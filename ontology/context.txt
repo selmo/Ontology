@@ -1,0 +1,234 @@
+# MC 분류·용어 통합 체계 (컨텍스트용)
+
+## ID 체계
+- 분류(CLSF): C + DD(도메인) + LL(중분류) + SSSS(일련번호)
+- 용어(TERM): T + DD(도메인) + LL(중분류) + SSSS(일련번호)
+
+---
+
+## 01. 공공 | Public Sector
+
+### [분류 체계]
+- C01000001 공공
+  ├ C01010001 지방시대·지역균형발전
+  │ └ C01010002 인구감소지역·지방소멸 대응
+  ├ C01020001 지방자치·행정체제 개편
+  │ └ C01020002 특별자치시·도
+  ├ C01030001 디지털플랫폼정부
+  │ ├ C01030002 공공마이데이터·공공데이터
+  │ └ C01030003 AI기반 대국민 서비스
+  ├ C01040001 국가안전시스템 개편
+  │ └ C01040002 다중밀집·인파 안전
+  └ C01050001 지방재정·교부세
+    └ C01050002 고향사랑기부제
+
+### [핵심 용어]
+- T01010001 지방시대 | Local Era
+- T01010002 지방시대위원회 | Presidential Committee for Local Era
+- T01010003 인구감소지역 지원 특별법 | Special Act on Support for Depopulation Areas
+- T01010004 지방소멸대응기금 | Local Extinction Response Fund
+- T01020001 디지털플랫폼정부 | Digital Platform Government
+- T01020002 공공마이데이터 | Public MyData
+- T01020003 보이스피싱 음성분석 모델 | Voice Phishing Detection Model
+- T01030001 국가안전시스템 개편 종합대책 | Comprehensive Plan for National Safety System Reform
+- T01030002 READY Korea 훈련 | READY Korea Drill
+- T01040001 고향사랑기부제 | Hometown Love Donation Program
+- T01040002 지방교부세 | Local Allocation Tax
+
+---
+
+## 02. 금융 | Finance
+
+### [분류 체계]
+- C02000001 금융
+  ├ C02010001 통화정책·통화신용정책
+  │ ├ C02010002 기준금리 운영
+  │ └ C02010003 금융중개지원대출·유동성조절
+  │   └ C02010004 공개시장운영·대상기관제도
+  ├ C02020001 금융안정·부동산PF
+  │ └ C02020002 가계부채·취약차주
+  ├ C02030001 상생금융·포용금융
+  ├ C02040001 핀테크·혁신금융
+  │ └ C02040002 핀테크 투자 생태계
+  ├ C02050001 자본시장·증시
+  │ └ C02050002 투자자 커뮤니케이션·시장전망
+  ├ C02060001 연금·노후자산
+  │ └ C02060002 기금형 퇴직연금 도입
+  ├ C02070001 은행산업 경쟁·인가제도
+  │ ├ C02070002 지방은행 시중은행 전환
+  │ └ C02070003 은행 인가 심사·외부평가
+  └ C02080001 지속가능·녹색금융
+    └ C02080002 녹색분류체계·TCFD 공시
+
+### [핵심 용어]
+- T02010001 기준금리 | Base Rate
+- T02010002 금융중개지원대출 | Bank Intermediated Lending Support Facility
+- T02010003 공개시장운영 | Open Market Operations [OMO]
+- T02010004 물가안정기 재진입 | Re-entry into Price Stability Phase
+- T02010005 근원물가 | Core Inflation
+- T02010006 공개시장운영 대상기관 확대 | Expanded OMO Counterparty Framework
+- T02010007 통화안정증권 발행 | Monetary Stabilization Bond Issuance
+- T02010008 환매조건부증권 매입 | Repurchase Agreement Purchases
+- T02020001 부동산 PF 대출 | Real Estate Project Financing Loan [PF]
+- T02020002 금융안정 | Financial Stability
+- T02030001 상생금융 | Mutual Growth Finance
+- T02030002 포용금융 | Inclusive Finance
+- T02030003 소상공인 금리부담경감 3종 세트 | Small Business Interest Relief Package
+- T02030004 저금리 대환 프로그램 | Low-interest Refinancing Program
+- T02040001 핀테크 | Fintech
+- T02040002 핀테크 혁신펀드 | Fintech Innovation Fund
+- T02040003 핀테크 혁신펀드 1호 | Fintech Innovation Fund I
+- T02040004 핀테크 혁신펀드 2호 | Fintech Innovation Fund II
+- T02040005 핀테크 투자생태계 활성화 | Fintech Investment Ecosystem Activation
+- T02050004 증시 콘서트 | Capital Market Concert
+- T02050005 하반기 증시 대전망 세션 | H2 Market Outlook Session
+- T02050001 퇴직연금 | Retirement Pension
+- T02050002 기금형 퇴직연금 | Fund-type Retirement Pension
+- T02050003 고령화와 금융자산 운용 | Ageing and Financial Asset Management
+- T02060001 한-호주 퇴직연금 포럼 | Korea-Australia Retirement Pension Forum
+- T02060002 호주 Superannuation 제도 | Australian Superannuation System
+- T02060003 AIST 대표제 거버넌스 | AIST Representative Governance Model
+- T02070001 지방은행 시중은행 전환 | Regional Bank Conversion to Nationwide Bank
+- T02070002 인가내용 변경 방식 | Authorization Change Method
+- T02070003 예비인가 제도 | Preliminary Authorization Regime
+- T02070004 은행업 인가 세부심사요건 | Detailed Bank Authorization Requirements
+- T02070005 외부평가위원회 심사절차 | External Evaluation Committee Review
+- T02070006 인가 심사중단사유 관리 | Suspension Triggers Management
+- T02080001 녹색금융 | Green Finance
+- T02080002 TCFD 권고안 | TCFD Recommendations
+- T02080003 한국형 녹색분류체계 | Korean Green Taxonomy
+- T02080004 녹색금융 핸드북 | Green Finance Handbook
+
+---
+
+## 03. 커머스 | Commerce
+
+### [분류 체계]
+- C03000001 커머스
+  ├ C03010001 이커머스 시장·플랫폼
+  │ ├ C03010002 글로벌 이커머스 시장
+  │ └ C03010003 국내 이커머스 경쟁구도
+  ├ C03020001 온라인 유통모델·D2C
+  │ └ C03020002 D2C·구독경제
+  ├ C03030001 라이브커머스·콘텐츠 커머스
+  │ └ C03030002 라이브커머스 플랫폼
+  ├ C03040001 소비자 행동·패턴 변화
+  │ ├ C03040002 중고거래 플랫폼
+  │ └ C03040003 배달 플랫폼·라스트마일
+  ├ C03050001 이커머스 물류·풀필먼트
+  └ C03060001 이커머스 솔루션·SaaS
+    └ C03060002 마케팅·리뷰·고객경험
+
+### [핵심 용어]
+- T03010001 이커머스 | E-commerce
+- T03010002 온라인 마켓플레이스 | Online Marketplace
+- T03010003 D2C | Direct to Consumer [D2C]
+- T03010004 구독경제 | Subscription Economy
+- T03020001 라이브커머스 | Live Commerce
+- T03020002 라이브커머스 플랫폼 | Live Commerce Platform
+- T03030001 중고거래 플랫폼 | Used-goods Marketplace
+- T03030002 라스트마일 배송 | Last-mile Delivery
+- T03040001 커머스 SaaS | Commerce SaaS [SaaS]
+- T03040002 마케팅 자동화 | Marketing Automation
+- T03040003 리뷰 솔루션 | Review Solution
+- T03040004 체리슈머 | Cherry-sumer (Deal-seeking Consumer)
+- T03040005 소비자 후생 | Consumer Welfare
+
+---
+
+## 04. 산업 | Industry
+
+### [분류 체계]
+- C04000001 산업
+  ├ C04010001 디지털 경제·플랫폼 경제
+  │ └ C04010002 딥테크·기저기술
+  ├ C04020001 신산업·스타트업 생태계
+  │ └ C04020002 벤처투자·모태펀드
+  ├ C04030001 소비·라이프스타일 트렌드
+  │ └ C04030002 뉴 럭셔리 비즈니스
+  └ C04040001 미디어·콘텐츠·플랫폼
+
+### [핵심 용어]
+- T04010001 디지털 경제 | Digital Economy
+- T04010002 딥테크 | Deep Tech
+- T04020001 스타트업 생태계 | Startup Ecosystem
+- T04020002 모태펀드 | Fund of Funds [FoF]
+- T04030001 뉴 럭셔리 | New Luxury
+
+---
+
+## 05. 사회 | Society
+
+### [분류 체계]
+- C05000001 사회
+  ├ C05010001 고령화·인구구조
+  │ ├ C05010002 고령자 세분화·초고령사회
+  │ └ C05010003 초고령사회 소비·돌봄
+  ├ C05020001 사회보장·연금
+  │ └ C05020002 공적연금 의존도·연금라이프
+  └ C05030001 노동·고용·고령자 일자리
+
+### [핵심 용어]
+- T05010001 고령화사회·고령사회·초고령사회 | Ageing Society / Aged Society / Super-aged Society
+- T05010002 전기고령자·후기고령자 | Young-old / Old-old
+- T05010003 노노케어 | Old-to-old Care
+- T05010004 보이지 않는 가족 | Invisible Family
+- T05010005 유니버설 디자인 정책 | Universal Design Policy
+- T05020001 공적연금 | Public Pension
+- T05020002 연금라이프 | Pension-based Life
+- T05030001 고령자 가계의 소득·지출 구조 | Income and Expenditure Structure of Elderly Households
+
+---
+
+## 06. 법률 | Law
+
+### [분류 체계]
+- C06000001 법률
+  ├ C06010001 판례·판결
+  │ ├ C06010002 민사 판례
+  │ ├ C06010003 행정 판례
+  │ └ C06010004 형사 판례
+  ├ C06020001 세법·조세
+  │ └ C06020002 세금제도 변경
+  └ C06030001 공무원법·행정법
+
+### [핵심 용어]
+- T06010001 판례 | Precedent
+- T06010002 대법원 판결 | Supreme Court Decision
+- T06010003 헌법재판소 결정 | Constitutional Court Decision
+- T06020001 소득세 | Income Tax
+- T06020002 법인세 | Corporate Tax
+- T06020003 부가가치세 | Value Added Tax [VAT]
+- T06020004 상속세·증여세 | Inheritance Tax / Gift Tax
+- T06030001 국가공무원법 | State Public Officials Act
+- T06030002 행정절차법 | Administrative Procedure Act
+
+---
+
+## 07. 의료 | Medical
+
+### [분류 체계]
+- C07000001 의료
+  ├ C07010001 암·종양
+  │ ├ C07010002 대장암
+  │ └ C07010003 다발성골수종
+  ├ C07020001 안과
+  │ ├ C07020002 안구건조증
+  │ └ C07020003 안과질환
+  ├ C07030001 소화기
+  │ └ C07030002 위식도역류질환
+  └ C07040001 건강관리·예방
+
+### [핵심 용어]
+- T07010001 암 | Cancer
+- T07010002 대장암 | Colorectal Cancer [CRC]
+- T07010003 다발성골수종 | Multiple Myeloma [MM]
+- T07010004 항암화학요법 | Chemotherapy
+- T07020001 안구건조증 | Dry Eye Syndrome [DES]
+- T07020002 백내장 | Cataract
+- T07020003 녹내장 | Glaucoma
+- T07020004 황반변성 | Macular Degeneration [AMD]
+- T07030001 위식도역류질환 | Gastroesophageal Reflux Disease [GERD]
+- T07030002 내시경 | Endoscopy
+- T07040001 건강검진 | Health Screening
+- T07040002 예방의학 | Preventive Medicine

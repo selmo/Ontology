@@ -1,0 +1,16 @@
+# REL_TYPE<TAB>SRC_TERM_ID<TAB>DST_TERM_ID<TAB>SOURCE_FILE<TAB>Note
+# Examples:
+# ALIAS_OF	T03010003	T03010004	commerce/ecommerce.pdf	"D2C와 구독경제를 동일 모델로 지칭"
+# REGULATED_BY	T06020001	T06010002	public/2024_tax.pdf	"소득세 과세기준이 대법원 판결로 변경"
+# Use REL_TYPE matching Cypher edges (e.g., ALIAS_OF, ANTONYM_OF, DERIVES_FROM, REGULATED_BY).
+# SOURCE_FILE should point to the PDF/HWP(HWPX) that justifies the relation. Note can quote a sentence fragment.
+HAS_COMPONENT	T02030003	T02030004	finance/240320(보도자료) 금융권의 상생금융 추진현황.pdf	"소상공인 금리부담경감 3종 세트는 저금리 대환 프로그램을 구성요소로 포함"
+USES_METHOD	T02070001	T02070002	finance/240130(보도자료) 지방은행의 시중은행 전환시 인가방식 및 절차.pdf	"지방은행 전환은 신규인가가 아닌 인가내용 변경 방식을 따른다고 명시"
+OPTIONAL_STEP	T02070001	T02070003	finance/240130(보도자료) 지방은행의 시중은행 전환시 인가방식 및 절차.pdf	"예비인가는 신청 시 생략 가능하지만 필요시 진행 가능하다고 안내"
+MONITORED_BY	T02010004	T02010005	finance/3. 향후 통화신용정책 방향.pdf	"물가안정기 재진입 여부는 근원물가 둔화 흐름과 인플레이션 분포를 점검하며 판단"
+MUST_PASS	T02070001	T02070004	finance/[별첨] 지방은행의 시중은행 전환시 인가방식 및 절차.pdf	"지방은행 시중은행 전환은 자본금·대주주·내부통제 등 모든 세부심사요건을 다시 충족해야 한다고 정리"
+ASSESSED_BY	T02070004	T02070005	finance/[별첨] 지방은행의 시중은행 전환시 인가방식 및 절차.pdf	"사업계획 타당성은 외부평가위원회를 통해 확인하라고 은행업감독규정 제7조가 요구"
+GOVERNED_BY	T02070001	T02070006	finance/[별첨] 지방은행의 시중은행 전환시 인가방식 및 절차.pdf	"주주 관련 형사절차만 심사중단사유로 인정하고 금융사고 시 조치계획 제출로 심사를 이어갈 수 있다고 안내"
+MANDATED_BY	T02080001	T02080002	finance/WP22-05.pdf	"TCFD 권고안 지지가 2,990개 기관으로 확대되며 녹색금융 공시 의무화 근거가 된다고 보고"
+ENABLED_BY	T02080001	T02080003	finance/WP22-05.pdf	"한국형 녹색분류체계의 6대 환경목표·DNSH 기준이 녹색투자 대상을 식별해 녹색금융을 가능하게 함"
+GUIDED_BY	T02080001	T02080004	finance/WP22-05.pdf	"금융권 녹색금융 핸드북이 실무 가이드·운영사례·Q&A를 제공해 금융사의 녹색금융 집행을 안내"

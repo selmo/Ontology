@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.8.0",
+    "version": "3.9.0",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (동의어 대폭 확장: 87 → 450+, 커버리지 100%)"
+    "description": "MC 분류·용어 통합 체계 (디지털커머스·과학기술 표준 레퍼런스 완성)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -13,7 +13,7 @@
     "root_term_id": "4147179070a84d3887b97eb57085d850"
   },
   "standards": {
-    "count": 20,
+    "count": 24,
     "registry": [
       {
         "id": "STD-SKOS",
@@ -254,6 +254,54 @@
         "version": "2024",
         "uri": "https://www.data.go.kr/",
         "description": "공공데이터 품질관리 수준평가. 공공데이터법 제22조."
+      },
+      {
+        "id": "STD-GS1",
+        "code": "GS1-ECOM",
+        "name_ko": "GS1 전자상거래",
+        "name_en": "GS1 eCommerce Standards",
+        "type": "INTERNATIONAL",
+        "scope": "CLASSIFICATION",
+        "organization": "GS1",
+        "version": "2024",
+        "uri": "https://www.gs1.org/standards/ecommerce",
+        "description": "글로벌 유통·물류·전자상거래 표준. GTIN, GLN 등 상품식별코드 체계."
+      },
+      {
+        "id": "STD-SCHEMA",
+        "code": "SCHEMA-ORG",
+        "name_ko": "Schema.org",
+        "name_en": "Schema.org Structured Data",
+        "type": "INTERNATIONAL",
+        "scope": "ONTOLOGY",
+        "organization": "Schema.org (Google, Microsoft, Yahoo, Yandex)",
+        "version": "25.0",
+        "uri": "https://schema.org/",
+        "description": "웹 구조화 데이터 표준. Product, Offer, Payment 등 800+ 타입."
+      },
+      {
+        "id": "STD-ARXIV",
+        "code": "ARXIV",
+        "name_ko": "arXiv 분류체계",
+        "name_en": "arXiv Subject Classification",
+        "type": "INTERNATIONAL",
+        "scope": "CLASSIFICATION",
+        "organization": "Cornell University",
+        "version": "2024",
+        "uri": "https://arxiv.org/category_taxonomy",
+        "description": "과학 논문 아카이브 분류. 물리학, 수학, 컴퓨터과학 등 155개 카테고리."
+      },
+      {
+        "id": "STD-ACMCCS",
+        "code": "ACM-CCS",
+        "name_ko": "ACM 컴퓨팅 분류",
+        "name_en": "ACM Computing Classification System",
+        "type": "INTERNATIONAL",
+        "scope": "CLASSIFICATION",
+        "organization": "ACM",
+        "version": "2012",
+        "uri": "https://www.acm.org/publications/class-2012",
+        "description": "컴퓨터과학 분류체계. 소프트웨어, AI, 네트워크 등 2,000+ 개념."
       }
     ]
   },
@@ -7611,7 +7659,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "OnlineStore",
+                      "external_name": "schema:OnlineStore",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    },
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "47912",
+                      "external_name": "전자상거래 소매업",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7623,7 +7686,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "Marketplace",
+                      "external_name": "schema:OnlineStore (Marketplace)",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7635,7 +7706,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "OnlineStore",
+                      "external_name": "schema:OnlineStore (Social Commerce)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7647,7 +7726,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "OnlineStore",
+                      "external_name": "schema:OnlineStore (Vertical)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }
@@ -7680,7 +7767,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-GS1",
+                      "external_id": "Wholesale",
+                      "external_name": "GS1 Wholesale Distribution",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7692,7 +7787,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "DirectSales",
+                      "external_name": "schema:Product (Direct-to-Consumer)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7737,7 +7840,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "PaymentMethod",
+                      "external_name": "schema:PaymentMethod (Mobile Payment)",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7749,7 +7860,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "PaymentMethod",
+                      "external_name": "schema:PaymentMethod (Buy Now Pay Later)",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7761,7 +7880,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-GS1",
+                      "external_id": "Payment",
+                      "external_name": "GS1 Payment Infrastructure",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.82
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }
@@ -7794,7 +7921,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-GS1",
+                      "external_id": "LastMile",
+                      "external_name": "GS1 Last Mile Delivery",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7806,7 +7941,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-GS1",
+                      "external_id": "Fulfillment",
+                      "external_name": "GS1 Fulfillment Center",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7851,7 +7994,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C08050001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-SCHEMA",
+                      "external_id": "ConsumerBehavior",
+                      "external_name": "schema:ConsumerResearch",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.82
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10353,7 +10504,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "6.0",
+                      "external_name": "Natural Sciences (National R&D)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10365,7 +10524,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "2.0",
+                      "external_name": "Engineering and Technology (Corporate R&D)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10377,7 +10544,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "FOS",
+                      "external_name": "Research Outcomes",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.78
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10422,7 +10597,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "math",
+                      "external_name": "Mathematics (math.*)",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    },
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "1.1",
+                      "external_name": "Mathematics",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10434,7 +10624,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "physics",
+                      "external_name": "Physics (physics.*)",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    },
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "1.3",
+                      "external_name": "Physical Sciences",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10446,7 +10651,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "chem/bio",
+                      "external_name": "Chemistry/Biology",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    },
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "1.4",
+                      "external_name": "Chemical Sciences",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }
@@ -10479,7 +10699,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "eess",
+                      "external_name": "Electrical Engineering and Systems Science",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    },
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "2.2",
+                      "external_name": "Electrical/Electronic Engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10491,7 +10726,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "2.3",
+                      "external_name": "Mechanical Engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10503,7 +10746,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "2.1",
+                      "external_name": "Civil Engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10515,7 +10766,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "2.5",
+                      "external_name": "Materials Engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }
@@ -10548,7 +10807,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ACMCCS",
+                      "external_id": "Software",
+                      "external_name": "ACM CCS Software and its engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    },
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "cs.SE",
+                      "external_name": "Software Engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10560,7 +10834,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ACMCCS",
+                      "external_id": "AI",
+                      "external_name": "ACM CCS Artificial intelligence",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    },
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "cs.AI",
+                      "external_name": "Artificial Intelligence",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10572,7 +10861,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ACMCCS",
+                      "external_id": "Data",
+                      "external_name": "ACM CCS Information systems → Data management",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10584,7 +10881,22 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ACMCCS",
+                      "external_id": "Security",
+                      "external_name": "ACM CCS Security and privacy",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    },
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "cs.CR",
+                      "external_name": "Cryptography and Security",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }
@@ -10617,7 +10929,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11050001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "Innovation",
+                      "external_name": "OECD Innovation Indicators",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10674,7 +10994,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11060001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-ARXIV",
+                      "external_id": "astro-ph",
+                      "external_name": "Astrophysics (Space Science)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -10686,7 +11014,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C11060001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-OECD-FOS",
+                      "external_id": "2.10",
+                      "external_name": "Aerospace Engineering",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }

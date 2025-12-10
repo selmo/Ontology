@@ -1,38 +1,38 @@
 # MC 분류·용어 통합 체계
 
-**버전:** 3.8.0
+**버전:** 3.9.0
 **최종 업데이트:** 2025-12-11
 **구조:** 단일 마스터 파일 (ontology.json)
 
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-3.8.0-green.svg)](README.md)
+[![Version](https://img.shields.io/badge/version-3.9.0-green.svg)](README.md)
 [![Data Source](https://img.shields.io/badge/source-data.go.kr-orange.svg)](https://www.data.go.kr)
 
 ## 개요
 
-문서 분류 및 용어 관리를 위한 체계적인 온톨로지 시스템입니다. 공공데이터포털(data.go.kr)의 16개 표준 분류체계 중 12개를 선별하고, 20개 국제/국내 표준과 연계했습니다.
+문서 분류 및 용어 관리를 위한 체계적인 온톨로지 시스템입니다. 공공데이터포털(data.go.kr)의 16개 표준 분류체계 중 12개를 선별하고, 24개 국제/국내 표준과 연계했습니다.
 
 **주요 특징:**
 - 📄 **단일 마스터**: ontology.json 하나가 모든 데이터의 원천
-- 🏛️ **표준 기반**: 20개 국제/국내 표준 연계 (SKOS, ISO25964, UNESCO 등)
-- 📊 **풍부한 관계**: 568개 용어 관계 + 368개 표준 레퍼런스
+- 🏛️ **표준 기반**: 24개 국제/국내 표준 연계 (SKOS, GS1, arXiv, ACM CCS 등)
+- 📊 **풍부한 관계**: 568개 용어 관계 + 405개 표준 레퍼런스
 - 🔄 **다중 출력**: SQL, Cypher, JSON, TXT 자동 생성
 - ✅ **높은 품질**: 자동 검증 (0 오류, 0 경고)
 
-## 통계 (v3.8)
+## 통계 (v3.9)
 
 | 항목 | 개수 |
 |------|------|
 | 도메인 | 12개 |
 | 분류 | 376개 (44개 중분류, 332개 소분류) |
 | 용어 | 221개 |
-| **동의어** | **485개** ⬆️ |
+| 동의어 | 485개 |
 | 연관 용어 관계 | 83개 |
-| 표준 레지스트리 | 20개 |
-| 표준 레퍼런스 | 368개 (분류 218개, 용어 150개) |
-| 분류 커버리지 | 203/376 (54.0%) |
+| **표준 레지스트리** | **24개** ⬆️ |
+| **표준 레퍼런스** | **405개 (분류 255개, 용어 150개)** ⬆️ |
+| **분류 커버리지** | **232/376 (61.7%)** ⬆️ |
 | 용어 커버리지 | 140/221 (63.3%) |
-| **동의어 커버리지** | **182/182 (100.0%)** 🎯 |
+| 동의어 커버리지 | 182/182 (100.0%) |
 
 ## 12개 도메인
 
@@ -198,9 +198,9 @@ CONFIDENCE    NUMBER(3,2)    -- 신뢰도 (0.0-1.0)
 NOTE          VARCHAR2(4000) -- 비고
 ```
 
-## 표준 레지스트리 (20개)
+## 표준 레지스트리 (24개)
 
-### 국제 표준 (8개)
+### 국제 표준 (12개)
 - **STD-SKOS** - Simple Knowledge Organization System
 - **STD-ISO25964** - Thesauri and interoperability
 - **STD-DC** - Dublin Core Metadata Terms
@@ -209,6 +209,10 @@ NOTE          VARCHAR2(4000) -- 비고
 - **STD-FIBO** - Financial Industry Business Ontology
 - **STD-MESH** - Medical Subject Headings
 - **STD-ICD11** - International Classification of Diseases
+- **STD-GS1** - GS1 eCommerce Standards (글로벌 유통·물류·전자상거래)
+- **STD-SCHEMA** - Schema.org Structured Data (웹 구조화 데이터)
+- **STD-ARXIV** - arXiv Subject Classification (과학 논문 분류)
+- **STD-ACMCCS** - ACM Computing Classification System (컴퓨터과학 분류)
 
 ### 국내 표준 (6개)
 - **STD-BRM** - 행정기관 업무참조모형
@@ -287,6 +291,14 @@ $ python3 validate_ontology.py
 ```
 
 ## 버전 이력
+
+### v3.9 (2025-12-11)
+- 🎯 **디지털커머스·과학기술 표준 레퍼런스 완성**: 27.3%/25.9% → 81.8%/88.9%
+- ✨ 4개 신규 표준 등록: GS1, Schema.org, arXiv, ACM CCS
+- 📊 37개 표준 레퍼런스 추가 (29개 분류)
+- 🏆 **전체 12개 도메인 모두 50%+ 달성**
+- 📈 전체 분류 커버리지: 54.0% → 61.7%
+- 🔧 검증 스크립트 개선: 동적 표준 ID 로드
 
 ### v3.8 (2025-12-11)
 - 🎯 **동의어 대폭 확장**: 87개 → 485개 (+398개, 557% 증가)

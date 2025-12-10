@@ -1,5 +1,5 @@
 {
-  "count": 20,
+  "count": 24,
   "registry": [
     {
       "id": "STD-SKOS",
@@ -240,6 +240,54 @@
       "version": "2024",
       "uri": "https://www.data.go.kr/",
       "description": "공공데이터 품질관리 수준평가. 공공데이터법 제22조."
+    },
+    {
+      "id": "STD-GS1",
+      "code": "GS1-ECOM",
+      "name_ko": "GS1 전자상거래",
+      "name_en": "GS1 eCommerce Standards",
+      "type": "INTERNATIONAL",
+      "scope": "CLASSIFICATION",
+      "organization": "GS1",
+      "version": "2024",
+      "uri": "https://www.gs1.org/standards/ecommerce",
+      "description": "글로벌 유통·물류·전자상거래 표준. GTIN, GLN 등 상품식별코드 체계."
+    },
+    {
+      "id": "STD-SCHEMA",
+      "code": "SCHEMA-ORG",
+      "name_ko": "Schema.org",
+      "name_en": "Schema.org Structured Data",
+      "type": "INTERNATIONAL",
+      "scope": "ONTOLOGY",
+      "organization": "Schema.org (Google, Microsoft, Yahoo, Yandex)",
+      "version": "25.0",
+      "uri": "https://schema.org/",
+      "description": "웹 구조화 데이터 표준. Product, Offer, Payment 등 800+ 타입."
+    },
+    {
+      "id": "STD-ARXIV",
+      "code": "ARXIV",
+      "name_ko": "arXiv 분류체계",
+      "name_en": "arXiv Subject Classification",
+      "type": "INTERNATIONAL",
+      "scope": "CLASSIFICATION",
+      "organization": "Cornell University",
+      "version": "2024",
+      "uri": "https://arxiv.org/category_taxonomy",
+      "description": "과학 논문 아카이브 분류. 물리학, 수학, 컴퓨터과학 등 155개 카테고리."
+    },
+    {
+      "id": "STD-ACMCCS",
+      "code": "ACM-CCS",
+      "name_ko": "ACM 컴퓨팅 분류",
+      "name_en": "ACM Computing Classification System",
+      "type": "INTERNATIONAL",
+      "scope": "CLASSIFICATION",
+      "organization": "ACM",
+      "version": "2012",
+      "uri": "https://www.acm.org/publications/class-2012",
+      "description": "컴퓨터과학 분류체계. 소프트웨어, AI, 네트워크 등 2,000+ 개념."
     }
   ]
 }

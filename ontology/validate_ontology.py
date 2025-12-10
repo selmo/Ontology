@@ -11,13 +11,8 @@ from typing import List, Dict, Set, Tuple
 ROOT_CLSF_ID = '03facd74b2d24f7cab807b8980391649'
 ROOT_TERM_ID = '4147179070a84d3887b97eb57085d850'
 
-# 유효한 표준 ID 목록
-VALID_STANDARD_IDS = {
-    'STD-SKOS', 'STD-ISO25964', 'STD-DC', 'STD-UNESCO', 'STD-OECD-FOS',
-    'STD-FIBO', 'STD-MESH', 'STD-ICD11', 'STD-BRM', 'STD-KSIC', 'STD-KCD',
-    'STD-MOLEG', 'STD-DATAGOkr', 'STD-STDTERM', 'STD-DCAT-AP-KR', 'STD-KOOR',
-    'STD-ADMCODE', 'STD-KS-ISO11179', 'STD-DBSTD', 'STD-DATAQUALITY'
-}
+# 유효한 표준 ID 목록 (ontology.json에서 동적으로 로드됨)
+VALID_STANDARD_IDS = set()  # Will be populated from ontology.json
 
 # 유효한 매치 타입
 VALID_MATCH_TYPES = {
@@ -67,9 +62,16 @@ class ValidationResult:
         print("="*60 + "\n")
 
 def load_json(filepath: str) -> Dict:
-    """Load ontology.json"""
+    """Load ontology.json and populate VALID_STANDARD_IDS"""
+    global VALID_STANDARD_IDS
     with open(filepath, 'r', encoding='utf-8') as f:
-        return json.load(f)
+        data = json.load(f)
+
+    # Populate VALID_STANDARD_IDS from standards registry
+    if 'standards' in data and 'registry' in data['standards']:
+        VALID_STANDARD_IDS = {std['id'] for std in data['standards']['registry']}
+
+    return data
 
 def parse_sql(filepath: str) -> Tuple[List[Dict], List[Dict]]:
     """Parse ontology.sql and extract classifications and terms"""

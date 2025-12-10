@@ -1,11 +1,11 @@
 # MC 분류·용어 통합 체계
 
-**버전:** 3.6.0
+**버전:** 3.7.0
 **최종 업데이트:** 2025-12-10
 **구조:** 단일 마스터 파일 (ontology.json)
 
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-3.6.0-green.svg)](README.md)
+[![Version](https://img.shields.io/badge/version-3.7.0-green.svg)](README.md)
 [![Data Source](https://img.shields.io/badge/source-data.go.kr-orange.svg)](https://www.data.go.kr)
 
 ## 개요
@@ -19,7 +19,7 @@
 - 🔄 **다중 출력**: SQL, Cypher, JSON, TXT 자동 생성
 - ✅ **높은 품질**: 자동 검증 (0 오류, 0 경고)
 
-## 통계 (v3.6)
+## 통계 (v3.7)
 
 | 항목 | 개수 |
 |------|------|
@@ -29,7 +29,9 @@
 | 동의어 관계 | 154개 |
 | 연관 용어 관계 | 83개 |
 | 표준 레지스트리 | 20개 |
-| 표준 레퍼런스 | 255개 (분류 105개, 용어 150개) |
+| 표준 레퍼런스 | 368개 (분류 218개, 용어 150개) |
+| **분류 커버리지** | **203/376 (54.0%)** ⬆️ |
+| 용어 커버리지 | 140/221 (63.3%) |
 
 ## 12개 도메인
 
@@ -273,19 +275,28 @@ RETURN path;
 - ✅ 필드 값 일치
 - ✅ 표준 레퍼런스 유효성
 
-### 검증 결과 (v3.6)
+### 검증 결과 (v3.7)
 ```bash
 $ python3 validate_ontology.py
 
 ✅ 모든 검증 통과!
 총계: 0 오류, 0 경고, 9 정보
+- 분류 표준 레퍼런스: 203개 (218개 매핑)
+- 용어 표준 레퍼런스: 140개 (150개 매핑)
 ```
 
 ## 버전 이력
 
+### v3.7 (2025-12-10)
+- 📊 **분류 표준 레퍼런스 대폭 확장**: 23.9% → 54.0% (+30.1%p)
+- ✨ 113개 분류에 표준 매핑 추가 (90 → 203개)
+- 🎯 목표 50% 초과 달성
+- 🔗 7개 주요 표준 활용 (MESH, FIBO, UNESCO, KSIC, KCD, BRM 등)
+- 📈 10개 도메인 50% 이상 달성
+
 ### v3.6 (2025-12-10)
 - 🎯 **단일 마스터 구조**: ontology.json 하나로 통합
-- 🗂️ **파일 정리**: archive/ 디렉토리 분리
+- 🗂️ **파일 정리**: archive/ 및 generated/ 디렉토리 분리
 - 📝 **명명 일관성**: context.* → ontology.* 통일
 
 ### v3.5 (2025-12-10)

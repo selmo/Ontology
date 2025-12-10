@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.6.0",
+    "version": "3.7.0",
     "last_updated": "2025-12-10",
-    "description": "MC 분류·용어 통합 체계 (단일 마스터 파일)"
+    "description": "MC 분류·용어 통합 체계 (분류 표준 레퍼런스 54% 달성)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -319,7 +319,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:Organization",
+                      "external_name": "Public Organizations",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -331,7 +339,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:GovernmentOrganization",
+                      "external_name": "Government Departments",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -343,7 +359,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:SubsidiaryOrganization",
+                      "external_name": "Subsidiary Institutions",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -405,7 +429,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "dcat:administrativeArea",
+                      "external_name": "Administrative Districts",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -417,7 +449,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:LocalGovernment",
+                      "external_name": "Local Governments",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -429,7 +469,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "dcat:administrativeOffice",
+                      "external_name": "Local Administrative Offices",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -485,7 +533,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:InformationResource",
+                      "external_name": "Information Resources",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -497,7 +553,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:InformationSystem",
+                      "external_name": "Information Systems",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -509,7 +573,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "dcat:Dataset",
+                      "external_name": "Open Data",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -565,7 +637,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:Program",
+                      "external_name": "National Programs",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -577,7 +657,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C01040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-BRM",
+                      "external_id": "nc:PublicService",
+                      "external_name": "Public Services",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1013,7 +1101,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-1-6",
+                      "external_name": "School Education Statistics",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1025,7 +1121,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-TEACHERS",
+                      "external_name": "Teaching Staff Statistics",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1037,7 +1141,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-STUDENTS",
+                      "external_name": "Student Statistics",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1082,7 +1194,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-4",
+                      "external_name": "Post-secondary Non-tertiary Education Institutions",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1094,7 +1214,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-4-PROG",
+                      "external_name": "Lifelong Learning Programs",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.82
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1106,7 +1234,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-LITERACY",
+                      "external_name": "Adult Literacy Education",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1151,7 +1287,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-1-3",
+                      "external_name": "Primary and Secondary Education",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1163,7 +1307,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-CURRICULUM",
+                      "external_name": "Education Curriculum",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1175,7 +1327,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-ACHIEVEMENT",
+                      "external_name": "Academic Achievement",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1232,7 +1392,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-5-8",
+                      "external_name": "Tertiary Education (Universities)",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1244,7 +1412,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C02040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "ISCED-5-8-INFO",
+                      "external_name": "Higher Education Information Disclosure",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1885,7 +2061,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D006761",
+                      "external_name": "Hospitals and Clinics",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1897,7 +2081,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D010594",
+                      "external_name": "Pharmacies",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1909,7 +2101,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D006268",
+                      "external_name": "Health Facilities",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1921,7 +2121,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D004864",
+                      "external_name": "Medical Equipment",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1966,7 +2174,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D006296",
+                      "external_name": "Health Services Accessibility",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1978,7 +2194,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000067576",
+                      "external_name": "Healthcare Statistics",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -1990,7 +2214,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D017721",
+                      "external_name": "Hospital Costs",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.82
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -2035,7 +2267,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D006282",
+                      "external_name": "Health Personnel",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -2047,7 +2287,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D006282",
+                      "external_name": "Health Personnel Statistics",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -2092,7 +2340,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D019458",
+                      "external_name": "Health Insurance Coverage",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -2104,7 +2360,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D008484",
+                      "external_name": "Medicaid",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -2325,7 +2589,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C03060001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000069079",
+                      "external_name": "Medical Imaging Data",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3012,7 +3284,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D012947",
+                      "external_name": "Social Welfare",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3024,7 +3304,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D011634",
+                      "external_name": "Public Assistance",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3036,7 +3324,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D012943",
+                      "external_name": "Social Security",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3080,7 +3376,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D002648",
+                      "external_name": "Child Welfare",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3092,7 +3396,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000068101",
+                      "external_name": "Childcare Services",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3104,7 +3416,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D002675",
+                      "external_name": "Child Protection",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3148,7 +3468,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D006233",
+                      "external_name": "Disabled Persons",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3160,7 +3488,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D012050",
+                      "external_name": "Rehabilitation Services",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3172,7 +3508,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000077527",
+                      "external_name": "Disability Benefits",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3228,7 +3572,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000368",
+                      "external_name": "Aged",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3240,7 +3592,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D016387",
+                      "external_name": "Long-term Care",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3252,7 +3612,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C04040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D010415",
+                      "external_name": "Pensions",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3671,7 +4039,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D007881",
+                      "external_name": "Legislation as Topic",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3683,7 +4059,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D005069",
+                      "external_name": "Executive Orders and Regulations",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3695,7 +4079,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D007881",
+                      "external_name": "Local Ordinances",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3740,7 +4132,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D035521",
+                      "external_name": "Supreme Court Decisions",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3752,7 +4152,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D035521",
+                      "external_name": "Lower Court Decisions",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3764,7 +4172,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D007881",
+                      "external_name": "Judicial Statistics",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3809,7 +4225,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D035781",
+                      "external_name": "Legal Consultation",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -3821,7 +4245,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C05030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D035521",
+                      "external_name": "Legal Aid",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4509,7 +4941,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:Budget",
+                      "external_name": "예산 (Budget)",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4521,7 +4961,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:DepartmentalBudget",
+                      "external_name": "부처별 예산",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4533,7 +4981,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:BudgetExpenditure",
+                      "external_name": "세출·세입 예산",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4578,7 +5034,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-fct-ra:FinancialStatement",
+                      "external_name": "재정상태표",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4590,7 +5054,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-fct-ra:FiscalSettlement",
+                      "external_name": "국가결산",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4602,7 +5074,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fnd-arr-asmt:Assessment",
+                      "external_name": "재정사업 평가",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4654,7 +5134,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:LocalBudget",
+                      "external_name": "지방예산",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4666,7 +5154,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:LocalRevenue",
+                      "external_name": "지방세입",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4678,7 +5174,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-fct-ra:FiscalAutonomy",
+                      "external_name": "재정자립도",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4735,7 +5239,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:NationalTax",
+                      "external_name": "국세",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4747,7 +5259,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:LocalTax",
+                      "external_name": "지방세",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4759,7 +5279,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:FinancialIncomeTax",
+                      "external_name": "금융소득 과세",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4816,7 +5344,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06050001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:FundAccount",
+                      "external_name": "회계·기금",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4828,7 +5364,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06050001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-pas-fpas:FundManagementPlan",
+                      "external_name": "기금운용계획",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4885,7 +5429,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06060001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-fct-mkt:MonetaryPolicy",
+                      "external_name": "통화정책",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4897,7 +5449,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06060001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fnd-arr-reg:FinancialStability",
+                      "external_name": "금융안정",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -4909,7 +5469,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C06060001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-FIBO",
+                      "external_id": "fibo-fbc-fct-mkt:CapitalMarket",
+                      "external_name": "자본시장",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5688,7 +6256,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "47911",
+                      "external_name": "전자상거래 소매중개업",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5700,7 +6276,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "G47",
+                      "external_name": "소매업 (유통채널)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5712,7 +6296,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "63122",
+                      "external_name": "포털 및 기타 인터넷 정보매개 서비스업",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5757,7 +6349,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "C",
+                      "external_name": "제조업 (산업생산)",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.82
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5769,7 +6369,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "ALL",
+                      "external_name": "산업통계 전체",
+                      "match_type": "BROAD_MATCH",
+                      "confidence": 0.75
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5781,7 +6389,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "ALL",
+                      "external_name": "기업통계",
+                      "match_type": "BROAD_MATCH",
+                      "confidence": 0.75
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5826,7 +6442,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D004651",
+                      "external_name": "Employment",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5838,7 +6462,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D004651",
+                      "external_name": "Employment Statistics",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.85
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5850,7 +6482,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000067576",
+                      "external_name": "Labor Market",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5895,7 +6535,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "70200",
+                      "external_name": "창업 및 벤처 컨설팅업",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.8
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5907,7 +6555,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "64992",
+                      "external_name": "벤처캐피탈업",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -5919,7 +6575,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C07040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-KSIC",
+                      "external_id": "70200",
+                      "external_name": "창업지원 서비스업",
+                      "match_type": "RELATED_MATCH",
+                      "confidence": 0.82
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7240,7 +7904,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "CULT-HERITAGE",
+                      "external_name": "Cultural Heritage",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7252,7 +7924,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "CULT-FACILITY",
+                      "external_name": "Cultural Facilities",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7264,7 +7944,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-UNESCO",
+                      "external_id": "CULT-EVENT",
+                      "external_name": "Cultural Events",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7309,7 +7997,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D014195",
+                      "external_name": "Travel",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7321,7 +8017,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D014195",
+                      "external_name": "Tourist Attractions",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7333,7 +8037,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000068376",
+                      "external_name": "Tourism Statistics",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7378,7 +8090,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D013177",
+                      "external_name": "Sports",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7390,7 +8110,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D013178",
+                      "external_name": "Sports Facilities",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -7402,7 +8130,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C09030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D013177",
+                      "external_name": "Sports Events",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8151,7 +8887,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000397",
+                      "external_name": "Air Pollution",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8163,7 +8907,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D014874",
+                      "external_name": "Water Pollution",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8175,7 +8927,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D012989",
+                      "external_name": "Soil Pollution",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8219,7 +8979,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D057231",
+                      "external_name": "Climate Change",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8231,7 +8999,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000073116",
+                      "external_name": "Carbon Emissions",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8243,7 +9019,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000073116",
+                      "external_name": "Greenhouse Gas Emissions",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8287,7 +9071,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D014887",
+                      "external_name": "Weather",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8299,7 +9091,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D057231",
+                      "external_name": "Climate Data",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8311,7 +9111,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D055873",
+                      "external_name": "Weather Forecasting",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8355,7 +9163,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D059205",
+                      "external_name": "Natural Resources",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.88
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8367,7 +9183,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000072480",
+                      "external_name": "Energy Resources",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -8379,7 +9203,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C10040001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D014867",
+                      "external_name": "Water Resources",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9752,7 +10584,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D004190",
+                      "external_name": "Disaster Planning",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9764,7 +10604,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D054071",
+                      "external_name": "Emergency Management",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9776,7 +10624,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12010001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D004632",
+                      "external_name": "Emergency Medical Services",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9820,7 +10676,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D005390",
+                      "external_name": "Fires",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.95
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9832,7 +10696,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D000081874",
+                      "external_name": "Fire Safety",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9844,7 +10716,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12020001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D005390",
+                      "external_name": "Fire Prevention",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.9
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9888,7 +10768,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D004190",
+                      "external_name": "Natural Disasters",
+                      "match_type": "CLOSE_MATCH",
+                      "confidence": 0.92
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9900,7 +10788,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D055867",
+                      "external_name": "Earthquakes",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 },
@@ -9912,7 +10808,15 @@
                   "group": false,
                   "level": 2,
                   "parent_id": "C12030001",
-                  "standard_refs": [],
+                  "standard_refs": [
+                    {
+                      "standard_id": "STD-MESH",
+                      "external_id": "D055868",
+                      "external_name": "Floods",
+                      "match_type": "EXACT_MATCH",
+                      "confidence": 0.98
+                    }
+                  ],
                   "primary_standard": null,
                   "children": []
                 }

@@ -193,7 +193,7 @@ def generate_mc_term_rel_sql(data: Dict) -> str:
     for domain in data['domains']:
         flat_terms = flatten_terms(domain['terms'])
 
-        has_relations = any(term.get('synonyms') or term.get('related_terms') or term.get('parent_id')
+        has_relations = any(term.get('synonyms') or term.get('parent_id')
                            for term in flat_terms)
 
         if has_relations:
@@ -233,22 +233,6 @@ def generate_mc_term_rel_sql(data: Dict) -> str:
                     )
 
         if synonym_found:
-            lines.append("")
-
-        # 연관 용어 관계
-        related_found = False
-        for term in flat_terms:
-            if term.get('related_terms'):
-                if not related_found:
-                    lines.append("-- 연관 용어 (Related Terms)")
-                    related_found = True
-                for related_id in term['related_terms']:
-                    lines.append(
-                        f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
-                        f"VALUES ('{term['id']}', 'T', '{related_id}');"
-                    )
-
-        if related_found:
             lines.append("")
 
     return '\n'.join(lines)
@@ -431,15 +415,15 @@ def generate_ontology_cypher(data: Dict) -> str:
 
         lines.append("")
 
-        # Related terms (RELATED_TO)
-        lines.append("// Related Term Relations")
-        for term in flat_terms:
-            if term.get('related_terms'):
-                for related_id in term['related_terms']:
+        # Similar classifications (SIMILAR_TO)
+        lines.append("// Similar Classification Relations")
+        for clsf in flat_clsf:
+            if clsf.get('similar_to'):
+                for similar_id in clsf['similar_to']:
                     lines.append(
-                        f"MATCH (t1:Term {{id: '{term['id']}'}}), "
-                        f"(t2:Term {{id: '{related_id}'}}) "
-                        f"CREATE (t1)-[:RELATED_TO]->(t2);"
+                        f"MATCH (c1:Classification {{id: '{clsf['id']}'}}), "
+                        f"(c2:Classification {{id: '{similar_id}'}}) "
+                        f"CREATE (c1)-[:SIMILAR_TO]->(c2);"
                     )
 
         lines.append("")

@@ -1,11 +1,11 @@
 # MC 분류·용어 통합 체계
 
-**버전:** 3.9.0
+**버전:** 3.10.0
 **최종 업데이트:** 2025-12-11
 **구조:** 단일 마스터 파일 (ontology.json)
 
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-3.9.0-green.svg)](README.md)
+[![Version](https://img.shields.io/badge/version-3.10.0-green.svg)](README.md)
 [![Data Source](https://img.shields.io/badge/source-data.go.kr-orange.svg)](https://www.data.go.kr)
 
 ## 개요
@@ -247,10 +247,10 @@ NOTE          VARCHAR2(4000) -- 비고
 - `:Synonym` - 동의어
 
 ### 관계 타입
-- `:PARENT_OF` - 계층 관계
-- `:BELONGS_TO` - 용어→분류
-- `:SYNONYM_OF` - 동의어
-- `:RELATED_TO` - 연관 관계
+- `:PARENT_OF` - 계층 관계 (Classification↔Classification, Term↔Term)
+- `:BELONGS_TO` - 용어→분류 소속
+- `:SYNONYM_OF` - 용어 동의어
+- `:SIMILAR_TO` - 분류 간 유사 관계 (도메인 간 연계)
 
 ### Memgraph 사용법
 ```cypher
@@ -291,6 +291,13 @@ $ python3 validate_ontology.py
 ```
 
 ## 버전 이력
+
+### v3.10 (2025-12-11)
+- 🔄 **관계 재구조화**: SIMILAR_TO 추가, RELATED_TO 제거
+- ✨ Classification 간 유사 관계 도입 (21쌍, 42개 관계)
+- ✗ Term 간 RELATED_TO 제거 (79개) - SYNONYM_OF로 충분
+- 🎯 도메인 간 연계 강화 (교육↔과학기술, 보건의료↔사회복지 등)
+- 📊 총 관계 수: 1,453개 → 1,412개 (최적화)
 
 ### v3.9 (2025-12-11)
 - 🎯 **디지털커머스·과학기술 표준 레퍼런스 완성**: 27.3%/25.9% → 81.8%/88.9%

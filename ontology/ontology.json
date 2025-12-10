@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.9.0",
+    "version": "3.10.0",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (디지털커머스·과학기술 표준 레퍼런스 완성)"
+    "description": "MC 분류·용어 통합 체계 (관계 재구조화: SIMILAR_TO 추가, RELATED_TO 제거)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -553,6 +553,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C06030001"
               ]
             },
             {
@@ -715,7 +718,10 @@
                     }
                   ],
                   "primary_standard": null,
-                  "children": []
+                  "children": [],
+                  "similar_to": [
+                    "C05030001"
+                  ]
                 },
                 {
                   "id": "C01040004",
@@ -729,6 +735,10 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C06010001",
+                "C05010001"
               ]
             },
             {
@@ -834,11 +844,6 @@
             "공공단체",
             "공공조직"
           ],
-          "related_terms": [
-            "T01010002",
-            "T01010003",
-            "T01010004"
-          ],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [
@@ -870,7 +875,6 @@
             "행정조직",
             "부처조직도"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [
@@ -895,7 +899,6 @@
             "공공기관정보",
             "기관현황"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [],
@@ -912,10 +915,6 @@
             "행정동",
             "법정동",
             "동리"
-          ],
-          "related_terms": [
-            "T01020002",
-            "T01030002"
           ],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
@@ -941,7 +940,6 @@
             "광역자치단체",
             "기초자치단체"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -972,7 +970,6 @@
             "면사무소",
             "동주민센터"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -997,7 +994,6 @@
             "동사무소",
             "행정센터"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -1021,9 +1017,6 @@
             "전자정부",
             "디지털행정",
             "스마트행정"
-          ],
-          "related_terms": [
-            "T01030002"
           ],
           "linked_clsf_id": "C01030001",
           "parent_id": null,
@@ -1055,7 +1048,6 @@
             "정보자원관리",
             "IT자산"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01030001",
           "parent_id": null,
           "standard_refs": [
@@ -1080,7 +1072,6 @@
             "공공정보개방",
             "오픈데이터"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01030001",
           "parent_id": null,
           "standard_refs": [],
@@ -1097,9 +1088,6 @@
             "국가정책",
             "정부사업",
             "국정과제"
-          ],
-          "related_terms": [
-            "T01040002"
           ],
           "linked_clsf_id": "C01040001",
           "parent_id": null,
@@ -1125,7 +1113,6 @@
             "행정서비스",
             "민원서비스"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C01040001",
           "parent_id": null,
           "standard_refs": [],
@@ -1352,6 +1339,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C09030001"
               ]
             },
             {
@@ -1457,6 +1447,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C09010001"
               ]
             },
             {
@@ -1516,7 +1509,10 @@
                     }
                   ],
                   "primary_standard": null,
-                  "children": []
+                  "children": [],
+                  "similar_to": [
+                    "C11050001"
+                  ]
                 },
                 {
                   "id": "C02040004",
@@ -1542,6 +1538,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C11010001"
               ]
             },
             {
@@ -1672,11 +1671,6 @@
             "교육통계",
             "학교통계연보"
           ],
-          "related_terms": [
-            "T02010002",
-            "T02010003",
-            "T02010004"
-          ],
           "linked_clsf_id": "C02010001",
           "parent_id": null,
           "standard_refs": [
@@ -1769,7 +1763,6 @@
             "학교재정",
             "교육비"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02010001",
           "parent_id": null,
           "standard_refs": [],
@@ -1786,11 +1779,6 @@
             "평생학습",
             "성인교육",
             "계속교육"
-          ],
-          "related_terms": [
-            "T02020002",
-            "T02020003",
-            "T02020004"
           ],
           "linked_clsf_id": "C02020001",
           "parent_id": null,
@@ -1876,7 +1864,6 @@
             "직업능력개발훈련",
             "직무교육"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02020001",
           "parent_id": null,
           "standard_refs": [
@@ -1901,10 +1888,6 @@
             "초중등교육",
             "공교육",
             "정규교육"
-          ],
-          "related_terms": [
-            "T02030002",
-            "T02030003"
           ],
           "linked_clsf_id": "C02030001",
           "parent_id": null,
@@ -1968,7 +1951,6 @@
             "학교건물",
             "학습시설"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02030001",
           "parent_id": null,
           "standard_refs": [
@@ -1993,7 +1975,6 @@
             "교육복지사업",
             "교육지원"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02030001",
           "parent_id": null,
           "standard_refs": [],
@@ -2009,9 +1990,6 @@
           "synonyms": [
             "대학교육",
             "고등교육기관"
-          ],
-          "related_terms": [
-            "T02040002"
           ],
           "linked_clsf_id": "C02040001",
           "parent_id": null,
@@ -2030,7 +2008,6 @@
             "대학정보제공",
             "학교공시"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02040001",
           "parent_id": null,
           "standard_refs": [
@@ -2056,7 +2033,6 @@
             "대학-기업협력",
             "산학협동"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02040001",
           "parent_id": null,
           "standard_refs": [],
@@ -2074,7 +2050,6 @@
             "어린이집",
             "유치원"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02050001",
           "parent_id": null,
           "standard_refs": [],
@@ -2091,7 +2066,6 @@
             "누리교육과정",
             "국가수준교육과정"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02050001",
           "parent_id": null,
           "standard_refs": [
@@ -2117,7 +2091,6 @@
             "장애인교육",
             "특수교육기관"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02060001",
           "parent_id": null,
           "standard_refs": [],
@@ -2135,7 +2108,6 @@
             "영재학급",
             "영재학생"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C02060001",
           "parent_id": null,
           "standard_refs": [],
@@ -2457,6 +2429,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C04020001"
               ]
             },
             {
@@ -2530,6 +2505,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C04010001"
               ]
             },
             {
@@ -2706,6 +2684,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C04040001"
               ]
             },
             {
@@ -2911,12 +2892,6 @@
             "의료시설",
             "보건의료기관"
           ],
-          "related_terms": [
-            "T03010004",
-            "T03010005",
-            "T03010006",
-            "T03010007"
-          ],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -2996,7 +2971,6 @@
             "약국시설",
             "조제약국"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3021,7 +2995,6 @@
             "의료인프라",
             "병원시설"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3047,7 +3020,6 @@
             "진료장비",
             "의료설비"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3072,9 +3044,6 @@
             "DES",
             "건조안"
           ],
-          "related_terms": [
-            "T03020005"
-          ],
           "linked_clsf_id": "C03020001",
           "parent_id": null,
           "standard_refs": [
@@ -3098,9 +3067,6 @@
           "synonyms": [
             "외래진료통계",
             "입원통계"
-          ],
-          "related_terms": [
-            "T03020005"
           ],
           "linked_clsf_id": "C03020001",
           "parent_id": null,
@@ -3133,10 +3099,6 @@
             "GERD",
             "역류성식도염"
           ],
-          "related_terms": [
-            "T03030002",
-            "T03030003"
-          ],
           "linked_clsf_id": "C03030001",
           "parent_id": null,
           "standard_refs": [
@@ -3162,7 +3124,6 @@
             "의료진",
             "임상의"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03030001",
           "parent_id": null,
           "standard_refs": [
@@ -3187,7 +3148,6 @@
             "간호인력",
             "간호직"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03030001",
           "parent_id": null,
           "standard_refs": [],
@@ -3203,9 +3163,6 @@
           "synonyms": [
             "국민건강보험",
             "의료보험"
-          ],
-          "related_terms": [
-            "T03040002"
           ],
           "linked_clsf_id": "C03040001",
           "parent_id": null,
@@ -3231,7 +3188,6 @@
             "의료보호",
             "의료지원"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03040001",
           "parent_id": null,
           "standard_refs": [
@@ -3255,11 +3211,6 @@
           "synonyms": [
             "악성종양",
             "Cancer"
-          ],
-          "related_terms": [
-            "T03050002",
-            "T03010005",
-            "T03010006"
           ],
           "linked_clsf_id": "C03050001",
           "parent_id": null,
@@ -3333,7 +3284,6 @@
             "DES",
             "건조안"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03050001",
           "parent_id": null,
           "standard_refs": [
@@ -3359,7 +3309,6 @@
             "역류성식도염",
             "위식도역류"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03050001",
           "parent_id": null,
           "standard_refs": [
@@ -3384,9 +3333,6 @@
             "의료빅데이터",
             "Healthcare Big Data"
           ],
-          "related_terms": [
-            "T03060002"
-          ],
           "linked_clsf_id": "C03060001",
           "parent_id": null,
           "standard_refs": [],
@@ -3404,7 +3350,6 @@
             "진단영상",
             "의료이미지"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C03060001",
           "parent_id": null,
           "standard_refs": [],
@@ -3528,6 +3473,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C03040001"
               ]
             },
             {
@@ -3620,6 +3568,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C03030001"
               ]
             },
             {
@@ -3816,6 +3767,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C03050001"
               ]
             },
             {
@@ -3944,9 +3898,6 @@
             "사회안전망",
             "사회복지제도"
           ],
-          "related_terms": [
-            "T04010002"
-          ],
           "linked_clsf_id": "C04010001",
           "parent_id": null,
           "standard_refs": [
@@ -3970,7 +3921,6 @@
             "사회보험제도",
             "4대보험"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C04010001",
           "parent_id": null,
           "standard_refs": [
@@ -3994,7 +3944,6 @@
             "노노돌봄",
             "고령자돌봄"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C04010001",
           "parent_id": null,
           "standard_refs": [
@@ -4017,9 +3966,6 @@
           "synonyms": [
             "공적연금제도",
             "사회보험연금"
-          ],
-          "related_terms": [
-            "T04020002"
           ],
           "linked_clsf_id": "C04020001",
           "parent_id": null,
@@ -4045,7 +3991,6 @@
             "양로시설",
             "요양시설"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C04020001",
           "parent_id": null,
           "standard_refs": [
@@ -4070,7 +4015,6 @@
             "취약층",
             "소외계층"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C04030001",
           "parent_id": null,
           "standard_refs": [
@@ -4094,7 +4038,6 @@
             "빈곤층",
             "기초수급자"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C04030001",
           "parent_id": null,
           "standard_refs": [],
@@ -4110,10 +4053,6 @@
           "synonyms": [
             "Aged Society",
             "고령화사회"
-          ],
-          "related_terms": [
-            "T04040002",
-            "T04040003"
           ],
           "linked_clsf_id": "C04040001",
           "parent_id": null,
@@ -4163,7 +4102,6 @@
             "Senior Care",
             "노인돌봄"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C04040001",
           "parent_id": null,
           "standard_refs": [],
@@ -4297,6 +4235,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C01040001"
               ]
             },
             {
@@ -4463,6 +4404,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C01040003"
               ]
             },
             {
@@ -4663,10 +4607,6 @@
             "법규",
             "법제"
           ],
-          "related_terms": [
-            "T05010002",
-            "T05010003"
-          ],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4691,7 +4631,6 @@
             "법규범",
             "제정법"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4716,7 +4655,6 @@
             "시행규칙",
             "명령"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4741,7 +4679,6 @@
             "지방법규",
             "자치규칙"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4766,7 +4703,6 @@
             "고시",
             "훈령"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4791,7 +4727,6 @@
             "재판례",
             "법원판례"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [
@@ -4816,7 +4751,6 @@
             "상고심판례",
             "최고법원판례"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [
@@ -4842,7 +4776,6 @@
             "일반법원판례",
             "하급법원판례"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [
@@ -4869,7 +4802,6 @@
             "재판통계연보",
             "사법통계"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [],
@@ -4887,7 +4819,6 @@
             "법률복지",
             "법무서비스"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05030001",
           "parent_id": null,
           "standard_refs": [
@@ -4912,7 +4843,6 @@
             "법률컨설팅",
             "법무상담"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05030001",
           "parent_id": null,
           "standard_refs": [],
@@ -4930,7 +4860,6 @@
             "법률지원",
             "법률복지"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05030001",
           "parent_id": null,
           "standard_refs": [],
@@ -4949,11 +4878,6 @@
             "부동산등기",
             "소유권등기",
             "재산등기"
-          ],
-          "related_terms": [
-            "T05040002",
-            "T05040003",
-            "T05040004"
           ],
           "linked_clsf_id": "C05040001",
           "parent_id": null,
@@ -5045,7 +4969,6 @@
             "국세청세금",
             "국가세수"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05040001",
           "parent_id": null,
           "standard_refs": [],
@@ -5062,7 +4985,6 @@
             "지방세무",
             "자치단체세금"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05040001",
           "parent_id": null,
           "standard_refs": [],
@@ -5080,7 +5002,6 @@
             "형법체계",
             "범죄처벌"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05050001",
           "parent_id": null,
           "standard_refs": [],
@@ -5098,7 +5019,6 @@
             "범죄발생현황",
             "형사통계"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05050001",
           "parent_id": null,
           "standard_refs": [],
@@ -5116,7 +5036,6 @@
             "행정심판",
             "행정쟁송"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05060001",
           "parent_id": null,
           "standard_refs": [],
@@ -5133,7 +5052,6 @@
             "행정쟁송",
             "행정불복"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C05060001",
           "parent_id": null,
           "standard_refs": [],
@@ -5267,6 +5185,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C01040001"
               ]
             },
             {
@@ -5472,6 +5393,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C01020001"
               ]
             },
             {
@@ -6036,12 +5960,6 @@
             "Base Rate",
             "기준금리"
           ],
-          "related_terms": [
-            "T06010002",
-            "T06010003",
-            "T06010004",
-            "T06010005"
-          ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [
@@ -6066,7 +5984,6 @@
             "부문별예산",
             "사업별예산"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [
@@ -6090,10 +6007,6 @@
           "synonyms": [
             "OMO",
             "공개시장조작"
-          ],
-          "related_terms": [
-            "T06010007",
-            "T06010008"
           ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
@@ -6119,7 +6032,6 @@
             "지출예산",
             "세출"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [],
@@ -6136,7 +6048,6 @@
             "수입예산",
             "세입"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [],
@@ -6153,9 +6064,6 @@
             "PF",
             "프로젝트파이낸싱",
             "Project Financing"
-          ],
-          "related_terms": [
-            "T06020002"
           ],
           "linked_clsf_id": "C06020001",
           "parent_id": null,
@@ -6182,7 +6090,6 @@
             "재무상태표",
             "재정현황"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06020001",
           "parent_id": null,
           "standard_refs": [
@@ -6207,7 +6114,6 @@
             "국가결산",
             "세입세출결산"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06020001",
           "parent_id": null,
           "standard_refs": [],
@@ -6223,11 +6129,6 @@
           "synonyms": [
             "지방정부재정",
             "지역재정"
-          ],
-          "related_terms": [
-            "T06030002",
-            "T06030003",
-            "T06030004"
           ],
           "linked_clsf_id": "C06030001",
           "parent_id": null,
@@ -6260,7 +6161,6 @@
             "지방교부금",
             "재정교부금"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06030001",
           "parent_id": null,
           "standard_refs": [
@@ -6285,7 +6185,6 @@
             "재정자주도",
             "재정독립도"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06030001",
           "parent_id": null,
           "standard_refs": [],
@@ -6301,9 +6200,6 @@
           "synonyms": [
             "금융기술",
             "Fintech"
-          ],
-          "related_terms": [
-            "T06040002"
           ],
           "linked_clsf_id": "C06040001",
           "parent_id": null,
@@ -6336,7 +6232,6 @@
             "지역세",
             "지방세금"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06040001",
           "parent_id": null,
           "standard_refs": [
@@ -6386,10 +6281,6 @@
             "기업연금",
             "퇴직연금"
           ],
-          "related_terms": [
-            "T06050002",
-            "T04020001"
-          ],
           "linked_clsf_id": "C06050001",
           "parent_id": null,
           "standard_refs": [
@@ -6414,7 +6305,6 @@
             "기금관리",
             "기금운영"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C06050001",
           "parent_id": null,
           "standard_refs": [
@@ -6438,9 +6328,6 @@
           "synonyms": [
             "금융정책",
             "통화금융정책"
-          ],
-          "related_terms": [
-            "T06060002"
           ],
           "linked_clsf_id": "C06060001",
           "parent_id": null,
@@ -6613,6 +6500,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C08010001"
               ]
             },
             {
@@ -6706,6 +6596,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C11040001"
               ]
             },
             {
@@ -6799,6 +6692,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C08020001"
               ]
             },
             {
@@ -6892,6 +6788,10 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C08030001",
+                "C11050001"
               ]
             },
             {
@@ -7091,12 +6991,6 @@
             "Digital Economy",
             "데이터경제"
           ],
-          "related_terms": [
-            "T07010002",
-            "T07010003",
-            "T07020001",
-            "T07010004"
-          ],
           "linked_clsf_id": "C07010001",
           "parent_id": null,
           "standard_refs": [
@@ -7186,7 +7080,6 @@
             "Deep Technology",
             "심층기술"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07010001",
           "parent_id": null,
           "standard_refs": [
@@ -7210,7 +7103,6 @@
             "자동차제조업",
             "차량산업"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07020001",
           "parent_id": null,
           "standard_refs": [
@@ -7236,7 +7128,6 @@
             "바이오테크",
             "BT산업"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07020001",
           "parent_id": null,
           "standard_refs": [
@@ -7261,7 +7152,6 @@
             "3차산업",
             "서비스산업"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07030001",
           "parent_id": null,
           "standard_refs": [
@@ -7287,9 +7177,6 @@
             "문전배송",
             "Last Mile"
           ],
-          "related_terms": [
-            "T07060002"
-          ],
           "linked_clsf_id": "C07030001",
           "parent_id": null,
           "standard_refs": [
@@ -7313,10 +7200,6 @@
             "상거래SaaS",
             "쇼핑몰솔루션",
             "E-commerce Platform"
-          ],
-          "related_terms": [
-            "T07040002",
-            "T07040003"
           ],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
@@ -7342,7 +7225,6 @@
             "고용",
             "일자리창출"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [],
@@ -7360,7 +7242,6 @@
             "비취업률",
             "미취업률"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [
@@ -7385,7 +7266,6 @@
             "취업시장",
             "인력시장"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [],
@@ -7402,7 +7282,6 @@
             "최저시급",
             "법정최저임금"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [],
@@ -7418,9 +7297,6 @@
           "synonyms": [
             "디지털경제",
             "Digital Economy"
-          ],
-          "related_terms": [
-            "T07050002"
           ],
           "linked_clsf_id": "C07050001",
           "parent_id": null,
@@ -7472,7 +7348,6 @@
             "스타트업회사",
             "신생기업"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07050001",
           "parent_id": null,
           "standard_refs": [
@@ -7496,7 +7371,6 @@
             "창업지원기관",
             "인큐베이터"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07050001",
           "parent_id": null,
           "standard_refs": [],
@@ -7512,9 +7386,6 @@
           "synonyms": [
             "이커머스기술",
             "E-commerce Tech"
-          ],
-          "related_terms": [
-            "T07060002"
           ],
           "linked_clsf_id": "C07060001",
           "parent_id": null,
@@ -7560,7 +7431,6 @@
             "대외무역",
             "수출입통계"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07070001",
           "parent_id": null,
           "standard_refs": [],
@@ -7577,7 +7447,6 @@
             "국제무역",
             "글로벌무역"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07070001",
           "parent_id": null,
           "standard_refs": [],
@@ -7595,7 +7464,6 @@
             "무역흑자",
             "수출입차액"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C07070001",
           "parent_id": null,
           "standard_refs": [],
@@ -7738,6 +7606,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C07010001"
               ]
             },
             {
@@ -7811,6 +7682,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C07030001"
               ]
             },
             {
@@ -7892,6 +7766,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C07040001"
               ]
             },
             {
@@ -8047,10 +7924,6 @@
             "Disaster Management",
             "재난대응체계"
           ],
-          "related_terms": [
-            "T08010002",
-            "T08010003"
-          ],
           "linked_clsf_id": "C08010001",
           "parent_id": null,
           "standard_refs": [
@@ -8120,9 +7993,6 @@
             "안전관리",
             "Safety Management"
           ],
-          "related_terms": [
-            "T08020002"
-          ],
           "linked_clsf_id": "C08020001",
           "parent_id": null,
           "standard_refs": [
@@ -8175,7 +8045,6 @@
             "모바일결제",
             "페이"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C08030001",
           "parent_id": null,
           "standard_refs": [
@@ -8200,7 +8069,6 @@
             "선구매후결제",
             "외상결제"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C08030001",
           "parent_id": null,
           "standard_refs": [
@@ -8226,7 +8094,6 @@
             "주문처리",
             "배송대행"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C08040001",
           "parent_id": null,
           "standard_refs": [
@@ -8252,7 +8119,6 @@
             "최종배송",
             "막차배송"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C08040001",
           "parent_id": null,
           "standard_refs": [],
@@ -8269,7 +8135,6 @@
             "실시간커머스",
             "라방"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C08050001",
           "parent_id": null,
           "standard_refs": [
@@ -8294,7 +8159,6 @@
             "구독서비스",
             "정기결제"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C08050001",
           "parent_id": null,
           "standard_refs": [],
@@ -8428,6 +8292,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C02030001"
               ]
             },
             {
@@ -8614,6 +8481,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C02020001"
               ]
             },
             {
@@ -8813,10 +8683,6 @@
             "문화유산",
             "Cultural Heritage"
           ],
-          "related_terms": [
-            "T09010002",
-            "T09010003"
-          ],
           "linked_clsf_id": "C09010001",
           "parent_id": null,
           "standard_refs": [
@@ -8892,7 +8758,6 @@
             "국가지정문화재",
             "국보급유물"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09010001",
           "parent_id": null,
           "standard_refs": [
@@ -8917,7 +8782,6 @@
             "유네스코세계유산",
             "세계문화유산"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09010001",
           "parent_id": null,
           "standard_refs": [
@@ -8941,9 +8805,6 @@
           "synonyms": [
             "관광명소",
             "Tourist Site"
-          ],
-          "related_terms": [
-            "T09020002"
           ],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
@@ -8970,7 +8831,6 @@
             "관광객통계",
             "방문객통계"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [
@@ -8996,7 +8856,6 @@
             "여행산업",
             "관광업"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [],
@@ -9014,7 +8873,6 @@
             "관광업체",
             "여행사업"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [],
@@ -9030,10 +8888,6 @@
           "synonyms": [
             "문화시설",
             "Cultural Facility"
-          ],
-          "related_terms": [
-            "T09030002",
-            "T09030003"
           ],
           "linked_clsf_id": "C09030001",
           "parent_id": null,
@@ -9105,7 +8959,6 @@
             "문화공간",
             "극장"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09030001",
           "parent_id": null,
           "standard_refs": [],
@@ -9122,7 +8975,6 @@
             "공공도서관",
             "도서관시설"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09030001",
           "parent_id": null,
           "standard_refs": [
@@ -9147,9 +8999,6 @@
             "공연",
             "Performance",
             "무대예술"
-          ],
-          "related_terms": [
-            "T09040002"
           ],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
@@ -9176,7 +9025,6 @@
             "Exhibition",
             "전람회"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [
@@ -9202,7 +9050,6 @@
             "문화축제",
             "전통축제"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [
@@ -9228,7 +9075,6 @@
             "K-Wave",
             "한국열풍"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [],
@@ -9246,7 +9092,6 @@
             "케이팝",
             "한국대중문화"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [],
@@ -9264,7 +9109,6 @@
             "운동시설",
             "스포츠센터"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09050001",
           "parent_id": null,
           "standard_refs": [
@@ -9290,7 +9134,6 @@
             "직업스포츠",
             "프로경기"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09050001",
           "parent_id": null,
           "standard_refs": [],
@@ -9308,7 +9151,6 @@
             "여가체육",
             "동호회체육"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09050001",
           "parent_id": null,
           "standard_refs": [],
@@ -9326,7 +9168,6 @@
             "미디어콘텐츠",
             "TV콘텐츠"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09060001",
           "parent_id": null,
           "standard_refs": [],
@@ -9344,7 +9185,6 @@
             "스트리밍서비스",
             "넷플릭스"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C09060001",
           "parent_id": null,
           "standard_refs": [],
@@ -9560,6 +9400,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C11010001"
               ]
             },
             {
@@ -9652,6 +9495,11 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C12040001",
+                "C12040004",
+                "C12040002"
               ]
             },
             {
@@ -9800,6 +9648,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C11030001"
               ]
             },
             {
@@ -9872,11 +9723,6 @@
             "환경보전",
             "Environmental Conservation",
             "환경보호"
-          ],
-          "related_terms": [
-            "T10010002",
-            "T10010003",
-            "T10010004"
           ],
           "linked_clsf_id": "C10010001",
           "parent_id": null,
@@ -9977,7 +9823,6 @@
             "미세입자",
             "대기오염물질"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10010001",
           "parent_id": null,
           "standard_refs": [
@@ -10008,7 +9853,6 @@
             "토양환경오염",
             "지하수오염"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10010001",
           "parent_id": null,
           "standard_refs": [],
@@ -10025,10 +9869,6 @@
             "기후변화",
             "Climate Change",
             "지구온난화"
-          ],
-          "related_terms": [
-            "T10020002",
-            "T10020003"
           ],
           "linked_clsf_id": "C10020001",
           "parent_id": null,
@@ -10108,7 +9948,6 @@
             "국가감축목표",
             "배출감축목표"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10020001",
           "parent_id": null,
           "standard_refs": [],
@@ -10126,7 +9965,6 @@
             "기후대응",
             "기후탄력성"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10020001",
           "parent_id": null,
           "standard_refs": [],
@@ -10142,10 +9980,6 @@
           "synonyms": [
             "날씨",
             "Weather"
-          ],
-          "related_terms": [
-            "T10030002",
-            "T10030003"
           ],
           "linked_clsf_id": "C10030001",
           "parent_id": null,
@@ -10221,7 +10055,6 @@
             "기상경보",
             "특보"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10030001",
           "parent_id": null,
           "standard_refs": [],
@@ -10239,7 +10072,6 @@
             "기상정보",
             "날씨정보"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10030001",
           "parent_id": null,
           "standard_refs": [],
@@ -10255,10 +10087,6 @@
           "synonyms": [
             "생태계",
             "Ecosystem"
-          ],
-          "related_terms": [
-            "T10040002",
-            "T10040003"
           ],
           "linked_clsf_id": "C10040001",
           "parent_id": null,
@@ -10321,7 +10149,6 @@
             "생태다양성",
             "생물종다양성"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10040001",
           "parent_id": null,
           "standard_refs": [],
@@ -10339,7 +10166,6 @@
             "대체에너지",
             "청정에너지"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [
@@ -10365,7 +10191,6 @@
             "태양광발전",
             "솔라"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [],
@@ -10382,7 +10207,6 @@
             "풍력발전",
             "풍력에너지"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [],
@@ -10399,7 +10223,6 @@
             "수소경제",
             "수소에너지"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [],
@@ -10417,7 +10240,6 @@
             "폐기물재생",
             "재사용"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10060001",
           "parent_id": null,
           "standard_refs": [],
@@ -10434,7 +10256,6 @@
             "순환자원경제",
             "자원순환"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C10060001",
           "parent_id": null,
           "standard_refs": [],
@@ -10568,6 +10389,10 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C02040001",
+                "C10020001"
               ]
             },
             {
@@ -10778,6 +10603,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C10050001"
               ]
             },
             {
@@ -10900,6 +10728,9 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C07020001"
               ]
             },
             {
@@ -10965,6 +10796,10 @@
                   "primary_standard": null,
                   "children": []
                 }
+              ],
+              "similar_to": [
+                "C02040003",
+                "C07040001"
               ]
             },
             {
@@ -11043,7 +10878,6 @@
             "R&D투자",
             "기술개발"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11010001",
           "parent_id": null,
           "standard_refs": [
@@ -11068,7 +10902,6 @@
             "정부R&D",
             "국책연구"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11010001",
           "parent_id": null,
           "standard_refs": [
@@ -11092,7 +10925,6 @@
             "자연과학분야",
             "기초과학"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11020001",
           "parent_id": null,
           "standard_refs": [
@@ -11117,7 +10949,6 @@
             "물리과학",
             "물리학연구"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11020001",
           "parent_id": null,
           "standard_refs": [
@@ -11143,7 +10974,6 @@
             "엔지니어링",
             "기술공학"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11030001",
           "parent_id": null,
           "standard_refs": [
@@ -11169,7 +10999,6 @@
             "전기공학",
             "전자기술"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11030001",
           "parent_id": null,
           "standard_refs": [
@@ -11195,7 +11024,6 @@
             "ICT",
             "디지털기술"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11040001",
           "parent_id": null,
           "standard_refs": [
@@ -11221,7 +11049,6 @@
             "딥러닝",
             "지능형시스템"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11040001",
           "parent_id": null,
           "standard_refs": [
@@ -11247,7 +11074,6 @@
             "데이터분석",
             "데이터과학"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11040001",
           "parent_id": null,
           "standard_refs": [
@@ -11273,7 +11099,6 @@
             "지식재산권",
             "발명특허"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11050001",
           "parent_id": null,
           "standard_refs": [
@@ -11299,7 +11124,6 @@
             "기술사업화",
             "기술거래"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11050001",
           "parent_id": null,
           "standard_refs": [],
@@ -11317,7 +11141,6 @@
             "우주기술",
             "항공우주"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C11060001",
           "parent_id": null,
           "standard_refs": [],
@@ -11645,7 +11468,10 @@
                   "parent_id": "C12040001",
                   "standard_refs": [],
                   "primary_standard": null,
-                  "children": []
+                  "children": [],
+                  "similar_to": [
+                    "C10030001"
+                  ]
                 },
                 {
                   "id": "C12040003",
@@ -11669,8 +11495,14 @@
                   "parent_id": "C12040001",
                   "standard_refs": [],
                   "primary_standard": null,
-                  "children": []
+                  "children": [],
+                  "similar_to": [
+                    "C10030001"
+                  ]
                 }
+              ],
+              "similar_to": [
+                "C10030001"
               ]
             },
             {
@@ -11744,7 +11576,6 @@
             "재난대응체계",
             "위기관리"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [
@@ -11769,7 +11600,6 @@
             "재난방지",
             "사전대비"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [
@@ -11795,7 +11625,6 @@
             "재해대응",
             "비상대응"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [
@@ -11820,7 +11649,6 @@
             "재해복원",
             "피해복구"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [],
@@ -11838,7 +11666,6 @@
             "재해통계",
             "피해통계"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [],
@@ -11856,7 +11683,6 @@
             "안전확보",
             "위험관리"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [
@@ -11881,7 +11707,6 @@
             "건축물안전",
             "구조물안전"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [
@@ -11906,7 +11731,6 @@
             "일상안전",
             "시민안전"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [],
@@ -11924,7 +11748,6 @@
             "도로안전",
             "차량안전"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [],
@@ -11942,7 +11765,6 @@
             "긴급대비",
             "위기대비"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12030001",
           "parent_id": null,
           "standard_refs": [
@@ -11967,7 +11789,6 @@
             "재난훈련",
             "대피훈련"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12030001",
           "parent_id": null,
           "standard_refs": [
@@ -11992,7 +11813,6 @@
             "구난구조",
             "인명구조"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12030001",
           "parent_id": null,
           "standard_refs": [],
@@ -12010,7 +11830,6 @@
             "자연재해",
             "천재지변"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [
@@ -12034,7 +11853,6 @@
             "태풍피해",
             "태풍재난"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [
@@ -12059,7 +11877,6 @@
             "폭우재난",
             "집중호우"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [],
@@ -12077,7 +11894,6 @@
             "지진재난",
             "진동재해"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [],
@@ -12095,7 +11911,6 @@
             "폭염주의보",
             "열대야"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [],
@@ -12113,7 +11928,6 @@
             "인적재난",
             "인위재난"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [
@@ -12138,7 +11952,6 @@
             "화재재난",
             "소방사고"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [],
@@ -12156,7 +11969,6 @@
             "전염병재해",
             "역병"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [],
@@ -12174,7 +11986,6 @@
             "산업재해",
             "작업재해"
           ],
-          "related_terms": [],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [],

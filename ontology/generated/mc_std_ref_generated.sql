@@ -1,5 +1,5 @@
 -- MC_STD_REF 표준 레퍼런스 테이블 INSERT 문
--- Generated: 2025-12-10
+-- Generated: 2025-12-11
 
 -- 표준 레지스트리 (MC_STANDARD)
 INSERT INTO MC_STANDARD (STD_ID, STD_CODE, STD_NAME_KO, STD_NAME_EN, STD_TYPE, STD_SCOPE, ORGANIZATION, VERSION, URI, STD_DESC) VALUES ('STD-SKOS', 'W3C-SKOS', 'SKOS', 'Simple Knowledge Organization System', 'INTERNATIONAL', 'ONTOLOGY', 'W3C', '2009-08-18', 'https://www.w3.org/2004/02/skos/', 'RDF 기반 지식조직체계 표준. 시소러스, 분류체계, 택소노미 표현.');

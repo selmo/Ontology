@@ -1,5 +1,5 @@
 -- MC_CLSF 분류 테이블 INSERT 문
--- Generated: 2025-12-10
+-- Generated: 2025-12-11
 
 -- 공공행정 (Public Administration)
 INSERT INTO MC_CLSF (CLSF_ID, CLSF_NAME, CLSF_DESC, PRT_CLSF_ID, GROUP_YN, README) VALUES ('C01000001', '공공행정', '공공행정 부문 정책 및 제도 전반을 다루는 최상위 분류', '03facd74b2d24f7cab807b8980391649', 'Y', '공공 부문 정책 및 행정 전반. 지방행정, 디지털정부, 국가안전, 재정 등을 포괄하며 public/ 디렉토리의 문서와 매핑됨.');

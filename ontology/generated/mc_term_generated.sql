@@ -1,5 +1,5 @@
 -- MC_TERM 용어 테이블 INSERT 문
--- Generated: 2025-12-10
+-- Generated: 2025-12-11
 
 -- 공공행정 (Public Administration)
 INSERT INTO MC_TERM (TERM_ID, TERM_NAME, TERM_NAME_EN, ACRONYM, TERM_DESC, DIC_ID, README) VALUES ('T01010001', '공공기관', 'Public Institution', '', '지역 주도의 균형발전을 통해 수도권 집중을 완화하고 지방이 자생력을 갖춘 시대를 지향하는 정책 기조. 중앙정부 주도에서 벗어나 지역이 스스로 성장동력을 창출하고 발전할 수 있는 체계를 구축하는 것을 목표로 함.', '4147179070a84d3887b97eb57085d850', 'C01010001');

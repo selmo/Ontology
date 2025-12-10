@@ -1,0 +1,1850 @@
+// MC 분류·용어 Memgraph Cypher
+// Generated: 2025-12-10
+
+// Root Nodes
+CREATE (:Classification {id: '03facd74b2d24f7cab807b8980391649', name: 'ROOT', display_name: 'ROOT (:Classification)'});
+CREATE (:Term {id: '4147179070a84d3887b97eb57085d850', name_ko: 'ROOT', name_en: 'ROOT', display_name: 'ROOT (:Term)'});
+
+// 공공행정 (Public Administration)
+
+// Classifications
+CREATE (:Classification {id: 'C01000001', name: '공공행정', description: '공공행정 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '공공행정 (:Classification)', readme: '공공 부문 정책 및 행정 전반. 지방행정, 디지털정부, 국가안전, 재정 등을 포괄하며 public/ 디렉토리의 문서와 매핑됨.', group: true});
+CREATE (:Classification {id: 'C01010001', name: '정부조직·기관관리', description: '정부조직·기관관리을(를) 다루는 분류', display_name: '정부조직·기관관리 (:Classification)', readme: '지방시대 정책과 지역균형발전. 수도권 집중 완화, 지역 주도 발전, 인구감소지역 지원 정책을 포함.', group: true});
+CREATE (:Classification {id: 'C01010002', name: '공공기관 현황', description: '공공기관 현황 관련 분류', display_name: '공공기관 현황 (:Classification)', readme: '인구감소지역 지원 및 지방소멸 대응. 인구감소지역 지원 특별법, 지방소멸대응기금 등 관련 정책.', group: false});
+CREATE (:Classification {id: 'C01010003', name: '정부부처 조직', description: '정부부처 조직 관련 분류', display_name: '정부부처 조직 (:Classification)', readme: '정부부처 조직 관련.', group: false});
+CREATE (:Classification {id: 'C01010004', name: '산하기관 정보', description: '산하기관 정보 관련 분류', display_name: '산하기관 정보 (:Classification)', readme: '산하기관 정보 관련.', group: false});
+CREATE (:Classification {id: 'C01010005', name: '공공기관 경영평가', description: '공공기관 경영평가 관련 분류', display_name: '공공기관 경영평가 (:Classification)', readme: '공공기관 경영평가 관련.', group: false});
+CREATE (:Classification {id: 'C01010006', name: '공무원 인사', description: '공무원 인사 관련 분류', display_name: '공무원 인사 (:Classification)', readme: '공무원 인사 관련.', group: false});
+CREATE (:Classification {id: 'C01020001', name: '지방행정·자치', description: '지방행정·자치을(를) 다루는 분류', display_name: '지방행정·자치 (:Classification)', readme: '지방자치제도 및 행정체제 개편. 지방자치법, 행정구역 개편, 자치분권 정책.', group: true});
+CREATE (:Classification {id: 'C01020002', name: '행정구역 정보', description: '행정구역 정보 관련 분류', display_name: '행정구역 정보 (:Classification)', readme: '특별자치시 및 특별자치도. 세종특별자치시, 제주특별자치도 등 특례 지방자치단체.', group: false});
+CREATE (:Classification {id: 'C01020003', name: '지방자치단체', description: '지방자치단체 관련 분류', display_name: '지방자치단체 (:Classification)', readme: '지방자치단체 관련.', group: false});
+CREATE (:Classification {id: 'C01020004', name: '읍면동 행정기관', description: '읍면동 행정기관 관련 분류', display_name: '읍면동 행정기관 (:Classification)', readme: '읍면동 행정기관 관련.', group: false});
+CREATE (:Classification {id: 'C01020005', name: '특별자치시도', description: '특별자치시도 관련 분류', display_name: '특별자치시도 (:Classification)', readme: '특별자치시도 관련.', group: false});
+CREATE (:Classification {id: 'C01020006', name: '지방의회', description: '지방의회 관련 분류', display_name: '지방의회 (:Classification)', readme: '지방의회 관련.', group: false});
+CREATE (:Classification {id: 'C01030001', name: '행정정보화', description: '행정정보화을(를) 다루는 분류', display_name: '행정정보화 (:Classification)', readme: '디지털플랫폼정부 정책. 데이터·AI·클라우드 기반 공공서비스 혁신, 전자정부 고도화.', group: true});
+CREATE (:Classification {id: 'C01030002', name: '정보자원 현황', description: '정보자원 현황 관련 분류', display_name: '정보자원 현황 (:Classification)', readme: '공공마이데이터 및 공공데이터 정책. 개인정보 자기결정권, 공공데이터 개방·활용.', group: false});
+CREATE (:Classification {id: 'C01030003', name: '정보시스템', description: '정보시스템 관련 분류', display_name: '정보시스템 (:Classification)', readme: 'AI 기반 대국민 서비스. 챗봇, 보이스피싱 탐지 등 AI 활용 공공서비스.', group: false});
+CREATE (:Classification {id: 'C01030004', name: '공공데이터 개방', description: '공공데이터 개방 관련 분류', display_name: '공공데이터 개방 (:Classification)', readme: '공공데이터 개방 관련.', group: false});
+CREATE (:Classification {id: 'C01030005', name: '전자정부 서비스', description: '전자정부 서비스 관련 분류', display_name: '전자정부 서비스 (:Classification)', readme: '전자정부 서비스 관련.', group: false});
+CREATE (:Classification {id: 'C01030006', name: '디지털플랫폼정부', description: '디지털플랫폼정부 관련 분류', display_name: '디지털플랫폼정부 (:Classification)', readme: '디지털플랫폼정부 관련.', group: false});
+CREATE (:Classification {id: 'C01040001', name: '국가정책·사업', description: '국가정책·사업을(를) 다루는 분류', display_name: '국가정책·사업 (:Classification)', readme: '국가안전시스템 개편. 재난안전관리체계, 위기대응 훈련, 안전관리 정책.', group: true});
+CREATE (:Classification {id: 'C01040002', name: '국가 주요사업', description: '국가 주요사업 관련 분류', display_name: '국가 주요사업 (:Classification)', readme: '다중밀집 장소 및 인파 안전관리. 대규모 행사, 다중이용시설 안전관리.', group: false});
+CREATE (:Classification {id: 'C01040003', name: '대민서비스', description: '대민서비스 관련 분류', display_name: '대민서비스 (:Classification)', readme: '대민서비스 관련.', group: false});
+CREATE (:Classification {id: 'C01040004', name: '규제개혁', description: '규제개혁 관련 분류', display_name: '규제개혁 (:Classification)', readme: '규제개혁 관련.', group: false});
+CREATE (:Classification {id: 'C01050001', name: '인사·조직', description: '인사·조직을(를) 다루는 분류', display_name: '인사·조직 (:Classification)', readme: '지방재정 및 지방교부세. 지방재정 건전성, 교부세 배분, 지방채 관리.', group: true});
+CREATE (:Classification {id: 'C01050002', name: '공무원 현황', description: '공무원 현황 관련 분류', display_name: '공무원 현황 (:Classification)', readme: '고향사랑기부제. 지방재정 확충을 위한 기부금 제도, 답례품 정책.', group: false});
+CREATE (:Classification {id: 'C01050003', name: '조직관리', description: '조직관리 관련 분류', display_name: '조직관리 (:Classification)', readme: '조직관리 관련.', group: false});
+CREATE (:Classification {id: 'C01060001', name: '감사·평가', description: '감사·평가을(를) 다루는 분류', display_name: '감사·평가 (:Classification)', readme: '국가재정 및 부처 전략계획. 중기재정운용계획, 부처별 업무계획 등.', group: true});
+CREATE (:Classification {id: 'C01060002', name: '정부업무평가', description: '정부업무평가 관련 분류', display_name: '정부업무평가 (:Classification)', readme: '부처별 연간업무 계획. 각 정부 부처의 연간 주요 업무 추진 계획.', group: false});
+CREATE (:Classification {id: 'C01060003', name: '감사원 감사', description: '감사원 감사 관련 분류', display_name: '감사원 감사 (:Classification)', readme: '교육 인프라 및 학교도서관. 학교도서관 진흥, 교육시설 개선 등.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C01000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01000001'}), (c:Classification {id: 'C01010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01010001'}), (c:Classification {id: 'C01010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01010001'}), (c:Classification {id: 'C01010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01010001'}), (c:Classification {id: 'C01010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01010001'}), (c:Classification {id: 'C01010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01010001'}), (c:Classification {id: 'C01010006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01000001'}), (c:Classification {id: 'C01020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01020001'}), (c:Classification {id: 'C01020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01020001'}), (c:Classification {id: 'C01020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01020001'}), (c:Classification {id: 'C01020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01020001'}), (c:Classification {id: 'C01020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01020001'}), (c:Classification {id: 'C01020006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01000001'}), (c:Classification {id: 'C01030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01030001'}), (c:Classification {id: 'C01030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01030001'}), (c:Classification {id: 'C01030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01030001'}), (c:Classification {id: 'C01030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01030001'}), (c:Classification {id: 'C01030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01030001'}), (c:Classification {id: 'C01030006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01000001'}), (c:Classification {id: 'C01040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01040001'}), (c:Classification {id: 'C01040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01040001'}), (c:Classification {id: 'C01040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01040001'}), (c:Classification {id: 'C01040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01000001'}), (c:Classification {id: 'C01050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01050001'}), (c:Classification {id: 'C01050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01050001'}), (c:Classification {id: 'C01050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01000001'}), (c:Classification {id: 'C01060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01060001'}), (c:Classification {id: 'C01060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C01060001'}), (c:Classification {id: 'C01060003'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T01010001', name_ko: '공공기관', name_en: 'Public Institution', acronym: 'None', description: '지역 주도의 균형발전을 통해 수도권 집중을 완화하고 지방이 자생력을 갖춘 시대를 지향하는 정책 기조. 중앙정부 주도에서 벗어나 지역이 스스로 성장동력을 창출하고 발전할 수 있는 체계를 구축하는 것을 목표로 함.', display_name: '공공기관 (:Term)'});
+CREATE (:Term {id: 'T01010002', name_ko: '정부조직도', name_en: 'Government Organization Chart', acronym: 'None', description: '지방시대 정책을 총괄 조정하는 대통령 소속 위원회. 관계부처 협의, 정책 조정, 이행 점검 등의 역할을 수행하며 지방분권과 균형발전을 위한 컨트롤타워 역할.', display_name: '정부조직도 (:Term)'});
+CREATE (:Term {id: 'T01010003', name_ko: '공공기관 현황', name_en: 'Public Institution Status', acronym: 'None', description: '인구감소지역에 대한 국가의 특별한 지원을 규정한 법률. 인구감소지역 지정 기준, 국가와 지자체의 책무, 재정지원 근거 등을 명시.', display_name: '공공기관 현황 (:Term)'});
+CREATE (:Term {id: 'T01020001', name_ko: '행정구역', name_en: 'Administrative District', acronym: 'None', description: '데이터·AI·클라우드 기반으로 공공서비스를 혁신하는 정부 운영 방식. 데이터 기반 의사결정, 서비스 통합·연계, 국민 맞춤형 서비스 제공을 지향.', display_name: '행정구역 (:Term)'});
+CREATE (:Term {id: 'T01020002', name_ko: '지방자치단체', name_en: 'Local Government', acronym: 'None', description: '공공기관이 보유한 개인정보를 본인이 직접 관리·활용할 수 있도록 하는 제도. 개인정보 자기결정권 강화 및 데이터 기반 맞춤형 서비스 제공.', display_name: '지방자치단체 (:Term)'});
+CREATE (:Term {id: 'T01020003', name_ko: '읍면동', name_en: 'Eup-Myeon-Dong', acronym: 'None', description: '보이스피싱 범죄를 탐지하고 예방하기 위한 AI 기반 음성 분석 기술. 통화 내용의 실시간 분석을 통해 의심 거래를 차단.', display_name: '읍면동 (:Term)'});
+CREATE (:Term {id: 'T01020004', name_ko: '행정복지센터', name_en: 'Administrative Welfare Center', acronym: 'None', description: '읍·면·동에 설치된 주민 복지 서비스 통합 창구. 기존 주민센터의 명칭 변경.', display_name: '행정복지센터 (:Term)'});
+CREATE (:Term {id: 'T01030001', name_ko: '행정정보화', name_en: 'Administrative Informatization', acronym: 'None', description: '재난·안전 관리 체계를 효율적으로 개선하기 위한 국가 차원의 시스템. 컨트롤타워 일원화, 현장 중심 대응 체계, 과학기술 기반 예방 등을 포함.', display_name: '행정정보화 (:Term)'});
+CREATE (:Term {id: 'T01030002', name_ko: '정보자원', name_en: 'Information Resources', acronym: 'None', description: '국가 차원의 재난 대응 능력을 점검하고 훈련하는 통합 재난안전 훈련. 정부·지자체·민간이 함께 참여하는 범국가적 훈련.', display_name: '정보자원 (:Term)'});
+CREATE (:Term {id: 'T01030003', name_ko: '공공데이터 개방', name_en: 'Open Public Data', acronym: 'None', description: '정보자원(시스템, 데이터, 네트워크 등)의 현황과 운영 상태. 행정기관 정보화 현황.', display_name: '공공데이터 개방 (:Term)'});
+CREATE (:Term {id: 'T01040001', name_ko: '국가정책', name_en: 'National Policy', acronym: 'None', description: '개인이 고향이나 관심 있는 지방자치단체에 기부하면 세액공제와 답례품을 제공하는 제도. 지방재정 확충 및 지역경제 활성화 목적.', display_name: '국가정책 (:Term)'});
+CREATE (:Term {id: 'T01040002', name_ko: '대민서비스', name_en: 'Public Service', acronym: 'None', description: '지방재정 조정을 위해 국세의 일부를 지방자치단체에 교부하는 재원. 보통교부세와 특별교부세로 구분되며 재정 격차 완화 목적.', display_name: '대민서비스 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01020004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T01040002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T01010001'}), (c:Classification {id: 'C01010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01010002'}), (c:Classification {id: 'C01010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01010003'}), (c:Classification {id: 'C01010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01020001'}), (c:Classification {id: 'C01020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01020002'}), (c:Classification {id: 'C01020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01020003'}), (c:Classification {id: 'C01020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01020004'}), (c:Classification {id: 'C01020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01030001'}), (c:Classification {id: 'C01030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01030002'}), (c:Classification {id: 'C01030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01030003'}), (c:Classification {id: 'C01030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01040001'}), (c:Classification {id: 'C01040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T01040002'}), (c:Classification {id: 'C01040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T01010001'}), (t2:Term {id: 'T01010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T01010001'}), (t2:Term {id: 'T01010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T01010001'}), (t2:Term {id: 'T01010004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T01020001'}), (t2:Term {id: 'T01020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T01020001'}), (t2:Term {id: 'T01030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T01030001'}), (t2:Term {id: 'T01030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T01040001'}), (t2:Term {id: 'T01040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 교육 (Education)
+
+// Classifications
+CREATE (:Classification {id: 'C02000001', name: '교육', description: '교육 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '교육 (:Classification)', readme: '교육 관련.', group: true});
+CREATE (:Classification {id: 'C02010001', name: '교육통계', description: '교육통계을(를) 다루는 분류', display_name: '교육통계 (:Classification)', readme: '교육통계 관련.', group: true});
+CREATE (:Classification {id: 'C02010002', name: '학교 통계', description: '학교 통계 관련 분류', display_name: '학교 통계 (:Classification)', readme: '학교 통계 관련.', group: false});
+CREATE (:Classification {id: 'C02010003', name: '교원 통계', description: '교원 통계 관련 분류', display_name: '교원 통계 (:Classification)', readme: '교원 통계 관련.', group: false});
+CREATE (:Classification {id: 'C02010004', name: '학생 통계', description: '학생 통계 관련 분류', display_name: '학생 통계 (:Classification)', readme: '학생 통계 관련.', group: false});
+CREATE (:Classification {id: 'C02010005', name: '교육재정 통계', description: '교육재정 통계 관련 분류', display_name: '교육재정 통계 (:Classification)', readme: '교육재정 통계 관련.', group: false});
+CREATE (:Classification {id: 'C02020001', name: '평생교육', description: '평생교육을(를) 다루는 분류', display_name: '평생교육 (:Classification)', readme: '평생교육 관련.', group: true});
+CREATE (:Classification {id: 'C02020002', name: '평생교육기관', description: '평생교육기관 관련 분류', display_name: '평생교육기관 (:Classification)', readme: '평생교육기관 관련.', group: false});
+CREATE (:Classification {id: 'C02020003', name: '평생학습강좌', description: '평생학습강좌 관련 분류', display_name: '평생학습강좌 (:Classification)', readme: '평생학습강좌 관련.', group: false});
+CREATE (:Classification {id: 'C02020004', name: '성인문해교육', description: '성인문해교육 관련 분류', display_name: '성인문해교육 (:Classification)', readme: '성인문해교육 관련.', group: false});
+CREATE (:Classification {id: 'C02020005', name: '직업능력개발', description: '직업능력개발 관련 분류', display_name: '직업능력개발 (:Classification)', readme: '직업능력개발 관련.', group: false});
+CREATE (:Classification {id: 'C02030001', name: '학교교육', description: '학교교육을(를) 다루는 분류', display_name: '학교교육 (:Classification)', readme: '학교교육 관련.', group: true});
+CREATE (:Classification {id: 'C02030002', name: '초중고 교육', description: '초중고 교육 관련 분류', display_name: '초중고 교육 (:Classification)', readme: '초중고 교육 관련.', group: false});
+CREATE (:Classification {id: 'C02030003', name: '교육과정', description: '교육과정 관련 분류', display_name: '교육과정 (:Classification)', readme: '교육과정 관련.', group: false});
+CREATE (:Classification {id: 'C02030004', name: '학업성취도', description: '학업성취도 관련 분류', display_name: '학업성취도 (:Classification)', readme: '학업성취도 관련.', group: false});
+CREATE (:Classification {id: 'C02030005', name: '학교시설', description: '학교시설 관련 분류', display_name: '학교시설 (:Classification)', readme: '학교시설 관련.', group: false});
+CREATE (:Classification {id: 'C02030006', name: '교육복지', description: '교육복지 관련 분류', display_name: '교육복지 (:Classification)', readme: '교육복지 관련.', group: false});
+CREATE (:Classification {id: 'C02040001', name: '고등교육', description: '고등교육을(를) 다루는 분류', display_name: '고등교육 (:Classification)', readme: '고등교육 관련.', group: true});
+CREATE (:Classification {id: 'C02040002', name: '대학정보', description: '대학정보 관련 분류', display_name: '대학정보 (:Classification)', readme: '대학정보 관련.', group: false});
+CREATE (:Classification {id: 'C02040003', name: '대학정보공시', description: '대학정보공시 관련 분류', display_name: '대학정보공시 (:Classification)', readme: '대학정보공시 관련.', group: false});
+CREATE (:Classification {id: 'C02040004', name: '대학재정', description: '대학재정 관련 분류', display_name: '대학재정 (:Classification)', readme: '대학재정 관련.', group: false});
+CREATE (:Classification {id: 'C02040005', name: '산학협력', description: '산학협력 관련 분류', display_name: '산학협력 (:Classification)', readme: '산학협력 관련.', group: false});
+CREATE (:Classification {id: 'C02050001', name: '유아교육', description: '유아교육을(를) 다루는 분류', display_name: '유아교육 (:Classification)', readme: '유아교육 관련.', group: true});
+CREATE (:Classification {id: 'C02050002', name: '유치원 현황', description: '유치원 현황 관련 분류', display_name: '유치원 현황 (:Classification)', readme: '유치원 현황 관련.', group: false});
+CREATE (:Classification {id: 'C02050003', name: '어린이집', description: '어린이집 관련 분류', display_name: '어린이집 (:Classification)', readme: '어린이집 관련.', group: false});
+CREATE (:Classification {id: 'C02050004', name: '누리과정', description: '누리과정 관련 분류', display_name: '누리과정 (:Classification)', readme: '누리과정 관련.', group: false});
+CREATE (:Classification {id: 'C02060001', name: '특수·영재교육', description: '특수·영재교육을(를) 다루는 분류', display_name: '특수·영재교육 (:Classification)', readme: '특수·영재교육 관련.', group: true});
+CREATE (:Classification {id: 'C02060002', name: '특수교육', description: '특수교육 관련 분류', display_name: '특수교육 (:Classification)', readme: '특수교육 관련.', group: false});
+CREATE (:Classification {id: 'C02060003', name: '영재교육', description: '영재교육 관련 분류', display_name: '영재교육 (:Classification)', readme: '영재교육 관련.', group: false});
+CREATE (:Classification {id: 'C02060004', name: '대안교육', description: '대안교육 관련 분류', display_name: '대안교육 (:Classification)', readme: '대안교육 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C02000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02000001'}), (c:Classification {id: 'C02010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02010001'}), (c:Classification {id: 'C02010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02010001'}), (c:Classification {id: 'C02010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02010001'}), (c:Classification {id: 'C02010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02010001'}), (c:Classification {id: 'C02010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02000001'}), (c:Classification {id: 'C02020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02020001'}), (c:Classification {id: 'C02020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02020001'}), (c:Classification {id: 'C02020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02020001'}), (c:Classification {id: 'C02020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02020001'}), (c:Classification {id: 'C02020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02000001'}), (c:Classification {id: 'C02030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02030001'}), (c:Classification {id: 'C02030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02030001'}), (c:Classification {id: 'C02030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02030001'}), (c:Classification {id: 'C02030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02030001'}), (c:Classification {id: 'C02030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02030001'}), (c:Classification {id: 'C02030006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02000001'}), (c:Classification {id: 'C02040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02040001'}), (c:Classification {id: 'C02040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02040001'}), (c:Classification {id: 'C02040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02040001'}), (c:Classification {id: 'C02040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02040001'}), (c:Classification {id: 'C02040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02000001'}), (c:Classification {id: 'C02050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02050001'}), (c:Classification {id: 'C02050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02050001'}), (c:Classification {id: 'C02050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02050001'}), (c:Classification {id: 'C02050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02000001'}), (c:Classification {id: 'C02060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02060001'}), (c:Classification {id: 'C02060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02060001'}), (c:Classification {id: 'C02060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C02060001'}), (c:Classification {id: 'C02060004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T02010001', name_ko: '교육통계연보', name_en: 'Education Statistics Yearbook', acronym: 'None', description: '매년 발간되는 교육 관련 주요 통계 자료집. 학교, 학생, 교원, 교육재정 등 전반적인 교육현황을 수록.', display_name: '교육통계연보 (:Term)'});
+CREATE (:Term {id: 'T02010002', name_ko: '학교 통계', name_en: 'School Statistics', acronym: 'None', description: '학교 수, 학급 수, 학생 수 등 학교 기본 통계. 학교급별(유치원, 초중고, 대학) 현황 포함.', display_name: '학교 통계 (:Term)'});
+CREATE (:Term {id: 'T02010003', name_ko: '교원 통계', name_en: 'Teacher Statistics', acronym: 'None', description: '교원 수, 교원 1인당 학생 수, 교원 자격별 현황 등 교원 관련 통계.', display_name: '교원 통계 (:Term)'});
+CREATE (:Term {id: 'T02010004', name_ko: '학생 통계', name_en: 'Student Statistics', acronym: 'None', description: '학생 수, 재적 현황, 진학률, 졸업률 등 학생 관련 통계. 지역별·학교급별 구분.', display_name: '학생 통계 (:Term)'});
+CREATE (:Term {id: 'T02010005', name_ko: '교육재정', name_en: 'Education Finance', acronym: 'None', description: '교육재정 (Education Finance)', display_name: '교육재정 (:Term)'});
+CREATE (:Term {id: 'T02020001', name_ko: '평생교육', name_en: 'Lifelong Education', acronym: 'None', description: '학교교육을 마친 후에도 계속되는 전 생애 학습 활동. 성인교육, 직업교육, 문화교육 등 포함.', display_name: '평생교육 (:Term)'});
+CREATE (:Term {id: 'T02020002', name_ko: '평생교육기관', name_en: 'Lifelong Education Institution', acronym: 'None', description: '평생교육을 제공하는 기관. 평생학습관, 시민대학, 문화센터, 사회복지관 등.', display_name: '평생교육기관 (:Term)'});
+CREATE (:Term {id: 'T02020003', name_ko: '평생학습강좌', name_en: 'Lifelong Learning Course', acronym: 'None', description: '평생교육기관에서 운영하는 강좌 프로그램. 인문교양, 문화예술, 시민참여, 직업능력 등.', display_name: '평생학습강좌 (:Term)'});
+CREATE (:Term {id: 'T02020004', name_ko: '성인문해교육', name_en: 'Adult Literacy Education', acronym: 'None', description: '성인의 기초 문해력 향상을 위한 교육. 한글 해득, 기초 수리력, 디지털 문해력 등.', display_name: '성인문해교육 (:Term)'});
+CREATE (:Term {id: 'T02020005', name_ko: '직업능력개발', name_en: 'Vocational Training', acronym: 'None', description: '직업능력개발 (Vocational Training)', display_name: '직업능력개발 (:Term)'});
+CREATE (:Term {id: 'T02030001', name_ko: '학교교육', name_en: 'School Education', acronym: 'None', description: '초·중·고등학교에서 이루어지는 정규 교육. 교육과정, 학업성취도, 생활지도 등 포함.', display_name: '학교교육 (:Term)'});
+CREATE (:Term {id: 'T02030002', name_ko: '교육과정', name_en: 'Curriculum', acronym: 'None', description: '학교에서 가르치는 교과 내용과 방법의 체계. 국가수준 교육과정(2015개정, 2022개정 등).', display_name: '교육과정 (:Term)'});
+CREATE (:Term {id: 'T02030003', name_ko: '학업성취도', name_en: 'Academic Achievement', acronym: 'None', description: '학생의 교육 목표 달성 정도를 측정하는 지표. 국가수준 학업성취도 평가(NAEA).', display_name: '학업성취도 (:Term)'});
+CREATE (:Term {id: 'T02030004', name_ko: '학교시설', name_en: 'School Facilities', acronym: 'None', description: '학교시설 (School Facilities)', display_name: '학교시설 (:Term)'});
+CREATE (:Term {id: 'T02030005', name_ko: '교육복지', name_en: 'Education Welfare', acronym: 'None', description: '교육복지 (Education Welfare)', display_name: '교육복지 (:Term)'});
+CREATE (:Term {id: 'T02040001', name_ko: '고등교육', name_en: 'Higher Education', acronym: 'None', description: '대학 및 대학원 수준의 고등교육. 학사·석사·박사 학위과정 포함.', display_name: '고등교육 (:Term)'});
+CREATE (:Term {id: 'T02040002', name_ko: '대학정보공시', name_en: 'University Information Disclosure', acronym: 'None', description: '대학이 교육·연구·재정·학생 현황 등을 공개하는 제도. 대학 정보의 투명성 확보.', display_name: '대학정보공시 (:Term)'});
+CREATE (:Term {id: 'T02040003', name_ko: '산학협력', name_en: 'Industry-Academia Cooperation', acronym: 'None', description: '산학협력 (Industry-Academia Cooperation)', display_name: '산학협력 (:Term)'});
+CREATE (:Term {id: 'T02050001', name_ko: '유아교육', name_en: 'Early Childhood Education', acronym: 'None', description: '유아교육 (Early Childhood Education)', display_name: '유아교육 (:Term)'});
+CREATE (:Term {id: 'T02050002', name_ko: '누리과정', name_en: 'Nuri Curriculum', acronym: 'None', description: '누리과정 (Nuri Curriculum)', display_name: '누리과정 (:Term)'});
+CREATE (:Term {id: 'T02060001', name_ko: '특수교육', name_en: 'Special Education', acronym: 'None', description: '특수교육 (Special Education)', display_name: '특수교육 (:Term)'});
+CREATE (:Term {id: 'T02060002', name_ko: '영재교육', name_en: 'Gifted Education', acronym: 'None', description: '영재교육 (Gifted Education)', display_name: '영재교육 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02010001'}), (t:Term {id: 'T02010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02010001'}), (t:Term {id: 'T02010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02010001'}), (t:Term {id: 'T02010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02020001'}), (t:Term {id: 'T02020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02020001'}), (t:Term {id: 'T02020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02020001'}), (t:Term {id: 'T02020004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02020005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02030001'}), (t:Term {id: 'T02030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T02030001'}), (t:Term {id: 'T02030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02030004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02030005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T02060002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T02010001'}), (c:Classification {id: 'C02010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02010002'}), (c:Classification {id: 'C02010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02010003'}), (c:Classification {id: 'C02010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02010004'}), (c:Classification {id: 'C02010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02010005'}), (c:Classification {id: 'C02010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02020001'}), (c:Classification {id: 'C02020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02020002'}), (c:Classification {id: 'C02020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02020003'}), (c:Classification {id: 'C02020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02020004'}), (c:Classification {id: 'C02020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02020005'}), (c:Classification {id: 'C02020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02030001'}), (c:Classification {id: 'C02030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02030002'}), (c:Classification {id: 'C02030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02030003'}), (c:Classification {id: 'C02030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02030004'}), (c:Classification {id: 'C02030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02030005'}), (c:Classification {id: 'C02030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02040001'}), (c:Classification {id: 'C02040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02040002'}), (c:Classification {id: 'C02040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02040003'}), (c:Classification {id: 'C02040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02050001'}), (c:Classification {id: 'C02050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02050002'}), (c:Classification {id: 'C02050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02060001'}), (c:Classification {id: 'C02060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T02060002'}), (c:Classification {id: 'C02060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T02010001'}), (t2:Term {id: 'T02010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02010001'}), (t2:Term {id: 'T02010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02010001'}), (t2:Term {id: 'T02010004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02020001'}), (t2:Term {id: 'T02020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02020001'}), (t2:Term {id: 'T02020003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02020001'}), (t2:Term {id: 'T02020004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02030001'}), (t2:Term {id: 'T02030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02030001'}), (t2:Term {id: 'T02030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T02040001'}), (t2:Term {id: 'T02040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 보건의료 (Healthcare)
+
+// Classifications
+CREATE (:Classification {id: 'C03000001', name: '보건의료', description: '보건의료 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '보건의료 (:Classification)', readme: '보건의료 관련.', group: true});
+CREATE (:Classification {id: 'C03010001', name: '의료기관', description: '의료기관을(를) 다루는 분류', display_name: '의료기관 (:Classification)', readme: '의료기관 관련.', group: true});
+CREATE (:Classification {id: 'C03010002', name: '병원·의원 현황', description: '병원·의원 현황 관련 분류', display_name: '병원·의원 현황 (:Classification)', readme: '병원·의원 현황 관련.', group: false});
+CREATE (:Classification {id: 'C03010003', name: '약국 현황', description: '약국 현황 관련 분류', display_name: '약국 현황 (:Classification)', readme: '약국 현황 관련.', group: false});
+CREATE (:Classification {id: 'C03010004', name: '의료시설 정보', description: '의료시설 정보 관련 분류', display_name: '의료시설 정보 (:Classification)', readme: '의료시설 정보 관련.', group: false});
+CREATE (:Classification {id: 'C03010005', name: '의료장비 현황', description: '의료장비 현황 관련 분류', display_name: '의료장비 현황 (:Classification)', readme: '의료장비 현황 관련.', group: false});
+CREATE (:Classification {id: 'C03010006', name: '의료기관 인증', description: '의료기관 인증 관련 분류', display_name: '의료기관 인증 (:Classification)', readme: '의료기관 인증 관련.', group: false});
+CREATE (:Classification {id: 'C03020001', name: '의료이용', description: '의료이용을(를) 다루는 분류', display_name: '의료이용 (:Classification)', readme: '의료이용 관련.', group: true});
+CREATE (:Classification {id: 'C03020002', name: '지역별 의료이용', description: '지역별 의료이용 관련 분류', display_name: '지역별 의료이용 (:Classification)', readme: '지역별 의료이용 관련.', group: false});
+CREATE (:Classification {id: 'C03020003', name: '진료통계', description: '진료통계 관련 분류', display_name: '진료통계 (:Classification)', readme: '진료통계 관련.', group: false});
+CREATE (:Classification {id: 'C03020004', name: '의료비 통계', description: '의료비 통계 관련 분류', display_name: '의료비 통계 (:Classification)', readme: '의료비 통계 관련.', group: false});
+CREATE (:Classification {id: 'C03020005', name: '의료접근성', description: '의료접근성 관련 분류', display_name: '의료접근성 (:Classification)', readme: '의료접근성 관련.', group: false});
+CREATE (:Classification {id: 'C03030001', name: '보건인력', description: '보건인력을(를) 다루는 분류', display_name: '보건인력 (:Classification)', readme: '보건인력 관련.', group: true});
+CREATE (:Classification {id: 'C03030002', name: '의사·간호사 현황', description: '의사·간호사 현황 관련 분류', display_name: '의사·간호사 현황 (:Classification)', readme: '의사·간호사 현황 관련.', group: false});
+CREATE (:Classification {id: 'C03030003', name: '보건의료인력 통계', description: '보건의료인력 통계 관련 분류', display_name: '보건의료인력 통계 (:Classification)', readme: '보건의료인력 통계 관련.', group: false});
+CREATE (:Classification {id: 'C03030004', name: '의료인력 양성', description: '의료인력 양성 관련 분류', display_name: '의료인력 양성 (:Classification)', readme: '의료인력 양성 관련.', group: false});
+CREATE (:Classification {id: 'C03040001', name: '건강보험', description: '건강보험을(를) 다루는 분류', display_name: '건강보험 (:Classification)', readme: '건강보험 관련.', group: true});
+CREATE (:Classification {id: 'C03040002', name: '건강보험 통계', description: '건강보험 통계 관련 분류', display_name: '건강보험 통계 (:Classification)', readme: '건강보험 통계 관련.', group: false});
+CREATE (:Classification {id: 'C03040003', name: '의료급여', description: '의료급여 관련 분류', display_name: '의료급여 (:Classification)', readme: '의료급여 관련.', group: false});
+CREATE (:Classification {id: 'C03040004', name: '보험급여 기준', description: '보험급여 기준 관련 분류', display_name: '보험급여 기준 (:Classification)', readme: '보험급여 기준 관련.', group: false});
+CREATE (:Classification {id: 'C03050001', name: '질병관리', description: '질병관리을(를) 다루는 분류', display_name: '질병관리 (:Classification)', readme: '질병관리 관련.', group: true});
+CREATE (:Classification {id: 'C03050002', name: '암·종양', description: '암·종양 관련 분류', display_name: '암·종양 (:Classification)', readme: '암·종양 관련.', group: false});
+CREATE (:Classification {id: 'C03050003', name: '안과질환', description: '안과질환 관련 분류', display_name: '안과질환 (:Classification)', readme: '안과질환 관련.', group: false});
+CREATE (:Classification {id: 'C03050004', name: '소화기질환', description: '소화기질환 관련 분류', display_name: '소화기질환 (:Classification)', readme: '소화기질환 관련.', group: false});
+CREATE (:Classification {id: 'C03050005', name: '순환기질환', description: '순환기질환 관련 분류', display_name: '순환기질환 (:Classification)', readme: '순환기질환 관련.', group: false});
+CREATE (:Classification {id: 'C03050006', name: '호흡기질환', description: '호흡기질환 관련 분류', display_name: '호흡기질환 (:Classification)', readme: '호흡기질환 관련.', group: false});
+CREATE (:Classification {id: 'C03050007', name: '근골격계질환', description: '근골격계질환 관련 분류', display_name: '근골격계질환 (:Classification)', readme: '근골격계질환 관련.', group: false});
+CREATE (:Classification {id: 'C03050008', name: '정신건강질환', description: '정신건강질환 관련 분류', display_name: '정신건강질환 (:Classification)', readme: '정신건강질환 관련.', group: false});
+CREATE (:Classification {id: 'C03050009', name: '감염병', description: '감염병 관련 분류', display_name: '감염병 (:Classification)', readme: '감염병 관련.', group: false});
+CREATE (:Classification {id: 'C03060001', name: '보건의료데이터', description: '보건의료데이터을(를) 다루는 분류', display_name: '보건의료데이터 (:Classification)', readme: '보건의료데이터 관련.', group: true});
+CREATE (:Classification {id: 'C03060002', name: '의료영상데이터', description: '의료영상데이터 관련 분류', display_name: '의료영상데이터 (:Classification)', readme: '의료영상데이터 관련.', group: false});
+CREATE (:Classification {id: 'C03060003', name: '건강정보 빅데이터', description: '건강정보 빅데이터 관련 분류', display_name: '건강정보 빅데이터 (:Classification)', readme: '건강정보 빅데이터 관련.', group: false});
+CREATE (:Classification {id: 'C03070001', name: '공중보건', description: '공중보건을(를) 다루는 분류', display_name: '공중보건 (:Classification)', readme: '공중보건 관련.', group: true});
+CREATE (:Classification {id: 'C03070002', name: '예방접종', description: '예방접종 관련 분류', display_name: '예방접종 (:Classification)', readme: '예방접종 관련.', group: false});
+CREATE (:Classification {id: 'C03070003', name: '검역·방역', description: '검역·방역 관련 분류', display_name: '검역·방역 (:Classification)', readme: '검역·방역 관련.', group: false});
+CREATE (:Classification {id: 'C03070004', name: '건강증진', description: '건강증진 관련 분류', display_name: '건강증진 (:Classification)', readme: '건강증진 관련.', group: false});
+CREATE (:Classification {id: 'C03080001', name: '의약품·의료기기', description: '의약품·의료기기을(를) 다루는 분류', display_name: '의약품·의료기기 (:Classification)', readme: '의약품·의료기기 관련.', group: true});
+CREATE (:Classification {id: 'C03080002', name: '의약품 허가', description: '의약품 허가 관련 분류', display_name: '의약품 허가 (:Classification)', readme: '의약품 허가 관련.', group: false});
+CREATE (:Classification {id: 'C03080003', name: '의료기기 인허가', description: '의료기기 인허가 관련 분류', display_name: '의료기기 인허가 (:Classification)', readme: '의료기기 인허가 관련.', group: false});
+CREATE (:Classification {id: 'C03080004', name: '임상시험', description: '임상시험 관련 분류', display_name: '임상시험 (:Classification)', readme: '임상시험 관련.', group: false});
+CREATE (:Classification {id: 'C03090001', name: '응급의료', description: '응급의료을(를) 다루는 분류', display_name: '응급의료 (:Classification)', readme: '응급의료 관련.', group: true});
+CREATE (:Classification {id: 'C03090002', name: '응급의료기관', description: '응급의료기관 관련 분류', display_name: '응급의료기관 (:Classification)', readme: '응급의료기관 관련.', group: false});
+CREATE (:Classification {id: 'C03090003', name: '응급환자 이송', description: '응급환자 이송 관련 분류', display_name: '응급환자 이송 (:Classification)', readme: '응급환자 이송 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C03000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03010001'}), (c:Classification {id: 'C03010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03010001'}), (c:Classification {id: 'C03010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03010001'}), (c:Classification {id: 'C03010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03010001'}), (c:Classification {id: 'C03010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03010001'}), (c:Classification {id: 'C03010006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03020001'}), (c:Classification {id: 'C03020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03020001'}), (c:Classification {id: 'C03020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03020001'}), (c:Classification {id: 'C03020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03020001'}), (c:Classification {id: 'C03020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03030001'}), (c:Classification {id: 'C03030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03030001'}), (c:Classification {id: 'C03030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03030001'}), (c:Classification {id: 'C03030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03040001'}), (c:Classification {id: 'C03040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03040001'}), (c:Classification {id: 'C03040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03040001'}), (c:Classification {id: 'C03040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050007'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050008'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03050001'}), (c:Classification {id: 'C03050009'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03060001'}), (c:Classification {id: 'C03060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03060001'}), (c:Classification {id: 'C03060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03070001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03070001'}), (c:Classification {id: 'C03070002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03070001'}), (c:Classification {id: 'C03070003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03070001'}), (c:Classification {id: 'C03070004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03080001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03080001'}), (c:Classification {id: 'C03080002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03080001'}), (c:Classification {id: 'C03080003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03080001'}), (c:Classification {id: 'C03080004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03000001'}), (c:Classification {id: 'C03090001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03090001'}), (c:Classification {id: 'C03090002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C03090001'}), (c:Classification {id: 'C03090003'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T03010001', name_ko: '의료기관', name_en: 'Medical Institution', acronym: 'None', description: '악성 종양으로, 비정상적인 세포의 무제한적 성장과 전이를 특징으로 하는 질환. 유전자 변이, 면역 이상 등 다양한 원인.', display_name: '의료기관 (:Term)'});
+CREATE (:Term {id: 'T03010002', name_ko: '병원', name_en: 'Hospital', acronym: 'None', description: '대장(결장 및 직장)에 발생하는 악성 종양. 선암이 대부분이며 식습관, 유전 등이 위험요인.', display_name: '병원 (:Term)'});
+CREATE (:Term {id: 'T03010003', name_ko: '의원', name_en: 'Clinic', acronym: 'None', description: '골수의 형질세포에서 발생하는 혈액암. M단백 생성, 골 병변, 빈혈 등의 증상.', display_name: '의원 (:Term)'});
+CREATE (:Term {id: 'T03010004', name_ko: '약국', name_en: 'Pharmacy', acronym: 'None', description: '암세포를 죽이거나 성장을 억제하는 약물 치료. 세포독성 항암제, 표적치료제, 면역항암제 등.', display_name: '약국 (:Term)'});
+CREATE (:Term {id: 'T03010005', name_ko: '의료시설', name_en: 'Medical Facility', acronym: 'None', description: '암을 조기에 발견하기 위한 검진. 대장내시경, 유방촬영, CT 등.', display_name: '의료시설 (:Term)'});
+CREATE (:Term {id: 'T03010006', name_ko: '의료장비', name_en: 'Medical Equipment', acronym: 'None', description: '암을 치료하기 위한 의학적 처치. 수술, 항암화학요법, 방사선치료, 면역치료 등.', display_name: '의료장비 (:Term)'});
+CREATE (:Term {id: 'T03020001', name_ko: '의료이용 통계', name_en: 'Healthcare Utilization Statistics', acronym: 'None', description: '눈물이 부족하거나 과도하게 증발하여 안구 표면이 손상되는 질환. 눈물막 불안정성이 주요 원인.', display_name: '의료이용 통계 (:Term)'});
+CREATE (:Term {id: 'T03020002', name_ko: '진료통계', name_en: 'Medical Treatment Statistics', acronym: 'None', description: '수정체가 혼탁해져 시력이 저하되는 질환. 노화가 주요 원인이며 수술로 치료.', display_name: '진료통계 (:Term)'});
+CREATE (:Term {id: 'T03030001', name_ko: '보건의료인력', name_en: 'Healthcare Personnel', acronym: 'None', description: '위산이 식도로 역류하여 불편감이나 합병증을 유발하는 질환. 속쓰림, 역류감 등의 증상.', display_name: '보건의료인력 (:Term)'});
+CREATE (:Term {id: 'T03030002', name_ko: '의사', name_en: 'Physician', acronym: 'None', description: '내부 장기를 관찰하기 위해 내시경을 삽입하는 검사. 위내시경, 대장내시경 등.', display_name: '의사 (:Term)'});
+CREATE (:Term {id: 'T03030003', name_ko: '간호사', name_en: 'Nurse', acronym: 'None', description: '위암을 조기에 발견하기 위한 검진. 위내시경, 조직검사 등.', display_name: '간호사 (:Term)'});
+CREATE (:Term {id: 'T03040001', name_ko: '건강보험', name_en: 'Health Insurance', acronym: 'None', description: '질병의 조기 발견과 예방을 위한 정기 검진. 국가건강검진, 암 검진 등.', display_name: '건강보험 (:Term)'});
+CREATE (:Term {id: 'T03040002', name_ko: '의료급여', name_en: 'Medical Aid', acronym: 'None', description: '질병을 예방하고 건강을 증진하는 의학 분야. 예방접종, 건강증진, 환경보건 등.', display_name: '의료급여 (:Term)'});
+CREATE (:Term {id: 'T03050001', name_ko: '암', name_en: 'Cancer', acronym: 'None', description: '악성 종양으로, 비정상적인 세포의 무제한적 성장과 전이를 특징으로 하는 질환군. 대장암, 위암, 폐암, 유방암 등.', display_name: '암 (:Term)'});
+CREATE (:Term {id: 'T03050002', name_ko: '대장암', name_en: 'Colorectal Cancer', acronym: 'CRC', description: '대장(결장 및 직장)에 발생하는 악성 종양. 조기 발견 시 완치율이 높으며 대장내시경 검진이 중요.', display_name: '대장암 (:Term)'});
+CREATE (:Term {id: 'T03050003', name_ko: '안구건조증', name_en: 'Dry Eye Syndrome', acronym: 'DES', description: '눈물 분비 부족 또는 과도한 증발로 안구 표면이 손상되는 질환. 안구 불편감, 시력 저하 유발.', display_name: '안구건조증 (:Term)'});
+CREATE (:Term {id: 'T03050004', name_ko: '위식도역류질환', name_en: 'Gastroesophageal Reflux Disease', acronym: 'GERD', description: '위산이 식도로 역류하여 가슴쓰림과 불편감을 유발하는 만성 소화기 질환. 생활습관 개선과 약물치료로 관리.', display_name: '위식도역류질환 (:Term)'});
+CREATE (:Term {id: 'T03060001', name_ko: '보건의료빅데이터', name_en: 'Healthcare Big Data', acronym: 'None', description: '보건의료 분야에서 수집·생성되는 대규모 데이터. 진료정보, 건강검진, 유전체정보, 의료영상 등.', display_name: '보건의료빅데이터 (:Term)'});
+CREATE (:Term {id: 'T03060002', name_ko: '의료영상데이터', name_en: 'Medical Imaging Data', acronym: 'None', description: 'X-ray, CT, MRI 등 의료영상 장비로 생성된 데이터. 진단·치료 계획 수립에 활용.', display_name: '의료영상데이터 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T03010001'}), (t:Term {id: 'T03010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T03010001'}), (t:Term {id: 'T03010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03010006'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T03050001'}), (t:Term {id: 'T03050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03050003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03050004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T03060002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T03010001'}), (c:Classification {id: 'C03010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03010002'}), (c:Classification {id: 'C03010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03010003'}), (c:Classification {id: 'C03010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03010004'}), (c:Classification {id: 'C03010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03010005'}), (c:Classification {id: 'C03010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03010006'}), (c:Classification {id: 'C03010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03020001'}), (c:Classification {id: 'C03020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03020002'}), (c:Classification {id: 'C03020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03030001'}), (c:Classification {id: 'C03030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03030002'}), (c:Classification {id: 'C03030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03030003'}), (c:Classification {id: 'C03030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03040001'}), (c:Classification {id: 'C03040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03040002'}), (c:Classification {id: 'C03040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03050001'}), (c:Classification {id: 'C03050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03050002'}), (c:Classification {id: 'C03050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03050003'}), (c:Classification {id: 'C03050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03050004'}), (c:Classification {id: 'C03050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03060001'}), (c:Classification {id: 'C03060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T03060002'}), (c:Classification {id: 'C03060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T03010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '결장암', display_name: '결장암 (:Synonym)'});
+MATCH (t:Term {id: 'T03010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '직장암', display_name: '직장암 (:Synonym)'});
+MATCH (t:Term {id: 'T03010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'CRC', display_name: 'CRC (:Synonym)'});
+MATCH (t:Term {id: 'T03010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '골수종', display_name: '골수종 (:Synonym)'});
+MATCH (t:Term {id: 'T03010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'MM', display_name: 'MM (:Synonym)'});
+MATCH (t:Term {id: 'T03020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'DES', display_name: 'DES (:Synonym)'});
+MATCH (t:Term {id: 'T03020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '건조안', display_name: '건조안 (:Synonym)'});
+MATCH (t:Term {id: 'T03030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'GERD', display_name: 'GERD (:Synonym)'});
+MATCH (t:Term {id: 'T03030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '역류성식도염', display_name: '역류성식도염 (:Synonym)'});
+MATCH (t:Term {id: 'T03050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '악성종양', display_name: '악성종양 (:Synonym)'});
+MATCH (t:Term {id: 'T03050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Cancer', display_name: 'Cancer (:Synonym)'});
+MATCH (t:Term {id: 'T03050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '결장암', display_name: '결장암 (:Synonym)'});
+MATCH (t:Term {id: 'T03050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '직장암', display_name: '직장암 (:Synonym)'});
+MATCH (t:Term {id: 'T03050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'CRC', display_name: 'CRC (:Synonym)'});
+MATCH (t:Term {id: 'T03050003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'DES', display_name: 'DES (:Synonym)'});
+MATCH (t:Term {id: 'T03050003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '건조안', display_name: '건조안 (:Synonym)'});
+MATCH (t:Term {id: 'T03050004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'GERD', display_name: 'GERD (:Synonym)'});
+MATCH (t:Term {id: 'T03050004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '역류성식도염', display_name: '역류성식도염 (:Synonym)'});
+MATCH (t:Term {id: 'T03050004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '위식도역류', display_name: '위식도역류 (:Synonym)'});
+MATCH (t:Term {id: 'T03060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '의료빅데이터', display_name: '의료빅데이터 (:Synonym)'});
+MATCH (t:Term {id: 'T03060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Healthcare Big Data', display_name: 'Healthcare Big Data (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010005'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010006'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010007'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03010002'}), (t2:Term {id: 'T03010005'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03010002'}), (t2:Term {id: 'T03030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03020001'}), (t2:Term {id: 'T03020005'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03020002'}), (t2:Term {id: 'T03020005'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03030001'}), (t2:Term {id: 'T03030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03030001'}), (t2:Term {id: 'T03030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03040001'}), (t2:Term {id: 'T03040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03050001'}), (t2:Term {id: 'T03050002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03050001'}), (t2:Term {id: 'T03010005'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03050001'}), (t2:Term {id: 'T03010006'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T03060001'}), (t2:Term {id: 'T03060002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 사회복지 (Social Welfare)
+
+// Classifications
+CREATE (:Classification {id: 'C04000001', name: '사회복지', description: '사회복지 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '사회복지 (:Classification)', readme: '사회복지 관련.', group: true});
+CREATE (:Classification {id: 'C04010001', name: '사회보장', description: '사회보장을(를) 다루는 분류', display_name: '사회보장 (:Classification)', readme: '사회보장 관련.', group: true});
+CREATE (:Classification {id: 'C04010002', name: '사회보험', description: '사회보험 관련 분류', display_name: '사회보험 (:Classification)', readme: '사회보험 관련.', group: false});
+CREATE (:Classification {id: 'C04010003', name: '공적부조', description: '공적부조 관련 분류', display_name: '공적부조 (:Classification)', readme: '공적부조 관련.', group: false});
+CREATE (:Classification {id: 'C04010004', name: '사회서비스', description: '사회서비스 관련 분류', display_name: '사회서비스 (:Classification)', readme: '사회서비스 관련.', group: false});
+CREATE (:Classification {id: 'C04010005', name: '기초생활보장', description: '기초생활보장 관련 분류', display_name: '기초생활보장 (:Classification)', readme: '기초생활보장 관련.', group: false});
+CREATE (:Classification {id: 'C04020001', name: '복지시설', description: '복지시설을(를) 다루는 분류', display_name: '복지시설 (:Classification)', readme: '복지시설 관련.', group: true});
+CREATE (:Classification {id: 'C04020002', name: '노인복지시설', description: '노인복지시설 관련 분류', display_name: '노인복지시설 (:Classification)', readme: '노인복지시설 관련.', group: false});
+CREATE (:Classification {id: 'C04020003', name: '아동복지시설', description: '아동복지시설 관련 분류', display_name: '아동복지시설 (:Classification)', readme: '아동복지시설 관련.', group: false});
+CREATE (:Classification {id: 'C04020004', name: '장애인복지시설', description: '장애인복지시설 관련 분류', display_name: '장애인복지시설 (:Classification)', readme: '장애인복지시설 관련.', group: false});
+CREATE (:Classification {id: 'C04020005', name: '지역사회복지관', description: '지역사회복지관 관련 분류', display_name: '지역사회복지관 (:Classification)', readme: '지역사회복지관 관련.', group: false});
+CREATE (:Classification {id: 'C04030001', name: '취약계층지원', description: '취약계층지원을(를) 다루는 분류', display_name: '취약계층지원 (:Classification)', readme: '취약계층지원 관련.', group: true});
+CREATE (:Classification {id: 'C04030002', name: '저소득층 지원', description: '저소득층 지원 관련 분류', display_name: '저소득층 지원 (:Classification)', readme: '저소득층 지원 관련.', group: false});
+CREATE (:Classification {id: 'C04030003', name: '다문화가족 지원', description: '다문화가족 지원 관련 분류', display_name: '다문화가족 지원 (:Classification)', readme: '다문화가족 지원 관련.', group: false});
+CREATE (:Classification {id: 'C04030004', name: '한부모가족 지원', description: '한부모가족 지원 관련 분류', display_name: '한부모가족 지원 (:Classification)', readme: '한부모가족 지원 관련.', group: false});
+CREATE (:Classification {id: 'C04030005', name: '노숙인 지원', description: '노숙인 지원 관련 분류', display_name: '노숙인 지원 (:Classification)', readme: '노숙인 지원 관련.', group: false});
+CREATE (:Classification {id: 'C04030006', name: '북한이탈주민 지원', description: '북한이탈주민 지원 관련 분류', display_name: '북한이탈주민 지원 (:Classification)', readme: '북한이탈주민 지원 관련.', group: false});
+CREATE (:Classification {id: 'C04040001', name: '고령화·인구정책', description: '고령화·인구정책을(를) 다루는 분류', display_name: '고령화·인구정책 (:Classification)', readme: '고령화·인구정책 관련.', group: true});
+CREATE (:Classification {id: 'C04040002', name: '고령사회 대응', description: '고령사회 대응 관련 분류', display_name: '고령사회 대응 (:Classification)', readme: '고령사회 대응 관련.', group: false});
+CREATE (:Classification {id: 'C04040003', name: '인구감소 대응', description: '인구감소 대응 관련 분류', display_name: '인구감소 대응 (:Classification)', readme: '인구감소 대응 관련.', group: false});
+CREATE (:Classification {id: 'C04040004', name: '저출산 대책', description: '저출산 대책 관련 분류', display_name: '저출산 대책 (:Classification)', readme: '저출산 대책 관련.', group: false});
+CREATE (:Classification {id: 'C04040005', name: '돌봄서비스', description: '돌봄서비스 관련 분류', display_name: '돌봄서비스 (:Classification)', readme: '돌봄서비스 관련.', group: false});
+CREATE (:Classification {id: 'C04050001', name: '아동·청소년복지', description: '아동·청소년복지을(를) 다루는 분류', display_name: '아동·청소년복지 (:Classification)', readme: '아동·청소년복지 관련.', group: true});
+CREATE (:Classification {id: 'C04050002', name: '아동보호', description: '아동보호 관련 분류', display_name: '아동보호 (:Classification)', readme: '아동보호 관련.', group: false});
+CREATE (:Classification {id: 'C04050003', name: '청소년 정책', description: '청소년 정책 관련 분류', display_name: '청소년 정책 (:Classification)', readme: '청소년 정책 관련.', group: false});
+CREATE (:Classification {id: 'C04050004', name: '보육서비스', description: '보육서비스 관련 분류', display_name: '보육서비스 (:Classification)', readme: '보육서비스 관련.', group: false});
+CREATE (:Classification {id: 'C04060001', name: '장애인복지', description: '장애인복지을(를) 다루는 분류', display_name: '장애인복지 (:Classification)', readme: '장애인복지 관련.', group: true});
+CREATE (:Classification {id: 'C04060002', name: '장애인 등록', description: '장애인 등록 관련 분류', display_name: '장애인 등록 (:Classification)', readme: '장애인 등록 관련.', group: false});
+CREATE (:Classification {id: 'C04060003', name: '장애인 고용', description: '장애인 고용 관련 분류', display_name: '장애인 고용 (:Classification)', readme: '장애인 고용 관련.', group: false});
+CREATE (:Classification {id: 'C04060004', name: '장애인 활동지원', description: '장애인 활동지원 관련 분류', display_name: '장애인 활동지원 (:Classification)', readme: '장애인 활동지원 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C04000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04000001'}), (c:Classification {id: 'C04010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04010001'}), (c:Classification {id: 'C04010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04010001'}), (c:Classification {id: 'C04010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04010001'}), (c:Classification {id: 'C04010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04010001'}), (c:Classification {id: 'C04010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04000001'}), (c:Classification {id: 'C04020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04020001'}), (c:Classification {id: 'C04020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04020001'}), (c:Classification {id: 'C04020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04020001'}), (c:Classification {id: 'C04020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04020001'}), (c:Classification {id: 'C04020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04000001'}), (c:Classification {id: 'C04030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04030001'}), (c:Classification {id: 'C04030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04030001'}), (c:Classification {id: 'C04030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04030001'}), (c:Classification {id: 'C04030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04030001'}), (c:Classification {id: 'C04030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04030001'}), (c:Classification {id: 'C04030006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04000001'}), (c:Classification {id: 'C04040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04040001'}), (c:Classification {id: 'C04040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04040001'}), (c:Classification {id: 'C04040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04040001'}), (c:Classification {id: 'C04040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04040001'}), (c:Classification {id: 'C04040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04000001'}), (c:Classification {id: 'C04050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04050001'}), (c:Classification {id: 'C04050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04050001'}), (c:Classification {id: 'C04050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04050001'}), (c:Classification {id: 'C04050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04000001'}), (c:Classification {id: 'C04060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04060001'}), (c:Classification {id: 'C04060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04060001'}), (c:Classification {id: 'C04060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C04060001'}), (c:Classification {id: 'C04060004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T04010001', name_ko: '사회보장', name_en: 'Social Security', acronym: 'None', description: '고령 인구 비율에 따른 사회 단계 구분. 고령화사회(7% 이상), 고령사회(14% 이상), 초고령사회(20% 이상).', display_name: '사회보장 (:Term)'});
+CREATE (:Term {id: 'T04010002', name_ko: '사회보험', name_en: 'Social Insurance', acronym: 'None', description: '65-74세 전기고령자(Young-old)와 75세 이상 후기고령자(Old-old)의 구분. 건강 상태와 사회활동 수준 차이.', display_name: '사회보험 (:Term)'});
+CREATE (:Term {id: 'T04010003', name_ko: '공적부조', name_en: 'Public Assistance', acronym: 'None', description: '고령자가 고령자를 돌보는 돌봄 형태. 배우자 간 돌봄, 친구·이웃 간 돌봄 등.', display_name: '공적부조 (:Term)'});
+CREATE (:Term {id: 'T04020001', name_ko: '복지시설', name_en: 'Welfare Facility', acronym: 'None', description: '국가가 운영하는 공적 연금 제도. 국민연금, 공무원연금, 군인연금 등.', display_name: '복지시설 (:Term)'});
+CREATE (:Term {id: 'T04020002', name_ko: '노인복지시설', name_en: 'Elderly Welfare Facility', acronym: 'None', description: '연금 소득에 의존하여 생활하는 삶의 방식. 은퇴 후 소득원으로서의 연금 역할.', display_name: '노인복지시설 (:Term)'});
+CREATE (:Term {id: 'T04030001', name_ko: '취약계층', name_en: 'Vulnerable Groups', acronym: 'None', description: '고령자 가구의 소득원(근로, 연금, 자산소득 등)과 지출 항목(생활비, 의료비 등) 구조 분석.', display_name: '취약계층 (:Term)'});
+CREATE (:Term {id: 'T04030002', name_ko: '저소득층', name_en: 'Low-Income Groups', acronym: 'None', description: '빈곤층, 기초생활수급자 등 경제적으로 어려운 계층. 기초생활보장제도, 긴급복지지원 등의 대상.', display_name: '저소득층 (:Term)'});
+CREATE (:Term {id: 'T04040001', name_ko: '고령사회', name_en: 'Aging Society', acronym: 'None', description: '전체 인구 중 65세 이상 인구가 14% 이상인 사회. 한국은 2018년에 고령사회 진입.', display_name: '고령사회 (:Term)'});
+CREATE (:Term {id: 'T04040002', name_ko: '초고령사회', name_en: 'Super-Aged Society', acronym: 'None', description: '전체 인구 중 65세 이상 인구가 20% 이상인 사회. 한국은 2025년 초고령사회 진입 예상.', display_name: '초고령사회 (:Term)'});
+CREATE (:Term {id: 'T04040003', name_ko: '노노케어', name_en: 'Senior-to-Senior Care', acronym: 'None', description: '고령자가 고령자를 돌보는 돌봄 형태. 배우자 간 돌봄, 친구·이웃 간 상호 돌봄 등.', display_name: '노노케어 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T04040001'}), (t:Term {id: 'T04040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T04040003'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T04010001'}), (c:Classification {id: 'C04010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04010002'}), (c:Classification {id: 'C04010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04010003'}), (c:Classification {id: 'C04010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04020001'}), (c:Classification {id: 'C04020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04020002'}), (c:Classification {id: 'C04020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04030001'}), (c:Classification {id: 'C04030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04030002'}), (c:Classification {id: 'C04030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04040001'}), (c:Classification {id: 'C04040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04040002'}), (c:Classification {id: 'C04040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T04040003'}), (c:Classification {id: 'C04040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T04010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '노노돌봄', display_name: '노노돌봄 (:Synonym)'});
+MATCH (t:Term {id: 'T04010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '고령자돌봄', display_name: '고령자돌봄 (:Synonym)'});
+MATCH (t:Term {id: 'T04020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공적연금제도', display_name: '공적연금제도 (:Synonym)'});
+MATCH (t:Term {id: 'T04020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '사회보험연금', display_name: '사회보험연금 (:Synonym)'});
+MATCH (t:Term {id: 'T04030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '빈곤층', display_name: '빈곤층 (:Synonym)'});
+MATCH (t:Term {id: 'T04030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기초수급자', display_name: '기초수급자 (:Synonym)'});
+MATCH (t:Term {id: 'T04040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Aged Society', display_name: 'Aged Society (:Synonym)'});
+MATCH (t:Term {id: 'T04040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '고령화사회', display_name: '고령화사회 (:Synonym)'});
+MATCH (t:Term {id: 'T04040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Super-Aged Society', display_name: 'Super-Aged Society (:Synonym)'});
+MATCH (t:Term {id: 'T04040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '초고령화사회', display_name: '초고령화사회 (:Synonym)'});
+MATCH (t:Term {id: 'T04040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Senior Care', display_name: 'Senior Care (:Synonym)'});
+MATCH (t:Term {id: 'T04040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '노인돌봄', display_name: '노인돌봄 (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T04010001'}), (t2:Term {id: 'T04010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T04020001'}), (t2:Term {id: 'T04020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T04040001'}), (t2:Term {id: 'T04040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T04040001'}), (t2:Term {id: 'T04040003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 법률 (Law)
+
+// Classifications
+CREATE (:Classification {id: 'C05000001', name: '법률', description: '법률 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '법률 (:Classification)', readme: '법률 관련.', group: true});
+CREATE (:Classification {id: 'C05010001', name: '법령·법규', description: '법령·법규을(를) 다루는 분류', display_name: '법령·법규 (:Classification)', readme: '법령·법규 관련.', group: true});
+CREATE (:Classification {id: 'C05010002', name: '법률', description: '법률 관련 분류', display_name: '법률 (:Classification)', readme: '법률 관련.', group: false});
+CREATE (:Classification {id: 'C05010003', name: '시행령·시행규칙', description: '시행령·시행규칙 관련 분류', display_name: '시행령·시행규칙 (:Classification)', readme: '시행령·시행규칙 관련.', group: false});
+CREATE (:Classification {id: 'C05010004', name: '자치법규', description: '자치법규 관련 분류', display_name: '자치법규 (:Classification)', readme: '자치법규 관련.', group: false});
+CREATE (:Classification {id: 'C05010005', name: '행정규칙', description: '행정규칙 관련 분류', display_name: '행정규칙 (:Classification)', readme: '행정규칙 관련.', group: false});
+CREATE (:Classification {id: 'C05020001', name: '판례·재판', description: '판례·재판을(를) 다루는 분류', display_name: '판례·재판 (:Classification)', readme: '판례·재판 관련.', group: true});
+CREATE (:Classification {id: 'C05020002', name: '대법원 판례', description: '대법원 판례 관련 분류', display_name: '대법원 판례 (:Classification)', readme: '대법원 판례 관련.', group: false});
+CREATE (:Classification {id: 'C05020003', name: '하급심 판례', description: '하급심 판례 관련 분류', display_name: '하급심 판례 (:Classification)', readme: '하급심 판례 관련.', group: false});
+CREATE (:Classification {id: 'C05020004', name: '재판통계', description: '재판통계 관련 분류', display_name: '재판통계 (:Classification)', readme: '재판통계 관련.', group: false});
+CREATE (:Classification {id: 'C05020005', name: '헌법재판소 결정', description: '헌법재판소 결정 관련 분류', display_name: '헌법재판소 결정 (:Classification)', readme: '헌법재판소 결정 관련.', group: false});
+CREATE (:Classification {id: 'C05030001', name: '법률서비스', description: '법률서비스을(를) 다루는 분류', display_name: '법률서비스 (:Classification)', readme: '법률서비스 관련.', group: true});
+CREATE (:Classification {id: 'C05030002', name: '법률상담', description: '법률상담 관련 분류', display_name: '법률상담 (:Classification)', readme: '법률상담 관련.', group: false});
+CREATE (:Classification {id: 'C05030003', name: '법률구조', description: '법률구조 관련 분류', display_name: '법률구조 (:Classification)', readme: '법률구조 관련.', group: false});
+CREATE (:Classification {id: 'C05030004', name: '법률정보 제공', description: '법률정보 제공 관련 분류', display_name: '법률정보 제공 (:Classification)', readme: '법률정보 제공 관련.', group: false});
+CREATE (:Classification {id: 'C05040001', name: '조세·세법', description: '조세·세법을(를) 다루는 분류', display_name: '조세·세법 (:Classification)', readme: '조세·세법 관련.', group: true});
+CREATE (:Classification {id: 'C05040002', name: '국세', description: '국세 관련 분류', display_name: '국세 (:Classification)', readme: '국세 관련.', group: false});
+CREATE (:Classification {id: 'C05040003', name: '지방세', description: '지방세 관련 분류', display_name: '지방세 (:Classification)', readme: '지방세 관련.', group: false});
+CREATE (:Classification {id: 'C05040004', name: '관세', description: '관세 관련 분류', display_name: '관세 (:Classification)', readme: '관세 관련.', group: false});
+CREATE (:Classification {id: 'C05040005', name: '세무행정', description: '세무행정 관련 분류', display_name: '세무행정 (:Classification)', readme: '세무행정 관련.', group: false});
+CREATE (:Classification {id: 'C05050001', name: '민사·상사법', description: '민사·상사법을(를) 다루는 분류', display_name: '민사·상사법 (:Classification)', readme: '민사·상사법 관련.', group: true});
+CREATE (:Classification {id: 'C05050002', name: '민법', description: '민법 관련 분류', display_name: '민법 (:Classification)', readme: '민법 관련.', group: false});
+CREATE (:Classification {id: 'C05050003', name: '상법', description: '상법 관련 분류', display_name: '상법 (:Classification)', readme: '상법 관련.', group: false});
+CREATE (:Classification {id: 'C05050004', name: '지식재산권법', description: '지식재산권법 관련 분류', display_name: '지식재산권법 (:Classification)', readme: '지식재산권법 관련.', group: false});
+CREATE (:Classification {id: 'C05060001', name: '형사·행정법', description: '형사·행정법을(를) 다루는 분류', display_name: '형사·행정법 (:Classification)', readme: '형사·행정법 관련.', group: true});
+CREATE (:Classification {id: 'C05060002', name: '형법', description: '형법 관련 분류', display_name: '형법 (:Classification)', readme: '형법 관련.', group: false});
+CREATE (:Classification {id: 'C05060003', name: '행정법', description: '행정법 관련 분류', display_name: '행정법 (:Classification)', readme: '행정법 관련.', group: false});
+CREATE (:Classification {id: 'C05060004', name: '행정심판', description: '행정심판 관련 분류', display_name: '행정심판 (:Classification)', readme: '행정심판 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C05000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05000001'}), (c:Classification {id: 'C05010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05010001'}), (c:Classification {id: 'C05010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05010001'}), (c:Classification {id: 'C05010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05010001'}), (c:Classification {id: 'C05010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05010001'}), (c:Classification {id: 'C05010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05000001'}), (c:Classification {id: 'C05020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05020001'}), (c:Classification {id: 'C05020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05020001'}), (c:Classification {id: 'C05020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05020001'}), (c:Classification {id: 'C05020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05020001'}), (c:Classification {id: 'C05020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05000001'}), (c:Classification {id: 'C05030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05030001'}), (c:Classification {id: 'C05030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05030001'}), (c:Classification {id: 'C05030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05030001'}), (c:Classification {id: 'C05030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05000001'}), (c:Classification {id: 'C05040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05040001'}), (c:Classification {id: 'C05040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05040001'}), (c:Classification {id: 'C05040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05040001'}), (c:Classification {id: 'C05040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05040001'}), (c:Classification {id: 'C05040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05000001'}), (c:Classification {id: 'C05050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05050001'}), (c:Classification {id: 'C05050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05050001'}), (c:Classification {id: 'C05050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05050001'}), (c:Classification {id: 'C05050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05000001'}), (c:Classification {id: 'C05060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05060001'}), (c:Classification {id: 'C05060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05060001'}), (c:Classification {id: 'C05060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C05060001'}), (c:Classification {id: 'C05060004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T05010001', name_ko: '법령', name_en: 'Legislation', acronym: 'None', description: '법원의 재판 선례. 유사 사건의 재판 시 참고 기준.', display_name: '법령 (:Term)'});
+CREATE (:Term {id: 'T05010002', name_ko: '법률', name_en: 'Law', acronym: 'None', description: '대법원의 판결. 최종심 판결로 법적 구속력이 강함.', display_name: '법률 (:Term)'});
+CREATE (:Term {id: 'T05010003', name_ko: '시행령', name_en: 'Enforcement Decree', acronym: 'None', description: '헌법재판소의 결정. 위헌법률심판, 헌법소원 등.', display_name: '시행령 (:Term)'});
+CREATE (:Term {id: 'T05010004', name_ko: '자치법규', name_en: 'Local Ordinance', acronym: 'None', description: '자치법규 (Local Ordinance)', display_name: '자치법규 (:Term)'});
+CREATE (:Term {id: 'T05010005', name_ko: '행정규칙', name_en: 'Administrative Rules', acronym: 'None', description: '행정규칙 (Administrative Rules)', display_name: '행정규칙 (:Term)'});
+CREATE (:Term {id: 'T05020001', name_ko: '판례', name_en: 'Case Law', acronym: 'None', description: '개인의 소득(근로소득, 사업소득, 기타소득 등)에 부과하는 세금. 누진세율 적용.', display_name: '판례 (:Term)'});
+CREATE (:Term {id: 'T05020002', name_ko: '대법원 판례', name_en: 'Supreme Court Precedent', acronym: 'None', description: '법인의 소득(영업이익, 자산처분익 등)에 부과하는 세금. 법인세법에 근거.', display_name: '대법원 판례 (:Term)'});
+CREATE (:Term {id: 'T05020003', name_ko: '헌법재판소 결정', name_en: 'Constitutional Court Decision', acronym: 'None', description: '재화와 용역의 공급(판매)에 부과하는 세금. 최종 소비자가 부담하는 간접세.', display_name: '헌법재판소 결정 (:Term)'});
+CREATE (:Term {id: 'T05020004', name_ko: '재판통계', name_en: 'Judicial Statistics', acronym: 'None', description: '상속 또는 증여받은 재산에 부과하는 세금. 부의 재분배 기능.', display_name: '재판통계 (:Term)'});
+CREATE (:Term {id: 'T05030001', name_ko: '법률서비스', name_en: 'Legal Service', acronym: 'None', description: '국가공무원의 복무·권리·의무 등을 규정한 법률. 공직윤리, 징계, 신분보장 등.', display_name: '법률서비스 (:Term)'});
+CREATE (:Term {id: 'T05030002', name_ko: '법률상담', name_en: 'Legal Consultation', acronym: 'None', description: '행정절차의 공정성·투명성·신뢰성 확보를 위한 법률. 처분 절차, 의견 청취, 이유 제시 등.', display_name: '법률상담 (:Term)'});
+CREATE (:Term {id: 'T05030003', name_ko: '법률구조', name_en: 'Legal Aid', acronym: 'None', description: '법률구조 (Legal Aid)', display_name: '법률구조 (:Term)'});
+CREATE (:Term {id: 'T05040001', name_ko: '조세', name_en: 'Tax', acronym: 'None', description: '국가 또는 지방자치단체가 재정 수입을 위해 국민에게 부과하는 금전. 국세와 지방세로 구분.', display_name: '조세 (:Term)'});
+CREATE (:Term {id: 'T05040002', name_ko: '종합부동산세', name_en: 'Comprehensive Real Estate Tax', acronym: 'None', description: '일정 금액 이상의 부동산을 보유한 자에게 부과하는 국세. 종부세로 약칭.', display_name: '종합부동산세 (:Term)'});
+CREATE (:Term {id: 'T05040003', name_ko: '양도소득세', name_en: 'Capital Gains Tax', acronym: 'None', description: '부동산, 주식 등 자산의 양도로 발생한 소득에 부과하는 세금. 양도차익의 일정 비율 과세.', display_name: '양도소득세 (:Term)'});
+CREATE (:Term {id: 'T05040004', name_ko: '부가가치세', name_en: 'Value Added Tax', acronym: 'VAT', description: '재화와 용역의 공급(판매) 단계마다 부가되는 가치에 대해 부과하는 세금. 부가세, VAT로 약칭.', display_name: '부가가치세 (:Term)'});
+CREATE (:Term {id: 'T05040005', name_ko: '국세', name_en: 'National Tax', acronym: 'None', description: '국세 (National Tax)', display_name: '국세 (:Term)'});
+CREATE (:Term {id: 'T05040006', name_ko: '지방세', name_en: 'Local Tax', acronym: 'None', description: '지방세 (Local Tax)', display_name: '지방세 (:Term)'});
+CREATE (:Term {id: 'T05050001', name_ko: '민법', name_en: 'Civil Law', acronym: 'None', description: '민법 (Civil Law)', display_name: '민법 (:Term)'});
+CREATE (:Term {id: 'T05050002', name_ko: '상법', name_en: 'Commercial Law', acronym: 'None', description: '상법 (Commercial Law)', display_name: '상법 (:Term)'});
+CREATE (:Term {id: 'T05060001', name_ko: '형법', name_en: 'Criminal Law', acronym: 'None', description: '형법 (Criminal Law)', display_name: '형법 (:Term)'});
+CREATE (:Term {id: 'T05060002', name_ko: '행정심판', name_en: 'Administrative Appeal', acronym: 'None', description: '행정심판 (Administrative Appeal)', display_name: '행정심판 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05020004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T05040001'}), (t:Term {id: 'T05040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T05040001'}), (t:Term {id: 'T05040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T05040001'}), (t:Term {id: 'T05040004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05040005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05040006'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T05060002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T05010001'}), (c:Classification {id: 'C05010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05010002'}), (c:Classification {id: 'C05010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05010003'}), (c:Classification {id: 'C05010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05010004'}), (c:Classification {id: 'C05010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05010005'}), (c:Classification {id: 'C05010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05020001'}), (c:Classification {id: 'C05020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05020002'}), (c:Classification {id: 'C05020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05020003'}), (c:Classification {id: 'C05020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05020004'}), (c:Classification {id: 'C05020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05030001'}), (c:Classification {id: 'C05030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05030002'}), (c:Classification {id: 'C05030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05030003'}), (c:Classification {id: 'C05030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05040001'}), (c:Classification {id: 'C05040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05040002'}), (c:Classification {id: 'C05040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05040003'}), (c:Classification {id: 'C05040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05040004'}), (c:Classification {id: 'C05040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05040005'}), (c:Classification {id: 'C05040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05040006'}), (c:Classification {id: 'C05040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05050001'}), (c:Classification {id: 'C05050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05050002'}), (c:Classification {id: 'C05050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05060001'}), (c:Classification {id: 'C05060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T05060002'}), (c:Classification {id: 'C05060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T05020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '부가세', display_name: '부가세 (:Synonym)'});
+MATCH (t:Term {id: 'T05020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'VAT', display_name: 'VAT (:Synonym)'});
+MATCH (t:Term {id: 'T05020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '상증세', display_name: '상증세 (:Synonym)'});
+MATCH (t:Term {id: 'T05020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '증여세', display_name: '증여세 (:Synonym)'});
+MATCH (t:Term {id: 'T05020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '상속세', display_name: '상속세 (:Synonym)'});
+MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Tax', display_name: 'Tax (:Synonym)'});
+MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '조세', display_name: '조세 (:Synonym)'});
+MATCH (t:Term {id: 'T05040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '종부세', display_name: '종부세 (:Synonym)'});
+MATCH (t:Term {id: 'T05040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '종합부동산세', display_name: '종합부동산세 (:Synonym)'});
+MATCH (t:Term {id: 'T05040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '양도세', display_name: '양도세 (:Synonym)'});
+MATCH (t:Term {id: 'T05040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Capital Gains Tax', display_name: 'Capital Gains Tax (:Synonym)'});
+MATCH (t:Term {id: 'T05040004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '부가세', display_name: '부가세 (:Synonym)'});
+MATCH (t:Term {id: 'T05040004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'VAT', display_name: 'VAT (:Synonym)'});
+MATCH (t:Term {id: 'T05040004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '부가가치세', display_name: '부가가치세 (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T05010001'}), (t2:Term {id: 'T05010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T05010001'}), (t2:Term {id: 'T05010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T05040001'}), (t2:Term {id: 'T05040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T05040001'}), (t2:Term {id: 'T05040003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T05040001'}), (t2:Term {id: 'T05040004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 재정금융 (Finance)
+
+// Classifications
+CREATE (:Classification {id: 'C06000001', name: '재정금융', description: '재정금융 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '재정금융 (:Classification)', readme: '금융 부문 정책 및 제도. 통화정책, 금융안정, 자본시장, 연금 등을 포괄하며 finance/ 디렉토리와 매핑.', group: true});
+CREATE (:Classification {id: 'C06010001', name: '통화정책', description: '통화정책을(를) 다루는 분류', display_name: '통화정책 (:Classification)', readme: '통화정책 및 통화신용정책. 기준금리, 공개시장운영, 유동성 조절 등.', group: true});
+CREATE (:Classification {id: 'C06010002', name: '기준금리 운영', description: '기준금리 운영 관련 분류', display_name: '기준금리 운영 (:Classification)', readme: '기준금리 운영. 한국은행의 기준금리 결정 및 운용.', group: false});
+CREATE (:Classification {id: 'C06010003', name: '공개시장운영', description: '공개시장운영 관련 분류', display_name: '공개시장운영 (:Classification)', readme: '금융중개지원대출 및 유동성조절. 금융기관 유동성 지원 정책.', group: false});
+CREATE (:Classification {id: 'C06010004', name: '유동성조절', description: '유동성조절 관련 분류', display_name: '유동성조절 (:Classification)', readme: '공개시장운영 및 대상기관제도. OMO 대상기관 관리 및 확대.', group: false});
+CREATE (:Classification {id: 'C06010005', name: '통화안정증권', description: '통화안정증권 관련 분류', display_name: '통화안정증권 (:Classification)', readme: '통화안정증권 관련.', group: false});
+CREATE (:Classification {id: 'C06020001', name: '금융안정', description: '금융안정을(를) 다루는 분류', display_name: '금융안정 (:Classification)', readme: '금융안정 및 부동산PF. 금융시스템 안정성, 부동산 PF 리스크 관리.', group: true});
+CREATE (:Classification {id: 'C06020002', name: '가계부채 관리', description: '가계부채 관리 관련 분류', display_name: '가계부채 관리 (:Classification)', readme: '가계부채 및 취약차주. 가계부채 관리, 취약차주 지원.', group: false});
+CREATE (:Classification {id: 'C06020003', name: '부동산PF 리스크', description: '부동산PF 리스크 관련 분류', display_name: '부동산PF 리스크 (:Classification)', readme: '부동산PF 리스크 관련.', group: false});
+CREATE (:Classification {id: 'C06020004', name: '시스템리스크', description: '시스템리스크 관련 분류', display_name: '시스템리스크 (:Classification)', readme: '시스템리스크 관련.', group: false});
+CREATE (:Classification {id: 'C06020005', name: '금융감독', description: '금융감독 관련 분류', display_name: '금융감독 (:Classification)', readme: '금융감독 관련.', group: false});
+CREATE (:Classification {id: 'C06030001', name: '금융기관', description: '금융기관을(를) 다루는 분류', display_name: '금융기관 (:Classification)', readme: '상생금융 및 포용금융. 서민금융, 소상공인 지원 등.', group: true});
+CREATE (:Classification {id: 'C06030002', name: '은행', description: '은행 관련 분류', display_name: '은행 (:Classification)', readme: '은행 관련.', group: false});
+CREATE (:Classification {id: 'C06030003', name: '보험사', description: '보험사 관련 분류', display_name: '보험사 (:Classification)', readme: '보험사 관련.', group: false});
+CREATE (:Classification {id: 'C06030004', name: '증권사', description: '증권사 관련 분류', display_name: '증권사 (:Classification)', readme: '증권사 관련.', group: false});
+CREATE (:Classification {id: 'C06030005', name: '저축은행', description: '저축은행 관련 분류', display_name: '저축은행 (:Classification)', readme: '저축은행 관련.', group: false});
+CREATE (:Classification {id: 'C06030006', name: '상호금융', description: '상호금융 관련 분류', display_name: '상호금융 (:Classification)', readme: '상호금융 관련.', group: false});
+CREATE (:Classification {id: 'C06040001', name: '자본시장', description: '자본시장을(를) 다루는 분류', display_name: '자본시장 (:Classification)', readme: '핀테크 및 혁신금융. 금융기술 혁신, 핀테크 생태계 조성.', group: true});
+CREATE (:Classification {id: 'C06040002', name: '주식시장', description: '주식시장 관련 분류', display_name: '주식시장 (:Classification)', readme: '핀테크 투자 생태계. 핀테크 기업 투자 및 육성.', group: false});
+CREATE (:Classification {id: 'C06040003', name: '채권시장', description: '채권시장 관련 분류', display_name: '채권시장 (:Classification)', readme: '채권시장 관련.', group: false});
+CREATE (:Classification {id: 'C06040004', name: '펀드', description: '펀드 관련 분류', display_name: '펀드 (:Classification)', readme: '펀드 관련.', group: false});
+CREATE (:Classification {id: 'C06040005', name: '파생상품', description: '파생상품 관련 분류', display_name: '파생상품 (:Classification)', readme: '파생상품 관련.', group: false});
+CREATE (:Classification {id: 'C06040006', name: '외환시장', description: '외환시장 관련 분류', display_name: '외환시장 (:Classification)', readme: '외환시장 관련.', group: false});
+CREATE (:Classification {id: 'C06050001', name: '여신·대출', description: '여신·대출을(를) 다루는 분류', display_name: '여신·대출 (:Classification)', readme: '자본시장 및 증시. 증권시장, 투자자 보호 등.', group: true});
+CREATE (:Classification {id: 'C06050002', name: '기업대출', description: '기업대출 관련 분류', display_name: '기업대출 (:Classification)', readme: '투자자 커뮤니케이션 및 시장전망. IR, 시장 전망 공유.', group: false});
+CREATE (:Classification {id: 'C06050003', name: '가계대출', description: '가계대출 관련 분류', display_name: '가계대출 (:Classification)', readme: '가계대출 관련.', group: false});
+CREATE (:Classification {id: 'C06050004', name: '주택담보대출', description: '주택담보대출 관련 분류', display_name: '주택담보대출 (:Classification)', readme: '주택담보대출 관련.', group: false});
+CREATE (:Classification {id: 'C06050005', name: '소상공인금융', description: '소상공인금융 관련 분류', display_name: '소상공인금융 (:Classification)', readme: '소상공인금융 관련.', group: false});
+CREATE (:Classification {id: 'C06060001', name: '금융지표', description: '금융지표을(를) 다루는 분류', display_name: '금융지표 (:Classification)', readme: '연금 및 노후자산. 퇴직연금, 노후소득 보장.', group: true});
+CREATE (:Classification {id: 'C06060002', name: '금리지표', description: '금리지표 관련 분류', display_name: '금리지표 (:Classification)', readme: '기금형 퇴직연금 도입. 기금형 퇴직연금 제도 및 도입 방안.', group: false});
+CREATE (:Classification {id: 'C06060003', name: '환율', description: '환율 관련 분류', display_name: '환율 (:Classification)', readme: '환율 관련.', group: false});
+CREATE (:Classification {id: 'C06060004', name: '시장지수', description: '시장지수 관련 분류', display_name: '시장지수 (:Classification)', readme: '시장지수 관련.', group: false});
+CREATE (:Classification {id: 'C06060005', name: '경제지표', description: '경제지표 관련 분류', display_name: '경제지표 (:Classification)', readme: '경제지표 관련.', group: false});
+CREATE (:Classification {id: 'C06070001', name: '핀테크·혁신금융', description: '핀테크·혁신금융을(를) 다루는 분류', display_name: '핀테크·혁신금융 (:Classification)', readme: '은행산업 경쟁 및 인가제도. 은행 인가, 감독 규제.', group: true});
+CREATE (:Classification {id: 'C06070002', name: '디지털금융', description: '디지털금융 관련 분류', display_name: '디지털금융 (:Classification)', readme: '지방은행 시중은행 전환. 영업범위 확대, 인가 변경.', group: false});
+CREATE (:Classification {id: 'C06070003', name: '빅테크금융', description: '빅테크금융 관련 분류', display_name: '빅테크금융 (:Classification)', readme: '은행 인가 심사 및 외부평가. 인가 절차, 평가위원회 운영.', group: false});
+CREATE (:Classification {id: 'C06070004', name: '오픈뱅킹', description: '오픈뱅킹 관련 분류', display_name: '오픈뱅킹 (:Classification)', readme: '오픈뱅킹 관련.', group: false});
+CREATE (:Classification {id: 'C06070005', name: '가상자산', description: '가상자산 관련 분류', display_name: '가상자산 (:Classification)', readme: '가상자산 관련.', group: false});
+CREATE (:Classification {id: 'C06080001', name: '연금·보험', description: '연금·보험을(를) 다루는 분류', display_name: '연금·보험 (:Classification)', readme: '지속가능 및 녹색금융. ESG 투자, 녹색채권 등.', group: true});
+CREATE (:Classification {id: 'C06080002', name: '공적연금', description: '공적연금 관련 분류', display_name: '공적연금 (:Classification)', readme: '녹색분류체계 및 TCFD 공시. K-Taxonomy, 기후 공시.', group: false});
+CREATE (:Classification {id: 'C06080003', name: '퇴직연금', description: '퇴직연금 관련 분류', display_name: '퇴직연금 (:Classification)', readme: '퇴직연금 관련.', group: false});
+CREATE (:Classification {id: 'C06080004', name: '보험상품', description: '보험상품 관련 분류', display_name: '보험상품 (:Classification)', readme: '보험상품 관련.', group: false});
+CREATE (:Classification {id: 'C06080005', name: '연금자산관리', description: '연금자산관리 관련 분류', display_name: '연금자산관리 (:Classification)', readme: '연금자산관리 관련.', group: false});
+CREATE (:Classification {id: 'C06090001', name: '국가재정', description: '국가재정을(를) 다루는 분류', display_name: '국가재정 (:Classification)', readme: '국가재정 관련.', group: true});
+CREATE (:Classification {id: 'C06090002', name: '국가예산', description: '국가예산 관련 분류', display_name: '국가예산 (:Classification)', readme: '국가예산 관련.', group: false});
+CREATE (:Classification {id: 'C06090003', name: '세출·세입', description: '세출·세입 관련 분류', display_name: '세출·세입 (:Classification)', readme: '세출·세입 관련.', group: false});
+CREATE (:Classification {id: 'C06090004', name: '국가결산', description: '국가결산 관련 분류', display_name: '국가결산 (:Classification)', readme: '국가결산 관련.', group: false});
+CREATE (:Classification {id: 'C06090005', name: '재정사업평가', description: '재정사업평가 관련 분류', display_name: '재정사업평가 (:Classification)', readme: '재정사업평가 관련.', group: false});
+CREATE (:Classification {id: 'C06100001', name: '지방재정', description: '지방재정을(를) 다루는 분류', display_name: '지방재정 (:Classification)', readme: '지방재정 관련.', group: true});
+CREATE (:Classification {id: 'C06100002', name: '지방예산', description: '지방예산 관련 분류', display_name: '지방예산 (:Classification)', readme: '지방예산 관련.', group: false});
+CREATE (:Classification {id: 'C06100003', name: '지방세입', description: '지방세입 관련 분류', display_name: '지방세입 (:Classification)', readme: '지방세입 관련.', group: false});
+CREATE (:Classification {id: 'C06100004', name: '재정자립도', description: '재정자립도 관련 분류', display_name: '재정자립도 (:Classification)', readme: '재정자립도 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C06000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06010001'}), (c:Classification {id: 'C06010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06010001'}), (c:Classification {id: 'C06010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06010001'}), (c:Classification {id: 'C06010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06010001'}), (c:Classification {id: 'C06010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06020001'}), (c:Classification {id: 'C06020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06020001'}), (c:Classification {id: 'C06020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06020001'}), (c:Classification {id: 'C06020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06020001'}), (c:Classification {id: 'C06020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06030001'}), (c:Classification {id: 'C06030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06030001'}), (c:Classification {id: 'C06030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06030001'}), (c:Classification {id: 'C06030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06030001'}), (c:Classification {id: 'C06030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06030001'}), (c:Classification {id: 'C06030006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06040001'}), (c:Classification {id: 'C06040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06040001'}), (c:Classification {id: 'C06040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06040001'}), (c:Classification {id: 'C06040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06040001'}), (c:Classification {id: 'C06040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06040001'}), (c:Classification {id: 'C06040006'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06050001'}), (c:Classification {id: 'C06050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06050001'}), (c:Classification {id: 'C06050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06050001'}), (c:Classification {id: 'C06050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06050001'}), (c:Classification {id: 'C06050005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06060001'}), (c:Classification {id: 'C06060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06060001'}), (c:Classification {id: 'C06060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06060001'}), (c:Classification {id: 'C06060004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06060001'}), (c:Classification {id: 'C06060005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06070001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06070001'}), (c:Classification {id: 'C06070002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06070001'}), (c:Classification {id: 'C06070003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06070001'}), (c:Classification {id: 'C06070004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06070001'}), (c:Classification {id: 'C06070005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06080001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06080001'}), (c:Classification {id: 'C06080002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06080001'}), (c:Classification {id: 'C06080003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06080001'}), (c:Classification {id: 'C06080004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06080001'}), (c:Classification {id: 'C06080005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06090001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06090001'}), (c:Classification {id: 'C06090002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06090001'}), (c:Classification {id: 'C06090003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06090001'}), (c:Classification {id: 'C06090004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06090001'}), (c:Classification {id: 'C06090005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06000001'}), (c:Classification {id: 'C06100001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06100001'}), (c:Classification {id: 'C06100002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06100001'}), (c:Classification {id: 'C06100003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C06100001'}), (c:Classification {id: 'C06100004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T06010001', name_ko: '국가예산', name_en: 'National Budget', acronym: 'None', description: '중앙은행이 금융기관과 거래할 때 적용하는 정책금리. 한국은행 금융통화위원회에서 결정하며 시중금리의 기준이 됨.', display_name: '국가예산 (:Term)'});
+CREATE (:Term {id: 'T06010002', name_ko: '분야별 예산', name_en: 'Budget by Sector', acronym: 'None', description: '중앙은행이 금융기관에 유동성을 지원하여 금융중개 기능을 활성화하는 대출제도. 대출 한도 및 금리는 한국은행이 결정.', display_name: '분야별 예산 (:Term)'});
+CREATE (:Term {id: 'T06010003', name_ko: '부처별 예산', name_en: 'Budget by Ministry', acronym: 'None', description: '중앙은행이 유가증권(국채, 통안증권 등)을 매매하여 시중 통화량을 조절하는 정책 수단. 금융기관의 유동성을 직접 관리.', display_name: '부처별 예산 (:Term)'});
+CREATE (:Term {id: 'T06010004', name_ko: '세출예산', name_en: 'Expenditure Budget', acronym: 'None', description: '높았던 물가 상승률이 목표 범위(한국은행 2%)로 돌아와 안정화되는 시기. 통화정책의 정상화를 의미.', display_name: '세출예산 (:Term)'});
+CREATE (:Term {id: 'T06010005', name_ko: '세입예산', name_en: 'Revenue Budget', acronym: 'None', description: '식료품·에너지 등 변동성이 큰 품목을 제외한 물가지수. 기조적 물가 흐름 파악에 활용.', display_name: '세입예산 (:Term)'});
+CREATE (:Term {id: 'T06020001', name_ko: '재정통계', name_en: 'Fiscal Statistics', acronym: 'None', description: '부동산 개발사업에 필요한 자금을 금융기관이 대출해주는 금융 상품. 사업성 평가 기반 대출로 담보 가치 변동 리스크 존재.', display_name: '재정통계 (:Term)'});
+CREATE (:Term {id: 'T06020002', name_ko: '재정상태표', name_en: 'Statement of Financial Position', acronym: 'None', description: '금융시스템의 안정성 유지와 시스템 리스크 관리. 금융기관 건전성, 시장 안정성, 금융 인프라 안정성 포함.', display_name: '재정상태표 (:Term)'});
+CREATE (:Term {id: 'T06020003', name_ko: '국가결산', name_en: 'National Settlement', acronym: 'None', description: '회계연도가 종료된 후 세입·세출 결산을 확정하는 과정. 국가결산보고서 발간.', display_name: '국가결산 (:Term)'});
+CREATE (:Term {id: 'T06030001', name_ko: '지방재정', name_en: 'Local Finance', acronym: 'None', description: '대기업과 중소기업, 금융기관과 서민이 함께 성장하는 금융 생태계. 동반성장, 상생협력의 금융 실천.', display_name: '지방재정 (:Term)'});
+CREATE (:Term {id: 'T06030002', name_ko: '지방교부세', name_en: 'Local Allocation Tax', acronym: 'None', description: '금융 소외계층도 적절한 금융서비스를 이용할 수 있도록 하는 정책. 저신용자, 저소득층, 금융취약계층 지원.', display_name: '지방교부세 (:Term)'});
+CREATE (:Term {id: 'T06030003', name_ko: '재정자립도', name_en: 'Fiscal Independence Ratio', acronym: 'None', description: '소상공인의 금리 부담을 경감하기 위한 3가지 정책 패키지. 금리 인하, 상환 유예, 대환 지원 등.', display_name: '재정자립도 (:Term)'});
+CREATE (:Term {id: 'T06040001', name_ko: '국세', name_en: 'National Tax', acronym: 'None', description: '금융(Finance)과 기술(Technology)의 결합으로 혁신적인 금융서비스를 제공하는 산업. 모바일 결제, 인터넷전문은행, 로보어드바이저 등.', display_name: '국세 (:Term)'});
+CREATE (:Term {id: 'T06040002', name_ko: '지방세', name_en: 'Local Tax', acronym: 'None', description: '핀테크 기업의 성장을 지원하기 위한 정부 및 민간의 투자 펀드. 초기 기업 투자, 기술 개발 지원.', display_name: '지방세 (:Term)'});
+CREATE (:Term {id: 'T06040003', name_ko: '금융소득', name_en: 'Financial Income', acronym: 'None', description: '핀테크 혁신펀드의 첫 번째 펀드.', display_name: '금융소득 (:Term)'});
+CREATE (:Term {id: 'T06050001', name_ko: '기금', name_en: 'Fund', acronym: 'None', description: '근로자가 퇴직 후 생활안정을 위해 적립하는 연금. 확정급여형(DB)과 확정기여형(DC)으로 구분.', display_name: '기금 (:Term)'});
+CREATE (:Term {id: 'T06050002', name_ko: '기금운용', name_en: 'Fund Management', acronym: 'None', description: '퇴직연금을 여러 사용자가 공동으로 적립·운용하는 기금 형태. 중소기업 근로자의 퇴직연금 가입률 제고.', display_name: '기금운용 (:Term)'});
+CREATE (:Term {id: 'T06060001', name_ko: '통화정책', name_en: 'Monetary Policy', acronym: 'None', description: '한국과 호주 간 퇴직연금 제도를 논의하는 포럼. 양국 제도 비교, 정책 시사점 도출.', display_name: '통화정책 (:Term)'});
+CREATE (:Term {id: 'T06060002', name_ko: '기준금리', name_en: 'Base Rate', acronym: 'None', description: '호주의 의무적 퇴직연금 제도. 사용자가 근로자 임금의 일정 비율을 연금 계좌에 적립.', display_name: '기준금리 (:Term)'});
+CREATE (:Term {id: 'T06060003', name_ko: '금융안정', name_en: 'Financial Stability', acronym: 'None', description: '호주 산업 슈퍼펀드(AIST)의 대표 거버넌스 모델. 사용자·근로자 동등 대표.', display_name: '금융안정 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T06040002'}), (t:Term {id: 'T06040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T06060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T06060001'}), (t:Term {id: 'T06060002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T06060002'}), (t:Term {id: 'T06060003'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T06010001'}), (c:Classification {id: 'C06010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06010002'}), (c:Classification {id: 'C06010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06010003'}), (c:Classification {id: 'C06010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06010004'}), (c:Classification {id: 'C06010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06010005'}), (c:Classification {id: 'C06010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06020001'}), (c:Classification {id: 'C06020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06020002'}), (c:Classification {id: 'C06020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06020003'}), (c:Classification {id: 'C06020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06030001'}), (c:Classification {id: 'C06030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06030002'}), (c:Classification {id: 'C06030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06030003'}), (c:Classification {id: 'C06030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06040001'}), (c:Classification {id: 'C06040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06040002'}), (c:Classification {id: 'C06040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06040003'}), (c:Classification {id: 'C06040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06050001'}), (c:Classification {id: 'C06050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06050002'}), (c:Classification {id: 'C06050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06060001'}), (c:Classification {id: 'C06060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06060002'}), (c:Classification {id: 'C06060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T06060003'}), (c:Classification {id: 'C06060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T06010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '정책금리', display_name: '정책금리 (:Synonym)'});
+MATCH (t:Term {id: 'T06010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Base Rate', display_name: 'Base Rate (:Synonym)'});
+MATCH (t:Term {id: 'T06010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기준금리', display_name: '기준금리 (:Synonym)'});
+MATCH (t:Term {id: 'T06010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'OMO', display_name: 'OMO (:Synonym)'});
+MATCH (t:Term {id: 'T06010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공개시장조작', display_name: '공개시장조작 (:Synonym)'});
+MATCH (t:Term {id: 'T06020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'PF', display_name: 'PF (:Synonym)'});
+MATCH (t:Term {id: 'T06020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '프로젝트파이낸싱', display_name: '프로젝트파이낸싱 (:Synonym)'});
+MATCH (t:Term {id: 'T06020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Project Financing', display_name: 'Project Financing (:Synonym)'});
+MATCH (t:Term {id: 'T06020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '국가결산', display_name: '국가결산 (:Synonym)'});
+MATCH (t:Term {id: 'T06020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '세입세출결산', display_name: '세입세출결산 (:Synonym)'});
+MATCH (t:Term {id: 'T06040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '금융기술', display_name: '금융기술 (:Synonym)'});
+MATCH (t:Term {id: 'T06040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Fintech', display_name: 'Fintech (:Synonym)'});
+MATCH (t:Term {id: 'T06050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'DC', display_name: 'DC (:Synonym)'});
+MATCH (t:Term {id: 'T06050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'DB', display_name: 'DB (:Synonym)'});
+MATCH (t:Term {id: 'T06050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기업연금', display_name: '기업연금 (:Synonym)'});
+MATCH (t:Term {id: 'T06050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '퇴직연금', display_name: '퇴직연금 (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010005'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06010003'}), (t2:Term {id: 'T06010007'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06010003'}), (t2:Term {id: 'T06010008'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06020001'}), (t2:Term {id: 'T06020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06030001'}), (t2:Term {id: 'T06030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06030001'}), (t2:Term {id: 'T06030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06030001'}), (t2:Term {id: 'T06030004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06040001'}), (t2:Term {id: 'T06040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06050001'}), (t2:Term {id: 'T06050002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06050001'}), (t2:Term {id: 'T04020001'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T06060001'}), (t2:Term {id: 'T06060002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 산업경제 (Industry & Economy)
+
+// Classifications
+CREATE (:Classification {id: 'C07000001', name: '산업경제', description: '산업경제 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '산업경제 (:Classification)', readme: '산업경제 관련.', group: true});
+CREATE (:Classification {id: 'C07010001', name: '산업통계', description: '산업통계을(를) 다루는 분류', display_name: '산업통계 (:Classification)', readme: '산업통계 관련.', group: true});
+CREATE (:Classification {id: 'C07010002', name: '산업생산', description: '산업생산 관련 분류', display_name: '산업생산 (:Classification)', readme: '산업생산 관련.', group: false});
+CREATE (:Classification {id: 'C07010003', name: '산업동향', description: '산업동향 관련 분류', display_name: '산업동향 (:Classification)', readme: '산업동향 관련.', group: false});
+CREATE (:Classification {id: 'C07010004', name: '기업통계', description: '기업통계 관련 분류', display_name: '기업통계 (:Classification)', readme: '기업통계 관련.', group: false});
+CREATE (:Classification {id: 'C07010005', name: '산업구조', description: '산업구조 관련 분류', display_name: '산업구조 (:Classification)', readme: '산업구조 관련.', group: false});
+CREATE (:Classification {id: 'C07020001', name: '제조업', description: '제조업을(를) 다루는 분류', display_name: '제조업 (:Classification)', readme: '제조업 관련.', group: true});
+CREATE (:Classification {id: 'C07020002', name: '반도체·전자', description: '반도체·전자 관련 분류', display_name: '반도체·전자 (:Classification)', readme: '반도체·전자 관련.', group: false});
+CREATE (:Classification {id: 'C07020003', name: '자동차·조선', description: '자동차·조선 관련 분류', display_name: '자동차·조선 (:Classification)', readme: '자동차·조선 관련.', group: false});
+CREATE (:Classification {id: 'C07020004', name: '석유화학', description: '석유화학 관련 분류', display_name: '석유화학 (:Classification)', readme: '석유화학 관련.', group: false});
+CREATE (:Classification {id: 'C07020005', name: '바이오·헬스', description: '바이오·헬스 관련 분류', display_name: '바이오·헬스 (:Classification)', readme: '바이오·헬스 관련.', group: false});
+CREATE (:Classification {id: 'C07030001', name: '서비스업', description: '서비스업을(를) 다루는 분류', display_name: '서비스업 (:Classification)', readme: '서비스업 관련.', group: true});
+CREATE (:Classification {id: 'C07030002', name: '유통·도소매', description: '유통·도소매 관련 분류', display_name: '유통·도소매 (:Classification)', readme: '유통·도소매 관련.', group: false});
+CREATE (:Classification {id: 'C07030003', name: '금융·보험', description: '금융·보험 관련 분류', display_name: '금융·보험 (:Classification)', readme: '금융·보험 관련.', group: false});
+CREATE (:Classification {id: 'C07030004', name: '전문서비스', description: '전문서비스 관련 분류', display_name: '전문서비스 (:Classification)', readme: '전문서비스 관련.', group: false});
+CREATE (:Classification {id: 'C07030005', name: '숙박·음식', description: '숙박·음식 관련 분류', display_name: '숙박·음식 (:Classification)', readme: '숙박·음식 관련.', group: false});
+CREATE (:Classification {id: 'C07040001', name: '고용·노동', description: '고용·노동을(를) 다루는 분류', display_name: '고용·노동 (:Classification)', readme: '고용·노동 관련.', group: true});
+CREATE (:Classification {id: 'C07040002', name: '일자리 정보', description: '일자리 정보 관련 분류', display_name: '일자리 정보 (:Classification)', readme: '일자리 정보 관련.', group: false});
+CREATE (:Classification {id: 'C07040003', name: '고용통계', description: '고용통계 관련 분류', display_name: '고용통계 (:Classification)', readme: '고용통계 관련.', group: false});
+CREATE (:Classification {id: 'C07040004', name: '노동시장', description: '노동시장 관련 분류', display_name: '노동시장 (:Classification)', readme: '노동시장 관련.', group: false});
+CREATE (:Classification {id: 'C07040005', name: '근로조건', description: '근로조건 관련 분류', display_name: '근로조건 (:Classification)', readme: '근로조건 관련.', group: false});
+CREATE (:Classification {id: 'C07050001', name: '창업·벤처', description: '창업·벤처을(를) 다루는 분류', display_name: '창업·벤처 (:Classification)', readme: '창업·벤처 관련.', group: true});
+CREATE (:Classification {id: 'C07050002', name: '스타트업', description: '스타트업 관련 분류', display_name: '스타트업 (:Classification)', readme: '스타트업 관련.', group: false});
+CREATE (:Classification {id: 'C07050003', name: '벤처투자', description: '벤처투자 관련 분류', display_name: '벤처투자 (:Classification)', readme: '벤처투자 관련.', group: false});
+CREATE (:Classification {id: 'C07050004', name: '창업지원', description: '창업지원 관련 분류', display_name: '창업지원 (:Classification)', readme: '창업지원 관련.', group: false});
+CREATE (:Classification {id: 'C07050005', name: '벤처생태계', description: '벤처생태계 관련 분류', display_name: '벤처생태계 (:Classification)', readme: '벤처생태계 관련.', group: false});
+CREATE (:Classification {id: 'C07060001', name: '중소기업', description: '중소기업을(를) 다루는 분류', display_name: '중소기업 (:Classification)', readme: '중소기업 관련.', group: true});
+CREATE (:Classification {id: 'C07060002', name: '중소기업 현황', description: '중소기업 현황 관련 분류', display_name: '중소기업 현황 (:Classification)', readme: '중소기업 현황 관련.', group: false});
+CREATE (:Classification {id: 'C07060003', name: '소상공인', description: '소상공인 관련 분류', display_name: '소상공인 (:Classification)', readme: '소상공인 관련.', group: false});
+CREATE (:Classification {id: 'C07060004', name: '중소기업 지원', description: '중소기업 지원 관련 분류', display_name: '중소기업 지원 (:Classification)', readme: '중소기업 지원 관련.', group: false});
+CREATE (:Classification {id: 'C07070001', name: '무역·통상', description: '무역·통상을(를) 다루는 분류', display_name: '무역·통상 (:Classification)', readme: '무역·통상 관련.', group: true});
+CREATE (:Classification {id: 'C07070002', name: '수출입 통계', description: '수출입 통계 관련 분류', display_name: '수출입 통계 (:Classification)', readme: '수출입 통계 관련.', group: false});
+CREATE (:Classification {id: 'C07070003', name: 'FTA', description: 'FTA 관련 분류', display_name: 'FTA (:Classification)', readme: 'FTA 관련.', group: false});
+CREATE (:Classification {id: 'C07070004', name: '통상정책', description: '통상정책 관련 분류', display_name: '통상정책 (:Classification)', readme: '통상정책 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C07000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07010001'}), (c:Classification {id: 'C07010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07010001'}), (c:Classification {id: 'C07010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07010001'}), (c:Classification {id: 'C07010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07010001'}), (c:Classification {id: 'C07010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07020001'}), (c:Classification {id: 'C07020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07020001'}), (c:Classification {id: 'C07020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07020001'}), (c:Classification {id: 'C07020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07020001'}), (c:Classification {id: 'C07020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07030001'}), (c:Classification {id: 'C07030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07030001'}), (c:Classification {id: 'C07030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07030001'}), (c:Classification {id: 'C07030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07030001'}), (c:Classification {id: 'C07030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07040001'}), (c:Classification {id: 'C07040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07040001'}), (c:Classification {id: 'C07040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07040001'}), (c:Classification {id: 'C07040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07040001'}), (c:Classification {id: 'C07040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07050001'}), (c:Classification {id: 'C07050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07050001'}), (c:Classification {id: 'C07050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07050001'}), (c:Classification {id: 'C07050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07050001'}), (c:Classification {id: 'C07050005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07060001'}), (c:Classification {id: 'C07060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07060001'}), (c:Classification {id: 'C07060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07060001'}), (c:Classification {id: 'C07060004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07000001'}), (c:Classification {id: 'C07070001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07070001'}), (c:Classification {id: 'C07070002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07070001'}), (c:Classification {id: 'C07070003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C07070001'}), (c:Classification {id: 'C07070004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T07010001', name_ko: '산업생산지수', name_en: 'Industrial Production Index', acronym: 'None', description: '디지털 기술을 기반으로 한 경제 활동. 플랫폼 경제, 공유경제, 데이터 경제 등.', display_name: '산업생산지수 (:Term)'});
+CREATE (:Term {id: 'T07010003', name_ko: '기업통계', name_en: 'Business Statistics', acronym: 'None', description: '제조사가 유통 중간 단계를 거치지 않고 소비자에게 직접 판매하는 방식. 마진 개선, 고객 데이터 확보 가능.', display_name: '기업통계 (:Term)'});
+CREATE (:Term {id: 'T07010004', name_ko: '산업구조', name_en: 'Industrial Structure', acronym: 'None', description: '정기적으로 상품이나 서비스를 제공받고 비용을 지불하는 경제 모델. 넷플릭스, 정기배송 등.', display_name: '산업구조 (:Term)'});
+CREATE (:Term {id: 'T07020001', name_ko: '반도체산업', name_en: 'Semiconductor Industry', acronym: 'None', description: '스타트업이 성장할 수 있는 창업·투자·지원 생태계. 엑셀러레이터, VC, 정부 지원 등.', display_name: '반도체산업 (:Term)'});
+CREATE (:Term {id: 'T07010002', name_ko: '산업동향', name_en: 'Industrial Trends', acronym: 'None', description: '과학적 발견이나 공학적 혁신을 기반으로 한 첨단 기술. AI, 양자컴퓨팅, 바이오 등.', display_name: '산업동향 (:Term)'});
+CREATE (:Term {id: 'T07020002', name_ko: '자동차산업', name_en: 'Automotive Industry', acronym: 'None', description: '벤처캐피탈(VC)에 투자하는 정부 출자 펀드. 민간 VC 육성 및 벤처 투자 활성화.', display_name: '자동차산업 (:Term)'});
+CREATE (:Term {id: 'T07020003', name_ko: '바이오산업', name_en: 'Bio Industry', acronym: 'None', description: '기업 간(B2B) 디지털 커머스 거래. 원자재, 부품, 서비스 등의 기업 간 온라인 거래.', display_name: '바이오산업 (:Term)'});
+CREATE (:Term {id: 'T07030001', name_ko: '서비스업', name_en: 'Service Industry', acronym: 'None', description: '새로운 형태의 럭셔리 소비 트렌드. 경험, 가치, 지속가능성 중시.', display_name: '서비스업 (:Term)'});
+CREATE (:Term {id: 'T07030002', name_ko: '유통업', name_en: 'Distribution Industry', acronym: 'None', description: '상품을 최종 목적지(소비자)까지 배송하는 마지막 단계. 배송비 절감 및 배송 속도가 경쟁력 핵심.', display_name: '유통업 (:Term)'});
+CREATE (:Term {id: 'T07040001', name_ko: '고용통계', name_en: 'Employment Statistics', acronym: 'None', description: '커머스 운영을 위한 클라우드 기반 소프트웨어 서비스. Shopify, Cafe24 등.', display_name: '고용통계 (:Term)'});
+CREATE (:Term {id: 'T07040002', name_ko: '일자리', name_en: 'Job', acronym: 'None', description: '마케팅 업무를 자동화하는 소프트웨어. 이메일 캠페인, 고객 세분화, 성과 분석 등.', display_name: '일자리 (:Term)'});
+CREATE (:Term {id: 'T07040003', name_ko: '실업률', name_en: 'Unemployment Rate', acronym: 'None', description: '고객 리뷰를 관리하는 솔루션. 리뷰 수집, 분석, 마케팅 활용.', display_name: '실업률 (:Term)'});
+CREATE (:Term {id: 'T07040004', name_ko: '노동시장', name_en: 'Labor Market', acronym: 'None', description: '가격과 혜택을 중시하며 여러 플랫폼을 비교하는 소비자. 할인, 쿠폰, 적립금 등에 민감.', display_name: '노동시장 (:Term)'});
+CREATE (:Term {id: 'T07040005', name_ko: '최저임금', name_en: 'Minimum Wage', acronym: 'None', description: '소비자가 상품·서비스로부터 얻는 경제적·심리적 만족도. 가격 대비 효용.', display_name: '최저임금 (:Term)'});
+CREATE (:Term {id: 'T07050001', name_ko: '창업', name_en: 'Startup', acronym: 'None', description: '디지털 기술을 기반으로 한 경제 활동 전반. 전자상거래, 플랫폼 비즈니스, 디지털 콘텐츠 산업 등.', display_name: '창업 (:Term)'});
+CREATE (:Term {id: 'T07050002', name_ko: '벤처투자', name_en: 'Venture Investment', acronym: 'None', description: '플랫폼을 매개로 공급자와 수요자를 연결하는 경제 모델. 배달앱, 중개 플랫폼, 공유경제 등.', display_name: '벤처투자 (:Term)'});
+CREATE (:Term {id: 'T07050003', name_ko: '스타트업', name_en: 'Startup Company', acronym: 'None', description: '스타트업 (Startup Company)', display_name: '스타트업 (:Term)'});
+CREATE (:Term {id: 'T07050004', name_ko: '액셀러레이터', name_en: 'Accelerator', acronym: 'None', description: '액셀러레이터 (Accelerator)', display_name: '액셀러레이터 (:Term)'});
+CREATE (:Term {id: 'T07060001', name_ko: '중소기업', name_en: 'SME', acronym: 'None', description: '이커머스 운영에 필요한 기술 솔루션. 결제, 배송, 재고관리, 고객관리 등.', display_name: '중소기업 (:Term)'});
+CREATE (:Term {id: 'T07060002', name_ko: '소상공인', name_en: 'Small Business Owner', acronym: 'None', description: '주문부터 배송까지 물류 전 과정을 처리하는 서비스. 입고, 보관, 포장, 배송 대행.', display_name: '소상공인 (:Term)'});
+CREATE (:Term {id: 'T07070001', name_ko: '수출입', name_en: 'Import and Export', acronym: 'None', description: '수출입 (Import and Export)', display_name: '수출입 (:Term)'});
+CREATE (:Term {id: 'T07070002', name_ko: 'FTA', name_en: 'Free Trade Agreement', acronym: 'None', description: 'FTA (Free Trade Agreement)', display_name: 'FTA (:Term)'});
+CREATE (:Term {id: 'T07070003', name_ko: '무역수지', name_en: 'Trade Balance', acronym: 'None', description: '무역수지 (Trade Balance)', display_name: '무역수지 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T07010001'}), (t:Term {id: 'T07010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T07010001'}), (t:Term {id: 'T07010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T07010001'}), (t:Term {id: 'T07020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07040004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07040005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T07050001'}), (t:Term {id: 'T07050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07050003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07050004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T07060001'}), (t:Term {id: 'T07060002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07070001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07070002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T07070003'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T07010001'}), (c:Classification {id: 'C07010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07010003'}), (c:Classification {id: 'C07010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07010004'}), (c:Classification {id: 'C07010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07020001'}), (c:Classification {id: 'C07020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07010002'}), (c:Classification {id: 'C07010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07020002'}), (c:Classification {id: 'C07020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07020003'}), (c:Classification {id: 'C07020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07030001'}), (c:Classification {id: 'C07030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07030002'}), (c:Classification {id: 'C07030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07040001'}), (c:Classification {id: 'C07040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07040002'}), (c:Classification {id: 'C07040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07040003'}), (c:Classification {id: 'C07040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07040004'}), (c:Classification {id: 'C07040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07040005'}), (c:Classification {id: 'C07040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07050001'}), (c:Classification {id: 'C07050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07050002'}), (c:Classification {id: 'C07050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07050003'}), (c:Classification {id: 'C07050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07050004'}), (c:Classification {id: 'C07050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07060001'}), (c:Classification {id: 'C07060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07060002'}), (c:Classification {id: 'C07060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07070001'}), (c:Classification {id: 'C07070001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07070002'}), (c:Classification {id: 'C07070001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T07070003'}), (c:Classification {id: 'C07070001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T07010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Digital Economy', display_name: 'Digital Economy (:Synonym)'});
+MATCH (t:Term {id: 'T07010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '데이터경제', display_name: '데이터경제 (:Synonym)'});
+MATCH (t:Term {id: 'T07010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'D2C', display_name: 'D2C (:Synonym)'});
+MATCH (t:Term {id: 'T07010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '직접판매', display_name: '직접판매 (:Synonym)'});
+MATCH (t:Term {id: 'T07010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '직거래', display_name: '직거래 (:Synonym)'});
+MATCH (t:Term {id: 'T07010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Subscription Model', display_name: 'Subscription Model (:Synonym)'});
+MATCH (t:Term {id: 'T07010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '구독모델', display_name: '구독모델 (:Synonym)'});
+MATCH (t:Term {id: 'T07020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '실시간커머스', display_name: '실시간커머스 (:Synonym)'});
+MATCH (t:Term {id: 'T07020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '라방', display_name: '라방 (:Synonym)'});
+MATCH (t:Term {id: 'T07020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Live Shopping', display_name: 'Live Shopping (:Synonym)'});
+MATCH (t:Term {id: 'T07010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Deep Technology', display_name: 'Deep Technology (:Synonym)'});
+MATCH (t:Term {id: 'T07010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '심층기술', display_name: '심층기술 (:Synonym)'});
+MATCH (t:Term {id: 'T07030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '최종구간배송', display_name: '최종구간배송 (:Synonym)'});
+MATCH (t:Term {id: 'T07030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '문전배송', display_name: '문전배송 (:Synonym)'});
+MATCH (t:Term {id: 'T07030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Last Mile', display_name: 'Last Mile (:Synonym)'});
+MATCH (t:Term {id: 'T07040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '상거래SaaS', display_name: '상거래SaaS (:Synonym)'});
+MATCH (t:Term {id: 'T07040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '쇼핑몰솔루션', display_name: '쇼핑몰솔루션 (:Synonym)'});
+MATCH (t:Term {id: 'T07040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'E-commerce Platform', display_name: 'E-commerce Platform (:Synonym)'});
+MATCH (t:Term {id: 'T07050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '디지털경제', display_name: '디지털경제 (:Synonym)'});
+MATCH (t:Term {id: 'T07050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Digital Economy', display_name: 'Digital Economy (:Synonym)'});
+MATCH (t:Term {id: 'T07050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '플랫폼경제', display_name: '플랫폼경제 (:Synonym)'});
+MATCH (t:Term {id: 'T07050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Platform Economy', display_name: 'Platform Economy (:Synonym)'});
+MATCH (t:Term {id: 'T07060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '이커머스기술', display_name: '이커머스기술 (:Synonym)'});
+MATCH (t:Term {id: 'T07060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'E-commerce Tech', display_name: 'E-commerce Tech (:Synonym)'});
+MATCH (t:Term {id: 'T07060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '풀필먼트', display_name: '풀필먼트 (:Synonym)'});
+MATCH (t:Term {id: 'T07060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Fulfillment', display_name: 'Fulfillment (:Synonym)'});
+MATCH (t:Term {id: 'T07060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '물류대행', display_name: '물류대행 (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07020001'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07010004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07020001'}), (t2:Term {id: 'T07030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07020001'}), (t2:Term {id: 'T07030004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07030002'}), (t2:Term {id: 'T07060002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07040001'}), (t2:Term {id: 'T07040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07040001'}), (t2:Term {id: 'T07040003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07050001'}), (t2:Term {id: 'T07050002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T07060001'}), (t2:Term {id: 'T07060002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 디지털커머스 (Digital Commerce)
+
+// Classifications
+CREATE (:Classification {id: 'C08000001', name: '디지털커머스', description: '디지털커머스 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '디지털커머스 (:Classification)', readme: '디지털커머스 관련.', group: true});
+CREATE (:Classification {id: 'C08010001', name: '이커머스 플랫폼', description: '이커머스 플랫폼을(를) 다루는 분류', display_name: '이커머스 플랫폼 (:Classification)', readme: '이커머스 플랫폼 관련.', group: true});
+CREATE (:Classification {id: 'C08010002', name: '온라인쇼핑몰', description: '온라인쇼핑몰 관련 분류', display_name: '온라인쇼핑몰 (:Classification)', readme: '온라인쇼핑몰 관련.', group: false});
+CREATE (:Classification {id: 'C08010003', name: '오픈마켓', description: '오픈마켓 관련 분류', display_name: '오픈마켓 (:Classification)', readme: '오픈마켓 관련.', group: false});
+CREATE (:Classification {id: 'C08010004', name: '소셜커머스', description: '소셜커머스 관련 분류', display_name: '소셜커머스 (:Classification)', readme: '소셜커머스 관련.', group: false});
+CREATE (:Classification {id: 'C08010005', name: '버티컬커머스', description: '버티컬커머스 관련 분류', display_name: '버티컬커머스 (:Classification)', readme: '버티컬커머스 관련.', group: false});
+CREATE (:Classification {id: 'C08020001', name: '온라인 유통', description: '온라인 유통을(를) 다루는 분류', display_name: '온라인 유통 (:Classification)', readme: '온라인 유통 관련.', group: true});
+CREATE (:Classification {id: 'C08020002', name: '온라인 도매', description: '온라인 도매 관련 분류', display_name: '온라인 도매 (:Classification)', readme: '온라인 도매 관련.', group: false});
+CREATE (:Classification {id: 'C08020003', name: 'D2C 직접판매', description: 'D2C 직접판매 관련 분류', display_name: 'D2C 직접판매 (:Classification)', readme: 'D2C 직접판매 관련.', group: false});
+CREATE (:Classification {id: 'C08020004', name: '크로스보더 커머스', description: '크로스보더 커머스 관련 분류', display_name: '크로스보더 커머스 (:Classification)', readme: '크로스보더 커머스 관련.', group: false});
+CREATE (:Classification {id: 'C08030001', name: '디지털 결제', description: '디지털 결제을(를) 다루는 분류', display_name: '디지털 결제 (:Classification)', readme: '디지털 결제 관련.', group: true});
+CREATE (:Classification {id: 'C08030002', name: '간편결제', description: '간편결제 관련 분류', display_name: '간편결제 (:Classification)', readme: '간편결제 관련.', group: false});
+CREATE (:Classification {id: 'C08030003', name: 'BNPL 후불결제', description: 'BNPL 후불결제 관련 분류', display_name: 'BNPL 후불결제 (:Classification)', readme: 'BNPL 후불결제 관련.', group: false});
+CREATE (:Classification {id: 'C08030004', name: '결제 인프라', description: '결제 인프라 관련 분류', display_name: '결제 인프라 (:Classification)', readme: '결제 인프라 관련.', group: false});
+CREATE (:Classification {id: 'C08040001', name: '물류·풀필먼트', description: '물류·풀필먼트을(를) 다루는 분류', display_name: '물류·풀필먼트 (:Classification)', readme: '물류·풀필먼트 관련.', group: true});
+CREATE (:Classification {id: 'C08040002', name: '라스트마일 배송', description: '라스트마일 배송 관련 분류', display_name: '라스트마일 배송 (:Classification)', readme: '라스트마일 배송 관련.', group: false});
+CREATE (:Classification {id: 'C08040003', name: '풀필먼트 센터', description: '풀필먼트 센터 관련 분류', display_name: '풀필먼트 센터 (:Classification)', readme: '풀필먼트 센터 관련.', group: false});
+CREATE (:Classification {id: 'C08040004', name: '반품·역물류', description: '반품·역물류 관련 분류', display_name: '반품·역물류 (:Classification)', readme: '반품·역물류 관련.', group: false});
+CREATE (:Classification {id: 'C08050001', name: '소비자 트렌드', description: '소비자 트렌드을(를) 다루는 분류', display_name: '소비자 트렌드 (:Classification)', readme: '소비자 트렌드 관련.', group: true});
+CREATE (:Classification {id: 'C08050002', name: '소비패턴 분석', description: '소비패턴 분석 관련 분류', display_name: '소비패턴 분석 (:Classification)', readme: '소비패턴 분석 관련.', group: false});
+CREATE (:Classification {id: 'C08050003', name: '라이브커머스', description: '라이브커머스 관련 분류', display_name: '라이브커머스 (:Classification)', readme: '라이브커머스 관련.', group: false});
+CREATE (:Classification {id: 'C08050004', name: '구독경제', description: '구독경제 관련 분류', display_name: '구독경제 (:Classification)', readme: '구독경제 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C08000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08000001'}), (c:Classification {id: 'C08010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08010001'}), (c:Classification {id: 'C08010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08010001'}), (c:Classification {id: 'C08010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08010001'}), (c:Classification {id: 'C08010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08010001'}), (c:Classification {id: 'C08010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08000001'}), (c:Classification {id: 'C08020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08020001'}), (c:Classification {id: 'C08020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08020001'}), (c:Classification {id: 'C08020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08020001'}), (c:Classification {id: 'C08020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08000001'}), (c:Classification {id: 'C08030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08030001'}), (c:Classification {id: 'C08030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08030001'}), (c:Classification {id: 'C08030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08030001'}), (c:Classification {id: 'C08030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08000001'}), (c:Classification {id: 'C08040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08040001'}), (c:Classification {id: 'C08040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08040001'}), (c:Classification {id: 'C08040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08040001'}), (c:Classification {id: 'C08040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08000001'}), (c:Classification {id: 'C08050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08050001'}), (c:Classification {id: 'C08050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08050001'}), (c:Classification {id: 'C08050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C08050001'}), (c:Classification {id: 'C08050004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T08010001', name_ko: '이커머스 플랫폼', name_en: 'E-commerce Platform', acronym: 'None', description: '재난의 예방·대비·대응·복구를 체계적으로 관리하는 활동. 국가재난관리체계, 재난관리책임기관 등.', display_name: '이커머스 플랫폼 (:Term)'});
+CREATE (:Term {id: 'T08010002', name_ko: '온라인쇼핑몰', name_en: 'Online Shopping Mall', acronym: 'None', description: '재난 발생을 사전에 방지하기 위한 활동. 위험요인 제거, 시설물 정기점검, 안전교육 등.', display_name: '온라인쇼핑몰 (:Term)'});
+CREATE (:Term {id: 'T08010003', name_ko: '오픈마켓', name_en: 'Open Market', acronym: 'None', description: '재난 발생 시 피해를 최소화하기 위한 긴급 대응 활동. 구조·구급, 긴급복구, 대피 등.', display_name: '오픈마켓 (:Term)'});
+CREATE (:Term {id: 'T08020001', name_ko: 'D2C', name_en: 'Direct to Consumer', acronym: 'None', description: '생활·시설·교통 등 분야의 안전 위험을 관리하는 활동. 안전점검, 위험평가, 개선조치 등.', display_name: 'D2C (:Term)'});
+CREATE (:Term {id: 'T08020002', name_ko: '크로스보더', name_en: 'Cross-border Commerce', acronym: 'None', description: '건축물, 교량, 터널 등 시설물의 안전을 점검·관리하는 활동. 정기안전점검, 정밀안전진단.', display_name: '크로스보더 (:Term)'});
+CREATE (:Term {id: 'T08030001', name_ko: '간편결제', name_en: 'Simple Payment', acronym: 'None', description: '전시·사변 등 국가 비상사태에 대비하는 활동. 민방위 훈련, 비상대피, 물자 비축 등.', display_name: '간편결제 (:Term)'});
+CREATE (:Term {id: 'T08030002', name_ko: 'BNPL', name_en: 'Buy Now Pay Later', acronym: 'None', description: 'BNPL (Buy Now Pay Later)', display_name: 'BNPL (:Term)'});
+CREATE (:Term {id: 'T08040001', name_ko: '풀필먼트', name_en: 'Fulfillment', acronym: 'None', description: '풀필먼트 (Fulfillment)', display_name: '풀필먼트 (:Term)'});
+CREATE (:Term {id: 'T08040002', name_ko: '라스트마일', name_en: 'Last Mile Delivery', acronym: 'None', description: '라스트마일 (Last Mile Delivery)', display_name: '라스트마일 (:Term)'});
+CREATE (:Term {id: 'T08050001', name_ko: '라이브커머스', name_en: 'Live Commerce', acronym: 'None', description: '라이브커머스 (Live Commerce)', display_name: '라이브커머스 (:Term)'});
+CREATE (:Term {id: 'T08050002', name_ko: '구독경제', name_en: 'Subscription Economy', acronym: 'None', description: '구독경제 (Subscription Economy)', display_name: '구독경제 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T08010001'}), (t:Term {id: 'T08010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T08010001'}), (t:Term {id: 'T08010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T08020001'}), (t:Term {id: 'T08020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T08050002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T08010001'}), (c:Classification {id: 'C08010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08010002'}), (c:Classification {id: 'C08010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08010003'}), (c:Classification {id: 'C08010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08020001'}), (c:Classification {id: 'C08020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08020002'}), (c:Classification {id: 'C08020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08030001'}), (c:Classification {id: 'C08030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08030002'}), (c:Classification {id: 'C08030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08040001'}), (c:Classification {id: 'C08040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08040002'}), (c:Classification {id: 'C08040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08050001'}), (c:Classification {id: 'C08050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T08050002'}), (c:Classification {id: 'C08050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T08010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난관리', display_name: '재난관리 (:Synonym)'});
+MATCH (t:Term {id: 'T08010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Disaster Management', display_name: 'Disaster Management (:Synonym)'});
+MATCH (t:Term {id: 'T08010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난대응체계', display_name: '재난대응체계 (:Synonym)'});
+MATCH (t:Term {id: 'T08010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난예방', display_name: '재난예방 (:Synonym)'});
+MATCH (t:Term {id: 'T08010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Prevention', display_name: 'Prevention (:Synonym)'});
+MATCH (t:Term {id: 'T08010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '사전예방', display_name: '사전예방 (:Synonym)'});
+MATCH (t:Term {id: 'T08010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난대응', display_name: '재난대응 (:Synonym)'});
+MATCH (t:Term {id: 'T08010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Emergency Response', display_name: 'Emergency Response (:Synonym)'});
+MATCH (t:Term {id: 'T08010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '긴급대응', display_name: '긴급대응 (:Synonym)'});
+MATCH (t:Term {id: 'T08020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '안전관리', display_name: '안전관리 (:Synonym)'});
+MATCH (t:Term {id: 'T08020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Safety Management', display_name: 'Safety Management (:Synonym)'});
+MATCH (t:Term {id: 'T08020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '시설안전', display_name: '시설안전 (:Synonym)'});
+MATCH (t:Term {id: 'T08020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Facility Safety', display_name: 'Facility Safety (:Synonym)'});
+MATCH (t:Term {id: 'T08020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '시설물점검', display_name: '시설물점검 (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T08010001'}), (t2:Term {id: 'T08010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T08010001'}), (t2:Term {id: 'T08010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T08020001'}), (t2:Term {id: 'T08020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 문화관광 (Culture & Tourism)
+
+// Classifications
+CREATE (:Classification {id: 'C09000001', name: '문화관광', description: '문화관광 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '문화관광 (:Classification)', readme: '문화관광 관련.', group: true});
+CREATE (:Classification {id: 'C09010001', name: '문화재', description: '문화재을(를) 다루는 분류', display_name: '문화재 (:Classification)', readme: '문화재 관련.', group: true});
+CREATE (:Classification {id: 'C09010002', name: '유형문화재', description: '유형문화재 관련 분류', display_name: '유형문화재 (:Classification)', readme: '유형문화재 관련.', group: false});
+CREATE (:Classification {id: 'C09010003', name: '무형문화재', description: '무형문화재 관련 분류', display_name: '무형문화재 (:Classification)', readme: '무형문화재 관련.', group: false});
+CREATE (:Classification {id: 'C09010004', name: '문화재 관리', description: '문화재 관리 관련 분류', display_name: '문화재 관리 (:Classification)', readme: '문화재 관리 관련.', group: false});
+CREATE (:Classification {id: 'C09010005', name: '세계유산', description: '세계유산 관련 분류', display_name: '세계유산 (:Classification)', readme: '세계유산 관련.', group: false});
+CREATE (:Classification {id: 'C09020001', name: '관광', description: '관광을(를) 다루는 분류', display_name: '관광 (:Classification)', readme: '관광 관련.', group: true});
+CREATE (:Classification {id: 'C09020002', name: '관광지 정보', description: '관광지 정보 관련 분류', display_name: '관광지 정보 (:Classification)', readme: '관광지 정보 관련.', group: false});
+CREATE (:Classification {id: 'C09020003', name: '관광통계', description: '관광통계 관련 분류', display_name: '관광통계 (:Classification)', readme: '관광통계 관련.', group: false});
+CREATE (:Classification {id: 'C09020004', name: '관광산업', description: '관광산업 관련 분류', display_name: '관광산업 (:Classification)', readme: '관광산업 관련.', group: false});
+CREATE (:Classification {id: 'C09020005', name: '관광정책', description: '관광정책 관련 분류', display_name: '관광정책 (:Classification)', readme: '관광정책 관련.', group: false});
+CREATE (:Classification {id: 'C09030001', name: '문화시설', description: '문화시설을(를) 다루는 분류', display_name: '문화시설 (:Classification)', readme: '문화시설 관련.', group: true});
+CREATE (:Classification {id: 'C09030002', name: '박물관·미술관', description: '박물관·미술관 관련 분류', display_name: '박물관·미술관 (:Classification)', readme: '박물관·미술관 관련.', group: false});
+CREATE (:Classification {id: 'C09030003', name: '공연장', description: '공연장 관련 분류', display_name: '공연장 (:Classification)', readme: '공연장 관련.', group: false});
+CREATE (:Classification {id: 'C09030004', name: '도서관', description: '도서관 관련 분류', display_name: '도서관 (:Classification)', readme: '도서관 관련.', group: false});
+CREATE (:Classification {id: 'C09030005', name: '문화센터', description: '문화센터 관련 분류', display_name: '문화센터 (:Classification)', readme: '문화센터 관련.', group: false});
+CREATE (:Classification {id: 'C09040001', name: '문화콘텐츠', description: '문화콘텐츠을(를) 다루는 분류', display_name: '문화콘텐츠 (:Classification)', readme: '문화콘텐츠 관련.', group: true});
+CREATE (:Classification {id: 'C09040002', name: '공연·전시', description: '공연·전시 관련 분류', display_name: '공연·전시 (:Classification)', readme: '공연·전시 관련.', group: false});
+CREATE (:Classification {id: 'C09040003', name: '문화행사', description: '문화행사 관련 분류', display_name: '문화행사 (:Classification)', readme: '문화행사 관련.', group: false});
+CREATE (:Classification {id: 'C09040004', name: '문화산업', description: '문화산업 관련 분류', display_name: '문화산업 (:Classification)', readme: '문화산업 관련.', group: false});
+CREATE (:Classification {id: 'C09040005', name: '한류·K-컬처', description: '한류·K-컬처 관련 분류', display_name: '한류·K-컬처 (:Classification)', readme: '한류·K-컬처 관련.', group: false});
+CREATE (:Classification {id: 'C09050001', name: '체육·스포츠', description: '체육·스포츠을(를) 다루는 분류', display_name: '체육·스포츠 (:Classification)', readme: '체육·스포츠 관련.', group: true});
+CREATE (:Classification {id: 'C09050002', name: '체육시설', description: '체육시설 관련 분류', display_name: '체육시설 (:Classification)', readme: '체육시설 관련.', group: false});
+CREATE (:Classification {id: 'C09050003', name: '프로스포츠', description: '프로스포츠 관련 분류', display_name: '프로스포츠 (:Classification)', readme: '프로스포츠 관련.', group: false});
+CREATE (:Classification {id: 'C09050004', name: '생활체육', description: '생활체육 관련 분류', display_name: '생활체육 (:Classification)', readme: '생활체육 관련.', group: false});
+CREATE (:Classification {id: 'C09060001', name: '미디어·방송', description: '미디어·방송을(를) 다루는 분류', display_name: '미디어·방송 (:Classification)', readme: '미디어·방송 관련.', group: true});
+CREATE (:Classification {id: 'C09060002', name: '방송콘텐츠', description: '방송콘텐츠 관련 분류', display_name: '방송콘텐츠 (:Classification)', readme: '방송콘텐츠 관련.', group: false});
+CREATE (:Classification {id: 'C09060003', name: 'OTT 플랫폼', description: 'OTT 플랫폼 관련 분류', display_name: 'OTT 플랫폼 (:Classification)', readme: 'OTT 플랫폼 관련.', group: false});
+CREATE (:Classification {id: 'C09060004', name: '언론·신문', description: '언론·신문 관련 분류', display_name: '언론·신문 (:Classification)', readme: '언론·신문 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C09000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09000001'}), (c:Classification {id: 'C09010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09010001'}), (c:Classification {id: 'C09010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09010001'}), (c:Classification {id: 'C09010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09010001'}), (c:Classification {id: 'C09010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09010001'}), (c:Classification {id: 'C09010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09000001'}), (c:Classification {id: 'C09020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09020001'}), (c:Classification {id: 'C09020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09020001'}), (c:Classification {id: 'C09020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09020001'}), (c:Classification {id: 'C09020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09020001'}), (c:Classification {id: 'C09020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09000001'}), (c:Classification {id: 'C09030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09030001'}), (c:Classification {id: 'C09030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09030001'}), (c:Classification {id: 'C09030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09030001'}), (c:Classification {id: 'C09030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09030001'}), (c:Classification {id: 'C09030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09000001'}), (c:Classification {id: 'C09040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09040001'}), (c:Classification {id: 'C09040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09040001'}), (c:Classification {id: 'C09040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09040001'}), (c:Classification {id: 'C09040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09040001'}), (c:Classification {id: 'C09040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09000001'}), (c:Classification {id: 'C09050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09050001'}), (c:Classification {id: 'C09050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09050001'}), (c:Classification {id: 'C09050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09050001'}), (c:Classification {id: 'C09050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09000001'}), (c:Classification {id: 'C09060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09060001'}), (c:Classification {id: 'C09060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09060001'}), (c:Classification {id: 'C09060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C09060001'}), (c:Classification {id: 'C09060004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T09010001', name_ko: '문화재', name_en: 'Cultural Heritage', acronym: 'None', description: '보존할 가치가 있는 유·무형의 문화적 유산. 국가지정문화재, 시도지정문화재 등으로 구분.', display_name: '문화재 (:Term)'});
+CREATE (:Term {id: 'T09010002', name_ko: '유형문화재', name_en: 'Tangible Cultural Heritage', acronym: 'None', description: '건조물, 전적, 회화, 조각 등 형태가 있는 문화재. 국보, 보물, 사적 등.', display_name: '유형문화재 (:Term)'});
+CREATE (:Term {id: 'T09010003', name_ko: '무형문화재', name_en: 'Intangible Cultural Heritage', acronym: 'None', description: '연극, 음악, 무용, 공예기술 등 형태가 없는 문화재. 중요무형문화재, 인간문화재 등.', display_name: '무형문화재 (:Term)'});
+CREATE (:Term {id: 'T09010004', name_ko: '국보', name_en: 'National Treasure', acronym: 'None', description: '국보 (National Treasure)', display_name: '국보 (:Term)'});
+CREATE (:Term {id: 'T09010005', name_ko: '세계유산', name_en: 'World Heritage', acronym: 'None', description: '세계유산 (World Heritage)', display_name: '세계유산 (:Term)'});
+CREATE (:Term {id: 'T09020001', name_ko: '관광지', name_en: 'Tourist Attraction', acronym: 'None', description: '관광 목적으로 사람들이 방문하는 명소. 자연관광지, 문화관광지, 레저관광지 등.', display_name: '관광지 (:Term)'});
+CREATE (:Term {id: 'T09020002', name_ko: '관광통계', name_en: 'Tourism Statistics', acronym: 'None', description: '관광객 수, 관광 수입, 숙박·교통 이용 현황 등 관광 관련 통계. 국민여행실태조사 등.', display_name: '관광통계 (:Term)'});
+CREATE (:Term {id: 'T09020003', name_ko: '관광산업', name_en: 'Tourism Industry', acronym: 'None', description: '관광산업 (Tourism Industry)', display_name: '관광산업 (:Term)'});
+CREATE (:Term {id: 'T09020004', name_ko: '여행업', name_en: 'Travel Industry', acronym: 'None', description: '여행업 (Travel Industry)', display_name: '여행업 (:Term)'});
+CREATE (:Term {id: 'T09030001', name_ko: '문화시설', name_en: 'Cultural Facility', acronym: 'None', description: '문화 활동이 이루어지는 시설. 박물관, 미술관, 도서관, 공연장, 문화센터 등.', display_name: '문화시설 (:Term)'});
+CREATE (:Term {id: 'T09030002', name_ko: '박물관', name_en: 'Museum', acronym: 'None', description: '역사·예술·민속 등 문화유산을 수집·보존·전시하는 시설. 국립박물관, 공립박물관 등.', display_name: '박물관 (:Term)'});
+CREATE (:Term {id: 'T09030003', name_ko: '미술관', name_en: 'Art Museum', acronym: 'None', description: '미술 작품을 전시·보존하는 시설. 국립현대미술관, 서울시립미술관 등.', display_name: '미술관 (:Term)'});
+CREATE (:Term {id: 'T09030004', name_ko: '공연장', name_en: 'Performance Hall', acronym: 'None', description: '공연장 (Performance Hall)', display_name: '공연장 (:Term)'});
+CREATE (:Term {id: 'T09030005', name_ko: '도서관', name_en: 'Library', acronym: 'None', description: '도서관 (Library)', display_name: '도서관 (:Term)'});
+CREATE (:Term {id: 'T09040001', name_ko: '공연', name_en: 'Performance', acronym: 'None', description: '음악, 연극, 무용 등 무대 예술 활동. 공연장, 야외공연, 축제 등에서 이루어짐.', display_name: '공연 (:Term)'});
+CREATE (:Term {id: 'T09040002', name_ko: '전시', name_en: 'Exhibition', acronym: 'None', description: '미술품, 사진, 유물 등을 전시하는 문화 활동. 상설전시, 기획전시, 특별전 등.', display_name: '전시 (:Term)'});
+CREATE (:Term {id: 'T09040003', name_ko: '축제', name_en: 'Festival', acronym: 'None', description: '축제 (Festival)', display_name: '축제 (:Term)'});
+CREATE (:Term {id: 'T09040004', name_ko: '한류', name_en: 'Korean Wave', acronym: 'Hallyu', description: '한류 (Korean Wave)', display_name: '한류 (:Term)'});
+CREATE (:Term {id: 'T09040005', name_ko: 'K-컬처', name_en: 'K-Culture', acronym: 'None', description: 'K-컬처 (K-Culture)', display_name: 'K-컬처 (:Term)'});
+CREATE (:Term {id: 'T09050001', name_ko: '체육시설', name_en: 'Sports Facility', acronym: 'None', description: '체육시설 (Sports Facility)', display_name: '체육시설 (:Term)'});
+CREATE (:Term {id: 'T09050002', name_ko: '프로스포츠', name_en: 'Professional Sports', acronym: 'None', description: '프로스포츠 (Professional Sports)', display_name: '프로스포츠 (:Term)'});
+CREATE (:Term {id: 'T09050003', name_ko: '생활체육', name_en: 'Recreational Sports', acronym: 'None', description: '생활체육 (Recreational Sports)', display_name: '생활체육 (:Term)'});
+CREATE (:Term {id: 'T09060001', name_ko: '방송콘텐츠', name_en: 'Broadcasting Content', acronym: 'None', description: '방송콘텐츠 (Broadcasting Content)', display_name: '방송콘텐츠 (:Term)'});
+CREATE (:Term {id: 'T09060002', name_ko: 'OTT', name_en: 'Over-The-Top', acronym: 'None', description: 'OTT (Over-The-Top)', display_name: 'OTT (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T09010001'}), (t:Term {id: 'T09010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T09010001'}), (t:Term {id: 'T09010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09020004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T09030001'}), (t:Term {id: 'T09030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T09030001'}), (t:Term {id: 'T09030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09030004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09030005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09040004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09040005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09050003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T09060002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T09010001'}), (c:Classification {id: 'C09010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09010002'}), (c:Classification {id: 'C09010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09010003'}), (c:Classification {id: 'C09010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09010004'}), (c:Classification {id: 'C09010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09010005'}), (c:Classification {id: 'C09010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09020001'}), (c:Classification {id: 'C09020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09020002'}), (c:Classification {id: 'C09020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09020003'}), (c:Classification {id: 'C09020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09020004'}), (c:Classification {id: 'C09020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09030001'}), (c:Classification {id: 'C09030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09030002'}), (c:Classification {id: 'C09030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09030003'}), (c:Classification {id: 'C09030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09030004'}), (c:Classification {id: 'C09030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09030005'}), (c:Classification {id: 'C09030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09040001'}), (c:Classification {id: 'C09040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09040002'}), (c:Classification {id: 'C09040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09040003'}), (c:Classification {id: 'C09040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09040004'}), (c:Classification {id: 'C09040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09040005'}), (c:Classification {id: 'C09040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09050001'}), (c:Classification {id: 'C09050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09050002'}), (c:Classification {id: 'C09050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09050003'}), (c:Classification {id: 'C09050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09060001'}), (c:Classification {id: 'C09060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T09060002'}), (c:Classification {id: 'C09060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T09010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '문화유산', display_name: '문화유산 (:Synonym)'});
+MATCH (t:Term {id: 'T09010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Cultural Heritage', display_name: 'Cultural Heritage (:Synonym)'});
+MATCH (t:Term {id: 'T09010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '유형문화재', display_name: '유형문화재 (:Synonym)'});
+MATCH (t:Term {id: 'T09010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Tangible Heritage', display_name: 'Tangible Heritage (:Synonym)'});
+MATCH (t:Term {id: 'T09010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '무형문화재', display_name: '무형문화재 (:Synonym)'});
+MATCH (t:Term {id: 'T09010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Intangible Heritage', display_name: 'Intangible Heritage (:Synonym)'});
+MATCH (t:Term {id: 'T09020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '관광명소', display_name: '관광명소 (:Synonym)'});
+MATCH (t:Term {id: 'T09020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Tourist Site', display_name: 'Tourist Site (:Synonym)'});
+MATCH (t:Term {id: 'T09030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '문화시설', display_name: '문화시설 (:Synonym)'});
+MATCH (t:Term {id: 'T09030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Cultural Facility', display_name: 'Cultural Facility (:Synonym)'});
+MATCH (t:Term {id: 'T09040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공연', display_name: '공연 (:Synonym)'});
+MATCH (t:Term {id: 'T09040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Performance', display_name: 'Performance (:Synonym)'});
+MATCH (t:Term {id: 'T09040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '무대예술', display_name: '무대예술 (:Synonym)'});
+MATCH (t:Term {id: 'T09040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '전시', display_name: '전시 (:Synonym)'});
+MATCH (t:Term {id: 'T09040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Exhibition', display_name: 'Exhibition (:Synonym)'});
+MATCH (t:Term {id: 'T09040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '전람회', display_name: '전람회 (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T09010001'}), (t2:Term {id: 'T09010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T09010001'}), (t2:Term {id: 'T09010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T09020001'}), (t2:Term {id: 'T09020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T09030001'}), (t2:Term {id: 'T09030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T09030001'}), (t2:Term {id: 'T09030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T09040001'}), (t2:Term {id: 'T09040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 환경기상 (Environment & Weather)
+
+// Classifications
+CREATE (:Classification {id: 'C10000001', name: '환경기상', description: '환경기상 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '환경기상 (:Classification)', readme: '환경기상 관련.', group: true});
+CREATE (:Classification {id: 'C10010001', name: '환경보전', description: '환경보전을(를) 다루는 분류', display_name: '환경보전 (:Classification)', readme: '환경보전 관련.', group: true});
+CREATE (:Classification {id: 'C10010002', name: '대기환경', description: '대기환경 관련 분류', display_name: '대기환경 (:Classification)', readme: '대기환경 관련.', group: false});
+CREATE (:Classification {id: 'C10010003', name: '수질환경', description: '수질환경 관련 분류', display_name: '수질환경 (:Classification)', readme: '수질환경 관련.', group: false});
+CREATE (:Classification {id: 'C10010004', name: '폐기물관리', description: '폐기물관리 관련 분류', display_name: '폐기물관리 (:Classification)', readme: '폐기물관리 관련.', group: false});
+CREATE (:Classification {id: 'C10010005', name: '토양환경', description: '토양환경 관련 분류', display_name: '토양환경 (:Classification)', readme: '토양환경 관련.', group: false});
+CREATE (:Classification {id: 'C10020001', name: '기후변화', description: '기후변화을(를) 다루는 분류', display_name: '기후변화 (:Classification)', readme: '기후변화 관련.', group: true});
+CREATE (:Classification {id: 'C10020002', name: '온실가스', description: '온실가스 관련 분류', display_name: '온실가스 (:Classification)', readme: '온실가스 관련.', group: false});
+CREATE (:Classification {id: 'C10020003', name: '기후변화 대응', description: '기후변화 대응 관련 분류', display_name: '기후변화 대응 (:Classification)', readme: '기후변화 대응 관련.', group: false});
+CREATE (:Classification {id: 'C10020004', name: '탄소중립', description: '탄소중립 관련 분류', display_name: '탄소중립 (:Classification)', readme: '탄소중립 관련.', group: false});
+CREATE (:Classification {id: 'C10020005', name: '기후적응', description: '기후적응 관련 분류', display_name: '기후적응 (:Classification)', readme: '기후적응 관련.', group: false});
+CREATE (:Classification {id: 'C10030001', name: '기상정보', description: '기상정보을(를) 다루는 분류', display_name: '기상정보 (:Classification)', readme: '기상정보 관련.', group: true});
+CREATE (:Classification {id: 'C10030002', name: '날씨예보', description: '날씨예보 관련 분류', display_name: '날씨예보 (:Classification)', readme: '날씨예보 관련.', group: false});
+CREATE (:Classification {id: 'C10030003', name: '기상관측', description: '기상관측 관련 분류', display_name: '기상관측 (:Classification)', readme: '기상관측 관련.', group: false});
+CREATE (:Classification {id: 'C10030004', name: '기상특보', description: '기상특보 관련 분류', display_name: '기상특보 (:Classification)', readme: '기상특보 관련.', group: false});
+CREATE (:Classification {id: 'C10030005', name: '기후정보', description: '기후정보 관련 분류', display_name: '기후정보 (:Classification)', readme: '기후정보 관련.', group: false});
+CREATE (:Classification {id: 'C10040001', name: '자연환경', description: '자연환경을(를) 다루는 분류', display_name: '자연환경 (:Classification)', readme: '자연환경 관련.', group: true});
+CREATE (:Classification {id: 'C10040002', name: '생태계', description: '생태계 관련 분류', display_name: '생태계 (:Classification)', readme: '생태계 관련.', group: false});
+CREATE (:Classification {id: 'C10040003', name: '자연보호구역', description: '자연보호구역 관련 분류', display_name: '자연보호구역 (:Classification)', readme: '자연보호구역 관련.', group: false});
+CREATE (:Classification {id: 'C10040004', name: '환경영향평가', description: '환경영향평가 관련 분류', display_name: '환경영향평가 (:Classification)', readme: '환경영향평가 관련.', group: false});
+CREATE (:Classification {id: 'C10040005', name: '생물다양성', description: '생물다양성 관련 분류', display_name: '생물다양성 (:Classification)', readme: '생물다양성 관련.', group: false});
+CREATE (:Classification {id: 'C10050001', name: '에너지', description: '에너지을(를) 다루는 분류', display_name: '에너지 (:Classification)', readme: '에너지 관련.', group: true});
+CREATE (:Classification {id: 'C10050002', name: '신재생에너지', description: '신재생에너지 관련 분류', display_name: '신재생에너지 (:Classification)', readme: '신재생에너지 관련.', group: false});
+CREATE (:Classification {id: 'C10050003', name: '에너지효율', description: '에너지효율 관련 분류', display_name: '에너지효율 (:Classification)', readme: '에너지효율 관련.', group: false});
+CREATE (:Classification {id: 'C10050004', name: '에너지전환', description: '에너지전환 관련 분류', display_name: '에너지전환 (:Classification)', readme: '에너지전환 관련.', group: false});
+CREATE (:Classification {id: 'C10060001', name: '자원순환', description: '자원순환을(를) 다루는 분류', display_name: '자원순환 (:Classification)', readme: '자원순환 관련.', group: true});
+CREATE (:Classification {id: 'C10060002', name: '재활용', description: '재활용 관련 분류', display_name: '재활용 (:Classification)', readme: '재활용 관련.', group: false});
+CREATE (:Classification {id: 'C10060003', name: '순환경제', description: '순환경제 관련 분류', display_name: '순환경제 (:Classification)', readme: '순환경제 관련.', group: false});
+CREATE (:Classification {id: 'C10060004', name: '폐자원 에너지화', description: '폐자원 에너지화 관련 분류', display_name: '폐자원 에너지화 (:Classification)', readme: '폐자원 에너지화 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C10000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10000001'}), (c:Classification {id: 'C10010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10010001'}), (c:Classification {id: 'C10010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10010001'}), (c:Classification {id: 'C10010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10010001'}), (c:Classification {id: 'C10010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10010001'}), (c:Classification {id: 'C10010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10000001'}), (c:Classification {id: 'C10020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10020001'}), (c:Classification {id: 'C10020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10020001'}), (c:Classification {id: 'C10020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10020001'}), (c:Classification {id: 'C10020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10020001'}), (c:Classification {id: 'C10020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10000001'}), (c:Classification {id: 'C10030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10030001'}), (c:Classification {id: 'C10030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10030001'}), (c:Classification {id: 'C10030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10030001'}), (c:Classification {id: 'C10030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10030001'}), (c:Classification {id: 'C10030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10000001'}), (c:Classification {id: 'C10040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10040001'}), (c:Classification {id: 'C10040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10040001'}), (c:Classification {id: 'C10040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10040001'}), (c:Classification {id: 'C10040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10040001'}), (c:Classification {id: 'C10040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10000001'}), (c:Classification {id: 'C10050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10050001'}), (c:Classification {id: 'C10050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10050001'}), (c:Classification {id: 'C10050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10050001'}), (c:Classification {id: 'C10050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10000001'}), (c:Classification {id: 'C10060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10060001'}), (c:Classification {id: 'C10060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10060001'}), (c:Classification {id: 'C10060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C10060001'}), (c:Classification {id: 'C10060004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T10010001', name_ko: '환경보전', name_en: 'Environmental Conservation', acronym: 'None', description: '자연환경을 보호하고 보전하는 활동. 대기·수질·토양 관리, 생태계 보호, 환경오염 방지.', display_name: '환경보전 (:Term)'});
+CREATE (:Term {id: 'T10010002', name_ko: '대기환경', name_en: 'Air Environment', acronym: 'None', description: '대기의 질을 관리하는 활동. 미세먼지, 오존, 이산화질소 등 대기오염물질 측정·관리.', display_name: '대기환경 (:Term)'});
+CREATE (:Term {id: 'T10010003', name_ko: '수질환경', name_en: 'Water Quality', acronym: 'None', description: '하천, 호수, 지하수 등의 수질을 관리하는 활동. 수질측정망 운영, 오염원 관리.', display_name: '수질환경 (:Term)'});
+CREATE (:Term {id: 'T10010004', name_ko: '폐기물', name_en: 'Waste', acronym: 'None', description: '생활쓰레기, 산업폐기물, 의료폐기물 등의 수거·처리·재활용. 자원순환, 감량정책.', display_name: '폐기물 (:Term)'});
+CREATE (:Term {id: 'T10010005', name_ko: '미세먼지', name_en: 'Fine Dust', acronym: 'PM2.5', description: '미세먼지 (Fine Dust)', display_name: '미세먼지 (:Term)'});
+CREATE (:Term {id: 'T10010006', name_ko: '토양오염', name_en: 'Soil Contamination', acronym: 'None', description: '토양오염 (Soil Contamination)', display_name: '토양오염 (:Term)'});
+CREATE (:Term {id: 'T10020001', name_ko: '기후변화', name_en: 'Climate Change', acronym: 'None', description: '지구 평균 기온 상승과 기후 패턴의 장기적 변화. 온실가스 배출이 주요 원인.', display_name: '기후변화 (:Term)'});
+CREATE (:Term {id: 'T10020002', name_ko: '온실가스', name_en: 'Greenhouse Gas', acronym: 'None', description: '지구 온난화를 일으키는 기체. 이산화탄소(CO2), 메탄(CH4), 아산화질소(N2O) 등.', display_name: '온실가스 (:Term)'});
+CREATE (:Term {id: 'T10020003', name_ko: '탄소중립', name_en: 'Carbon Neutrality', acronym: 'None', description: '온실가스 배출과 흡수를 같게 하여 실질 배출량을 0으로 만드는 것. 2050 탄소중립 목표.', display_name: '탄소중립 (:Term)'});
+CREATE (:Term {id: 'T10020004', name_ko: 'NDC', name_en: 'Nationally Determined Contribution', acronym: 'None', description: 'NDC (Nationally Determined Contribution)', display_name: 'NDC (:Term)'});
+CREATE (:Term {id: 'T10020005', name_ko: '기후적응', name_en: 'Climate Adaptation', acronym: 'None', description: '기후적응 (Climate Adaptation)', display_name: '기후적응 (:Term)'});
+CREATE (:Term {id: 'T10030001', name_ko: '날씨', name_en: 'Weather', acronym: 'None', description: '특정 시점의 대기 상태. 기온, 습도, 강수, 바람 등으로 표현.', display_name: '날씨 (:Term)'});
+CREATE (:Term {id: 'T10030002', name_ko: '기상', name_en: 'Meteorology', acronym: 'None', description: '대기 현상을 연구하는 학문. 기상 관측, 예보, 기후 분석 등.', display_name: '기상 (:Term)'});
+CREATE (:Term {id: 'T10030003', name_ko: '기상예보', name_en: 'Weather Forecast', acronym: 'None', description: '미래의 날씨를 과학적으로 예측하는 것. 단기예보(1-3일), 중기예보(4-10일) 등.', display_name: '기상예보 (:Term)'});
+CREATE (:Term {id: 'T10030004', name_ko: '기상특보', name_en: 'Weather Warning', acronym: 'None', description: '기상특보 (Weather Warning)', display_name: '기상특보 (:Term)'});
+CREATE (:Term {id: 'T10030005', name_ko: '기후정보', name_en: 'Climate Information', acronym: 'None', description: '기후정보 (Climate Information)', display_name: '기후정보 (:Term)'});
+CREATE (:Term {id: 'T10040001', name_ko: '생태계', name_en: 'Ecosystem', acronym: 'None', description: '생물과 무생물이 상호작용하는 하나의 공동체. 산림생태계, 해양생태계, 습지생태계 등.', display_name: '생태계 (:Term)'});
+CREATE (:Term {id: 'T10040002', name_ko: '자연보호구역', name_en: 'Nature Reserve', acronym: 'None', description: '자연환경과 생태계를 법적으로 보호하는 구역. 국립공원, 생태경관보전지역, 습지보호지역 등.', display_name: '자연보호구역 (:Term)'});
+CREATE (:Term {id: 'T10040003', name_ko: '환경영향평가', name_en: 'Environmental Impact Assessment', acronym: 'None', description: '개발사업이 환경에 미치는 영향을 사전에 평가하는 제도. 환경영향평가법에 근거.', display_name: '환경영향평가 (:Term)'});
+CREATE (:Term {id: 'T10040004', name_ko: '생물다양성', name_en: 'Biodiversity', acronym: 'None', description: '생물다양성 (Biodiversity)', display_name: '생물다양성 (:Term)'});
+CREATE (:Term {id: 'T10050001', name_ko: '신재생에너지', name_en: 'Renewable Energy', acronym: 'None', description: '신재생에너지 (Renewable Energy)', display_name: '신재생에너지 (:Term)'});
+CREATE (:Term {id: 'T10050002', name_ko: '태양광', name_en: 'Solar Power', acronym: 'None', description: '태양광 (Solar Power)', display_name: '태양광 (:Term)'});
+CREATE (:Term {id: 'T10050003', name_ko: '풍력', name_en: 'Wind Power', acronym: 'None', description: '풍력 (Wind Power)', display_name: '풍력 (:Term)'});
+CREATE (:Term {id: 'T10050004', name_ko: '에너지전환', name_en: 'Energy Transition', acronym: 'None', description: '에너지전환 (Energy Transition)', display_name: '에너지전환 (:Term)'});
+CREATE (:Term {id: 'T10060001', name_ko: '재활용', name_en: 'Recycling', acronym: 'None', description: '재활용 (Recycling)', display_name: '재활용 (:Term)'});
+CREATE (:Term {id: 'T10060002', name_ko: '순환경제', name_en: 'Circular Economy', acronym: 'None', description: '순환경제 (Circular Economy)', display_name: '순환경제 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10010001'}), (t:Term {id: 'T10010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10010001'}), (t:Term {id: 'T10010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10010001'}), (t:Term {id: 'T10010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10010006'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10020001'}), (t:Term {id: 'T10020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10020001'}), (t:Term {id: 'T10020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10020004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10020005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10030001'}), (t:Term {id: 'T10030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10030001'}), (t:Term {id: 'T10030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10030004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10030005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10040001'}), (t:Term {id: 'T10040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: 'T10040001'}), (t:Term {id: 'T10040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10040004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10050003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10050004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T10060002'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T10010001'}), (c:Classification {id: 'C10010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10010002'}), (c:Classification {id: 'C10010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10010003'}), (c:Classification {id: 'C10010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10010004'}), (c:Classification {id: 'C10010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10010005'}), (c:Classification {id: 'C10010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10010006'}), (c:Classification {id: 'C10010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10020001'}), (c:Classification {id: 'C10020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10020002'}), (c:Classification {id: 'C10020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10020003'}), (c:Classification {id: 'C10020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10020004'}), (c:Classification {id: 'C10020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10020005'}), (c:Classification {id: 'C10020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10030001'}), (c:Classification {id: 'C10030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10030002'}), (c:Classification {id: 'C10030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10030003'}), (c:Classification {id: 'C10030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10030004'}), (c:Classification {id: 'C10030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10030005'}), (c:Classification {id: 'C10030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10040001'}), (c:Classification {id: 'C10040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10040002'}), (c:Classification {id: 'C10040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10040003'}), (c:Classification {id: 'C10040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10040004'}), (c:Classification {id: 'C10040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10050001'}), (c:Classification {id: 'C10050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10050002'}), (c:Classification {id: 'C10050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10050003'}), (c:Classification {id: 'C10050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10050004'}), (c:Classification {id: 'C10050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10060001'}), (c:Classification {id: 'C10060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T10060002'}), (c:Classification {id: 'C10060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+MATCH (t:Term {id: 'T10010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '환경보전', display_name: '환경보전 (:Synonym)'});
+MATCH (t:Term {id: 'T10010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Environmental Conservation', display_name: 'Environmental Conservation (:Synonym)'});
+MATCH (t:Term {id: 'T10010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '환경보호', display_name: '환경보호 (:Synonym)'});
+MATCH (t:Term {id: 'T10010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '대기환경', display_name: '대기환경 (:Synonym)'});
+MATCH (t:Term {id: 'T10010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Air Quality', display_name: 'Air Quality (:Synonym)'});
+MATCH (t:Term {id: 'T10010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '대기질', display_name: '대기질 (:Synonym)'});
+MATCH (t:Term {id: 'T10010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '수질', display_name: '수질 (:Synonym)'});
+MATCH (t:Term {id: 'T10010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Water Quality', display_name: 'Water Quality (:Synonym)'});
+MATCH (t:Term {id: 'T10010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '쓰레기', display_name: '쓰레기 (:Synonym)'});
+MATCH (t:Term {id: 'T10010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Waste', display_name: 'Waste (:Synonym)'});
+MATCH (t:Term {id: 'T10010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '폐기물', display_name: '폐기물 (:Synonym)'});
+MATCH (t:Term {id: 'T10020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기후변화', display_name: '기후변화 (:Synonym)'});
+MATCH (t:Term {id: 'T10020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Climate Change', display_name: 'Climate Change (:Synonym)'});
+MATCH (t:Term {id: 'T10020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지구온난화', display_name: '지구온난화 (:Synonym)'});
+MATCH (t:Term {id: 'T10020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'GHG', display_name: 'GHG (:Synonym)'});
+MATCH (t:Term {id: 'T10020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Greenhouse Gas', display_name: 'Greenhouse Gas (:Synonym)'});
+MATCH (t:Term {id: 'T10020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '온실가스', display_name: '온실가스 (:Synonym)'});
+MATCH (t:Term {id: 'T10020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '탄소중립', display_name: '탄소중립 (:Synonym)'});
+MATCH (t:Term {id: 'T10020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Carbon Neutrality', display_name: 'Carbon Neutrality (:Synonym)'});
+MATCH (t:Term {id: 'T10020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Net Zero', display_name: 'Net Zero (:Synonym)'});
+MATCH (t:Term {id: 'T10030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '날씨', display_name: '날씨 (:Synonym)'});
+MATCH (t:Term {id: 'T10030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Weather', display_name: 'Weather (:Synonym)'});
+MATCH (t:Term {id: 'T10030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기상학', display_name: '기상학 (:Synonym)'});
+MATCH (t:Term {id: 'T10030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Meteorology', display_name: 'Meteorology (:Synonym)'});
+MATCH (t:Term {id: 'T10030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '일기예보', display_name: '일기예보 (:Synonym)'});
+MATCH (t:Term {id: 'T10030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Weather Forecast', display_name: 'Weather Forecast (:Synonym)'});
+MATCH (t:Term {id: 'T10040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '생태계', display_name: '생태계 (:Synonym)'});
+MATCH (t:Term {id: 'T10040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Ecosystem', display_name: 'Ecosystem (:Synonym)'});
+MATCH (t:Term {id: 'T10040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '보호구역', display_name: '보호구역 (:Synonym)'});
+MATCH (t:Term {id: 'T10040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Protected Area', display_name: 'Protected Area (:Synonym)'});
+MATCH (t:Term {id: 'T10040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '자연보호지역', display_name: '자연보호지역 (:Synonym)'});
+MATCH (t:Term {id: 'T10040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '환경영향평가', display_name: '환경영향평가 (:Synonym)'});
+MATCH (t:Term {id: 'T10040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'EIA', display_name: 'EIA (:Synonym)'});
+MATCH (t:Term {id: 'T10040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Environmental Impact Assessment', display_name: 'Environmental Impact Assessment (:Synonym)'});
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T10010001'}), (t2:Term {id: 'T10010002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10010001'}), (t2:Term {id: 'T10010003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10010001'}), (t2:Term {id: 'T10010004'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10020001'}), (t2:Term {id: 'T10020002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10020001'}), (t2:Term {id: 'T10020003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10030001'}), (t2:Term {id: 'T10030002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10030001'}), (t2:Term {id: 'T10030003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10040001'}), (t2:Term {id: 'T10040002'}) CREATE (t1)-[:RELATED_TO]->(t2);
+MATCH (t1:Term {id: 'T10040001'}), (t2:Term {id: 'T10040003'}) CREATE (t1)-[:RELATED_TO]->(t2);
+
+// 과학기술 (Science & Technology)
+
+// Classifications
+CREATE (:Classification {id: 'C11000001', name: '과학기술', description: '과학기술 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '과학기술 (:Classification)', readme: '과학기술 관련.', group: true});
+CREATE (:Classification {id: 'C11010001', name: '연구개발', description: '연구개발을(를) 다루는 분류', display_name: '연구개발 (:Classification)', readme: '연구개발 관련.', group: true});
+CREATE (:Classification {id: 'C11010002', name: '국가R&D', description: '국가R&D 관련 분류', display_name: '국가R&D (:Classification)', readme: '국가R&D 관련.', group: false});
+CREATE (:Classification {id: 'C11010003', name: '기업R&D', description: '기업R&D 관련 분류', display_name: '기업R&D (:Classification)', readme: '기업R&D 관련.', group: false});
+CREATE (:Classification {id: 'C11010004', name: '연구성과', description: '연구성과 관련 분류', display_name: '연구성과 (:Classification)', readme: '연구성과 관련.', group: false});
+CREATE (:Classification {id: 'C11010005', name: '연구인력', description: '연구인력 관련 분류', display_name: '연구인력 (:Classification)', readme: '연구인력 관련.', group: false});
+CREATE (:Classification {id: 'C11020001', name: '자연과학', description: '자연과학을(를) 다루는 분류', display_name: '자연과학 (:Classification)', readme: '자연과학 관련.', group: true});
+CREATE (:Classification {id: 'C11020002', name: '수학·통계', description: '수학·통계 관련 분류', display_name: '수학·통계 (:Classification)', readme: '수학·통계 관련.', group: false});
+CREATE (:Classification {id: 'C11020003', name: '물리학', description: '물리학 관련 분류', display_name: '물리학 (:Classification)', readme: '물리학 관련.', group: false});
+CREATE (:Classification {id: 'C11020004', name: '화학·생명과학', description: '화학·생명과학 관련 분류', display_name: '화학·생명과학 (:Classification)', readme: '화학·생명과학 관련.', group: false});
+CREATE (:Classification {id: 'C11030001', name: '공학기술', description: '공학기술을(를) 다루는 분류', display_name: '공학기술 (:Classification)', readme: '공학기술 관련.', group: true});
+CREATE (:Classification {id: 'C11030002', name: '전기·전자공학', description: '전기·전자공학 관련 분류', display_name: '전기·전자공학 (:Classification)', readme: '전기·전자공학 관련.', group: false});
+CREATE (:Classification {id: 'C11030003', name: '기계공학', description: '기계공학 관련 분류', display_name: '기계공학 (:Classification)', readme: '기계공학 관련.', group: false});
+CREATE (:Classification {id: 'C11030004', name: '토목·건축', description: '토목·건축 관련 분류', display_name: '토목·건축 (:Classification)', readme: '토목·건축 관련.', group: false});
+CREATE (:Classification {id: 'C11030005', name: '재료공학', description: '재료공학 관련 분류', display_name: '재료공학 (:Classification)', readme: '재료공학 관련.', group: false});
+CREATE (:Classification {id: 'C11040001', name: 'ICT·정보기술', description: 'ICT·정보기술을(를) 다루는 분류', display_name: 'ICT·정보기술 (:Classification)', readme: 'ICT·정보기술 관련.', group: true});
+CREATE (:Classification {id: 'C11040002', name: '소프트웨어', description: '소프트웨어 관련 분류', display_name: '소프트웨어 (:Classification)', readme: '소프트웨어 관련.', group: false});
+CREATE (:Classification {id: 'C11040003', name: '인공지능', description: '인공지능 관련 분류', display_name: '인공지능 (:Classification)', readme: '인공지능 관련.', group: false});
+CREATE (:Classification {id: 'C11040004', name: '빅데이터', description: '빅데이터 관련 분류', display_name: '빅데이터 (:Classification)', readme: '빅데이터 관련.', group: false});
+CREATE (:Classification {id: 'C11040005', name: '사이버보안', description: '사이버보안 관련 분류', display_name: '사이버보안 (:Classification)', readme: '사이버보안 관련.', group: false});
+CREATE (:Classification {id: 'C11050001', name: '기술혁신·특허', description: '기술혁신·특허을(를) 다루는 분류', display_name: '기술혁신·특허 (:Classification)', readme: '기술혁신·특허 관련.', group: true});
+CREATE (:Classification {id: 'C11050002', name: '특허·지식재산', description: '특허·지식재산 관련 분류', display_name: '특허·지식재산 (:Classification)', readme: '특허·지식재산 관련.', group: false});
+CREATE (:Classification {id: 'C11050003', name: '기술이전', description: '기술이전 관련 분류', display_name: '기술이전 (:Classification)', readme: '기술이전 관련.', group: false});
+CREATE (:Classification {id: 'C11050004', name: '표준화', description: '표준화 관련 분류', display_name: '표준화 (:Classification)', readme: '표준화 관련.', group: false});
+CREATE (:Classification {id: 'C11060001', name: '우주·항공', description: '우주·항공을(를) 다루는 분류', display_name: '우주·항공 (:Classification)', readme: '우주·항공 관련.', group: true});
+CREATE (:Classification {id: 'C11060002', name: '우주개발', description: '우주개발 관련 분류', display_name: '우주개발 (:Classification)', readme: '우주개발 관련.', group: false});
+CREATE (:Classification {id: 'C11060003', name: '항공기술', description: '항공기술 관련 분류', display_name: '항공기술 (:Classification)', readme: '항공기술 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C11000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11000001'}), (c:Classification {id: 'C11010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11010001'}), (c:Classification {id: 'C11010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11010001'}), (c:Classification {id: 'C11010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11010001'}), (c:Classification {id: 'C11010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11010001'}), (c:Classification {id: 'C11010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11000001'}), (c:Classification {id: 'C11020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11020001'}), (c:Classification {id: 'C11020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11020001'}), (c:Classification {id: 'C11020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11020001'}), (c:Classification {id: 'C11020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11000001'}), (c:Classification {id: 'C11030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11030001'}), (c:Classification {id: 'C11030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11030001'}), (c:Classification {id: 'C11030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11030001'}), (c:Classification {id: 'C11030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11030001'}), (c:Classification {id: 'C11030005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11000001'}), (c:Classification {id: 'C11040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11040001'}), (c:Classification {id: 'C11040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11040001'}), (c:Classification {id: 'C11040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11040001'}), (c:Classification {id: 'C11040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11040001'}), (c:Classification {id: 'C11040005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11000001'}), (c:Classification {id: 'C11050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11050001'}), (c:Classification {id: 'C11050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11050001'}), (c:Classification {id: 'C11050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11050001'}), (c:Classification {id: 'C11050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11000001'}), (c:Classification {id: 'C11060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11060001'}), (c:Classification {id: 'C11060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C11060001'}), (c:Classification {id: 'C11060003'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T11010001', name_ko: '연구개발', name_en: 'Research and Development', acronym: 'R&D', description: '연구개발 (Research and Development)', display_name: '연구개발 (:Term)'});
+CREATE (:Term {id: 'T11010002', name_ko: '국가R&D', name_en: 'National R&D', acronym: 'None', description: '국가R&D (National R&D)', display_name: '국가R&D (:Term)'});
+CREATE (:Term {id: 'T11020001', name_ko: '자연과학', name_en: 'Natural Science', acronym: 'None', description: '자연과학 (Natural Science)', display_name: '자연과학 (:Term)'});
+CREATE (:Term {id: 'T11020002', name_ko: '물리학', name_en: 'Physics', acronym: 'None', description: '물리학 (Physics)', display_name: '물리학 (:Term)'});
+CREATE (:Term {id: 'T11030001', name_ko: '공학기술', name_en: 'Engineering', acronym: 'None', description: '공학기술 (Engineering)', display_name: '공학기술 (:Term)'});
+CREATE (:Term {id: 'T11030002', name_ko: '전자공학', name_en: 'Electronics Engineering', acronym: 'None', description: '전자공학 (Electronics Engineering)', display_name: '전자공학 (:Term)'});
+CREATE (:Term {id: 'T11040001', name_ko: '정보기술', name_en: 'Information Technology', acronym: 'IT', description: '정보기술 (Information Technology)', display_name: '정보기술 (:Term)'});
+CREATE (:Term {id: 'T11040002', name_ko: '인공지능', name_en: 'Artificial Intelligence', acronym: 'AI', description: '인공지능 (Artificial Intelligence)', display_name: '인공지능 (:Term)'});
+CREATE (:Term {id: 'T11040003', name_ko: '빅데이터', name_en: 'Big Data', acronym: 'None', description: '빅데이터 (Big Data)', display_name: '빅데이터 (:Term)'});
+CREATE (:Term {id: 'T11050001', name_ko: '특허', name_en: 'Patent', acronym: 'None', description: '특허 (Patent)', display_name: '특허 (:Term)'});
+CREATE (:Term {id: 'T11050002', name_ko: '기술이전', name_en: 'Technology Transfer', acronym: 'None', description: '기술이전 (Technology Transfer)', display_name: '기술이전 (:Term)'});
+CREATE (:Term {id: 'T11060001', name_ko: '우주개발', name_en: 'Space Development', acronym: 'None', description: '우주개발 (Space Development)', display_name: '우주개발 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T11060001'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T11010001'}), (c:Classification {id: 'C11010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11010002'}), (c:Classification {id: 'C11010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11020001'}), (c:Classification {id: 'C11020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11020002'}), (c:Classification {id: 'C11020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11030001'}), (c:Classification {id: 'C11030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11030002'}), (c:Classification {id: 'C11030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11040001'}), (c:Classification {id: 'C11040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11040002'}), (c:Classification {id: 'C11040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11040003'}), (c:Classification {id: 'C11040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11050001'}), (c:Classification {id: 'C11050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11050002'}), (c:Classification {id: 'C11050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T11060001'}), (c:Classification {id: 'C11060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+
+// Related Term Relations
+
+// 재난안전 (Disaster & Safety)
+
+// Classifications
+CREATE (:Classification {id: 'C12000001', name: '재난안전', description: '재난안전 부문 정책 및 제도 전반을 다루는 최상위 분류', display_name: '재난안전 (:Classification)', readme: '재난안전 관련.', group: true});
+CREATE (:Classification {id: 'C12010001', name: '재난관리', description: '재난관리을(를) 다루는 분류', display_name: '재난관리 (:Classification)', readme: '재난관리 관련.', group: true});
+CREATE (:Classification {id: 'C12010002', name: '재난예방', description: '재난예방 관련 분류', display_name: '재난예방 (:Classification)', readme: '재난예방 관련.', group: false});
+CREATE (:Classification {id: 'C12010003', name: '재난대응', description: '재난대응 관련 분류', display_name: '재난대응 (:Classification)', readme: '재난대응 관련.', group: false});
+CREATE (:Classification {id: 'C12010004', name: '복구·복원', description: '복구·복원 관련 분류', display_name: '복구·복원 (:Classification)', readme: '복구·복원 관련.', group: false});
+CREATE (:Classification {id: 'C12010005', name: '재난통계', description: '재난통계 관련 분류', display_name: '재난통계 (:Classification)', readme: '재난통계 관련.', group: false});
+CREATE (:Classification {id: 'C12020001', name: '안전관리', description: '안전관리을(를) 다루는 분류', display_name: '안전관리 (:Classification)', readme: '안전관리 관련.', group: true});
+CREATE (:Classification {id: 'C12020002', name: '시설물안전', description: '시설물안전 관련 분류', display_name: '시설물안전 (:Classification)', readme: '시설물안전 관련.', group: false});
+CREATE (:Classification {id: 'C12020003', name: '생활안전', description: '생활안전 관련 분류', display_name: '생활안전 (:Classification)', readme: '생활안전 관련.', group: false});
+CREATE (:Classification {id: 'C12020004', name: '다중이용시설', description: '다중이용시설 관련 분류', display_name: '다중이용시설 (:Classification)', readme: '다중이용시설 관련.', group: false});
+CREATE (:Classification {id: 'C12020005', name: '교통안전', description: '교통안전 관련 분류', display_name: '교통안전 (:Classification)', readme: '교통안전 관련.', group: false});
+CREATE (:Classification {id: 'C12030001', name: '비상대비', description: '비상대비을(를) 다루는 분류', display_name: '비상대비 (:Classification)', readme: '비상대비 관련.', group: true});
+CREATE (:Classification {id: 'C12030002', name: '민방위', description: '민방위 관련 분류', display_name: '민방위 (:Classification)', readme: '민방위 관련.', group: false});
+CREATE (:Classification {id: 'C12030003', name: '비상대응체계', description: '비상대응체계 관련 분류', display_name: '비상대응체계 (:Classification)', readme: '비상대응체계 관련.', group: false});
+CREATE (:Classification {id: 'C12030004', name: '국가비상사태', description: '국가비상사태 관련 분류', display_name: '국가비상사태 (:Classification)', readme: '국가비상사태 관련.', group: false});
+CREATE (:Classification {id: 'C12040001', name: '자연재해', description: '자연재해을(를) 다루는 분류', display_name: '자연재해 (:Classification)', readme: '자연재해 관련.', group: true});
+CREATE (:Classification {id: 'C12040002', name: '태풍·홍수', description: '태풍·홍수 관련 분류', display_name: '태풍·홍수 (:Classification)', readme: '태풍·홍수 관련.', group: false});
+CREATE (:Classification {id: 'C12040003', name: '지진·화산', description: '지진·화산 관련 분류', display_name: '지진·화산 (:Classification)', readme: '지진·화산 관련.', group: false});
+CREATE (:Classification {id: 'C12040004', name: '가뭄·폭염', description: '가뭄·폭염 관련 분류', display_name: '가뭄·폭염 (:Classification)', readme: '가뭄·폭염 관련.', group: false});
+CREATE (:Classification {id: 'C12050001', name: '사회재난', description: '사회재난을(를) 다루는 분류', display_name: '사회재난 (:Classification)', readme: '사회재난 관련.', group: true});
+CREATE (:Classification {id: 'C12050002', name: '화재·폭발', description: '화재·폭발 관련 분류', display_name: '화재·폭발 (:Classification)', readme: '화재·폭발 관련.', group: false});
+CREATE (:Classification {id: 'C12050003', name: '감염병 재난', description: '감염병 재난 관련 분류', display_name: '감염병 재난 (:Classification)', readme: '감염병 재난 관련.', group: false});
+CREATE (:Classification {id: 'C12050004', name: '환경오염 사고', description: '환경오염 사고 관련 분류', display_name: '환경오염 사고 (:Classification)', readme: '환경오염 사고 관련.', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C12000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12000001'}), (c:Classification {id: 'C12010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12010001'}), (c:Classification {id: 'C12010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12010001'}), (c:Classification {id: 'C12010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12010001'}), (c:Classification {id: 'C12010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12010001'}), (c:Classification {id: 'C12010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12000001'}), (c:Classification {id: 'C12020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12020001'}), (c:Classification {id: 'C12020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12020001'}), (c:Classification {id: 'C12020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12020001'}), (c:Classification {id: 'C12020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12020001'}), (c:Classification {id: 'C12020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12000001'}), (c:Classification {id: 'C12030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12030001'}), (c:Classification {id: 'C12030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12030001'}), (c:Classification {id: 'C12030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12030001'}), (c:Classification {id: 'C12030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12000001'}), (c:Classification {id: 'C12040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12040001'}), (c:Classification {id: 'C12040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12040001'}), (c:Classification {id: 'C12040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12040001'}), (c:Classification {id: 'C12040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12000001'}), (c:Classification {id: 'C12050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12050001'}), (c:Classification {id: 'C12050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12050001'}), (c:Classification {id: 'C12050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C12050001'}), (c:Classification {id: 'C12050004'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T12010001', name_ko: '재난관리', name_en: 'Disaster Management', acronym: 'None', description: '재난관리 (Disaster Management)', display_name: '재난관리 (:Term)'});
+CREATE (:Term {id: 'T12010002', name_ko: '재난예방', name_en: 'Disaster Prevention', acronym: 'None', description: '재난예방 (Disaster Prevention)', display_name: '재난예방 (:Term)'});
+CREATE (:Term {id: 'T12010003', name_ko: '재난대응', name_en: 'Disaster Response', acronym: 'None', description: '재난대응 (Disaster Response)', display_name: '재난대응 (:Term)'});
+CREATE (:Term {id: 'T12010004', name_ko: '복구복원', name_en: 'Recovery and Restoration', acronym: 'None', description: '복구복원 (Recovery and Restoration)', display_name: '복구복원 (:Term)'});
+CREATE (:Term {id: 'T12010005', name_ko: '재난통계', name_en: 'Disaster Statistics', acronym: 'None', description: '재난통계 (Disaster Statistics)', display_name: '재난통계 (:Term)'});
+CREATE (:Term {id: 'T12020001', name_ko: '안전관리', name_en: 'Safety Management', acronym: 'None', description: '안전관리 (Safety Management)', display_name: '안전관리 (:Term)'});
+CREATE (:Term {id: 'T12020002', name_ko: '시설물안전', name_en: 'Facility Safety', acronym: 'None', description: '시설물안전 (Facility Safety)', display_name: '시설물안전 (:Term)'});
+CREATE (:Term {id: 'T12020003', name_ko: '생활안전', name_en: 'Daily Life Safety', acronym: 'None', description: '생활안전 (Daily Life Safety)', display_name: '생활안전 (:Term)'});
+CREATE (:Term {id: 'T12020004', name_ko: '교통안전', name_en: 'Traffic Safety', acronym: 'None', description: '교통안전 (Traffic Safety)', display_name: '교통안전 (:Term)'});
+CREATE (:Term {id: 'T12030001', name_ko: '비상대비', name_en: 'Emergency Preparedness', acronym: 'None', description: '비상대비 (Emergency Preparedness)', display_name: '비상대비 (:Term)'});
+CREATE (:Term {id: 'T12030002', name_ko: '민방위', name_en: 'Civil Defense', acronym: 'None', description: '민방위 (Civil Defense)', display_name: '민방위 (:Term)'});
+CREATE (:Term {id: 'T12030003', name_ko: '위기관리', name_en: 'Crisis Management', acronym: 'None', description: '위기관리 (Crisis Management)', display_name: '위기관리 (:Term)'});
+CREATE (:Term {id: 'T12040001', name_ko: '자연재해', name_en: 'Natural Disaster', acronym: 'None', description: '자연재해 (Natural Disaster)', display_name: '자연재해 (:Term)'});
+CREATE (:Term {id: 'T12040002', name_ko: '태풍', name_en: 'Typhoon', acronym: 'None', description: '태풍 (Typhoon)', display_name: '태풍 (:Term)'});
+CREATE (:Term {id: 'T12040003', name_ko: '홍수', name_en: 'Flood', acronym: 'None', description: '홍수 (Flood)', display_name: '홍수 (:Term)'});
+CREATE (:Term {id: 'T12040004', name_ko: '지진', name_en: 'Earthquake', acronym: 'None', description: '지진 (Earthquake)', display_name: '지진 (:Term)'});
+CREATE (:Term {id: 'T12040005', name_ko: '폭염', name_en: 'Heat Wave', acronym: 'None', description: '폭염 (Heat Wave)', display_name: '폭염 (:Term)'});
+CREATE (:Term {id: 'T12050001', name_ko: '사회재난', name_en: 'Social Disaster', acronym: 'None', description: '사회재난 (Social Disaster)', display_name: '사회재난 (:Term)'});
+CREATE (:Term {id: 'T12050002', name_ko: '화재', name_en: 'Fire', acronym: 'None', description: '화재 (Fire)', display_name: '화재 (:Term)'});
+CREATE (:Term {id: 'T12050003', name_ko: '감염병', name_en: 'Infectious Disease', acronym: 'None', description: '감염병 (Infectious Disease)', display_name: '감염병 (:Term)'});
+CREATE (:Term {id: 'T12050004', name_ko: '산업재해', name_en: 'Industrial Accident', acronym: 'None', description: '산업재해 (Industrial Accident)', display_name: '산업재해 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12010003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12010004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12010005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12020004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12030003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12040004'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12040005'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12050003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T12050004'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T12010001'}), (c:Classification {id: 'C12010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12010002'}), (c:Classification {id: 'C12010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12010003'}), (c:Classification {id: 'C12010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12010004'}), (c:Classification {id: 'C12010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12010005'}), (c:Classification {id: 'C12010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12020001'}), (c:Classification {id: 'C12020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12020002'}), (c:Classification {id: 'C12020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12020003'}), (c:Classification {id: 'C12020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12020004'}), (c:Classification {id: 'C12020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12030001'}), (c:Classification {id: 'C12030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12030002'}), (c:Classification {id: 'C12030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12030003'}), (c:Classification {id: 'C12030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12040001'}), (c:Classification {id: 'C12040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12040002'}), (c:Classification {id: 'C12040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12040003'}), (c:Classification {id: 'C12040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12040004'}), (c:Classification {id: 'C12040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12040005'}), (c:Classification {id: 'C12040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12050001'}), (c:Classification {id: 'C12050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12050002'}), (c:Classification {id: 'C12050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12050003'}), (c:Classification {id: 'C12050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T12050004'}), (c:Classification {id: 'C12050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations
+
+// Related Term Relations

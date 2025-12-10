@@ -1,0 +1,716 @@
+# MC 분류·용어 통합 체계
+
+**버전:** 3.6.0
+**최종 업데이트:** 2025-12-10
+
+## ID 체계
+
+- **분류 ID**: C + DD(도메인) + LL(중분류) + SSSS(일련번호)
+- **용어 ID**: T + DD(도메인) + LL(중분류) + SSSS(일련번호)
+
+## 도메인 구조
+
+---
+## 01. 공공행정 | Public Administration
+
+### [분류 체계]
+
+- C01000001 공공행정
+  ├ C01010001 정부조직·기관관리
+  │ ├ C01010002 공공기관 현황
+  │ ├ C01010003 정부부처 조직
+  │ ├ C01010004 산하기관 정보
+  │ ├ C01010005 공공기관 경영평가
+  │ └ C01010006 공무원 인사
+  ├ C01020001 지방행정·자치
+  │ ├ C01020002 행정구역 정보
+  │ ├ C01020003 지방자치단체
+  │ ├ C01020004 읍면동 행정기관
+  │ ├ C01020005 특별자치시도
+  │ └ C01020006 지방의회
+  ├ C01030001 행정정보화
+  │ ├ C01030002 정보자원 현황
+  │ ├ C01030003 정보시스템
+  │ ├ C01030004 공공데이터 개방
+  │ ├ C01030005 전자정부 서비스
+  │ └ C01030006 디지털플랫폼정부
+  ├ C01040001 국가정책·사업
+  │ ├ C01040002 국가 주요사업
+  │ ├ C01040003 대민서비스
+  │ └ C01040004 규제개혁
+  ├ C01050001 인사·조직
+  │ ├ C01050002 공무원 현황
+  │ └ C01050003 조직관리
+  └ C01060001 감사·평가
+    ├ C01060002 정부업무평가
+    └ C01060003 감사원 감사
+
+### [핵심 용어]
+
+- T01010001 공공기관 | Public Institution
+- T01010002 정부조직도 | Government Organization Chart
+- T01010003 공공기관 현황 | Public Institution Status
+- T01020001 행정구역 | Administrative District
+- T01020002 지방자치단체 | Local Government
+- T01020003 읍면동 | Eup-Myeon-Dong
+- T01020004 행정복지센터 | Administrative Welfare Center
+- T01030001 행정정보화 | Administrative Informatization
+- T01030002 정보자원 | Information Resources
+- T01030003 공공데이터 개방 | Open Public Data
+- T01040001 국가정책 | National Policy
+- T01040002 대민서비스 | Public Service
+
+---
+## 02. 교육 | Education
+
+### [분류 체계]
+
+- C02000001 교육
+  ├ C02010001 교육통계
+  │ ├ C02010002 학교 통계
+  │ ├ C02010003 교원 통계
+  │ ├ C02010004 학생 통계
+  │ └ C02010005 교육재정 통계
+  ├ C02020001 평생교육
+  │ ├ C02020002 평생교육기관
+  │ ├ C02020003 평생학습강좌
+  │ ├ C02020004 성인문해교육
+  │ └ C02020005 직업능력개발
+  ├ C02030001 학교교육
+  │ ├ C02030002 초중고 교육
+  │ ├ C02030003 교육과정
+  │ ├ C02030004 학업성취도
+  │ ├ C02030005 학교시설
+  │ └ C02030006 교육복지
+  ├ C02040001 고등교육
+  │ ├ C02040002 대학정보
+  │ ├ C02040003 대학정보공시
+  │ ├ C02040004 대학재정
+  │ └ C02040005 산학협력
+  ├ C02050001 유아교육
+  │ ├ C02050002 유치원 현황
+  │ ├ C02050003 어린이집
+  │ └ C02050004 누리과정
+  └ C02060001 특수·영재교육
+    ├ C02060002 특수교육
+    ├ C02060003 영재교육
+    └ C02060004 대안교육
+
+### [핵심 용어]
+
+- T02010001 교육통계연보 | Education Statistics Yearbook
+- T02010002 학교 통계 | School Statistics
+- T02010003 교원 통계 | Teacher Statistics
+- T02010004 학생 통계 | Student Statistics
+- T02010005 교육재정 | Education Finance
+- T02020001 평생교육 | Lifelong Education
+- T02020002 평생교육기관 | Lifelong Education Institution
+- T02020003 평생학습강좌 | Lifelong Learning Course
+- T02020004 성인문해교육 | Adult Literacy Education
+- T02020005 직업능력개발 | Vocational Training
+- T02030001 학교교육 | School Education
+- T02030002 교육과정 | Curriculum
+- T02030003 학업성취도 | Academic Achievement
+- T02030004 학교시설 | School Facilities
+- T02030005 교육복지 | Education Welfare
+- T02040001 고등교육 | Higher Education
+- T02040002 대학정보공시 | University Information Disclosure
+- T02040003 산학협력 | Industry-Academia Cooperation
+- T02050001 유아교육 | Early Childhood Education
+- T02050002 누리과정 | Nuri Curriculum
+- T02060001 특수교육 | Special Education
+- T02060002 영재교육 | Gifted Education
+
+---
+## 03. 보건의료 | Healthcare
+
+### [분류 체계]
+
+- C03000001 보건의료
+  ├ C03010001 의료기관
+  │ ├ C03010002 병원·의원 현황
+  │ ├ C03010003 약국 현황
+  │ ├ C03010004 의료시설 정보
+  │ ├ C03010005 의료장비 현황
+  │ └ C03010006 의료기관 인증
+  ├ C03020001 의료이용
+  │ ├ C03020002 지역별 의료이용
+  │ ├ C03020003 진료통계
+  │ ├ C03020004 의료비 통계
+  │ └ C03020005 의료접근성
+  ├ C03030001 보건인력
+  │ ├ C03030002 의사·간호사 현황
+  │ ├ C03030003 보건의료인력 통계
+  │ └ C03030004 의료인력 양성
+  ├ C03040001 건강보험
+  │ ├ C03040002 건강보험 통계
+  │ ├ C03040003 의료급여
+  │ └ C03040004 보험급여 기준
+  ├ C03050001 질병관리
+  │ ├ C03050002 암·종양
+  │ ├ C03050003 안과질환
+  │ ├ C03050004 소화기질환
+  │ ├ C03050005 순환기질환
+  │ ├ C03050006 호흡기질환
+  │ ├ C03050007 근골격계질환
+  │ ├ C03050008 정신건강질환
+  │ └ C03050009 감염병
+  ├ C03060001 보건의료데이터
+  │ ├ C03060002 의료영상데이터
+  │ └ C03060003 건강정보 빅데이터
+  ├ C03070001 공중보건
+  │ ├ C03070002 예방접종
+  │ ├ C03070003 검역·방역
+  │ └ C03070004 건강증진
+  ├ C03080001 의약품·의료기기
+  │ ├ C03080002 의약품 허가
+  │ ├ C03080003 의료기기 인허가
+  │ └ C03080004 임상시험
+  └ C03090001 응급의료
+    ├ C03090002 응급의료기관
+    └ C03090003 응급환자 이송
+
+### [핵심 용어]
+
+- T03010001 의료기관 | Medical Institution
+- T03010002 병원 | Hospital
+- T03010003 의원 | Clinic
+- T03010004 약국 | Pharmacy
+- T03010005 의료시설 | Medical Facility
+- T03010006 의료장비 | Medical Equipment
+- T03020001 의료이용 통계 | Healthcare Utilization Statistics
+- T03020002 진료통계 | Medical Treatment Statistics
+- T03030001 보건의료인력 | Healthcare Personnel
+- T03030002 의사 | Physician
+- T03030003 간호사 | Nurse
+- T03040001 건강보험 | Health Insurance
+- T03040002 의료급여 | Medical Aid
+- T03050001 암 | Cancer
+- T03050002 대장암 | Colorectal Cancer [CRC]
+- T03050003 안구건조증 | Dry Eye Syndrome [DES]
+- T03050004 위식도역류질환 | Gastroesophageal Reflux Disease [GERD]
+- T03060001 보건의료빅데이터 | Healthcare Big Data
+- T03060002 의료영상데이터 | Medical Imaging Data
+
+---
+## 04. 사회복지 | Social Welfare
+
+### [분류 체계]
+
+- C04000001 사회복지
+  ├ C04010001 사회보장
+  │ ├ C04010002 사회보험
+  │ ├ C04010003 공적부조
+  │ ├ C04010004 사회서비스
+  │ └ C04010005 기초생활보장
+  ├ C04020001 복지시설
+  │ ├ C04020002 노인복지시설
+  │ ├ C04020003 아동복지시설
+  │ ├ C04020004 장애인복지시설
+  │ └ C04020005 지역사회복지관
+  ├ C04030001 취약계층지원
+  │ ├ C04030002 저소득층 지원
+  │ ├ C04030003 다문화가족 지원
+  │ ├ C04030004 한부모가족 지원
+  │ ├ C04030005 노숙인 지원
+  │ └ C04030006 북한이탈주민 지원
+  ├ C04040001 고령화·인구정책
+  │ ├ C04040002 고령사회 대응
+  │ ├ C04040003 인구감소 대응
+  │ ├ C04040004 저출산 대책
+  │ └ C04040005 돌봄서비스
+  ├ C04050001 아동·청소년복지
+  │ ├ C04050002 아동보호
+  │ ├ C04050003 청소년 정책
+  │ └ C04050004 보육서비스
+  └ C04060001 장애인복지
+    ├ C04060002 장애인 등록
+    ├ C04060003 장애인 고용
+    └ C04060004 장애인 활동지원
+
+### [핵심 용어]
+
+- T04010001 사회보장 | Social Security
+- T04010002 사회보험 | Social Insurance
+- T04010003 공적부조 | Public Assistance
+- T04020001 복지시설 | Welfare Facility
+- T04020002 노인복지시설 | Elderly Welfare Facility
+- T04030001 취약계층 | Vulnerable Groups
+- T04030002 저소득층 | Low-Income Groups
+- T04040001 고령사회 | Aging Society
+- T04040002 초고령사회 | Super-Aged Society
+- T04040003 노노케어 | Senior-to-Senior Care
+
+---
+## 05. 법률 | Law
+
+### [분류 체계]
+
+- C05000001 법률
+  ├ C05010001 법령·법규
+  │ ├ C05010002 법률
+  │ ├ C05010003 시행령·시행규칙
+  │ ├ C05010004 자치법규
+  │ └ C05010005 행정규칙
+  ├ C05020001 판례·재판
+  │ ├ C05020002 대법원 판례
+  │ ├ C05020003 하급심 판례
+  │ ├ C05020004 재판통계
+  │ └ C05020005 헌법재판소 결정
+  ├ C05030001 법률서비스
+  │ ├ C05030002 법률상담
+  │ ├ C05030003 법률구조
+  │ └ C05030004 법률정보 제공
+  ├ C05040001 조세·세법
+  │ ├ C05040002 국세
+  │ ├ C05040003 지방세
+  │ ├ C05040004 관세
+  │ └ C05040005 세무행정
+  ├ C05050001 민사·상사법
+  │ ├ C05050002 민법
+  │ ├ C05050003 상법
+  │ └ C05050004 지식재산권법
+  └ C05060001 형사·행정법
+    ├ C05060002 형법
+    ├ C05060003 행정법
+    └ C05060004 행정심판
+
+### [핵심 용어]
+
+- T05010001 법령 | Legislation
+- T05010002 법률 | Law
+- T05010003 시행령 | Enforcement Decree
+- T05010004 자치법규 | Local Ordinance
+- T05010005 행정규칙 | Administrative Rules
+- T05020001 판례 | Case Law
+- T05020002 대법원 판례 | Supreme Court Precedent
+- T05020003 헌법재판소 결정 | Constitutional Court Decision
+- T05020004 재판통계 | Judicial Statistics
+- T05030001 법률서비스 | Legal Service
+- T05030002 법률상담 | Legal Consultation
+- T05030003 법률구조 | Legal Aid
+- T05040001 조세 | Tax
+- T05040002 종합부동산세 | Comprehensive Real Estate Tax
+- T05040003 양도소득세 | Capital Gains Tax
+- T05040004 부가가치세 | Value Added Tax [VAT]
+- T05040005 국세 | National Tax
+- T05040006 지방세 | Local Tax
+- T05050001 민법 | Civil Law
+- T05050002 상법 | Commercial Law
+- T05060001 형법 | Criminal Law
+- T05060002 행정심판 | Administrative Appeal
+
+---
+## 06. 재정금융 | Finance
+
+### [분류 체계]
+
+- C06000001 재정금융
+  ├ C06010001 통화정책
+  │ ├ C06010002 기준금리 운영
+  │ ├ C06010003 공개시장운영
+  │ ├ C06010004 유동성조절
+  │ └ C06010005 통화안정증권
+  ├ C06020001 금융안정
+  │ ├ C06020002 가계부채 관리
+  │ ├ C06020003 부동산PF 리스크
+  │ ├ C06020004 시스템리스크
+  │ └ C06020005 금융감독
+  ├ C06030001 금융기관
+  │ ├ C06030002 은행
+  │ ├ C06030003 보험사
+  │ ├ C06030004 증권사
+  │ ├ C06030005 저축은행
+  │ └ C06030006 상호금융
+  ├ C06040001 자본시장
+  │ ├ C06040002 주식시장
+  │ ├ C06040003 채권시장
+  │ ├ C06040004 펀드
+  │ ├ C06040005 파생상품
+  │ └ C06040006 외환시장
+  ├ C06050001 여신·대출
+  │ ├ C06050002 기업대출
+  │ ├ C06050003 가계대출
+  │ ├ C06050004 주택담보대출
+  │ └ C06050005 소상공인금융
+  ├ C06060001 금융지표
+  │ ├ C06060002 금리지표
+  │ ├ C06060003 환율
+  │ ├ C06060004 시장지수
+  │ └ C06060005 경제지표
+  ├ C06070001 핀테크·혁신금융
+  │ ├ C06070002 디지털금융
+  │ ├ C06070003 빅테크금융
+  │ ├ C06070004 오픈뱅킹
+  │ └ C06070005 가상자산
+  ├ C06080001 연금·보험
+  │ ├ C06080002 공적연금
+  │ ├ C06080003 퇴직연금
+  │ ├ C06080004 보험상품
+  │ └ C06080005 연금자산관리
+  ├ C06090001 국가재정
+  │ ├ C06090002 국가예산
+  │ ├ C06090003 세출·세입
+  │ ├ C06090004 국가결산
+  │ └ C06090005 재정사업평가
+  └ C06100001 지방재정
+    ├ C06100002 지방예산
+    ├ C06100003 지방세입
+    └ C06100004 재정자립도
+
+### [핵심 용어]
+
+- T06010001 국가예산 | National Budget
+- T06010002 분야별 예산 | Budget by Sector
+- T06010003 부처별 예산 | Budget by Ministry
+- T06010004 세출예산 | Expenditure Budget
+- T06010005 세입예산 | Revenue Budget
+- T06020001 재정통계 | Fiscal Statistics
+- T06020002 재정상태표 | Statement of Financial Position
+- T06020003 국가결산 | National Settlement
+- T06030001 지방재정 | Local Finance
+- T06030002 지방교부세 | Local Allocation Tax
+- T06030003 재정자립도 | Fiscal Independence Ratio
+- T06040001 국세 | National Tax
+- T06040002 지방세 | Local Tax
+- T06040003 금융소득 | Financial Income
+- T06050001 기금 | Fund
+- T06050002 기금운용 | Fund Management
+- T06060001 통화정책 | Monetary Policy
+- T06060002 기준금리 | Base Rate
+- T06060003 금융안정 | Financial Stability
+
+---
+## 07. 산업경제 | Industry & Economy
+
+### [분류 체계]
+
+- C07000001 산업경제
+  ├ C07010001 산업통계
+  │ ├ C07010002 산업생산
+  │ ├ C07010003 산업동향
+  │ ├ C07010004 기업통계
+  │ └ C07010005 산업구조
+  ├ C07020001 제조업
+  │ ├ C07020002 반도체·전자
+  │ ├ C07020003 자동차·조선
+  │ ├ C07020004 석유화학
+  │ └ C07020005 바이오·헬스
+  ├ C07030001 서비스업
+  │ ├ C07030002 유통·도소매
+  │ ├ C07030003 금융·보험
+  │ ├ C07030004 전문서비스
+  │ └ C07030005 숙박·음식
+  ├ C07040001 고용·노동
+  │ ├ C07040002 일자리 정보
+  │ ├ C07040003 고용통계
+  │ ├ C07040004 노동시장
+  │ └ C07040005 근로조건
+  ├ C07050001 창업·벤처
+  │ ├ C07050002 스타트업
+  │ ├ C07050003 벤처투자
+  │ ├ C07050004 창업지원
+  │ └ C07050005 벤처생태계
+  ├ C07060001 중소기업
+  │ ├ C07060002 중소기업 현황
+  │ ├ C07060003 소상공인
+  │ └ C07060004 중소기업 지원
+  └ C07070001 무역·통상
+    ├ C07070002 수출입 통계
+    ├ C07070003 FTA
+    └ C07070004 통상정책
+
+### [핵심 용어]
+
+- T07010001 산업생산지수 | Industrial Production Index
+- T07010003 기업통계 | Business Statistics
+- T07010004 산업구조 | Industrial Structure
+- T07020001 반도체산업 | Semiconductor Industry
+- T07010002 산업동향 | Industrial Trends
+- T07020002 자동차산업 | Automotive Industry
+- T07020003 바이오산업 | Bio Industry
+- T07030001 서비스업 | Service Industry
+- T07030002 유통업 | Distribution Industry
+- T07040001 고용통계 | Employment Statistics
+- T07040002 일자리 | Job
+- T07040003 실업률 | Unemployment Rate
+- T07040004 노동시장 | Labor Market
+- T07040005 최저임금 | Minimum Wage
+- T07050001 창업 | Startup
+- T07050002 벤처투자 | Venture Investment
+- T07050003 스타트업 | Startup Company
+- T07050004 액셀러레이터 | Accelerator
+- T07060001 중소기업 | SME
+- T07060002 소상공인 | Small Business Owner
+- T07070001 수출입 | Import and Export
+- T07070002 FTA | Free Trade Agreement
+- T07070003 무역수지 | Trade Balance
+
+---
+## 08. 디지털커머스 | Digital Commerce
+
+### [분류 체계]
+
+- C08000001 디지털커머스
+  ├ C08010001 이커머스 플랫폼
+  │ ├ C08010002 온라인쇼핑몰
+  │ ├ C08010003 오픈마켓
+  │ ├ C08010004 소셜커머스
+  │ └ C08010005 버티컬커머스
+  ├ C08020001 온라인 유통
+  │ ├ C08020002 온라인 도매
+  │ ├ C08020003 D2C 직접판매
+  │ └ C08020004 크로스보더 커머스
+  ├ C08030001 디지털 결제
+  │ ├ C08030002 간편결제
+  │ ├ C08030003 BNPL 후불결제
+  │ └ C08030004 결제 인프라
+  ├ C08040001 물류·풀필먼트
+  │ ├ C08040002 라스트마일 배송
+  │ ├ C08040003 풀필먼트 센터
+  │ └ C08040004 반품·역물류
+  └ C08050001 소비자 트렌드
+    ├ C08050002 소비패턴 분석
+    ├ C08050003 라이브커머스
+    └ C08050004 구독경제
+
+### [핵심 용어]
+
+- T08010001 이커머스 플랫폼 | E-commerce Platform
+- T08010002 온라인쇼핑몰 | Online Shopping Mall
+- T08010003 오픈마켓 | Open Market
+- T08020001 D2C | Direct to Consumer
+- T08020002 크로스보더 | Cross-border Commerce
+- T08030001 간편결제 | Simple Payment
+- T08030002 BNPL | Buy Now Pay Later
+- T08040001 풀필먼트 | Fulfillment
+- T08040002 라스트마일 | Last Mile Delivery
+- T08050001 라이브커머스 | Live Commerce
+- T08050002 구독경제 | Subscription Economy
+
+---
+## 09. 문화관광 | Culture & Tourism
+
+### [분류 체계]
+
+- C09000001 문화관광
+  ├ C09010001 문화재
+  │ ├ C09010002 유형문화재
+  │ ├ C09010003 무형문화재
+  │ ├ C09010004 문화재 관리
+  │ └ C09010005 세계유산
+  ├ C09020001 관광
+  │ ├ C09020002 관광지 정보
+  │ ├ C09020003 관광통계
+  │ ├ C09020004 관광산업
+  │ └ C09020005 관광정책
+  ├ C09030001 문화시설
+  │ ├ C09030002 박물관·미술관
+  │ ├ C09030003 공연장
+  │ ├ C09030004 도서관
+  │ └ C09030005 문화센터
+  ├ C09040001 문화콘텐츠
+  │ ├ C09040002 공연·전시
+  │ ├ C09040003 문화행사
+  │ ├ C09040004 문화산업
+  │ └ C09040005 한류·K-컬처
+  ├ C09050001 체육·스포츠
+  │ ├ C09050002 체육시설
+  │ ├ C09050003 프로스포츠
+  │ └ C09050004 생활체육
+  └ C09060001 미디어·방송
+    ├ C09060002 방송콘텐츠
+    ├ C09060003 OTT 플랫폼
+    └ C09060004 언론·신문
+
+### [핵심 용어]
+
+- T09010001 문화재 | Cultural Heritage
+- T09010002 유형문화재 | Tangible Cultural Heritage
+- T09010003 무형문화재 | Intangible Cultural Heritage
+- T09010004 국보 | National Treasure
+- T09010005 세계유산 | World Heritage
+- T09020001 관광지 | Tourist Attraction
+- T09020002 관광통계 | Tourism Statistics
+- T09020003 관광산업 | Tourism Industry
+- T09020004 여행업 | Travel Industry
+- T09030001 문화시설 | Cultural Facility
+- T09030002 박물관 | Museum
+- T09030003 미술관 | Art Museum
+- T09030004 공연장 | Performance Hall
+- T09030005 도서관 | Library
+- T09040001 공연 | Performance
+- T09040002 전시 | Exhibition
+- T09040003 축제 | Festival
+- T09040004 한류 | Korean Wave [Hallyu]
+- T09040005 K-컬처 | K-Culture
+- T09050001 체육시설 | Sports Facility
+- T09050002 프로스포츠 | Professional Sports
+- T09050003 생활체육 | Recreational Sports
+- T09060001 방송콘텐츠 | Broadcasting Content
+- T09060002 OTT | Over-The-Top
+
+---
+## 10. 환경기상 | Environment & Weather
+
+### [분류 체계]
+
+- C10000001 환경기상
+  ├ C10010001 환경보전
+  │ ├ C10010002 대기환경
+  │ ├ C10010003 수질환경
+  │ ├ C10010004 폐기물관리
+  │ └ C10010005 토양환경
+  ├ C10020001 기후변화
+  │ ├ C10020002 온실가스
+  │ ├ C10020003 기후변화 대응
+  │ ├ C10020004 탄소중립
+  │ └ C10020005 기후적응
+  ├ C10030001 기상정보
+  │ ├ C10030002 날씨예보
+  │ ├ C10030003 기상관측
+  │ ├ C10030004 기상특보
+  │ └ C10030005 기후정보
+  ├ C10040001 자연환경
+  │ ├ C10040002 생태계
+  │ ├ C10040003 자연보호구역
+  │ ├ C10040004 환경영향평가
+  │ └ C10040005 생물다양성
+  ├ C10050001 에너지
+  │ ├ C10050002 신재생에너지
+  │ ├ C10050003 에너지효율
+  │ └ C10050004 에너지전환
+  └ C10060001 자원순환
+    ├ C10060002 재활용
+    ├ C10060003 순환경제
+    └ C10060004 폐자원 에너지화
+
+### [핵심 용어]
+
+- T10010001 환경보전 | Environmental Conservation
+- T10010002 대기환경 | Air Environment
+- T10010003 수질환경 | Water Quality
+- T10010004 폐기물 | Waste
+- T10010005 미세먼지 | Fine Dust [PM2.5]
+- T10010006 토양오염 | Soil Contamination
+- T10020001 기후변화 | Climate Change
+- T10020002 온실가스 | Greenhouse Gas
+- T10020003 탄소중립 | Carbon Neutrality
+- T10020004 NDC | Nationally Determined Contribution
+- T10020005 기후적응 | Climate Adaptation
+- T10030001 날씨 | Weather
+- T10030002 기상 | Meteorology
+- T10030003 기상예보 | Weather Forecast
+- T10030004 기상특보 | Weather Warning
+- T10030005 기후정보 | Climate Information
+- T10040001 생태계 | Ecosystem
+- T10040002 자연보호구역 | Nature Reserve
+- T10040003 환경영향평가 | Environmental Impact Assessment
+- T10040004 생물다양성 | Biodiversity
+- T10050001 신재생에너지 | Renewable Energy
+- T10050002 태양광 | Solar Power
+- T10050003 풍력 | Wind Power
+- T10050004 에너지전환 | Energy Transition
+- T10060001 재활용 | Recycling
+- T10060002 순환경제 | Circular Economy
+
+---
+## 11. 과학기술 | Science & Technology
+
+### [분류 체계]
+
+- C11000001 과학기술
+  ├ C11010001 연구개발
+  │ ├ C11010002 국가R&D
+  │ ├ C11010003 기업R&D
+  │ ├ C11010004 연구성과
+  │ └ C11010005 연구인력
+  ├ C11020001 자연과학
+  │ ├ C11020002 수학·통계
+  │ ├ C11020003 물리학
+  │ └ C11020004 화학·생명과학
+  ├ C11030001 공학기술
+  │ ├ C11030002 전기·전자공학
+  │ ├ C11030003 기계공학
+  │ ├ C11030004 토목·건축
+  │ └ C11030005 재료공학
+  ├ C11040001 ICT·정보기술
+  │ ├ C11040002 소프트웨어
+  │ ├ C11040003 인공지능
+  │ ├ C11040004 빅데이터
+  │ └ C11040005 사이버보안
+  ├ C11050001 기술혁신·특허
+  │ ├ C11050002 특허·지식재산
+  │ ├ C11050003 기술이전
+  │ └ C11050004 표준화
+  └ C11060001 우주·항공
+    ├ C11060002 우주개발
+    └ C11060003 항공기술
+
+### [핵심 용어]
+
+- T11010001 연구개발 | Research and Development [R&D]
+- T11010002 국가R&D | National R&D
+- T11020001 자연과학 | Natural Science
+- T11020002 물리학 | Physics
+- T11030001 공학기술 | Engineering
+- T11030002 전자공학 | Electronics Engineering
+- T11040001 정보기술 | Information Technology [IT]
+- T11040002 인공지능 | Artificial Intelligence [AI]
+- T11040003 빅데이터 | Big Data
+- T11050001 특허 | Patent
+- T11050002 기술이전 | Technology Transfer
+- T11060001 우주개발 | Space Development
+
+---
+## 12. 재난안전 | Disaster & Safety
+
+### [분류 체계]
+
+- C12000001 재난안전
+  ├ C12010001 재난관리
+  │ ├ C12010002 재난예방
+  │ ├ C12010003 재난대응
+  │ ├ C12010004 복구·복원
+  │ └ C12010005 재난통계
+  ├ C12020001 안전관리
+  │ ├ C12020002 시설물안전
+  │ ├ C12020003 생활안전
+  │ ├ C12020004 다중이용시설
+  │ └ C12020005 교통안전
+  ├ C12030001 비상대비
+  │ ├ C12030002 민방위
+  │ ├ C12030003 비상대응체계
+  │ └ C12030004 국가비상사태
+  ├ C12040001 자연재해
+  │ ├ C12040002 태풍·홍수
+  │ ├ C12040003 지진·화산
+  │ └ C12040004 가뭄·폭염
+  └ C12050001 사회재난
+    ├ C12050002 화재·폭발
+    ├ C12050003 감염병 재난
+    └ C12050004 환경오염 사고
+
+### [핵심 용어]
+
+- T12010001 재난관리 | Disaster Management
+- T12010002 재난예방 | Disaster Prevention
+- T12010003 재난대응 | Disaster Response
+- T12010004 복구복원 | Recovery and Restoration
+- T12010005 재난통계 | Disaster Statistics
+- T12020001 안전관리 | Safety Management
+- T12020002 시설물안전 | Facility Safety
+- T12020003 생활안전 | Daily Life Safety
+- T12020004 교통안전 | Traffic Safety
+- T12030001 비상대비 | Emergency Preparedness
+- T12030002 민방위 | Civil Defense
+- T12030003 위기관리 | Crisis Management
+- T12040001 자연재해 | Natural Disaster
+- T12040002 태풍 | Typhoon
+- T12040003 홍수 | Flood
+- T12040004 지진 | Earthquake
+- T12040005 폭염 | Heat Wave
+- T12050001 사회재난 | Social Disaster
+- T12050002 화재 | Fire
+- T12050003 감염병 | Infectious Disease
+- T12050004 산업재해 | Industrial Accident

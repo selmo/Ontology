@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.13.3",
+    "version": "3.14.0",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (Close Match 수동 검토 완료: +12개)"
+    "description": "MC 분류·용어 통합 체계 (Option C: 14개 도메인 확장 - 데이터 거버넌스 + 학술연구 신설)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -13087,7 +13087,9 @@
       "name_en": "Digital Commerce",
       "description": "디지털커머스 부문 정책 및 제도 전반",
       "primary_standards": [
-        "STD-KSIC"
+        "STD-KSIC",
+        "STD-GS1",
+        "STD-SCHEMA"
       ],
       "classifications": [
         {
@@ -13551,6 +13553,22 @@
               "external_name": "전자상거래 소매중개업",
               "match_type": "EXACT_MATCH",
               "confidence": 0.9
+            },
+            {
+              "standard_id": "STD-GS1",
+              "external_id": "eCommerce",
+              "external_name": "GS1 eCommerce Standards",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.85,
+              "note": "글로벌 유통·물류·전자상거래 표준"
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "WebSite, WebPage",
+              "external_name": "Schema.org WebSite/WebPage",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.8,
+              "note": "웹 구조화 데이터 표준"
             }
           ],
           "primary_standard": "STD-KSIC",
@@ -13632,6 +13650,13 @@
               "external_name": "전자상거래 소매중개업",
               "match_type": "NARROW_MATCH",
               "confidence": 0.85
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "Product, Offer",
+              "external_name": "Schema.org Product/Offer",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.75
             }
           ],
           "primary_standard": "STD-KSIC",
@@ -13695,6 +13720,13 @@
               "external_name": "금융 지원 서비스업",
               "match_type": "RELATED_MATCH",
               "confidence": 0.8
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "PaymentMethod",
+              "external_name": "Schema.org PaymentMethod",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
             }
           ],
           "primary_standard": "STD-KSIC",
@@ -13726,6 +13758,14 @@
               "external_name": "금융 지원 서비스업",
               "match_type": "NARROW_MATCH",
               "confidence": 0.8
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "PaymentMethod",
+              "external_name": "Schema.org PaymentMethod",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.85,
+              "note": "Buy Now Pay Later 결제 방식"
             }
           ],
           "primary_standard": "STD-KSIC",
@@ -13758,6 +13798,14 @@
               "external_name": "운수 및 창고업",
               "match_type": "BROAD_MATCH",
               "confidence": 0.85
+            },
+            {
+              "standard_id": "STD-GS1",
+              "external_id": "Logistics",
+              "external_name": "GS1 Logistics Standards",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.85,
+              "note": "주문처리·재고관리·배송 통합"
             }
           ],
           "primary_standard": "STD-KSIC",
@@ -13784,7 +13832,16 @@
           },
           "linked_clsf_id": "C08040001",
           "parent_id": null,
-          "standard_refs": [],
+          "standard_refs": [
+            {
+              "standard_id": "STD-GS1",
+              "external_id": "GLN",
+              "external_name": "Global Location Number",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.75,
+              "note": "최종 배송지 위치식별"
+            }
+          ],
           "primary_standard": null,
           "children": []
         },
@@ -13814,6 +13871,13 @@
               "external_name": "전자상거래 소매중개업",
               "match_type": "NARROW_MATCH",
               "confidence": 0.85
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "BroadcastEvent, Product",
+              "external_name": "Schema.org BroadcastEvent/Product",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.8
             }
           ],
           "primary_standard": "STD-KSIC",
@@ -13838,7 +13902,15 @@
           },
           "linked_clsf_id": "C08050001",
           "parent_id": null,
-          "standard_refs": [],
+          "standard_refs": [
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "Subscription",
+              "external_name": "Schema.org Subscription",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
+            }
+          ],
           "primary_standard": null,
           "children": []
         },
@@ -13894,6 +13966,13 @@
               "external_name": "번호V50",
               "match_type": "EXACT_MATCH",
               "confidence": 1.0
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "OrderNumber",
+              "external_name": "Schema.org Order.orderNumber",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
             }
           ],
           "children": []
@@ -13922,6 +14001,14 @@
               "external_name": "번호V50",
               "match_type": "EXACT_MATCH",
               "confidence": 1.0
+            },
+            {
+              "standard_id": "STD-GS1",
+              "external_id": "GTIN",
+              "external_name": "Global Trade Item Number",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "GS1 글로벌 상품식별번호 (바코드)"
             }
           ],
           "children": []
@@ -14006,6 +14093,13 @@
               "external_name": "비용N15",
               "match_type": "EXACT_MATCH",
               "confidence": 1.0
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "DeliveryChargeSpecification",
+              "external_name": "Schema.org DeliveryChargeSpecification",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
             }
           ],
           "children": []
@@ -14062,6 +14156,20 @@
               "external_name": "주소V200",
               "match_type": "EXACT_MATCH",
               "confidence": 1.0
+            },
+            {
+              "standard_id": "STD-SCHEMA",
+              "external_id": "PostalAddress",
+              "external_name": "Schema.org PostalAddress",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-GS1",
+              "external_id": "GLN",
+              "external_name": "Global Location Number",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.8
             }
           ],
           "children": []
@@ -19734,6 +19842,1305 @@
               "external_name": "내용V4000",
               "match_type": "EXACT_MATCH",
               "confidence": 1.0
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "name_ko": "데이터 거버넌스",
+      "name_en": "Data Governance",
+      "description": "메타데이터 관리, 데이터 품질, 표준화, 공공데이터 개방 등 데이터 거버넌스 전반",
+      "primary_standards": [
+        "STD-DC",
+        "STD-DCAT-AP-KR",
+        "STD-KS-ISO11179",
+        "STD-DBSTD",
+        "STD-DATAQUALITY"
+      ],
+      "classifications": [
+        {
+          "id": "C13000001",
+          "name": "데이터 거버넌스",
+          "description": "메타데이터, 데이터 품질, 표준화 등 데이터 거버넌스 전반",
+          "level": 0,
+          "group": true,
+          "parent_id": "03facd74b2d24f7cab807b8980391649",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DC",
+              "external_id": "DCMI",
+              "external_name": "Dublin Core Metadata Initiative",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.8,
+              "note": "메타데이터 표준 전반"
+            }
+          ]
+        },
+        {
+          "id": "C13010001",
+          "name": "메타데이터 관리",
+          "description": "메타데이터 표준, 데이터 사전, 카탈로그 등 메타데이터 체계 관리",
+          "level": 1,
+          "group": false,
+          "parent_id": "C13000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DC",
+              "external_id": "DC-TERMS",
+              "external_name": "Dublin Core Metadata Terms",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "15개 핵심 메타데이터 요소"
+            },
+            {
+              "standard_id": "STD-KS-ISO11179",
+              "external_id": "ISO11179",
+              "external_name": "Metadata Registry",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "메타데이터 레지스트리 표준"
+            }
+          ]
+        },
+        {
+          "id": "C13010002",
+          "name": "메타데이터 표준",
+          "description": "메타데이터 요소, 스키마, 프로파일 등 표준 정의",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13010001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DC",
+              "external_id": "DC-ELEMENTS",
+              "external_name": "Dublin Core Elements",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C13010003",
+          "name": "데이터 사전",
+          "description": "데이터 항목 정의, 도메인, 규칙 등 데이터 사전 관리",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13010001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-KS-ISO11179",
+              "external_id": "ISO11179-3",
+              "external_name": "Registry metamodel and basic attributes",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "id": "C13010004",
+          "name": "데이터 카탈로그",
+          "description": "데이터셋 목록, 메타데이터 저장소, 카탈로그 서비스",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13010001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DCAT-AP-KR",
+              "external_id": "DCAT",
+              "external_name": "Data Catalog Vocabulary",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "W3C DCAT 기반 한국형 프로파일"
+            }
+          ]
+        },
+        {
+          "id": "C13020001",
+          "name": "데이터 품질관리",
+          "description": "데이터 품질 지표, 평가, 개선 등 품질관리 체계",
+          "level": 1,
+          "group": false,
+          "parent_id": "C13000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DATAQUALITY",
+              "external_id": "MOIS-DQ",
+              "external_name": "공공데이터 품질관리 수준평가",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "공공데이터법 제22조"
+            }
+          ]
+        },
+        {
+          "id": "C13020002",
+          "name": "품질 지표",
+          "description": "정확성, 완전성, 일관성, 적시성 등 품질 지표 정의",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13020001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DATAQUALITY",
+              "external_id": "DQ-DIMENSIONS",
+              "external_name": "Data Quality Dimensions",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "id": "C13020003",
+          "name": "품질 평가",
+          "description": "품질 측정, 진단, 모니터링 등 품질 평가 프로세스",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13020001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DATAQUALITY",
+              "external_id": "DQ-ASSESSMENT",
+              "external_name": "Data Quality Assessment",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "id": "C13020004",
+          "name": "품질 개선",
+          "description": "오류 정제, 데이터 클렌징, 품질 향상 활동",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13020001",
+          "standard_refs": []
+        },
+        {
+          "id": "C13030001",
+          "name": "데이터 표준화",
+          "description": "표준 용어, 표준 코드, 데이터베이스 표준 등",
+          "level": 1,
+          "group": false,
+          "parent_id": "C13000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-STDTERM",
+              "external_id": "STDTERM",
+              "external_name": "공공데이터 공통표준용어",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "9,027개 표준용어, 2,396개 표준단어"
+            },
+            {
+              "standard_id": "STD-DBSTD",
+              "external_id": "MOIS-DBSTD",
+              "external_name": "DB 표준화 지침",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C13030002",
+          "name": "표준 용어 관리",
+          "description": "표준용어, 표준단어, 용어사전 관리",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-STDTERM",
+              "external_id": "STDTERM-TERM",
+              "external_name": "공통표준용어",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C13030003",
+          "name": "표준 코드 관리",
+          "description": "공통코드, 코드체계, 코드 매핑 관리",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-ADMCODE",
+              "external_id": "ADMCODE",
+              "external_name": "행정표준코드",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "id": "C13030004",
+          "name": "데이터베이스 표준",
+          "description": "DB 설계 표준, 명명 규칙, 모델링 지침",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DBSTD",
+              "external_id": "DBSTD-DESIGN",
+              "external_name": "데이터베이스 설계 표준",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9,
+              "note": "38개 메타데이터 관리항목"
+            }
+          ]
+        },
+        {
+          "id": "C13040001",
+          "name": "공공데이터 개방",
+          "description": "오픈데이터 정책, 데이터셋 관리, API 제공 등",
+          "level": 1,
+          "group": false,
+          "parent_id": "C13000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DCAT-AP-KR",
+              "external_id": "DCAT-AP-KR",
+              "external_name": "DCAT Application Profile for Korea",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-DATAGOkr",
+              "external_id": "DATA-GO-KR",
+              "external_name": "공공데이터포털",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
+            }
+          ]
+        },
+        {
+          "id": "C13040002",
+          "name": "오픈데이터 정책",
+          "description": "공공데이터법, 개방 원칙, 라이선스 정책",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13040001",
+          "standard_refs": []
+        },
+        {
+          "id": "C13040003",
+          "name": "데이터셋 관리",
+          "description": "데이터셋 등록, 메타데이터 관리, 버전 관리",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13040001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-DCAT-AP-KR",
+              "external_id": "DCAT-DATASET",
+              "external_name": "Dataset Class",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C13040004",
+          "name": "API 관리",
+          "description": "오픈 API, REST API, 데이터 서비스 제공",
+          "level": 2,
+          "group": false,
+          "parent_id": "C13040001",
+          "standard_refs": []
+        }
+      ],
+      "terms": [
+        {
+          "id": "T13010001",
+          "name_ko": "메타데이터",
+          "name_en": "Metadata",
+          "acronym": null,
+          "description": "데이터에 대한 데이터. 데이터의 속성, 구조, 의미 등을 설명하는 정보",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "메타정보"
+            ],
+            "close": [
+              "데이터 정의"
+            ],
+            "related": [
+              "데이터 사전",
+              "데이터 카탈로그"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C13010001",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-DC",
+              "external_id": "METADATA",
+              "external_name": "Metadata",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13010002",
+          "name_ko": "데이터 사전",
+          "name_en": "Data Dictionary",
+          "acronym": "DD",
+          "description": "데이터 항목의 정의, 형식, 제약조건 등을 기술한 문서",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "데이터사전"
+            ],
+            "close": [
+              "메타데이터 저장소"
+            ],
+            "related": [
+              "데이터 정의서",
+              "테이블 정의서"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T13010001"
+          ],
+          "linked_clsf_id": "C13010003",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-KS-ISO11179",
+              "external_id": "DATA-DICTIONARY",
+              "external_name": "Data Dictionary",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13010003",
+          "name_ko": "데이터 카탈로그",
+          "name_en": "Data Catalog",
+          "acronym": null,
+          "description": "조직 내 데이터셋의 목록과 메타데이터를 관리하는 시스템",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "데이터 목록"
+            ],
+            "related": [
+              "데이터 포털",
+              "데이터 레지스트리"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T13010001"
+          ],
+          "linked_clsf_id": "C13010004",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-DCAT-AP-KR",
+              "external_id": "DCAT-CATALOG",
+              "external_name": "Catalog Class",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13020001",
+          "name_ko": "데이터 품질",
+          "name_en": "Data Quality",
+          "acronym": "DQ",
+          "description": "데이터가 의도된 용도에 적합한 정도를 나타내는 특성",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "데이터 정확도"
+            ],
+            "related": [
+              "데이터 신뢰도",
+              "데이터 무결성"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C13020001",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-DATAQUALITY",
+              "external_id": "DQ",
+              "external_name": "Data Quality",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13020002",
+          "name_ko": "데이터 정제",
+          "name_en": "Data Cleansing",
+          "acronym": null,
+          "description": "데이터의 오류, 중복, 불일치를 제거하여 품질을 향상시키는 프로세스",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "데이터 클렌징"
+            ],
+            "close": [
+              "데이터 정화"
+            ],
+            "related": [
+              "데이터 정규화",
+              "데이터 표준화"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T13020001"
+          ],
+          "linked_clsf_id": "C13020004",
+          "parent_id": null,
+          "standard_refs": [],
+          "children": []
+        },
+        {
+          "id": "T13030001",
+          "name_ko": "표준용어",
+          "name_en": "Standard Terminology",
+          "acronym": null,
+          "description": "조직 또는 도메인 내에서 공통으로 사용하는 표준화된 용어",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "공통표준용어"
+            ],
+            "close": [
+              "표준 용어"
+            ],
+            "related": [
+              "용어 사전",
+              "용어집"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C13030002",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-STDTERM",
+              "external_id": "STDTERM",
+              "external_name": "공공데이터 공통표준용어",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13030002",
+          "name_ko": "공통코드",
+          "name_en": "Common Code",
+          "acronym": null,
+          "description": "여러 시스템에서 공통으로 사용하는 표준화된 코드 체계",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "표준코드"
+            ],
+            "close": [
+              "코드값"
+            ],
+            "related": [
+              "코드체계",
+              "코드테이블"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C13030003",
+          "parent_id": null,
+          "standard_refs": [],
+          "children": []
+        },
+        {
+          "id": "T13040001",
+          "name_ko": "오픈데이터",
+          "name_en": "Open Data",
+          "acronym": null,
+          "description": "누구나 자유롭게 이용·재배포·재가공할 수 있도록 공개된 데이터",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "공공데이터",
+              "개방데이터"
+            ],
+            "close": [],
+            "related": [
+              "정부 데이터",
+              "공개 데이터"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C13040001",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-DATAGOkr",
+              "external_id": "OPENDATA",
+              "external_name": "공공데이터",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13040002",
+          "name_ko": "데이터셋",
+          "name_en": "Dataset",
+          "acronym": null,
+          "description": "특정 주제나 목적으로 수집된 데이터의 집합",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "데이터 집합"
+            ],
+            "related": [
+              "데이터 파일",
+              "데이터 테이블"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T13040001"
+          ],
+          "linked_clsf_id": "C13040003",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-DCAT-AP-KR",
+              "external_id": "DCAT-DATASET",
+              "external_name": "Dataset",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T13040003",
+          "name_ko": "오픈API",
+          "name_en": "Open API",
+          "acronym": "API",
+          "description": "공개된 애플리케이션 프로그래밍 인터페이스. 외부에서 데이터나 기능에 접근할 수 있도록 제공",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "공개API"
+            ],
+            "close": [
+              "REST API"
+            ],
+            "related": [
+              "웹 서비스",
+              "API 게이트웨이"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T13040001"
+          ],
+          "linked_clsf_id": "C13040004",
+          "parent_id": null,
+          "standard_refs": [],
+          "children": []
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "name_ko": "학술연구",
+      "name_en": "Academic Research",
+      "description": "연구개발, 학술출판, 학문분류 등 학술 및 연구 활동 전반",
+      "primary_standards": [
+        "STD-OECD-FOS",
+        "STD-ARXIV",
+        "STD-ACMCCS",
+        "STD-UNESCO"
+      ],
+      "classifications": [
+        {
+          "id": "C14000001",
+          "name": "학술연구",
+          "description": "연구개발, 학술출판, 학문분류 등 학술 및 연구 활동 전반",
+          "level": 0,
+          "group": true,
+          "parent_id": "03facd74b2d24f7cab807b8980391649",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "FOS",
+              "external_name": "Fields of Science",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.85,
+              "note": "6개 대분류, 42개 소분류 학문체계"
+            }
+          ]
+        },
+        {
+          "id": "C14010001",
+          "name": "연구개발",
+          "description": "R&D 정책, 연구과제, 연구성과 등",
+          "level": 1,
+          "group": false,
+          "parent_id": "C14000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "R&D",
+              "external_name": "R&D Classification",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "id": "C14010002",
+          "name": "R&D 정책",
+          "description": "연구개발 정책, 과학기술정책, 혁신정책",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14010001",
+          "standard_refs": []
+        },
+        {
+          "id": "C14010003",
+          "name": "연구과제",
+          "description": "연구 프로젝트, 과제 관리, 과제 평가",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14010001",
+          "standard_refs": []
+        },
+        {
+          "id": "C14010004",
+          "name": "연구성과",
+          "description": "연구 결과, 특허, 기술이전, 성과 확산",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14010001",
+          "standard_refs": []
+        },
+        {
+          "id": "C14020001",
+          "name": "학술출판",
+          "description": "학술논문, 학술지, 학술대회, 저작권 등",
+          "level": 1,
+          "group": false,
+          "parent_id": "C14000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "ARXIV",
+              "external_name": "arXiv Preprint Repository",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.85,
+              "note": "과학 논문 아카이브"
+            }
+          ]
+        },
+        {
+          "id": "C14020002",
+          "name": "학술논문",
+          "description": "학술지 논문, 학위논문, 학술대회 논문",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14020001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "ARXIV-PAPER",
+              "external_name": "arXiv Papers",
+              "match_type": "CLOSE_MATCH",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "id": "C14020003",
+          "name": "학술지",
+          "description": "학술지 발행, 논문 심사, 인용 지표",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14020001",
+          "standard_refs": []
+        },
+        {
+          "id": "C14020004",
+          "name": "학술대회",
+          "description": "학회, 컨퍼런스, 심포지엄, 워크샵",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14020001",
+          "standard_refs": []
+        },
+        {
+          "id": "C14030001",
+          "name": "학문분류",
+          "description": "자연과학, 공학, 인문사회, 예술체육 등 학문 분류체계",
+          "level": 1,
+          "group": false,
+          "parent_id": "C14000001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "FOS-CLASSIFICATION",
+              "external_name": "Fields of Science Classification",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C14030002",
+          "name": "자연과학",
+          "description": "수학, 물리학, 화학, 생물학, 지구과학 등",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "1",
+              "external_name": "Natural sciences",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "math,physics,q-bio",
+              "external_name": "Mathematics, Physics, Biology",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "id": "C14030003",
+          "name": "공학",
+          "description": "전기전자, 기계, 화학공학, 토목, 컴퓨터공학 등",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "2",
+              "external_name": "Engineering and technology",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "cs",
+              "external_name": "Computer Science",
+              "match_type": "NARROW_MATCH",
+              "confidence": 0.9
+            },
+            {
+              "standard_id": "STD-ACMCCS",
+              "external_id": "10003",
+              "external_name": "Computer systems organization",
+              "match_type": "NARROW_MATCH",
+              "confidence": 0.85
+            }
+          ]
+        },
+        {
+          "id": "C14030004",
+          "name": "의학",
+          "description": "임상의학, 보건학, 약학, 간호학 등",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "3",
+              "external_name": "Medical and health sciences",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C14030005",
+          "name": "농업",
+          "description": "농학, 수산학, 임학, 축산학, 수의학 등",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "4",
+              "external_name": "Agricultural and veterinary sciences",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ]
+        },
+        {
+          "id": "C14030006",
+          "name": "인문사회",
+          "description": "사회학, 경제학, 심리학, 문학, 역사학 등",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "5",
+              "external_name": "Social sciences",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "6",
+              "external_name": "Humanities and the arts",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-UNESCO",
+              "external_id": "UNESCO-SOCIAL",
+              "external_name": "Social and Human Sciences",
+              "match_type": "BROAD_MATCH",
+              "confidence": 0.8
+            }
+          ]
+        },
+        {
+          "id": "C14030007",
+          "name": "컴퓨터과학",
+          "description": "알고리즘, 인공지능, 소프트웨어공학, 네트워크 등",
+          "level": 2,
+          "group": false,
+          "parent_id": "C14030001",
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "cs",
+              "external_name": "Computer Science",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95,
+              "note": "cs.AI, cs.SE, cs.NE 등 40개 서브카테고리"
+            },
+            {
+              "standard_id": "STD-ACMCCS",
+              "external_id": "10011007",
+              "external_name": "Software and its engineering",
+              "match_type": "NARROW_MATCH",
+              "confidence": 0.85,
+              "note": "2,000+ 개념"
+            }
+          ]
+        }
+      ],
+      "terms": [
+        {
+          "id": "T14010001",
+          "name_ko": "연구개발",
+          "name_en": "Research and Development",
+          "acronym": "R&D",
+          "description": "새로운 지식이나 기술을 창출하기 위한 체계적인 연구 및 개발 활동",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "R&D"
+            ],
+            "close": [
+              "연구",
+              "개발"
+            ],
+            "related": [
+              "연구과제",
+              "연구성과"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C14010001",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "R&D",
+              "external_name": "Research and Development",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14010002",
+          "name_ko": "연구과제",
+          "name_en": "Research Project",
+          "acronym": null,
+          "description": "특정 연구 목표를 달성하기 위한 프로젝트",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "연구 프로젝트"
+            ],
+            "close": [
+              "과제"
+            ],
+            "related": [
+              "연구계획",
+              "연구비"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14010001"
+          ],
+          "linked_clsf_id": "C14010003",
+          "parent_id": null,
+          "standard_refs": [],
+          "children": []
+        },
+        {
+          "id": "T14020001",
+          "name_ko": "학술논문",
+          "name_en": "Academic Paper",
+          "acronym": null,
+          "description": "연구 결과를 학술지나 학술대회에 발표한 논문",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "논문"
+            ],
+            "close": [
+              "학술지 논문",
+              "연구논문"
+            ],
+            "related": [
+              "학위논문",
+              "프리프린트"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C14020002",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "PAPER",
+              "external_name": "Paper/Preprint",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.9
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14020002",
+          "name_ko": "학술지",
+          "name_en": "Academic Journal",
+          "acronym": null,
+          "description": "학술 논문을 게재하는 정기간행물",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "저널"
+            ],
+            "close": [
+              "학회지"
+            ],
+            "related": [
+              "학술잡지",
+              "학술지 논문"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14020001"
+          ],
+          "linked_clsf_id": "C14020003",
+          "parent_id": null,
+          "standard_refs": [],
+          "children": []
+        },
+        {
+          "id": "T14030001",
+          "name_ko": "학문분류",
+          "name_en": "Field of Science",
+          "acronym": "FOS",
+          "description": "학문 영역을 체계적으로 분류한 것",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "학문 체계",
+              "학문 영역"
+            ],
+            "related": [
+              "학과",
+              "전공"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [],
+          "linked_clsf_id": "C14030001",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "FOS",
+              "external_name": "Fields of Science",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14030002",
+          "name_ko": "자연과학",
+          "name_en": "Natural Sciences",
+          "acronym": null,
+          "description": "자연현상을 연구하는 학문. 수학, 물리학, 화학, 생물학, 지구과학 등",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "이학"
+            ],
+            "related": [
+              "순수과학",
+              "기초과학"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14030001"
+          ],
+          "linked_clsf_id": "C14030002",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "1",
+              "external_name": "Natural sciences",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14030003",
+          "name_ko": "공학",
+          "name_en": "Engineering",
+          "acronym": null,
+          "description": "과학 원리를 응용하여 실용적 문제를 해결하는 학문",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "엔지니어링"
+            ],
+            "close": [
+              "기술공학"
+            ],
+            "related": [
+              "응용과학",
+              "산업기술"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14030001"
+          ],
+          "linked_clsf_id": "C14030003",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-OECD-FOS",
+              "external_id": "2",
+              "external_name": "Engineering and technology",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14030004",
+          "name_ko": "컴퓨터과학",
+          "name_en": "Computer Science",
+          "acronym": "CS",
+          "description": "컴퓨터와 계산의 이론, 설계, 개발, 응용을 연구하는 학문",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "전산학"
+            ],
+            "related": [
+              "소프트웨어공학",
+              "인공지능",
+              "정보학"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14030003"
+          ],
+          "linked_clsf_id": "C14030007",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "cs",
+              "external_name": "Computer Science",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-ACMCCS",
+              "external_id": "10011007",
+              "external_name": "Software and its engineering",
+              "match_type": "RELATED_MATCH",
+              "confidence": 0.85
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14030005",
+          "name_ko": "인공지능",
+          "name_en": "Artificial Intelligence",
+          "acronym": "AI",
+          "description": "인간의 지능을 기계로 구현하는 기술 및 학문",
+          "synonyms": {
+            "terms": [],
+            "exact": [
+              "AI"
+            ],
+            "close": [
+              "머신러닝",
+              "딥러닝"
+            ],
+            "related": [
+              "신경망",
+              "기계학습"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14030004"
+          ],
+          "linked_clsf_id": "C14030007",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "cs.AI",
+              "external_name": "Artificial Intelligence",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-ACMCCS",
+              "external_id": "10010147",
+              "external_name": "Artificial intelligence",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "T14030006",
+          "name_ko": "소프트웨어공학",
+          "name_en": "Software Engineering",
+          "acronym": "SE",
+          "description": "소프트웨어 개발, 운영, 유지보수를 체계적으로 다루는 공학 분야",
+          "synonyms": {
+            "terms": [],
+            "exact": [],
+            "close": [
+              "SW공학"
+            ],
+            "related": [
+              "소프트웨어 개발",
+              "프로그래밍"
+            ],
+            "broader": [],
+            "narrower": []
+          },
+          "related_terms": [
+            "T14030004"
+          ],
+          "linked_clsf_id": "C14030007",
+          "parent_id": null,
+          "standard_refs": [
+            {
+              "standard_id": "STD-ARXIV",
+              "external_id": "cs.SE",
+              "external_name": "Software Engineering",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
+            },
+            {
+              "standard_id": "STD-ACMCCS",
+              "external_id": "10011007",
+              "external_name": "Software and its engineering",
+              "match_type": "EXACT_MATCH",
+              "confidence": 0.95
             }
           ],
           "children": []

@@ -1,0 +1,584 @@
+{
+  "domain": {
+    "code": "13",
+    "name_ko": "데이터 거버넌스",
+    "name_en": "Data Governance",
+    "description": "메타데이터 관리, 데이터 품질, 표준화, 공공데이터 개방 등 데이터 거버넌스 전반",
+    "primary_standards": [
+      "STD-DC",
+      "STD-DCAT-AP-KR",
+      "STD-KS-ISO11179",
+      "STD-DBSTD",
+      "STD-DATAQUALITY"
+    ]
+  },
+  "classifications": [
+    {
+      "id": "C13000001",
+      "name": "데이터 거버넌스",
+      "description": "메타데이터, 데이터 품질, 표준화 등 데이터 거버넌스 전반",
+      "level": 0,
+      "group": true,
+      "parent_id": "03facd74b2d24f7cab807b8980391649",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DC",
+          "external_id": "DCMI",
+          "external_name": "Dublin Core Metadata Initiative",
+          "match_type": "BROAD_MATCH",
+          "confidence": 0.80,
+          "note": "메타데이터 표준 전반"
+        }
+      ]
+    },
+    {
+      "id": "C13010001",
+      "name": "메타데이터 관리",
+      "description": "메타데이터 표준, 데이터 사전, 카탈로그 등 메타데이터 체계 관리",
+      "level": 1,
+      "group": false,
+      "parent_id": "C13000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DC",
+          "external_id": "DC-TERMS",
+          "external_name": "Dublin Core Metadata Terms",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "15개 핵심 메타데이터 요소"
+        },
+        {
+          "standard_id": "STD-KS-ISO11179",
+          "external_id": "ISO11179",
+          "external_name": "Metadata Registry",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "메타데이터 레지스트리 표준"
+        }
+      ]
+    },
+    {
+      "id": "C13010002",
+      "name": "메타데이터 표준",
+      "description": "메타데이터 요소, 스키마, 프로파일 등 표준 정의",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13010001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DC",
+          "external_id": "DC-ELEMENTS",
+          "external_name": "Dublin Core Elements",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C13010003",
+      "name": "데이터 사전",
+      "description": "데이터 항목 정의, 도메인, 규칙 등 데이터 사전 관리",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13010001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-KS-ISO11179",
+          "external_id": "ISO11179-3",
+          "external_name": "Registry metamodel and basic attributes",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.90
+        }
+      ]
+    },
+    {
+      "id": "C13010004",
+      "name": "데이터 카탈로그",
+      "description": "데이터셋 목록, 메타데이터 저장소, 카탈로그 서비스",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13010001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DCAT-AP-KR",
+          "external_id": "DCAT",
+          "external_name": "Data Catalog Vocabulary",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "W3C DCAT 기반 한국형 프로파일"
+        }
+      ]
+    },
+    {
+      "id": "C13020001",
+      "name": "데이터 품질관리",
+      "description": "데이터 품질 지표, 평가, 개선 등 품질관리 체계",
+      "level": 1,
+      "group": false,
+      "parent_id": "C13000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DATAQUALITY",
+          "external_id": "MOIS-DQ",
+          "external_name": "공공데이터 품질관리 수준평가",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "공공데이터법 제22조"
+        }
+      ]
+    },
+    {
+      "id": "C13020002",
+      "name": "품질 지표",
+      "description": "정확성, 완전성, 일관성, 적시성 등 품질 지표 정의",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13020001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DATAQUALITY",
+          "external_id": "DQ-DIMENSIONS",
+          "external_name": "Data Quality Dimensions",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.90
+        }
+      ]
+    },
+    {
+      "id": "C13020003",
+      "name": "품질 평가",
+      "description": "품질 측정, 진단, 모니터링 등 품질 평가 프로세스",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13020001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DATAQUALITY",
+          "external_id": "DQ-ASSESSMENT",
+          "external_name": "Data Quality Assessment",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.90
+        }
+      ]
+    },
+    {
+      "id": "C13020004",
+      "name": "품질 개선",
+      "description": "오류 정제, 데이터 클렌징, 품질 향상 활동",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C13030001",
+      "name": "데이터 표준화",
+      "description": "표준 용어, 표준 코드, 데이터베이스 표준 등",
+      "level": 1,
+      "group": false,
+      "parent_id": "C13000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-STDTERM",
+          "external_id": "STDTERM",
+          "external_name": "공공데이터 공통표준용어",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "9,027개 표준용어, 2,396개 표준단어"
+        },
+        {
+          "standard_id": "STD-DBSTD",
+          "external_id": "MOIS-DBSTD",
+          "external_name": "DB 표준화 지침",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C13030002",
+      "name": "표준 용어 관리",
+      "description": "표준용어, 표준단어, 용어사전 관리",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-STDTERM",
+          "external_id": "STDTERM-TERM",
+          "external_name": "공통표준용어",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C13030003",
+      "name": "표준 코드 관리",
+      "description": "공통코드, 코드체계, 코드 매핑 관리",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-ADMCODE",
+          "external_id": "ADMCODE",
+          "external_name": "행정표준코드",
+          "match_type": "RELATED_MATCH",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C13030004",
+      "name": "데이터베이스 표준",
+      "description": "DB 설계 표준, 명명 규칙, 모델링 지침",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DBSTD",
+          "external_id": "DBSTD-DESIGN",
+          "external_name": "데이터베이스 설계 표준",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.90,
+          "note": "38개 메타데이터 관리항목"
+        }
+      ]
+    },
+    {
+      "id": "C13040001",
+      "name": "공공데이터 개방",
+      "description": "오픈데이터 정책, 데이터셋 관리, API 제공 등",
+      "level": 1,
+      "group": false,
+      "parent_id": "C13000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DCAT-AP-KR",
+          "external_id": "DCAT-AP-KR",
+          "external_name": "DCAT Application Profile for Korea",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-DATAGOkr",
+          "external_id": "DATA-GO-KR",
+          "external_name": "공공데이터포털",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.90
+        }
+      ]
+    },
+    {
+      "id": "C13040002",
+      "name": "오픈데이터 정책",
+      "description": "공공데이터법, 개방 원칙, 라이선스 정책",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13040001",
+      "standard_refs": []
+    },
+    {
+      "id": "C13040003",
+      "name": "데이터셋 관리",
+      "description": "데이터셋 등록, 메타데이터 관리, 버전 관리",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13040001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DCAT-AP-KR",
+          "external_id": "DCAT-DATASET",
+          "external_name": "Dataset Class",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C13040004",
+      "name": "API 관리",
+      "description": "오픈 API, REST API, 데이터 서비스 제공",
+      "level": 2,
+      "group": false,
+      "parent_id": "C13040001",
+      "standard_refs": []
+    }
+  ],
+  "terms": [
+    {
+      "id": "T13010001",
+      "name_ko": "메타데이터",
+      "name_en": "Metadata",
+      "acronym": null,
+      "description": "데이터에 대한 데이터. 데이터의 속성, 구조, 의미 등을 설명하는 정보",
+      "synonyms": {
+        "terms": [],
+        "exact": ["메타정보"],
+        "close": ["데이터 정의"],
+        "related": ["데이터 사전", "데이터 카탈로그"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C13010001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DC",
+          "external_id": "METADATA",
+          "external_name": "Metadata",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13010002",
+      "name_ko": "데이터 사전",
+      "name_en": "Data Dictionary",
+      "acronym": "DD",
+      "description": "데이터 항목의 정의, 형식, 제약조건 등을 기술한 문서",
+      "synonyms": {
+        "terms": [],
+        "exact": ["데이터사전"],
+        "close": ["메타데이터 저장소"],
+        "related": ["데이터 정의서", "테이블 정의서"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T13010001"],
+      "linked_clsf_id": "C13010003",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-KS-ISO11179",
+          "external_id": "DATA-DICTIONARY",
+          "external_name": "Data Dictionary",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13010003",
+      "name_ko": "데이터 카탈로그",
+      "name_en": "Data Catalog",
+      "acronym": null,
+      "description": "조직 내 데이터셋의 목록과 메타데이터를 관리하는 시스템",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["데이터 목록"],
+        "related": ["데이터 포털", "데이터 레지스트리"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T13010001"],
+      "linked_clsf_id": "C13010004",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DCAT-AP-KR",
+          "external_id": "DCAT-CATALOG",
+          "external_name": "Catalog Class",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13020001",
+      "name_ko": "데이터 품질",
+      "name_en": "Data Quality",
+      "acronym": "DQ",
+      "description": "데이터가 의도된 용도에 적합한 정도를 나타내는 특성",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["데이터 정확도"],
+        "related": ["데이터 신뢰도", "데이터 무결성"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C13020001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DATAQUALITY",
+          "external_id": "DQ",
+          "external_name": "Data Quality",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13020002",
+      "name_ko": "데이터 정제",
+      "name_en": "Data Cleansing",
+      "acronym": null,
+      "description": "데이터의 오류, 중복, 불일치를 제거하여 품질을 향상시키는 프로세스",
+      "synonyms": {
+        "terms": [],
+        "exact": ["데이터 클렌징"],
+        "close": ["데이터 정화"],
+        "related": ["데이터 정규화", "데이터 표준화"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T13020001"],
+      "linked_clsf_id": "C13020004",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T13030001",
+      "name_ko": "표준용어",
+      "name_en": "Standard Terminology",
+      "acronym": null,
+      "description": "조직 또는 도메인 내에서 공통으로 사용하는 표준화된 용어",
+      "synonyms": {
+        "terms": [],
+        "exact": ["공통표준용어"],
+        "close": ["표준 용어"],
+        "related": ["용어 사전", "용어집"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C13030002",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-STDTERM",
+          "external_id": "STDTERM",
+          "external_name": "공공데이터 공통표준용어",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13030002",
+      "name_ko": "공통코드",
+      "name_en": "Common Code",
+      "acronym": null,
+      "description": "여러 시스템에서 공통으로 사용하는 표준화된 코드 체계",
+      "synonyms": {
+        "terms": [],
+        "exact": ["표준코드"],
+        "close": ["코드값"],
+        "related": ["코드체계", "코드테이블"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C13030003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T13040001",
+      "name_ko": "오픈데이터",
+      "name_en": "Open Data",
+      "acronym": null,
+      "description": "누구나 자유롭게 이용·재배포·재가공할 수 있도록 공개된 데이터",
+      "synonyms": {
+        "terms": [],
+        "exact": ["공공데이터", "개방데이터"],
+        "close": [],
+        "related": ["정부 데이터", "공개 데이터"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C13040001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DATAGOkr",
+          "external_id": "OPENDATA",
+          "external_name": "공공데이터",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13040002",
+      "name_ko": "데이터셋",
+      "name_en": "Dataset",
+      "acronym": null,
+      "description": "특정 주제나 목적으로 수집된 데이터의 집합",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["데이터 집합"],
+        "related": ["데이터 파일", "데이터 테이블"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T13040001"],
+      "linked_clsf_id": "C13040003",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DCAT-AP-KR",
+          "external_id": "DCAT-DATASET",
+          "external_name": "Dataset",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T13040003",
+      "name_ko": "오픈API",
+      "name_en": "Open API",
+      "acronym": "API",
+      "description": "공개된 애플리케이션 프로그래밍 인터페이스. 외부에서 데이터나 기능에 접근할 수 있도록 제공",
+      "synonyms": {
+        "terms": [],
+        "exact": ["공개API"],
+        "close": ["REST API"],
+        "related": ["웹 서비스", "API 게이트웨이"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T13040001"],
+      "linked_clsf_id": "C13040004",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    }
+  ],
+  "statistics": {
+    "num_classifications": 18,
+    "num_terms": 10,
+    "num_standard_refs_clsf": 17,
+    "num_standard_refs_term": 9,
+    "standards_used": [
+      "STD-DC",
+      "STD-DCAT-AP-KR",
+      "STD-KS-ISO11179",
+      "STD-DBSTD",
+      "STD-DATAQUALITY",
+      "STD-STDTERM",
+      "STD-ADMCODE",
+      "STD-DATAGOkr"
+    ]
+  }
+}

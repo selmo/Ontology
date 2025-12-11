@@ -1,0 +1,593 @@
+{
+  "domain": {
+    "code": "14",
+    "name_ko": "학술연구",
+    "name_en": "Academic Research",
+    "description": "연구개발, 학술출판, 학문분류 등 학술 및 연구 활동 전반",
+    "primary_standards": [
+      "STD-OECD-FOS",
+      "STD-ARXIV",
+      "STD-ACMCCS",
+      "STD-UNESCO"
+    ]
+  },
+  "classifications": [
+    {
+      "id": "C14000001",
+      "name": "학술연구",
+      "description": "연구개발, 학술출판, 학문분류 등 학술 및 연구 활동 전반",
+      "level": 0,
+      "group": true,
+      "parent_id": "03facd74b2d24f7cab807b8980391649",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "FOS",
+          "external_name": "Fields of Science",
+          "match_type": "BROAD_MATCH",
+          "confidence": 0.85,
+          "note": "6개 대분류, 42개 소분류 학문체계"
+        }
+      ]
+    },
+    {
+      "id": "C14010001",
+      "name": "연구개발",
+      "description": "R&D 정책, 연구과제, 연구성과 등",
+      "level": 1,
+      "group": false,
+      "parent_id": "C14000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "R&D",
+          "external_name": "R&D Classification",
+          "match_type": "RELATED_MATCH",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C14010002",
+      "name": "R&D 정책",
+      "description": "연구개발 정책, 과학기술정책, 혁신정책",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C14010003",
+      "name": "연구과제",
+      "description": "연구 프로젝트, 과제 관리, 과제 평가",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C14010004",
+      "name": "연구성과",
+      "description": "연구 결과, 특허, 기술이전, 성과 확산",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C14020001",
+      "name": "학술출판",
+      "description": "학술논문, 학술지, 학술대회, 저작권 등",
+      "level": 1,
+      "group": false,
+      "parent_id": "C14000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "ARXIV",
+          "external_name": "arXiv Preprint Repository",
+          "match_type": "RELATED_MATCH",
+          "confidence": 0.85,
+          "note": "과학 논문 아카이브"
+        }
+      ]
+    },
+    {
+      "id": "C14020002",
+      "name": "학술논문",
+      "description": "학술지 논문, 학위논문, 학술대회 논문",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14020001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "ARXIV-PAPER",
+          "external_name": "arXiv Papers",
+          "match_type": "CLOSE_MATCH",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C14020003",
+      "name": "학술지",
+      "description": "학술지 발행, 논문 심사, 인용 지표",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C14020004",
+      "name": "학술대회",
+      "description": "학회, 컨퍼런스, 심포지엄, 워크샵",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C14030001",
+      "name": "학문분류",
+      "description": "자연과학, 공학, 인문사회, 예술체육 등 학문 분류체계",
+      "level": 1,
+      "group": false,
+      "parent_id": "C14000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "FOS-CLASSIFICATION",
+          "external_name": "Fields of Science Classification",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C14030002",
+      "name": "자연과학",
+      "description": "수학, 물리학, 화학, 생물학, 지구과학 등",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "1",
+          "external_name": "Natural sciences",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "math,physics,q-bio",
+          "external_name": "Mathematics, Physics, Biology",
+          "match_type": "BROAD_MATCH",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C14030003",
+      "name": "공학",
+      "description": "전기전자, 기계, 화학공학, 토목, 컴퓨터공학 등",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "2",
+          "external_name": "Engineering and technology",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "cs",
+          "external_name": "Computer Science",
+          "match_type": "NARROW_MATCH",
+          "confidence": 0.90
+        },
+        {
+          "standard_id": "STD-ACMCCS",
+          "external_id": "10003",
+          "external_name": "Computer systems organization",
+          "match_type": "NARROW_MATCH",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "id": "C14030004",
+      "name": "의학",
+      "description": "임상의학, 보건학, 약학, 간호학 등",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "3",
+          "external_name": "Medical and health sciences",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C14030005",
+      "name": "농업",
+      "description": "농학, 수산학, 임학, 축산학, 수의학 등",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "4",
+          "external_name": "Agricultural and veterinary sciences",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "id": "C14030006",
+      "name": "인문사회",
+      "description": "사회학, 경제학, 심리학, 문학, 역사학 등",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "5",
+          "external_name": "Social sciences",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "6",
+          "external_name": "Humanities and the arts",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-UNESCO",
+          "external_id": "UNESCO-SOCIAL",
+          "external_name": "Social and Human Sciences",
+          "match_type": "BROAD_MATCH",
+          "confidence": 0.80
+        }
+      ]
+    },
+    {
+      "id": "C14030007",
+      "name": "컴퓨터과학",
+      "description": "알고리즘, 인공지능, 소프트웨어공학, 네트워크 등",
+      "level": 2,
+      "group": false,
+      "parent_id": "C14030001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "cs",
+          "external_name": "Computer Science",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "cs.AI, cs.SE, cs.NE 등 40개 서브카테고리"
+        },
+        {
+          "standard_id": "STD-ACMCCS",
+          "external_id": "10011007",
+          "external_name": "Software and its engineering",
+          "match_type": "NARROW_MATCH",
+          "confidence": 0.85,
+          "note": "2,000+ 개념"
+        }
+      ]
+    }
+  ],
+  "terms": [
+    {
+      "id": "T14010001",
+      "name_ko": "연구개발",
+      "name_en": "Research and Development",
+      "acronym": "R&D",
+      "description": "새로운 지식이나 기술을 창출하기 위한 체계적인 연구 및 개발 활동",
+      "synonyms": {
+        "terms": [],
+        "exact": ["R&D"],
+        "close": ["연구", "개발"],
+        "related": ["연구과제", "연구성과"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C14010001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "R&D",
+          "external_name": "Research and Development",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14010002",
+      "name_ko": "연구과제",
+      "name_en": "Research Project",
+      "acronym": null,
+      "description": "특정 연구 목표를 달성하기 위한 프로젝트",
+      "synonyms": {
+        "terms": [],
+        "exact": ["연구 프로젝트"],
+        "close": ["과제"],
+        "related": ["연구계획", "연구비"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14010001"],
+      "linked_clsf_id": "C14010003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T14020001",
+      "name_ko": "학술논문",
+      "name_en": "Academic Paper",
+      "acronym": null,
+      "description": "연구 결과를 학술지나 학술대회에 발표한 논문",
+      "synonyms": {
+        "terms": [],
+        "exact": ["논문"],
+        "close": ["학술지 논문", "연구논문"],
+        "related": ["학위논문", "프리프린트"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C14020002",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "PAPER",
+          "external_name": "Paper/Preprint",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.90
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14020002",
+      "name_ko": "학술지",
+      "name_en": "Academic Journal",
+      "acronym": null,
+      "description": "학술 논문을 게재하는 정기간행물",
+      "synonyms": {
+        "terms": [],
+        "exact": ["저널"],
+        "close": ["학회지"],
+        "related": ["학술잡지", "학술지 논문"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14020001"],
+      "linked_clsf_id": "C14020003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T14030001",
+      "name_ko": "학문분류",
+      "name_en": "Field of Science",
+      "acronym": "FOS",
+      "description": "학문 영역을 체계적으로 분류한 것",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["학문 체계", "학문 영역"],
+        "related": ["학과", "전공"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C14030001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "FOS",
+          "external_name": "Fields of Science",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14030002",
+      "name_ko": "자연과학",
+      "name_en": "Natural Sciences",
+      "acronym": null,
+      "description": "자연현상을 연구하는 학문. 수학, 물리학, 화학, 생물학, 지구과학 등",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["이학"],
+        "related": ["순수과학", "기초과학"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14030001"],
+      "linked_clsf_id": "C14030002",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "1",
+          "external_name": "Natural sciences",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14030003",
+      "name_ko": "공학",
+      "name_en": "Engineering",
+      "acronym": null,
+      "description": "과학 원리를 응용하여 실용적 문제를 해결하는 학문",
+      "synonyms": {
+        "terms": [],
+        "exact": ["엔지니어링"],
+        "close": ["기술공학"],
+        "related": ["응용과학", "산업기술"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14030001"],
+      "linked_clsf_id": "C14030003",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-OECD-FOS",
+          "external_id": "2",
+          "external_name": "Engineering and technology",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14030004",
+      "name_ko": "컴퓨터과학",
+      "name_en": "Computer Science",
+      "acronym": "CS",
+      "description": "컴퓨터와 계산의 이론, 설계, 개발, 응용을 연구하는 학문",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["전산학"],
+        "related": ["소프트웨어공학", "인공지능", "정보학"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14030003"],
+      "linked_clsf_id": "C14030007",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "cs",
+          "external_name": "Computer Science",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-ACMCCS",
+          "external_id": "10011007",
+          "external_name": "Software and its engineering",
+          "match_type": "RELATED_MATCH",
+          "confidence": 0.85
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14030005",
+      "name_ko": "인공지능",
+      "name_en": "Artificial Intelligence",
+      "acronym": "AI",
+      "description": "인간의 지능을 기계로 구현하는 기술 및 학문",
+      "synonyms": {
+        "terms": [],
+        "exact": ["AI"],
+        "close": ["머신러닝", "딥러닝"],
+        "related": ["신경망", "기계학습"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14030004"],
+      "linked_clsf_id": "C14030007",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "cs.AI",
+          "external_name": "Artificial Intelligence",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-ACMCCS",
+          "external_id": "10010147",
+          "external_name": "Artificial intelligence",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T14030006",
+      "name_ko": "소프트웨어공학",
+      "name_en": "Software Engineering",
+      "acronym": "SE",
+      "description": "소프트웨어 개발, 운영, 유지보수를 체계적으로 다루는 공학 분야",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["SW공학"],
+        "related": ["소프트웨어 개발", "프로그래밍"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T14030004"],
+      "linked_clsf_id": "C14030007",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-ARXIV",
+          "external_id": "cs.SE",
+          "external_name": "Software Engineering",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        },
+        {
+          "standard_id": "STD-ACMCCS",
+          "external_id": "10011007",
+          "external_name": "Software and its engineering",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    }
+  ],
+  "statistics": {
+    "num_classifications": 17,
+    "num_terms": 10,
+    "num_standard_refs_clsf": 18,
+    "num_standard_refs_term": 11,
+    "standards_used": [
+      "STD-OECD-FOS",
+      "STD-ARXIV",
+      "STD-ACMCCS",
+      "STD-UNESCO"
+    ]
+  }
+}

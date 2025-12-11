@@ -1,11 +1,11 @@
 # MC 분류·용어 통합 체계
 
-**버전:** 3.10.0
+**버전:** 3.11.0
 **최종 업데이트:** 2025-12-11
 **구조:** 단일 마스터 파일 (ontology.json)
 
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-3.10.0-green.svg)](README.md)
+[![Version](https://img.shields.io/badge/version-3.11.0-green.svg)](README.md)
 [![Data Source](https://img.shields.io/badge/source-data.go.kr-orange.svg)](https://www.data.go.kr)
 
 ## 개요
@@ -15,24 +15,26 @@
 **주요 특징:**
 - 📄 **단일 마스터**: ontology.json 하나가 모든 데이터의 원천
 - 🏛️ **표준 기반**: 24개 국제/국내 표준 연계 (SKOS, GS1, arXiv, ACM CCS 등)
-- 📊 **풍부한 관계**: 568개 용어 관계 + 405개 표준 레퍼런스
+- 📊 **풍부한 관계**: 하이브리드 SYNONYM + RELATED_TO + SIMILAR_TO
 - 🔄 **다중 출력**: SQL, Cypher, JSON, TXT 자동 생성
 - ✅ **높은 품질**: 자동 검증 (0 오류, 0 경고)
 
-## 통계 (v3.9)
+## 통계 (v3.11)
 
-| 항목 | 개수 |
-|------|------|
-| 도메인 | 12개 |
-| 분류 | 376개 (44개 중분류, 332개 소분류) |
-| 용어 | 221개 |
-| 동의어 | 485개 |
-| 연관 용어 관계 | 83개 |
-| **표준 레지스트리** | **24개** ⬆️ |
-| **표준 레퍼런스** | **405개 (분류 255개, 용어 150개)** ⬆️ |
-| **분류 커버리지** | **232/376 (61.7%)** ⬆️ |
-| 용어 커버리지 | 140/221 (63.3%) |
-| 동의어 커버리지 | 182/182 (100.0%) |
+| 항목 | 개수 | 변경 |
+|------|------|------|
+| 도메인 | 12개 | - |
+| 분류 | 376개 (44개 중분류, 332개 소분류) | - |
+| 용어 | 221개 | - |
+| **동의어 (Term → Term)** | **5개** | **✨ NEW** |
+| **동의어 (문자열)** | **465개** | ⬇️ |
+| **연관 용어 (RELATED_TO)** | **78개** | ⬇️ |
+| 분류 유사 관계 (SIMILAR_TO) | 42개 | - |
+| 표준 레지스트리 | 24개 | - |
+| 표준 레퍼런스 | 405개 (분류 255개, 용어 150개) | - |
+| 분류 커버리지 | 232/376 (61.7%) | - |
+| 용어 커버리지 | 140/221 (63.3%) | - |
+| 동의어 커버리지 | 182/182 (100.0%) | - |
 
 ## 12개 도메인
 
@@ -247,10 +249,20 @@ NOTE          VARCHAR2(4000) -- 비고
 - `:Synonym` - 동의어
 
 ### 관계 타입
-- `:PARENT_OF` - 계층 관계 (Classification↔Classification, Term↔Term)
-- `:BELONGS_TO` - 용어→분류 소속
-- `:SYNONYM_OF` - 용어 동의어
-- `:SIMILAR_TO` - 분류 간 유사 관계 (도메인 간 연계)
+
+| 관계 | Source | Target | 방향 | 설명 |
+|------|--------|--------|------|------|
+| `:PARENT_OF` | Classification | Classification | 단방향 | 분류 계층 (376개) |
+| `:PARENT_OF` | Term | Term | 단방향 | 용어 계층 (221개) |
+| `:BELONGS_TO` | Term | Classification | 단방향 | 용어 소속 (221개) |
+| **`:SYNONYM_OF`** | **Term** | **Term** | **양방향** | **용어 동의어 (5개 = 10개 관계)** ✨ |
+| `:SYNONYM_OF` | Term | Synonym | 단방향 | 문자열 동의어 (465개) |
+| **`:RELATED_TO`** | **Term** | **Term** | **양방향** | **연관 용어 (78개 = 156개 관계)** |
+| `:SIMILAR_TO` | Classification | Classification | 양방향 | 분류 유사 관계 (42개) |
+
+**v3.11 주요 변경:**
+- **하이브리드 SYNONYM 구조**: Term → Term (5개) + Term → Synonym node (465개)
+- **RELATED_TO 복원**: 조건부 필터링 적용 (78개)
 
 ### Memgraph 사용법
 ```cypher
@@ -335,6 +347,20 @@ $ python3 validate_ontology.py
 - 🌐 도메인 확대: 10개 → 12개 (과학기술, 국토교통 추가)
 - 📋 표준 레지스트리 구축: 20개 표준 등록
 - 🔗 표준 레퍼런스 시스템 구현
+
+### v3.11 (2025-12-11)
+- ✨ **하이브리드 SYNONYM 구조**: Term → Term (5개) + Term → Synonym node (465개)
+- 🔄 **RELATED_TO 복원**: v3.9에서 78개 조건부 복원
+- 🎯 **자기 참조 제거**: 15개 제거
+- 📝 **정책 문서화**: term_revision_proposal.md
+
+### v3.10 (2025-12-11)
+- 🔗 SIMILAR_TO 추가: Classification 간 유사 관계 (42개)
+- ⚠️ RELATED_TO 잘못 제거 (v3.11에서 복원)
+
+### v3.9 (2025-12-11)
+- 📚 표준 레퍼런스 대폭 확장: 405개
+- 🏷️ 동의어 확장: 87개 → 485개 (100% 커버리지)
 
 ### v2.1 (2025-12-01)
 - 📊 세부 분류 확장: 92개 → 175개

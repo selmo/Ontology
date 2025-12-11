@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.11.0",
+    "version": "3.10.0",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (SYNONYM 하이브리드, RELATED_TO 조건부 복원)"
+    "description": "MC 분류·용어 통합 체계 (관계 재구조화: SIMILAR_TO 추가, RELATED_TO 제거)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -839,13 +839,11 @@
           "name_en": "Public Institution",
           "acronym": null,
           "description": "지역 주도의 균형발전을 통해 수도권 집중을 완화하고 지방이 자생력을 갖춘 시대를 지향하는 정책 기조. 중앙정부 주도에서 벗어나 지역이 스스로 성장동력을 창출하고 발전할 수 있는 체계를 구축하는 것을 목표로 함.",
-          "synonyms": {
-            "strings": [
-              "공기업",
-              "공공단체",
-              "공공조직"
-            ]
-          },
+          "synonyms": [
+            "공기업",
+            "공공단체",
+            "공공조직"
+          ],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [
@@ -864,12 +862,7 @@
             }
           ],
           "primary_standard": "STD-KOOR",
-          "children": [],
-          "related_terms": [
-            "T01010002",
-            "T01010003",
-            "T01010004"
-          ]
+          "children": []
         },
         {
           "id": "T01010002",
@@ -877,13 +870,11 @@
           "name_en": "Government Organization Chart",
           "acronym": null,
           "description": "지방시대 정책을 총괄 조정하는 대통령 소속 위원회. 관계부처 협의, 정책 조정, 이행 점검 등의 역할을 수행하며 지방분권과 균형발전을 위한 컨트롤타워 역할.",
-          "synonyms": {
-            "strings": [
-              "정부조직",
-              "행정조직",
-              "부처조직도"
-            ]
-          },
+          "synonyms": [
+            "정부조직",
+            "행정조직",
+            "부처조직도"
+          ],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [
@@ -904,12 +895,10 @@
           "name_en": "Public Institution Status",
           "acronym": null,
           "description": "인구감소지역에 대한 국가의 특별한 지원을 규정한 법률. 인구감소지역 지정 기준, 국가와 지자체의 책무, 재정지원 근거 등을 명시.",
-          "synonyms": {
-            "strings": [
-              "공공기관정보",
-              "기관현황"
-            ]
-          },
+          "synonyms": [
+            "공공기관정보",
+            "기관현황"
+          ],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [],
@@ -922,13 +911,11 @@
           "name_en": "Administrative District",
           "acronym": null,
           "description": "데이터·AI·클라우드 기반으로 공공서비스를 혁신하는 정부 운영 방식. 데이터 기반 의사결정, 서비스 통합·연계, 국민 맞춤형 서비스 제공을 지향.",
-          "synonyms": {
-            "strings": [
-              "행정동",
-              "법정동",
-              "동리"
-            ]
-          },
+          "synonyms": [
+            "행정동",
+            "법정동",
+            "동리"
+          ],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -940,11 +927,7 @@
             }
           ],
           "primary_standard": "STD-ADMCODE",
-          "children": [],
-          "related_terms": [
-            "T01020002",
-            "T01030002"
-          ]
+          "children": []
         },
         {
           "id": "T01020002",
@@ -952,13 +935,11 @@
           "name_en": "Local Government",
           "acronym": null,
           "description": "공공기관이 보유한 개인정보를 본인이 직접 관리·활용할 수 있도록 하는 제도. 개인정보 자기결정권 강화 및 데이터 기반 맞춤형 서비스 제공.",
-          "synonyms": {
-            "strings": [
-              "지자체",
-              "광역자치단체",
-              "기초자치단체"
-            ]
-          },
+          "synonyms": [
+            "지자체",
+            "광역자치단체",
+            "기초자치단체"
+          ],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -984,13 +965,11 @@
           "name_en": "Eup-Myeon-Dong",
           "acronym": null,
           "description": "보이스피싱 범죄를 탐지하고 예방하기 위한 AI 기반 음성 분석 기술. 통화 내용의 실시간 분석을 통해 의심 거래를 차단.",
-          "synonyms": {
-            "strings": [
-              "읍사무소",
-              "면사무소",
-              "동주민센터"
-            ]
-          },
+          "synonyms": [
+            "읍사무소",
+            "면사무소",
+            "동주민센터"
+          ],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -1010,13 +989,11 @@
           "name_en": "Administrative Welfare Center",
           "acronym": null,
           "description": "읍·면·동에 설치된 주민 복지 서비스 통합 창구. 기존 주민센터의 명칭 변경.",
-          "synonyms": {
-            "strings": [
-              "주민센터",
-              "동사무소",
-              "행정센터"
-            ]
-          },
+          "synonyms": [
+            "주민센터",
+            "동사무소",
+            "행정센터"
+          ],
           "linked_clsf_id": "C01020001",
           "parent_id": null,
           "standard_refs": [
@@ -1036,13 +1013,11 @@
           "name_en": "Administrative Informatization",
           "acronym": null,
           "description": "재난·안전 관리 체계를 효율적으로 개선하기 위한 국가 차원의 시스템. 컨트롤타워 일원화, 현장 중심 대응 체계, 과학기술 기반 예방 등을 포함.",
-          "synonyms": {
-            "strings": [
-              "전자정부",
-              "디지털행정",
-              "스마트행정"
-            ]
-          },
+          "synonyms": [
+            "전자정부",
+            "디지털행정",
+            "스마트행정"
+          ],
           "linked_clsf_id": "C01030001",
           "parent_id": null,
           "standard_refs": [
@@ -1061,10 +1036,7 @@
             }
           ],
           "primary_standard": "STD-DCAT-AP-KR",
-          "children": [],
-          "related_terms": [
-            "T01030002"
-          ]
+          "children": []
         },
         {
           "id": "T01030002",
@@ -1072,12 +1044,10 @@
           "name_en": "Information Resources",
           "acronym": null,
           "description": "국가 차원의 재난 대응 능력을 점검하고 훈련하는 통합 재난안전 훈련. 정부·지자체·민간이 함께 참여하는 범국가적 훈련.",
-          "synonyms": {
-            "strings": [
-              "정보자원관리",
-              "IT자산"
-            ]
-          },
+          "synonyms": [
+            "정보자원관리",
+            "IT자산"
+          ],
           "linked_clsf_id": "C01030001",
           "parent_id": null,
           "standard_refs": [
@@ -1097,13 +1067,11 @@
           "name_en": "Open Public Data",
           "acronym": null,
           "description": "정보자원(시스템, 데이터, 네트워크 등)의 현황과 운영 상태. 행정기관 정보화 현황.",
-          "synonyms": {
-            "strings": [
-              "공공데이터포털",
-              "공공정보개방",
-              "오픈데이터"
-            ]
-          },
+          "synonyms": [
+            "공공데이터포털",
+            "공공정보개방",
+            "오픈데이터"
+          ],
           "linked_clsf_id": "C01030001",
           "parent_id": null,
           "standard_refs": [],
@@ -1116,12 +1084,11 @@
           "name_en": "National Policy",
           "acronym": null,
           "description": "개인이 고향이나 관심 있는 지방자치단체에 기부하면 세액공제와 답례품을 제공하는 제도. 지방재정 확충 및 지역경제 활성화 목적.",
-          "synonyms": {
-            "strings": [
-              "정부사업",
-              "국정과제"
-            ]
-          },
+          "synonyms": [
+            "국가정책",
+            "정부사업",
+            "국정과제"
+          ],
           "linked_clsf_id": "C01040001",
           "parent_id": null,
           "standard_refs": [
@@ -1133,10 +1100,7 @@
             }
           ],
           "primary_standard": "STD-BRM",
-          "children": [],
-          "related_terms": [
-            "T01040002"
-          ]
+          "children": []
         },
         {
           "id": "T01040002",
@@ -1144,13 +1108,11 @@
           "name_en": "Public Service",
           "acronym": null,
           "description": "지방재정 조정을 위해 국세의 일부를 지방자치단체에 교부하는 재원. 보통교부세와 특별교부세로 구분되며 재정 격차 완화 목적.",
-          "synonyms": {
-            "strings": [
-              "국민서비스",
-              "행정서비스",
-              "민원서비스"
-            ]
-          },
+          "synonyms": [
+            "국민서비스",
+            "행정서비스",
+            "민원서비스"
+          ],
           "linked_clsf_id": "C01040001",
           "parent_id": null,
           "standard_refs": [],
@@ -1705,12 +1667,10 @@
           "name_en": "Education Statistics Yearbook",
           "acronym": null,
           "description": "매년 발간되는 교육 관련 주요 통계 자료집. 학교, 학생, 교원, 교육재정 등 전반적인 교육현황을 수록.",
-          "synonyms": {
-            "strings": [
-              "교육통계",
-              "학교통계연보"
-            ]
-          },
+          "synonyms": [
+            "교육통계",
+            "학교통계연보"
+          ],
           "linked_clsf_id": "C02010001",
           "parent_id": null,
           "standard_refs": [
@@ -1790,11 +1750,6 @@
               "primary_standard": "STD-UNESCO",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T02010002",
-            "T02010003",
-            "T02010004"
           ]
         },
         {
@@ -1803,13 +1758,11 @@
           "name_en": "Education Finance",
           "acronym": null,
           "description": "교육재정 (Education Finance)",
-          "synonyms": {
-            "strings": [
-              "교육예산",
-              "학교재정",
-              "교육비"
-            ]
-          },
+          "synonyms": [
+            "교육예산",
+            "학교재정",
+            "교육비"
+          ],
           "linked_clsf_id": "C02010001",
           "parent_id": null,
           "standard_refs": [],
@@ -1822,13 +1775,11 @@
           "name_en": "Lifelong Education",
           "acronym": null,
           "description": "학교교육을 마친 후에도 계속되는 전 생애 학습 활동. 성인교육, 직업교육, 문화교육 등 포함.",
-          "synonyms": {
-            "strings": [
-              "평생학습",
-              "성인교육",
-              "계속교육"
-            ]
-          },
+          "synonyms": [
+            "평생학습",
+            "성인교육",
+            "계속교육"
+          ],
           "linked_clsf_id": "C02020001",
           "parent_id": null,
           "standard_refs": [
@@ -1900,11 +1851,6 @@
               "primary_standard": "STD-UNESCO",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T02020002",
-            "T02020003",
-            "T02020004"
           ]
         },
         {
@@ -1913,13 +1859,11 @@
           "name_en": "Vocational Training",
           "acronym": null,
           "description": "직업능력개발 (Vocational Training)",
-          "synonyms": {
-            "strings": [
-              "직업교육훈련",
-              "직업능력개발훈련",
-              "직무교육"
-            ]
-          },
+          "synonyms": [
+            "직업교육훈련",
+            "직업능력개발훈련",
+            "직무교육"
+          ],
           "linked_clsf_id": "C02020001",
           "parent_id": null,
           "standard_refs": [
@@ -1940,13 +1884,11 @@
           "name_en": "School Education",
           "acronym": null,
           "description": "초·중·고등학교에서 이루어지는 정규 교육. 교육과정, 학업성취도, 생활지도 등 포함.",
-          "synonyms": {
-            "strings": [
-              "초중등교육",
-              "공교육",
-              "정규교육"
-            ]
-          },
+          "synonyms": [
+            "초중등교육",
+            "공교육",
+            "정규교육"
+          ],
           "linked_clsf_id": "C02030001",
           "parent_id": null,
           "standard_refs": [
@@ -1996,10 +1938,6 @@
               "primary_standard": null,
               "children": []
             }
-          ],
-          "related_terms": [
-            "T02030002",
-            "T02030003"
           ]
         },
         {
@@ -2008,13 +1946,11 @@
           "name_en": "School Facilities",
           "acronym": null,
           "description": "학교시설 (School Facilities)",
-          "synonyms": {
-            "strings": [
-              "교육시설",
-              "학교건물",
-              "학습시설"
-            ]
-          },
+          "synonyms": [
+            "교육시설",
+            "학교건물",
+            "학습시설"
+          ],
           "linked_clsf_id": "C02030001",
           "parent_id": null,
           "standard_refs": [
@@ -2035,12 +1971,10 @@
           "name_en": "Education Welfare",
           "acronym": null,
           "description": "교육복지 (Education Welfare)",
-          "synonyms": {
-            "strings": [
-              "교육복지사업",
-              "교육지원"
-            ]
-          },
+          "synonyms": [
+            "교육복지사업",
+            "교육지원"
+          ],
           "linked_clsf_id": "C02030001",
           "parent_id": null,
           "standard_refs": [],
@@ -2053,20 +1987,15 @@
           "name_en": "Higher Education",
           "acronym": null,
           "description": "대학 및 대학원 수준의 고등교육. 학사·석사·박사 학위과정 포함.",
-          "synonyms": {
-            "strings": [
-              "대학교육",
-              "고등교육기관"
-            ]
-          },
+          "synonyms": [
+            "대학교육",
+            "고등교육기관"
+          ],
           "linked_clsf_id": "C02040001",
           "parent_id": null,
           "standard_refs": [],
           "primary_standard": null,
-          "children": [],
-          "related_terms": [
-            "T02040002"
-          ]
+          "children": []
         },
         {
           "id": "T02040002",
@@ -2074,13 +2003,11 @@
           "name_en": "University Information Disclosure",
           "acronym": null,
           "description": "대학이 교육·연구·재정·학생 현황 등을 공개하는 제도. 대학 정보의 투명성 확보.",
-          "synonyms": {
-            "strings": [
-              "대학공시",
-              "대학정보제공",
-              "학교공시"
-            ]
-          },
+          "synonyms": [
+            "대학공시",
+            "대학정보제공",
+            "학교공시"
+          ],
           "linked_clsf_id": "C02040001",
           "parent_id": null,
           "standard_refs": [
@@ -2101,13 +2028,11 @@
           "name_en": "Industry-Academia Cooperation",
           "acronym": null,
           "description": "산학협력 (Industry-Academia Cooperation)",
-          "synonyms": {
-            "strings": [
-              "산학연협력",
-              "대학-기업협력",
-              "산학협동"
-            ]
-          },
+          "synonyms": [
+            "산학연협력",
+            "대학-기업협력",
+            "산학협동"
+          ],
           "linked_clsf_id": "C02040001",
           "parent_id": null,
           "standard_refs": [],
@@ -2120,13 +2045,11 @@
           "name_en": "Early Childhood Education",
           "acronym": null,
           "description": "유아교육 (Early Childhood Education)",
-          "synonyms": {
-            "strings": [
-              "유아교육기관",
-              "어린이집",
-              "유치원"
-            ]
-          },
+          "synonyms": [
+            "유아교육기관",
+            "어린이집",
+            "유치원"
+          ],
           "linked_clsf_id": "C02050001",
           "parent_id": null,
           "standard_refs": [],
@@ -2139,12 +2062,10 @@
           "name_en": "Nuri Curriculum",
           "acronym": null,
           "description": "누리과정 (Nuri Curriculum)",
-          "synonyms": {
-            "strings": [
-              "누리교육과정",
-              "국가수준교육과정"
-            ]
-          },
+          "synonyms": [
+            "누리교육과정",
+            "국가수준교육과정"
+          ],
           "linked_clsf_id": "C02050001",
           "parent_id": null,
           "standard_refs": [
@@ -2165,13 +2086,11 @@
           "name_en": "Special Education",
           "acronym": null,
           "description": "특수교육 (Special Education)",
-          "synonyms": {
-            "strings": [
-              "특수학교",
-              "장애인교육",
-              "특수교육기관"
-            ]
-          },
+          "synonyms": [
+            "특수학교",
+            "장애인교육",
+            "특수교육기관"
+          ],
           "linked_clsf_id": "C02060001",
           "parent_id": null,
           "standard_refs": [],
@@ -2184,13 +2103,11 @@
           "name_en": "Gifted Education",
           "acronym": null,
           "description": "영재교육 (Gifted Education)",
-          "synonyms": {
-            "strings": [
-              "영재교육원",
-              "영재학급",
-              "영재학생"
-            ]
-          },
+          "synonyms": [
+            "영재교육원",
+            "영재학급",
+            "영재학생"
+          ],
           "linked_clsf_id": "C02060001",
           "parent_id": null,
           "standard_refs": [],
@@ -2970,15 +2887,11 @@
           "name_en": "Medical Institution",
           "acronym": null,
           "description": "악성 종양으로, 비정상적인 세포의 무제한적 성장과 전이를 특징으로 하는 질환. 유전자 변이, 면역 이상 등 다양한 원인.",
-          "synonyms": {
-            "terms": [
-              "T03010005"
-            ],
-            "strings": [
-              "병원",
-              "보건의료기관"
-            ]
-          },
+          "synonyms": [
+            "병원",
+            "의료시설",
+            "보건의료기관"
+          ],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3046,11 +2959,6 @@
               "primary_standard": "STD-MESH",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T03010004",
-            "T03010006",
-            "T03010007"
           ]
         },
         {
@@ -3059,12 +2967,10 @@
           "name_en": "Pharmacy",
           "acronym": null,
           "description": "암세포를 죽이거나 성장을 억제하는 약물 치료. 세포독성 항암제, 표적치료제, 면역항암제 등.",
-          "synonyms": {
-            "strings": [
-              "약국시설",
-              "조제약국"
-            ]
-          },
+          "synonyms": [
+            "약국시설",
+            "조제약국"
+          ],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3085,12 +2991,10 @@
           "name_en": "Medical Facility",
           "acronym": null,
           "description": "암을 조기에 발견하기 위한 검진. 대장내시경, 유방촬영, CT 등.",
-          "synonyms": {
-            "strings": [
-              "의료인프라",
-              "병원시설"
-            ]
-          },
+          "synonyms": [
+            "의료인프라",
+            "병원시설"
+          ],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3111,13 +3015,11 @@
           "name_en": "Medical Equipment",
           "acronym": null,
           "description": "암을 치료하기 위한 의학적 처치. 수술, 항암화학요법, 방사선치료, 면역치료 등.",
-          "synonyms": {
-            "strings": [
-              "의료기기",
-              "진료장비",
-              "의료설비"
-            ]
-          },
+          "synonyms": [
+            "의료기기",
+            "진료장비",
+            "의료설비"
+          ],
           "linked_clsf_id": "C03010001",
           "parent_id": null,
           "standard_refs": [
@@ -3138,12 +3040,10 @@
           "name_en": "Healthcare Utilization Statistics",
           "acronym": null,
           "description": "눈물이 부족하거나 과도하게 증발하여 안구 표면이 손상되는 질환. 눈물막 불안정성이 주요 원인.",
-          "synonyms": {
-            "strings": [
-              "DES",
-              "건조안"
-            ]
-          },
+          "synonyms": [
+            "DES",
+            "건조안"
+          ],
           "linked_clsf_id": "C03020001",
           "parent_id": null,
           "standard_refs": [
@@ -3156,10 +3056,7 @@
             }
           ],
           "primary_standard": "STD-MESH",
-          "children": [],
-          "related_terms": [
-            "T03020005"
-          ]
+          "children": []
         },
         {
           "id": "T03020002",
@@ -3167,12 +3064,10 @@
           "name_en": "Medical Treatment Statistics",
           "acronym": null,
           "description": "수정체가 혼탁해져 시력이 저하되는 질환. 노화가 주요 원인이며 수술로 치료.",
-          "synonyms": {
-            "strings": [
-              "외래진료통계",
-              "입원통계"
-            ]
-          },
+          "synonyms": [
+            "외래진료통계",
+            "입원통계"
+          ],
           "linked_clsf_id": "C03020001",
           "parent_id": null,
           "standard_refs": [
@@ -3192,10 +3087,7 @@
             }
           ],
           "primary_standard": "STD-MESH",
-          "children": [],
-          "related_terms": [
-            "T03020005"
-          ]
+          "children": []
         },
         {
           "id": "T03030001",
@@ -3203,12 +3095,10 @@
           "name_en": "Healthcare Personnel",
           "acronym": null,
           "description": "위산이 식도로 역류하여 불편감이나 합병증을 유발하는 질환. 속쓰림, 역류감 등의 증상.",
-          "synonyms": {
-            "strings": [
-              "GERD",
-              "역류성식도염"
-            ]
-          },
+          "synonyms": [
+            "GERD",
+            "역류성식도염"
+          ],
           "linked_clsf_id": "C03030001",
           "parent_id": null,
           "standard_refs": [
@@ -3221,11 +3111,7 @@
             }
           ],
           "primary_standard": "STD-MESH",
-          "children": [],
-          "related_terms": [
-            "T03030002",
-            "T03030003"
-          ]
+          "children": []
         },
         {
           "id": "T03030002",
@@ -3233,13 +3119,11 @@
           "name_en": "Physician",
           "acronym": null,
           "description": "내부 장기를 관찰하기 위해 내시경을 삽입하는 검사. 위내시경, 대장내시경 등.",
-          "synonyms": {
-            "strings": [
-              "의료인",
-              "의료진",
-              "임상의"
-            ]
-          },
+          "synonyms": [
+            "의료인",
+            "의료진",
+            "임상의"
+          ],
           "linked_clsf_id": "C03030001",
           "parent_id": null,
           "standard_refs": [
@@ -3260,12 +3144,10 @@
           "name_en": "Nurse",
           "acronym": null,
           "description": "위암을 조기에 발견하기 위한 검진. 위내시경, 조직검사 등.",
-          "synonyms": {
-            "strings": [
-              "간호인력",
-              "간호직"
-            ]
-          },
+          "synonyms": [
+            "간호인력",
+            "간호직"
+          ],
           "linked_clsf_id": "C03030001",
           "parent_id": null,
           "standard_refs": [],
@@ -3278,12 +3160,10 @@
           "name_en": "Health Insurance",
           "acronym": null,
           "description": "질병의 조기 발견과 예방을 위한 정기 검진. 국가건강검진, 암 검진 등.",
-          "synonyms": {
-            "strings": [
-              "국민건강보험",
-              "의료보험"
-            ]
-          },
+          "synonyms": [
+            "국민건강보험",
+            "의료보험"
+          ],
           "linked_clsf_id": "C03040001",
           "parent_id": null,
           "standard_refs": [
@@ -3296,10 +3176,7 @@
             }
           ],
           "primary_standard": "STD-MESH",
-          "children": [],
-          "related_terms": [
-            "T03040002"
-          ]
+          "children": []
         },
         {
           "id": "T03040002",
@@ -3307,12 +3184,10 @@
           "name_en": "Medical Aid",
           "acronym": null,
           "description": "질병을 예방하고 건강을 증진하는 의학 분야. 예방접종, 건강증진, 환경보건 등.",
-          "synonyms": {
-            "strings": [
-              "의료보호",
-              "의료지원"
-            ]
-          },
+          "synonyms": [
+            "의료보호",
+            "의료지원"
+          ],
           "linked_clsf_id": "C03040001",
           "parent_id": null,
           "standard_refs": [
@@ -3333,12 +3208,10 @@
           "name_en": "Cancer",
           "acronym": null,
           "description": "악성 종양으로, 비정상적인 세포의 무제한적 성장과 전이를 특징으로 하는 질환군. 대장암, 위암, 폐암, 유방암 등.",
-          "synonyms": {
-            "strings": [
-              "악성종양",
-              "Cancer"
-            ]
-          },
+          "synonyms": [
+            "악성종양",
+            "Cancer"
+          ],
           "linked_clsf_id": "C03050001",
           "parent_id": null,
           "standard_refs": [
@@ -3399,11 +3272,6 @@
               "primary_standard": "STD-MESH",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T03050002",
-            "T03010005",
-            "T03010006"
           ]
         },
         {
@@ -3412,12 +3280,10 @@
           "name_en": "Dry Eye Syndrome",
           "acronym": "DES",
           "description": "눈물 분비 부족 또는 과도한 증발로 안구 표면이 손상되는 질환. 안구 불편감, 시력 저하 유발.",
-          "synonyms": {
-            "strings": [
-              "DES",
-              "건조안"
-            ]
-          },
+          "synonyms": [
+            "DES",
+            "건조안"
+          ],
           "linked_clsf_id": "C03050001",
           "parent_id": null,
           "standard_refs": [
@@ -3438,13 +3304,11 @@
           "name_en": "Gastroesophageal Reflux Disease",
           "acronym": "GERD",
           "description": "위산이 식도로 역류하여 가슴쓰림과 불편감을 유발하는 만성 소화기 질환. 생활습관 개선과 약물치료로 관리.",
-          "synonyms": {
-            "strings": [
-              "GERD",
-              "역류성식도염",
-              "위식도역류"
-            ]
-          },
+          "synonyms": [
+            "GERD",
+            "역류성식도염",
+            "위식도역류"
+          ],
           "linked_clsf_id": "C03050001",
           "parent_id": null,
           "standard_refs": [
@@ -3465,20 +3329,15 @@
           "name_en": "Healthcare Big Data",
           "acronym": null,
           "description": "보건의료 분야에서 수집·생성되는 대규모 데이터. 진료정보, 건강검진, 유전체정보, 의료영상 등.",
-          "synonyms": {
-            "strings": [
-              "의료빅데이터",
-              "Healthcare Big Data"
-            ]
-          },
+          "synonyms": [
+            "의료빅데이터",
+            "Healthcare Big Data"
+          ],
           "linked_clsf_id": "C03060001",
           "parent_id": null,
           "standard_refs": [],
           "primary_standard": null,
-          "children": [],
-          "related_terms": [
-            "T03060002"
-          ]
+          "children": []
         },
         {
           "id": "T03060002",
@@ -3486,13 +3345,11 @@
           "name_en": "Medical Imaging Data",
           "acronym": null,
           "description": "X-ray, CT, MRI 등 의료영상 장비로 생성된 데이터. 진단·치료 계획 수립에 활용.",
-          "synonyms": {
-            "strings": [
-              "의료영상",
-              "진단영상",
-              "의료이미지"
-            ]
-          },
+          "synonyms": [
+            "의료영상",
+            "진단영상",
+            "의료이미지"
+          ],
           "linked_clsf_id": "C03060001",
           "parent_id": null,
           "standard_refs": [],
@@ -4037,12 +3894,10 @@
           "name_en": "Social Security",
           "acronym": null,
           "description": "고령 인구 비율에 따른 사회 단계 구분. 고령화사회(7% 이상), 고령사회(14% 이상), 초고령사회(20% 이상).",
-          "synonyms": {
-            "strings": [
-              "사회안전망",
-              "사회복지제도"
-            ]
-          },
+          "synonyms": [
+            "사회안전망",
+            "사회복지제도"
+          ],
           "linked_clsf_id": "C04010001",
           "parent_id": null,
           "standard_refs": [
@@ -4054,10 +3909,7 @@
             }
           ],
           "primary_standard": "STD-DATAGOkr",
-          "children": [],
-          "related_terms": [
-            "T04010002"
-          ]
+          "children": []
         },
         {
           "id": "T04010002",
@@ -4065,12 +3917,10 @@
           "name_en": "Social Insurance",
           "acronym": null,
           "description": "65-74세 전기고령자(Young-old)와 75세 이상 후기고령자(Old-old)의 구분. 건강 상태와 사회활동 수준 차이.",
-          "synonyms": {
-            "strings": [
-              "사회보험제도",
-              "4대보험"
-            ]
-          },
+          "synonyms": [
+            "사회보험제도",
+            "4대보험"
+          ],
           "linked_clsf_id": "C04010001",
           "parent_id": null,
           "standard_refs": [
@@ -4090,12 +3940,10 @@
           "name_en": "Public Assistance",
           "acronym": null,
           "description": "고령자가 고령자를 돌보는 돌봄 형태. 배우자 간 돌봄, 친구·이웃 간 돌봄 등.",
-          "synonyms": {
-            "strings": [
-              "노노돌봄",
-              "고령자돌봄"
-            ]
-          },
+          "synonyms": [
+            "노노돌봄",
+            "고령자돌봄"
+          ],
           "linked_clsf_id": "C04010001",
           "parent_id": null,
           "standard_refs": [
@@ -4115,12 +3963,10 @@
           "name_en": "Welfare Facility",
           "acronym": null,
           "description": "국가가 운영하는 공적 연금 제도. 국민연금, 공무원연금, 군인연금 등.",
-          "synonyms": {
-            "strings": [
-              "공적연금제도",
-              "사회보험연금"
-            ]
-          },
+          "synonyms": [
+            "공적연금제도",
+            "사회보험연금"
+          ],
           "linked_clsf_id": "C04020001",
           "parent_id": null,
           "standard_refs": [
@@ -4132,10 +3978,7 @@
             }
           ],
           "primary_standard": "STD-DATAGOkr",
-          "children": [],
-          "related_terms": [
-            "T04020002"
-          ]
+          "children": []
         },
         {
           "id": "T04020002",
@@ -4143,13 +3986,11 @@
           "name_en": "Elderly Welfare Facility",
           "acronym": null,
           "description": "연금 소득에 의존하여 생활하는 삶의 방식. 은퇴 후 소득원으로서의 연금 역할.",
-          "synonyms": {
-            "strings": [
-              "노인시설",
-              "양로시설",
-              "요양시설"
-            ]
-          },
+          "synonyms": [
+            "노인시설",
+            "양로시설",
+            "요양시설"
+          ],
           "linked_clsf_id": "C04020001",
           "parent_id": null,
           "standard_refs": [
@@ -4169,13 +4010,11 @@
           "name_en": "Vulnerable Groups",
           "acronym": null,
           "description": "고령자 가구의 소득원(근로, 연금, 자산소득 등)과 지출 항목(생활비, 의료비 등) 구조 분석.",
-          "synonyms": {
-            "strings": [
-              "사회적약자",
-              "취약층",
-              "소외계층"
-            ]
-          },
+          "synonyms": [
+            "사회적약자",
+            "취약층",
+            "소외계층"
+          ],
           "linked_clsf_id": "C04030001",
           "parent_id": null,
           "standard_refs": [
@@ -4195,12 +4034,10 @@
           "name_en": "Low-Income Groups",
           "acronym": null,
           "description": "빈곤층, 기초생활수급자 등 경제적으로 어려운 계층. 기초생활보장제도, 긴급복지지원 등의 대상.",
-          "synonyms": {
-            "strings": [
-              "빈곤층",
-              "기초수급자"
-            ]
-          },
+          "synonyms": [
+            "빈곤층",
+            "기초수급자"
+          ],
           "linked_clsf_id": "C04030001",
           "parent_id": null,
           "standard_refs": [],
@@ -4213,12 +4050,10 @@
           "name_en": "Aging Society",
           "acronym": null,
           "description": "전체 인구 중 65세 이상 인구가 14% 이상인 사회. 한국은 2018년에 고령사회 진입.",
-          "synonyms": {
-            "strings": [
-              "Aged Society",
-              "고령화사회"
-            ]
-          },
+          "synonyms": [
+            "Aged Society",
+            "고령화사회"
+          ],
           "linked_clsf_id": "C04040001",
           "parent_id": null,
           "standard_refs": [
@@ -4255,10 +4090,6 @@
               "primary_standard": "STD-DATAGOkr",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T04040002",
-            "T04040003"
           ]
         },
         {
@@ -4267,12 +4098,10 @@
           "name_en": "Senior-to-Senior Care",
           "acronym": null,
           "description": "고령자가 고령자를 돌보는 돌봄 형태. 배우자 간 돌봄, 친구·이웃 간 상호 돌봄 등.",
-          "synonyms": {
-            "strings": [
-              "Senior Care",
-              "노인돌봄"
-            ]
-          },
+          "synonyms": [
+            "Senior Care",
+            "노인돌봄"
+          ],
           "linked_clsf_id": "C04040001",
           "parent_id": null,
           "standard_refs": [],
@@ -4773,13 +4602,11 @@
           "name_en": "Legislation",
           "acronym": null,
           "description": "법원의 재판 선례. 유사 사건의 재판 시 참고 기준.",
-          "synonyms": {
-            "strings": [
-              "법령정보",
-              "법규",
-              "법제"
-            ]
-          },
+          "synonyms": [
+            "법령정보",
+            "법규",
+            "법제"
+          ],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4791,11 +4618,7 @@
             }
           ],
           "primary_standard": "STD-MOLEG",
-          "children": [],
-          "related_terms": [
-            "T05010002",
-            "T05010003"
-          ]
+          "children": []
         },
         {
           "id": "T05010002",
@@ -4803,13 +4626,11 @@
           "name_en": "Law",
           "acronym": null,
           "description": "대법원의 판결. 최종심 판결로 법적 구속력이 강함.",
-          "synonyms": {
-            "strings": [
-              "법",
-              "법규범",
-              "제정법"
-            ]
-          },
+          "synonyms": [
+            "법",
+            "법규범",
+            "제정법"
+          ],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4829,13 +4650,11 @@
           "name_en": "Enforcement Decree",
           "acronym": null,
           "description": "헌법재판소의 결정. 위헌법률심판, 헌법소원 등.",
-          "synonyms": {
-            "strings": [
-              "대통령령",
-              "시행규칙",
-              "명령"
-            ]
-          },
+          "synonyms": [
+            "대통령령",
+            "시행규칙",
+            "명령"
+          ],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4855,13 +4674,11 @@
           "name_en": "Local Ordinance",
           "acronym": null,
           "description": "자치법규 (Local Ordinance)",
-          "synonyms": {
-            "strings": [
-              "조례",
-              "지방법규",
-              "자치규칙"
-            ]
-          },
+          "synonyms": [
+            "조례",
+            "지방법규",
+            "자치규칙"
+          ],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4881,13 +4698,11 @@
           "name_en": "Administrative Rules",
           "acronym": null,
           "description": "행정규칙 (Administrative Rules)",
-          "synonyms": {
-            "strings": [
-              "행정명령",
-              "고시",
-              "훈령"
-            ]
-          },
+          "synonyms": [
+            "행정명령",
+            "고시",
+            "훈령"
+          ],
           "linked_clsf_id": "C05010001",
           "parent_id": null,
           "standard_refs": [
@@ -4907,13 +4722,11 @@
           "name_en": "Case Law",
           "acronym": null,
           "description": "개인의 소득(근로소득, 사업소득, 기타소득 등)에 부과하는 세금. 누진세율 적용.",
-          "synonyms": {
-            "strings": [
-              "판결례",
-              "재판례",
-              "법원판례"
-            ]
-          },
+          "synonyms": [
+            "판결례",
+            "재판례",
+            "법원판례"
+          ],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [
@@ -4933,13 +4746,11 @@
           "name_en": "Supreme Court Precedent",
           "acronym": null,
           "description": "법인의 소득(영업이익, 자산처분익 등)에 부과하는 세금. 법인세법에 근거.",
-          "synonyms": {
-            "strings": [
-              "대법원판결",
-              "상고심판례",
-              "최고법원판례"
-            ]
-          },
+          "synonyms": [
+            "대법원판결",
+            "상고심판례",
+            "최고법원판례"
+          ],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [
@@ -4959,14 +4770,12 @@
           "name_en": "Constitutional Court Decision",
           "acronym": null,
           "description": "재화와 용역의 공급(판매)에 부과하는 세금. 최종 소비자가 부담하는 간접세.",
-          "synonyms": {
-            "strings": [
-              "부가세",
-              "VAT",
-              "일반법원판례",
-              "하급법원판례"
-            ]
-          },
+          "synonyms": [
+            "부가세",
+            "VAT",
+            "일반법원판례",
+            "하급법원판례"
+          ],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [
@@ -4986,15 +4795,13 @@
           "name_en": "Judicial Statistics",
           "acronym": null,
           "description": "상속 또는 증여받은 재산에 부과하는 세금. 부의 재분배 기능.",
-          "synonyms": {
-            "strings": [
-              "상증세",
-              "증여세",
-              "상속세",
-              "재판통계연보",
-              "사법통계"
-            ]
-          },
+          "synonyms": [
+            "상증세",
+            "증여세",
+            "상속세",
+            "재판통계연보",
+            "사법통계"
+          ],
           "linked_clsf_id": "C05020001",
           "parent_id": null,
           "standard_refs": [],
@@ -5007,13 +4814,11 @@
           "name_en": "Legal Service",
           "acronym": null,
           "description": "국가공무원의 복무·권리·의무 등을 규정한 법률. 공직윤리, 징계, 신분보장 등.",
-          "synonyms": {
-            "strings": [
-              "법률지원",
-              "법률복지",
-              "법무서비스"
-            ]
-          },
+          "synonyms": [
+            "법률지원",
+            "법률복지",
+            "법무서비스"
+          ],
           "linked_clsf_id": "C05030001",
           "parent_id": null,
           "standard_refs": [
@@ -5033,13 +4838,11 @@
           "name_en": "Legal Consultation",
           "acronym": null,
           "description": "행정절차의 공정성·투명성·신뢰성 확보를 위한 법률. 처분 절차, 의견 청취, 이유 제시 등.",
-          "synonyms": {
-            "strings": [
-              "법률자문",
-              "법률컨설팅",
-              "법무상담"
-            ]
-          },
+          "synonyms": [
+            "법률자문",
+            "법률컨설팅",
+            "법무상담"
+          ],
           "linked_clsf_id": "C05030001",
           "parent_id": null,
           "standard_refs": [],
@@ -5052,13 +4855,11 @@
           "name_en": "Legal Aid",
           "acronym": null,
           "description": "법률구조 (Legal Aid)",
-          "synonyms": {
-            "strings": [
-              "무료법률구조",
-              "법률지원",
-              "법률복지"
-            ]
-          },
+          "synonyms": [
+            "무료법률구조",
+            "법률지원",
+            "법률복지"
+          ],
           "linked_clsf_id": "C05030001",
           "parent_id": null,
           "standard_refs": [],
@@ -5071,14 +4872,13 @@
           "name_en": "Tax",
           "acronym": null,
           "description": "국가 또는 지방자치단체가 재정 수입을 위해 국민에게 부과하는 금전. 국세와 지방세로 구분.",
-          "synonyms": {
-            "strings": [
-              "Tax",
-              "부동산등기",
-              "소유권등기",
-              "재산등기"
-            ]
-          },
+          "synonyms": [
+            "Tax",
+            "조세",
+            "부동산등기",
+            "소유권등기",
+            "재산등기"
+          ],
           "linked_clsf_id": "C05040001",
           "parent_id": null,
           "standard_refs": [
@@ -5157,11 +4957,6 @@
               "primary_standard": null,
               "children": []
             }
-          ],
-          "related_terms": [
-            "T05040002",
-            "T05040003",
-            "T05040004"
           ]
         },
         {
@@ -5170,12 +4965,10 @@
           "name_en": "National Tax",
           "acronym": null,
           "description": "국세 (National Tax)",
-          "synonyms": {
-            "strings": [
-              "국세청세금",
-              "국가세수"
-            ]
-          },
+          "synonyms": [
+            "국세청세금",
+            "국가세수"
+          ],
           "linked_clsf_id": "C05040001",
           "parent_id": null,
           "standard_refs": [],
@@ -5188,12 +4981,10 @@
           "name_en": "Local Tax",
           "acronym": null,
           "description": "지방세 (Local Tax)",
-          "synonyms": {
-            "strings": [
-              "지방세무",
-              "자치단체세금"
-            ]
-          },
+          "synonyms": [
+            "지방세무",
+            "자치단체세금"
+          ],
           "linked_clsf_id": "C05040001",
           "parent_id": null,
           "standard_refs": [],
@@ -5206,13 +4997,11 @@
           "name_en": "Civil Law",
           "acronym": null,
           "description": "민법 (Civil Law)",
-          "synonyms": {
-            "strings": [
-              "형사사법",
-              "형법체계",
-              "범죄처벌"
-            ]
-          },
+          "synonyms": [
+            "형사사법",
+            "형법체계",
+            "범죄처벌"
+          ],
           "linked_clsf_id": "C05050001",
           "parent_id": null,
           "standard_refs": [],
@@ -5225,13 +5014,11 @@
           "name_en": "Commercial Law",
           "acronym": null,
           "description": "상법 (Commercial Law)",
-          "synonyms": {
-            "strings": [
-              "범죄통계",
-              "범죄발생현황",
-              "형사통계"
-            ]
-          },
+          "synonyms": [
+            "범죄통계",
+            "범죄발생현황",
+            "형사통계"
+          ],
           "linked_clsf_id": "C05050001",
           "parent_id": null,
           "standard_refs": [],
@@ -5244,15 +5031,11 @@
           "name_en": "Criminal Law",
           "acronym": null,
           "description": "형법 (Criminal Law)",
-          "synonyms": {
-            "terms": [
-              "T05060002"
-            ],
-            "strings": [
-              "행정소송",
-              "행정쟁송"
-            ]
-          },
+          "synonyms": [
+            "행정소송",
+            "행정심판",
+            "행정쟁송"
+          ],
           "linked_clsf_id": "C05060001",
           "parent_id": null,
           "standard_refs": [],
@@ -5265,12 +5048,10 @@
           "name_en": "Administrative Appeal",
           "acronym": null,
           "description": "행정심판 (Administrative Appeal)",
-          "synonyms": {
-            "strings": [
-              "행정쟁송",
-              "행정불복"
-            ]
-          },
+          "synonyms": [
+            "행정쟁송",
+            "행정불복"
+          ],
           "linked_clsf_id": "C05060001",
           "parent_id": null,
           "standard_refs": [],
@@ -6174,13 +5955,11 @@
           "name_en": "National Budget",
           "acronym": null,
           "description": "중앙은행이 금융기관과 거래할 때 적용하는 정책금리. 한국은행 금융통화위원회에서 결정하며 시중금리의 기준이 됨.",
-          "synonyms": {
-            "strings": [
-              "정책금리",
-              "Base Rate",
-              "기준금리"
-            ]
-          },
+          "synonyms": [
+            "정책금리",
+            "Base Rate",
+            "기준금리"
+          ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [
@@ -6193,13 +5972,7 @@
             }
           ],
           "primary_standard": "STD-FIBO",
-          "children": [],
-          "related_terms": [
-            "T06010002",
-            "T06010003",
-            "T06010004",
-            "T06010005"
-          ]
+          "children": []
         },
         {
           "id": "T06010002",
@@ -6207,12 +5980,10 @@
           "name_en": "Budget by Sector",
           "acronym": null,
           "description": "중앙은행이 금융기관에 유동성을 지원하여 금융중개 기능을 활성화하는 대출제도. 대출 한도 및 금리는 한국은행이 결정.",
-          "synonyms": {
-            "strings": [
-              "부문별예산",
-              "사업별예산"
-            ]
-          },
+          "synonyms": [
+            "부문별예산",
+            "사업별예산"
+          ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [
@@ -6233,12 +6004,10 @@
           "name_en": "Budget by Ministry",
           "acronym": null,
           "description": "중앙은행이 유가증권(국채, 통안증권 등)을 매매하여 시중 통화량을 조절하는 정책 수단. 금융기관의 유동성을 직접 관리.",
-          "synonyms": {
-            "strings": [
-              "OMO",
-              "공개시장조작"
-            ]
-          },
+          "synonyms": [
+            "OMO",
+            "공개시장조작"
+          ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [
@@ -6251,11 +6020,7 @@
             }
           ],
           "primary_standard": "STD-FIBO",
-          "children": [],
-          "related_terms": [
-            "T06010007",
-            "T06010008"
-          ]
+          "children": []
         },
         {
           "id": "T06010004",
@@ -6263,12 +6028,10 @@
           "name_en": "Expenditure Budget",
           "acronym": null,
           "description": "높았던 물가 상승률이 목표 범위(한국은행 2%)로 돌아와 안정화되는 시기. 통화정책의 정상화를 의미.",
-          "synonyms": {
-            "strings": [
-              "지출예산",
-              "세출"
-            ]
-          },
+          "synonyms": [
+            "지출예산",
+            "세출"
+          ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [],
@@ -6281,12 +6044,10 @@
           "name_en": "Revenue Budget",
           "acronym": null,
           "description": "식료품·에너지 등 변동성이 큰 품목을 제외한 물가지수. 기조적 물가 흐름 파악에 활용.",
-          "synonyms": {
-            "strings": [
-              "수입예산",
-              "세입"
-            ]
-          },
+          "synonyms": [
+            "수입예산",
+            "세입"
+          ],
           "linked_clsf_id": "C06010001",
           "parent_id": null,
           "standard_refs": [],
@@ -6299,13 +6060,11 @@
           "name_en": "Fiscal Statistics",
           "acronym": null,
           "description": "부동산 개발사업에 필요한 자금을 금융기관이 대출해주는 금융 상품. 사업성 평가 기반 대출로 담보 가치 변동 리스크 존재.",
-          "synonyms": {
-            "strings": [
-              "PF",
-              "프로젝트파이낸싱",
-              "Project Financing"
-            ]
-          },
+          "synonyms": [
+            "PF",
+            "프로젝트파이낸싱",
+            "Project Financing"
+          ],
           "linked_clsf_id": "C06020001",
           "parent_id": null,
           "standard_refs": [
@@ -6318,10 +6077,7 @@
             }
           ],
           "primary_standard": "STD-FIBO",
-          "children": [],
-          "related_terms": [
-            "T06020002"
-          ]
+          "children": []
         },
         {
           "id": "T06020002",
@@ -6329,13 +6085,11 @@
           "name_en": "Statement of Financial Position",
           "acronym": null,
           "description": "금융시스템의 안정성 유지와 시스템 리스크 관리. 금융기관 건전성, 시장 안정성, 금융 인프라 안정성 포함.",
-          "synonyms": {
-            "strings": [
-              "재정상태",
-              "재무상태표",
-              "재정현황"
-            ]
-          },
+          "synonyms": [
+            "재정상태",
+            "재무상태표",
+            "재정현황"
+          ],
           "linked_clsf_id": "C06020001",
           "parent_id": null,
           "standard_refs": [
@@ -6356,11 +6110,10 @@
           "name_en": "National Settlement",
           "acronym": null,
           "description": "회계연도가 종료된 후 세입·세출 결산을 확정하는 과정. 국가결산보고서 발간.",
-          "synonyms": {
-            "strings": [
-              "세입세출결산"
-            ]
-          },
+          "synonyms": [
+            "국가결산",
+            "세입세출결산"
+          ],
           "linked_clsf_id": "C06020001",
           "parent_id": null,
           "standard_refs": [],
@@ -6373,12 +6126,10 @@
           "name_en": "Local Finance",
           "acronym": null,
           "description": "대기업과 중소기업, 금융기관과 서민이 함께 성장하는 금융 생태계. 동반성장, 상생협력의 금융 실천.",
-          "synonyms": {
-            "strings": [
-              "지방정부재정",
-              "지역재정"
-            ]
-          },
+          "synonyms": [
+            "지방정부재정",
+            "지역재정"
+          ],
           "linked_clsf_id": "C06030001",
           "parent_id": null,
           "standard_refs": [
@@ -6398,12 +6149,7 @@
             }
           ],
           "primary_standard": "STD-FIBO",
-          "children": [],
-          "related_terms": [
-            "T06030002",
-            "T06030003",
-            "T06030004"
-          ]
+          "children": []
         },
         {
           "id": "T06030002",
@@ -6411,12 +6157,10 @@
           "name_en": "Local Allocation Tax",
           "acronym": null,
           "description": "금융 소외계층도 적절한 금융서비스를 이용할 수 있도록 하는 정책. 저신용자, 저소득층, 금융취약계층 지원.",
-          "synonyms": {
-            "strings": [
-              "지방교부금",
-              "재정교부금"
-            ]
-          },
+          "synonyms": [
+            "지방교부금",
+            "재정교부금"
+          ],
           "linked_clsf_id": "C06030001",
           "parent_id": null,
           "standard_refs": [
@@ -6437,12 +6181,10 @@
           "name_en": "Fiscal Independence Ratio",
           "acronym": null,
           "description": "소상공인의 금리 부담을 경감하기 위한 3가지 정책 패키지. 금리 인하, 상환 유예, 대환 지원 등.",
-          "synonyms": {
-            "strings": [
-              "재정자주도",
-              "재정독립도"
-            ]
-          },
+          "synonyms": [
+            "재정자주도",
+            "재정독립도"
+          ],
           "linked_clsf_id": "C06030001",
           "parent_id": null,
           "standard_refs": [],
@@ -6455,12 +6197,10 @@
           "name_en": "National Tax",
           "acronym": null,
           "description": "금융(Finance)과 기술(Technology)의 결합으로 혁신적인 금융서비스를 제공하는 산업. 모바일 결제, 인터넷전문은행, 로보어드바이저 등.",
-          "synonyms": {
-            "strings": [
-              "금융기술",
-              "Fintech"
-            ]
-          },
+          "synonyms": [
+            "금융기술",
+            "Fintech"
+          ],
           "linked_clsf_id": "C06040001",
           "parent_id": null,
           "standard_refs": [
@@ -6480,10 +6220,7 @@
             }
           ],
           "primary_standard": "STD-FIBO",
-          "children": [],
-          "related_terms": [
-            "T06040002"
-          ]
+          "children": []
         },
         {
           "id": "T06040002",
@@ -6491,12 +6228,10 @@
           "name_en": "Local Tax",
           "acronym": null,
           "description": "핀테크 기업의 성장을 지원하기 위한 정부 및 민간의 투자 펀드. 초기 기업 투자, 기술 개발 지원.",
-          "synonyms": {
-            "strings": [
-              "지역세",
-              "지방세금"
-            ]
-          },
+          "synonyms": [
+            "지역세",
+            "지방세금"
+          ],
           "linked_clsf_id": "C06040001",
           "parent_id": null,
           "standard_refs": [
@@ -6540,14 +6275,12 @@
           "name_en": "Fund",
           "acronym": null,
           "description": "근로자가 퇴직 후 생활안정을 위해 적립하는 연금. 확정급여형(DB)과 확정기여형(DC)으로 구분.",
-          "synonyms": {
-            "strings": [
-              "DC",
-              "DB",
-              "기업연금",
-              "퇴직연금"
-            ]
-          },
+          "synonyms": [
+            "DC",
+            "DB",
+            "기업연금",
+            "퇴직연금"
+          ],
           "linked_clsf_id": "C06050001",
           "parent_id": null,
           "standard_refs": [
@@ -6560,11 +6293,7 @@
             }
           ],
           "primary_standard": "STD-FIBO",
-          "children": [],
-          "related_terms": [
-            "T06050002",
-            "T04020001"
-          ]
+          "children": []
         },
         {
           "id": "T06050002",
@@ -6572,12 +6301,10 @@
           "name_en": "Fund Management",
           "acronym": null,
           "description": "퇴직연금을 여러 사용자가 공동으로 적립·운용하는 기금 형태. 중소기업 근로자의 퇴직연금 가입률 제고.",
-          "synonyms": {
-            "strings": [
-              "기금관리",
-              "기금운영"
-            ]
-          },
+          "synonyms": [
+            "기금관리",
+            "기금운영"
+          ],
           "linked_clsf_id": "C06050001",
           "parent_id": null,
           "standard_refs": [
@@ -6598,12 +6325,10 @@
           "name_en": "Monetary Policy",
           "acronym": null,
           "description": "한국과 호주 간 퇴직연금 제도를 논의하는 포럼. 양국 제도 비교, 정책 시사점 도출.",
-          "synonyms": {
-            "strings": [
-              "금융정책",
-              "통화금융정책"
-            ]
-          },
+          "synonyms": [
+            "금융정책",
+            "통화금융정책"
+          ],
           "linked_clsf_id": "C06060001",
           "parent_id": null,
           "standard_refs": [
@@ -6646,9 +6371,6 @@
                 }
               ]
             }
-          ],
-          "related_terms": [
-            "T06060002"
           ]
         }
       ]
@@ -7265,12 +6987,10 @@
           "name_en": "Industrial Production Index",
           "acronym": null,
           "description": "디지털 기술을 기반으로 한 경제 활동. 플랫폼 경제, 공유경제, 데이터 경제 등.",
-          "synonyms": {
-            "strings": [
-              "Digital Economy",
-              "데이터경제"
-            ]
-          },
+          "synonyms": [
+            "Digital Economy",
+            "데이터경제"
+          ],
           "linked_clsf_id": "C07010001",
           "parent_id": null,
           "standard_refs": [
@@ -7348,12 +7068,6 @@
               "primary_standard": "STD-KSIC",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T07010002",
-            "T07010003",
-            "T07020001",
-            "T07010004"
           ]
         },
         {
@@ -7362,12 +7076,10 @@
           "name_en": "Industrial Trends",
           "acronym": null,
           "description": "과학적 발견이나 공학적 혁신을 기반으로 한 첨단 기술. AI, 양자컴퓨팅, 바이오 등.",
-          "synonyms": {
-            "strings": [
-              "Deep Technology",
-              "심층기술"
-            ]
-          },
+          "synonyms": [
+            "Deep Technology",
+            "심층기술"
+          ],
           "linked_clsf_id": "C07010001",
           "parent_id": null,
           "standard_refs": [
@@ -7387,12 +7099,10 @@
           "name_en": "Automotive Industry",
           "acronym": null,
           "description": "벤처캐피탈(VC)에 투자하는 정부 출자 펀드. 민간 VC 육성 및 벤처 투자 활성화.",
-          "synonyms": {
-            "strings": [
-              "자동차제조업",
-              "차량산업"
-            ]
-          },
+          "synonyms": [
+            "자동차제조업",
+            "차량산업"
+          ],
           "linked_clsf_id": "C07020001",
           "parent_id": null,
           "standard_refs": [
@@ -7413,13 +7123,11 @@
           "name_en": "Bio Industry",
           "acronym": null,
           "description": "기업 간(B2B) 디지털 커머스 거래. 원자재, 부품, 서비스 등의 기업 간 온라인 거래.",
-          "synonyms": {
-            "strings": [
-              "생명공학산업",
-              "바이오테크",
-              "BT산업"
-            ]
-          },
+          "synonyms": [
+            "생명공학산업",
+            "바이오테크",
+            "BT산업"
+          ],
           "linked_clsf_id": "C07020001",
           "parent_id": null,
           "standard_refs": [
@@ -7440,12 +7148,10 @@
           "name_en": "Service Industry",
           "acronym": null,
           "description": "새로운 형태의 럭셔리 소비 트렌드. 경험, 가치, 지속가능성 중시.",
-          "synonyms": {
-            "strings": [
-              "3차산업",
-              "서비스산업"
-            ]
-          },
+          "synonyms": [
+            "3차산업",
+            "서비스산업"
+          ],
           "linked_clsf_id": "C07030001",
           "parent_id": null,
           "standard_refs": [
@@ -7466,13 +7172,11 @@
           "name_en": "Distribution Industry",
           "acronym": null,
           "description": "상품을 최종 목적지(소비자)까지 배송하는 마지막 단계. 배송비 절감 및 배송 속도가 경쟁력 핵심.",
-          "synonyms": {
-            "strings": [
-              "최종구간배송",
-              "문전배송",
-              "Last Mile"
-            ]
-          },
+          "synonyms": [
+            "최종구간배송",
+            "문전배송",
+            "Last Mile"
+          ],
           "linked_clsf_id": "C07030001",
           "parent_id": null,
           "standard_refs": [
@@ -7484,10 +7188,7 @@
             }
           ],
           "primary_standard": "STD-KSIC",
-          "children": [],
-          "related_terms": [
-            "T07060002"
-          ]
+          "children": []
         },
         {
           "id": "T07040001",
@@ -7495,13 +7196,11 @@
           "name_en": "Employment Statistics",
           "acronym": null,
           "description": "커머스 운영을 위한 클라우드 기반 소프트웨어 서비스. Shopify, Cafe24 등.",
-          "synonyms": {
-            "strings": [
-              "상거래SaaS",
-              "쇼핑몰솔루션",
-              "E-commerce Platform"
-            ]
-          },
+          "synonyms": [
+            "상거래SaaS",
+            "쇼핑몰솔루션",
+            "E-commerce Platform"
+          ],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [
@@ -7513,11 +7212,7 @@
             }
           ],
           "primary_standard": "STD-KSIC",
-          "children": [],
-          "related_terms": [
-            "T07040002",
-            "T07040003"
-          ]
+          "children": []
         },
         {
           "id": "T07040002",
@@ -7525,13 +7220,11 @@
           "name_en": "Job",
           "acronym": null,
           "description": "마케팅 업무를 자동화하는 소프트웨어. 이메일 캠페인, 고객 세분화, 성과 분석 등.",
-          "synonyms": {
-            "strings": [
-              "취업",
-              "고용",
-              "일자리창출"
-            ]
-          },
+          "synonyms": [
+            "취업",
+            "고용",
+            "일자리창출"
+          ],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [],
@@ -7544,13 +7237,11 @@
           "name_en": "Unemployment Rate",
           "acronym": null,
           "description": "고객 리뷰를 관리하는 솔루션. 리뷰 수집, 분석, 마케팅 활용.",
-          "synonyms": {
-            "strings": [
-              "실직률",
-              "비취업률",
-              "미취업률"
-            ]
-          },
+          "synonyms": [
+            "실직률",
+            "비취업률",
+            "미취업률"
+          ],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [
@@ -7570,13 +7261,11 @@
           "name_en": "Labor Market",
           "acronym": null,
           "description": "가격과 혜택을 중시하며 여러 플랫폼을 비교하는 소비자. 할인, 쿠폰, 적립금 등에 민감.",
-          "synonyms": {
-            "strings": [
-              "고용시장",
-              "취업시장",
-              "인력시장"
-            ]
-          },
+          "synonyms": [
+            "고용시장",
+            "취업시장",
+            "인력시장"
+          ],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [],
@@ -7589,12 +7278,10 @@
           "name_en": "Minimum Wage",
           "acronym": null,
           "description": "소비자가 상품·서비스로부터 얻는 경제적·심리적 만족도. 가격 대비 효용.",
-          "synonyms": {
-            "strings": [
-              "최저시급",
-              "법정최저임금"
-            ]
-          },
+          "synonyms": [
+            "최저시급",
+            "법정최저임금"
+          ],
           "linked_clsf_id": "C07040001",
           "parent_id": null,
           "standard_refs": [],
@@ -7607,12 +7294,10 @@
           "name_en": "Startup",
           "acronym": null,
           "description": "디지털 기술을 기반으로 한 경제 활동 전반. 전자상거래, 플랫폼 비즈니스, 디지털 콘텐츠 산업 등.",
-          "synonyms": {
-            "strings": [
-              "디지털경제",
-              "Digital Economy"
-            ]
-          },
+          "synonyms": [
+            "디지털경제",
+            "Digital Economy"
+          ],
           "linked_clsf_id": "C07050001",
           "parent_id": null,
           "standard_refs": [
@@ -7650,9 +7335,6 @@
               "primary_standard": "STD-KSIC",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T07050002"
           ]
         },
         {
@@ -7661,13 +7343,11 @@
           "name_en": "Startup Company",
           "acronym": null,
           "description": "스타트업 (Startup Company)",
-          "synonyms": {
-            "strings": [
-              "벤처기업",
-              "스타트업회사",
-              "신생기업"
-            ]
-          },
+          "synonyms": [
+            "벤처기업",
+            "스타트업회사",
+            "신생기업"
+          ],
           "linked_clsf_id": "C07050001",
           "parent_id": null,
           "standard_refs": [
@@ -7687,12 +7367,10 @@
           "name_en": "Accelerator",
           "acronym": null,
           "description": "액셀러레이터 (Accelerator)",
-          "synonyms": {
-            "strings": [
-              "창업지원기관",
-              "인큐베이터"
-            ]
-          },
+          "synonyms": [
+            "창업지원기관",
+            "인큐베이터"
+          ],
           "linked_clsf_id": "C07050001",
           "parent_id": null,
           "standard_refs": [],
@@ -7705,12 +7383,10 @@
           "name_en": "SME",
           "acronym": null,
           "description": "이커머스 운영에 필요한 기술 솔루션. 결제, 배송, 재고관리, 고객관리 등.",
-          "synonyms": {
-            "strings": [
-              "이커머스기술",
-              "E-commerce Tech"
-            ]
-          },
+          "synonyms": [
+            "이커머스기술",
+            "E-commerce Tech"
+          ],
           "linked_clsf_id": "C07060001",
           "parent_id": null,
           "standard_refs": [
@@ -7742,9 +7418,6 @@
               "primary_standard": null,
               "children": []
             }
-          ],
-          "related_terms": [
-            "T07060002"
           ]
         },
         {
@@ -7753,13 +7426,11 @@
           "name_en": "Import and Export",
           "acronym": null,
           "description": "수출입 (Import and Export)",
-          "synonyms": {
-            "strings": [
-              "무역",
-              "대외무역",
-              "수출입통계"
-            ]
-          },
+          "synonyms": [
+            "무역",
+            "대외무역",
+            "수출입통계"
+          ],
           "linked_clsf_id": "C07070001",
           "parent_id": null,
           "standard_refs": [],
@@ -7772,12 +7443,10 @@
           "name_en": "Free Trade Agreement",
           "acronym": null,
           "description": "FTA (Free Trade Agreement)",
-          "synonyms": {
-            "strings": [
-              "국제무역",
-              "글로벌무역"
-            ]
-          },
+          "synonyms": [
+            "국제무역",
+            "글로벌무역"
+          ],
           "linked_clsf_id": "C07070001",
           "parent_id": null,
           "standard_refs": [],
@@ -7790,13 +7459,11 @@
           "name_en": "Trade Balance",
           "acronym": null,
           "description": "무역수지 (Trade Balance)",
-          "synonyms": {
-            "strings": [
-              "무역적자",
-              "무역흑자",
-              "수출입차액"
-            ]
-          },
+          "synonyms": [
+            "무역적자",
+            "무역흑자",
+            "수출입차액"
+          ],
           "linked_clsf_id": "C07070001",
           "parent_id": null,
           "standard_refs": [],
@@ -8252,15 +7919,11 @@
           "name_en": "E-commerce Platform",
           "acronym": null,
           "description": "재난의 예방·대비·대응·복구를 체계적으로 관리하는 활동. 국가재난관리체계, 재난관리책임기관 등.",
-          "synonyms": {
-            "terms": [
-              "T12010001"
-            ],
-            "strings": [
-              "Disaster Management",
-              "재난대응체계"
-            ]
-          },
+          "synonyms": [
+            "재난관리",
+            "Disaster Management",
+            "재난대응체계"
+          ],
           "linked_clsf_id": "C08010001",
           "parent_id": null,
           "standard_refs": [
@@ -8318,10 +7981,6 @@
               "primary_standard": null,
               "children": []
             }
-          ],
-          "related_terms": [
-            "T08010002",
-            "T08010003"
           ]
         },
         {
@@ -8330,14 +7989,10 @@
           "name_en": "Direct to Consumer",
           "acronym": null,
           "description": "생활·시설·교통 등 분야의 안전 위험을 관리하는 활동. 안전점검, 위험평가, 개선조치 등.",
-          "synonyms": {
-            "terms": [
-              "T12020001"
-            ],
-            "strings": [
-              "Safety Management"
-            ]
-          },
+          "synonyms": [
+            "안전관리",
+            "Safety Management"
+          ],
           "linked_clsf_id": "C08020001",
           "parent_id": null,
           "standard_refs": [
@@ -8377,9 +8032,6 @@
               "primary_standard": "STD-KSIC",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T08020002"
           ]
         },
         {
@@ -8388,13 +8040,11 @@
           "name_en": "Simple Payment",
           "acronym": null,
           "description": "전시·사변 등 국가 비상사태에 대비하는 활동. 민방위 훈련, 비상대피, 물자 비축 등.",
-          "synonyms": {
-            "strings": [
-              "간편결제서비스",
-              "모바일결제",
-              "페이"
-            ]
-          },
+          "synonyms": [
+            "간편결제서비스",
+            "모바일결제",
+            "페이"
+          ],
           "linked_clsf_id": "C08030001",
           "parent_id": null,
           "standard_refs": [
@@ -8415,12 +8065,10 @@
           "name_en": "Buy Now Pay Later",
           "acronym": null,
           "description": "BNPL (Buy Now Pay Later)",
-          "synonyms": {
-            "strings": [
-              "선구매후결제",
-              "외상결제"
-            ]
-          },
+          "synonyms": [
+            "선구매후결제",
+            "외상결제"
+          ],
           "linked_clsf_id": "C08030001",
           "parent_id": null,
           "standard_refs": [
@@ -8441,13 +8089,11 @@
           "name_en": "Fulfillment",
           "acronym": null,
           "description": "풀필먼트 (Fulfillment)",
-          "synonyms": {
-            "strings": [
-              "물류대행",
-              "주문처리",
-              "배송대행"
-            ]
-          },
+          "synonyms": [
+            "물류대행",
+            "주문처리",
+            "배송대행"
+          ],
           "linked_clsf_id": "C08040001",
           "parent_id": null,
           "standard_refs": [
@@ -8468,13 +8114,11 @@
           "name_en": "Last Mile Delivery",
           "acronym": null,
           "description": "라스트마일 (Last Mile Delivery)",
-          "synonyms": {
-            "strings": [
-              "라스트마일배송",
-              "최종배송",
-              "막차배송"
-            ]
-          },
+          "synonyms": [
+            "라스트마일배송",
+            "최종배송",
+            "막차배송"
+          ],
           "linked_clsf_id": "C08040001",
           "parent_id": null,
           "standard_refs": [],
@@ -8487,12 +8131,10 @@
           "name_en": "Live Commerce",
           "acronym": null,
           "description": "라이브커머스 (Live Commerce)",
-          "synonyms": {
-            "strings": [
-              "실시간커머스",
-              "라방"
-            ]
-          },
+          "synonyms": [
+            "실시간커머스",
+            "라방"
+          ],
           "linked_clsf_id": "C08050001",
           "parent_id": null,
           "standard_refs": [
@@ -8513,12 +8155,10 @@
           "name_en": "Subscription Economy",
           "acronym": null,
           "description": "구독경제 (Subscription Economy)",
-          "synonyms": {
-            "strings": [
-              "구독서비스",
-              "정기결제"
-            ]
-          },
+          "synonyms": [
+            "구독서비스",
+            "정기결제"
+          ],
           "linked_clsf_id": "C08050001",
           "parent_id": null,
           "standard_refs": [],
@@ -9039,12 +8679,10 @@
           "name_en": "Cultural Heritage",
           "acronym": null,
           "description": "보존할 가치가 있는 유·무형의 문화적 유산. 국가지정문화재, 시도지정문화재 등으로 구분.",
-          "synonyms": {
-            "strings": [
-              "문화유산",
-              "Cultural Heritage"
-            ]
-          },
+          "synonyms": [
+            "문화유산",
+            "Cultural Heritage"
+          ],
           "linked_clsf_id": "C09010001",
           "parent_id": null,
           "standard_refs": [
@@ -9108,10 +8746,6 @@
               "primary_standard": "STD-UNESCO",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T09010002",
-            "T09010003"
           ]
         },
         {
@@ -9120,12 +8754,10 @@
           "name_en": "National Treasure",
           "acronym": null,
           "description": "국보 (National Treasure)",
-          "synonyms": {
-            "strings": [
-              "국가지정문화재",
-              "국보급유물"
-            ]
-          },
+          "synonyms": [
+            "국가지정문화재",
+            "국보급유물"
+          ],
           "linked_clsf_id": "C09010001",
           "parent_id": null,
           "standard_refs": [
@@ -9146,12 +8778,10 @@
           "name_en": "World Heritage",
           "acronym": null,
           "description": "세계유산 (World Heritage)",
-          "synonyms": {
-            "strings": [
-              "유네스코세계유산",
-              "세계문화유산"
-            ]
-          },
+          "synonyms": [
+            "유네스코세계유산",
+            "세계문화유산"
+          ],
           "linked_clsf_id": "C09010001",
           "parent_id": null,
           "standard_refs": [
@@ -9172,12 +8802,10 @@
           "name_en": "Tourist Attraction",
           "acronym": null,
           "description": "관광 목적으로 사람들이 방문하는 명소. 자연관광지, 문화관광지, 레저관광지 등.",
-          "synonyms": {
-            "strings": [
-              "관광명소",
-              "Tourist Site"
-            ]
-          },
+          "synonyms": [
+            "관광명소",
+            "Tourist Site"
+          ],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [
@@ -9190,10 +8818,7 @@
             }
           ],
           "primary_standard": "STD-UNESCO",
-          "children": [],
-          "related_terms": [
-            "T09020002"
-          ]
+          "children": []
         },
         {
           "id": "T09020002",
@@ -9201,13 +8826,11 @@
           "name_en": "Tourism Statistics",
           "acronym": null,
           "description": "관광객 수, 관광 수입, 숙박·교통 이용 현황 등 관광 관련 통계. 국민여행실태조사 등.",
-          "synonyms": {
-            "strings": [
-              "여행통계",
-              "관광객통계",
-              "방문객통계"
-            ]
-          },
+          "synonyms": [
+            "여행통계",
+            "관광객통계",
+            "방문객통계"
+          ],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [
@@ -9228,13 +8851,11 @@
           "name_en": "Tourism Industry",
           "acronym": null,
           "description": "관광산업 (Tourism Industry)",
-          "synonyms": {
-            "strings": [
-              "관광사업",
-              "여행산업",
-              "관광업"
-            ]
-          },
+          "synonyms": [
+            "관광사업",
+            "여행산업",
+            "관광업"
+          ],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [],
@@ -9247,13 +8868,11 @@
           "name_en": "Travel Industry",
           "acronym": null,
           "description": "여행업 (Travel Industry)",
-          "synonyms": {
-            "strings": [
-              "여행사",
-              "관광업체",
-              "여행사업"
-            ]
-          },
+          "synonyms": [
+            "여행사",
+            "관광업체",
+            "여행사업"
+          ],
           "linked_clsf_id": "C09020001",
           "parent_id": null,
           "standard_refs": [],
@@ -9266,11 +8885,10 @@
           "name_en": "Cultural Facility",
           "acronym": null,
           "description": "문화 활동이 이루어지는 시설. 박물관, 미술관, 도서관, 공연장, 문화센터 등.",
-          "synonyms": {
-            "strings": [
-              "Cultural Facility"
-            ]
-          },
+          "synonyms": [
+            "문화시설",
+            "Cultural Facility"
+          ],
           "linked_clsf_id": "C09030001",
           "parent_id": null,
           "standard_refs": [
@@ -9328,10 +8946,6 @@
               "primary_standard": "STD-UNESCO",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T09030002",
-            "T09030003"
           ]
         },
         {
@@ -9340,13 +8954,11 @@
           "name_en": "Performance Hall",
           "acronym": null,
           "description": "공연장 (Performance Hall)",
-          "synonyms": {
-            "strings": [
-              "공연시설",
-              "문화공간",
-              "극장"
-            ]
-          },
+          "synonyms": [
+            "공연시설",
+            "문화공간",
+            "극장"
+          ],
           "linked_clsf_id": "C09030001",
           "parent_id": null,
           "standard_refs": [],
@@ -9359,12 +8971,10 @@
           "name_en": "Library",
           "acronym": null,
           "description": "도서관 (Library)",
-          "synonyms": {
-            "strings": [
-              "공공도서관",
-              "도서관시설"
-            ]
-          },
+          "synonyms": [
+            "공공도서관",
+            "도서관시설"
+          ],
           "linked_clsf_id": "C09030001",
           "parent_id": null,
           "standard_refs": [
@@ -9385,12 +8995,11 @@
           "name_en": "Performance",
           "acronym": null,
           "description": "음악, 연극, 무용 등 무대 예술 활동. 공연장, 야외공연, 축제 등에서 이루어짐.",
-          "synonyms": {
-            "strings": [
-              "Performance",
-              "무대예술"
-            ]
-          },
+          "synonyms": [
+            "공연",
+            "Performance",
+            "무대예술"
+          ],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [
@@ -9403,10 +9012,7 @@
             }
           ],
           "primary_standard": "STD-UNESCO",
-          "children": [],
-          "related_terms": [
-            "T09040002"
-          ]
+          "children": []
         },
         {
           "id": "T09040002",
@@ -9414,12 +9020,11 @@
           "name_en": "Exhibition",
           "acronym": null,
           "description": "미술품, 사진, 유물 등을 전시하는 문화 활동. 상설전시, 기획전시, 특별전 등.",
-          "synonyms": {
-            "strings": [
-              "Exhibition",
-              "전람회"
-            ]
-          },
+          "synonyms": [
+            "전시",
+            "Exhibition",
+            "전람회"
+          ],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [
@@ -9440,13 +9045,11 @@
           "name_en": "Festival",
           "acronym": null,
           "description": "축제 (Festival)",
-          "synonyms": {
-            "strings": [
-              "지역축제",
-              "문화축제",
-              "전통축제"
-            ]
-          },
+          "synonyms": [
+            "지역축제",
+            "문화축제",
+            "전통축제"
+          ],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [
@@ -9467,13 +9070,11 @@
           "name_en": "Korean Wave",
           "acronym": "Hallyu",
           "description": "한류 (Korean Wave)",
-          "synonyms": {
-            "strings": [
-              "한국문화",
-              "K-Wave",
-              "한국열풍"
-            ]
-          },
+          "synonyms": [
+            "한국문화",
+            "K-Wave",
+            "한국열풍"
+          ],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [],
@@ -9486,13 +9087,11 @@
           "name_en": "K-Culture",
           "acronym": null,
           "description": "K-컬처 (K-Culture)",
-          "synonyms": {
-            "strings": [
-              "한국문화콘텐츠",
-              "케이팝",
-              "한국대중문화"
-            ]
-          },
+          "synonyms": [
+            "한국문화콘텐츠",
+            "케이팝",
+            "한국대중문화"
+          ],
           "linked_clsf_id": "C09040001",
           "parent_id": null,
           "standard_refs": [],
@@ -9505,13 +9104,11 @@
           "name_en": "Sports Facility",
           "acronym": null,
           "description": "체육시설 (Sports Facility)",
-          "synonyms": {
-            "strings": [
-              "체육인프라",
-              "운동시설",
-              "스포츠센터"
-            ]
-          },
+          "synonyms": [
+            "체육인프라",
+            "운동시설",
+            "스포츠센터"
+          ],
           "linked_clsf_id": "C09050001",
           "parent_id": null,
           "standard_refs": [
@@ -9532,13 +9129,11 @@
           "name_en": "Professional Sports",
           "acronym": null,
           "description": "프로스포츠 (Professional Sports)",
-          "synonyms": {
-            "strings": [
-              "프로리그",
-              "직업스포츠",
-              "프로경기"
-            ]
-          },
+          "synonyms": [
+            "프로리그",
+            "직업스포츠",
+            "프로경기"
+          ],
           "linked_clsf_id": "C09050001",
           "parent_id": null,
           "standard_refs": [],
@@ -9551,13 +9146,11 @@
           "name_en": "Recreational Sports",
           "acronym": null,
           "description": "생활체육 (Recreational Sports)",
-          "synonyms": {
-            "strings": [
-              "생활스포츠",
-              "여가체육",
-              "동호회체육"
-            ]
-          },
+          "synonyms": [
+            "생활스포츠",
+            "여가체육",
+            "동호회체육"
+          ],
           "linked_clsf_id": "C09050001",
           "parent_id": null,
           "standard_refs": [],
@@ -9570,13 +9163,11 @@
           "name_en": "Broadcasting Content",
           "acronym": null,
           "description": "방송콘텐츠 (Broadcasting Content)",
-          "synonyms": {
-            "strings": [
-              "방송프로그램",
-              "미디어콘텐츠",
-              "TV콘텐츠"
-            ]
-          },
+          "synonyms": [
+            "방송프로그램",
+            "미디어콘텐츠",
+            "TV콘텐츠"
+          ],
           "linked_clsf_id": "C09060001",
           "parent_id": null,
           "standard_refs": [],
@@ -9589,13 +9180,11 @@
           "name_en": "Over-The-Top",
           "acronym": null,
           "description": "OTT (Over-The-Top)",
-          "synonyms": {
-            "strings": [
-              "온라인동영상서비스",
-              "스트리밍서비스",
-              "넷플릭스"
-            ]
-          },
+          "synonyms": [
+            "온라인동영상서비스",
+            "스트리밍서비스",
+            "넷플릭스"
+          ],
           "linked_clsf_id": "C09060001",
           "parent_id": null,
           "standard_refs": [],
@@ -10130,12 +9719,11 @@
           "name_en": "Environmental Conservation",
           "acronym": null,
           "description": "자연환경을 보호하고 보전하는 활동. 대기·수질·토양 관리, 생태계 보호, 환경오염 방지.",
-          "synonyms": {
-            "strings": [
-              "Environmental Conservation",
-              "환경보호"
-            ]
-          },
+          "synonyms": [
+            "환경보전",
+            "Environmental Conservation",
+            "환경보호"
+          ],
           "linked_clsf_id": "C10010001",
           "parent_id": null,
           "standard_refs": [
@@ -10222,11 +9810,6 @@
               "primary_standard": "STD-DATAGOkr",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T10010002",
-            "T10010003",
-            "T10010004"
           ]
         },
         {
@@ -10235,13 +9818,11 @@
           "name_en": "Fine Dust",
           "acronym": "PM2.5",
           "description": "미세먼지 (Fine Dust)",
-          "synonyms": {
-            "strings": [
-              "초미세먼지",
-              "미세입자",
-              "대기오염물질"
-            ]
-          },
+          "synonyms": [
+            "초미세먼지",
+            "미세입자",
+            "대기오염물질"
+          ],
           "linked_clsf_id": "C10010001",
           "parent_id": null,
           "standard_refs": [
@@ -10268,12 +9849,10 @@
           "name_en": "Soil Contamination",
           "acronym": null,
           "description": "토양오염 (Soil Contamination)",
-          "synonyms": {
-            "strings": [
-              "토양환경오염",
-              "지하수오염"
-            ]
-          },
+          "synonyms": [
+            "토양환경오염",
+            "지하수오염"
+          ],
           "linked_clsf_id": "C10010001",
           "parent_id": null,
           "standard_refs": [],
@@ -10286,12 +9865,11 @@
           "name_en": "Climate Change",
           "acronym": null,
           "description": "지구 평균 기온 상승과 기후 패턴의 장기적 변화. 온실가스 배출이 주요 원인.",
-          "synonyms": {
-            "strings": [
-              "Climate Change",
-              "지구온난화"
-            ]
-          },
+          "synonyms": [
+            "기후변화",
+            "Climate Change",
+            "지구온난화"
+          ],
           "linked_clsf_id": "C10020001",
           "parent_id": null,
           "standard_refs": [
@@ -10357,10 +9935,6 @@
               "primary_standard": "STD-UNESCO",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T10020002",
-            "T10020003"
           ]
         },
         {
@@ -10369,13 +9943,11 @@
           "name_en": "Nationally Determined Contribution",
           "acronym": null,
           "description": "NDC (Nationally Determined Contribution)",
-          "synonyms": {
-            "strings": [
-              "온실가스감축목표",
-              "국가감축목표",
-              "배출감축목표"
-            ]
-          },
+          "synonyms": [
+            "온실가스감축목표",
+            "국가감축목표",
+            "배출감축목표"
+          ],
           "linked_clsf_id": "C10020001",
           "parent_id": null,
           "standard_refs": [],
@@ -10388,13 +9960,11 @@
           "name_en": "Climate Adaptation",
           "acronym": null,
           "description": "기후적응 (Climate Adaptation)",
-          "synonyms": {
-            "strings": [
-              "기후변화적응",
-              "기후대응",
-              "기후탄력성"
-            ]
-          },
+          "synonyms": [
+            "기후변화적응",
+            "기후대응",
+            "기후탄력성"
+          ],
           "linked_clsf_id": "C10020001",
           "parent_id": null,
           "standard_refs": [],
@@ -10407,11 +9977,10 @@
           "name_en": "Weather",
           "acronym": null,
           "description": "특정 시점의 대기 상태. 기온, 습도, 강수, 바람 등으로 표현.",
-          "synonyms": {
-            "strings": [
-              "Weather"
-            ]
-          },
+          "synonyms": [
+            "날씨",
+            "Weather"
+          ],
           "linked_clsf_id": "C10030001",
           "parent_id": null,
           "standard_refs": [
@@ -10473,10 +10042,6 @@
               "primary_standard": "STD-DATAGOkr",
               "children": []
             }
-          ],
-          "related_terms": [
-            "T10030002",
-            "T10030003"
           ]
         },
         {
@@ -10485,13 +10050,11 @@
           "name_en": "Weather Warning",
           "acronym": null,
           "description": "기상특보 (Weather Warning)",
-          "synonyms": {
-            "strings": [
-              "기상주의보",
-              "기상경보",
-              "특보"
-            ]
-          },
+          "synonyms": [
+            "기상주의보",
+            "기상경보",
+            "특보"
+          ],
           "linked_clsf_id": "C10030001",
           "parent_id": null,
           "standard_refs": [],
@@ -10504,13 +10067,11 @@
           "name_en": "Climate Information",
           "acronym": null,
           "description": "기후정보 (Climate Information)",
-          "synonyms": {
-            "strings": [
-              "기후데이터",
-              "기상정보",
-              "날씨정보"
-            ]
-          },
+          "synonyms": [
+            "기후데이터",
+            "기상정보",
+            "날씨정보"
+          ],
           "linked_clsf_id": "C10030001",
           "parent_id": null,
           "standard_refs": [],
@@ -10523,11 +10084,10 @@
           "name_en": "Ecosystem",
           "acronym": null,
           "description": "생물과 무생물이 상호작용하는 하나의 공동체. 산림생태계, 해양생태계, 습지생태계 등.",
-          "synonyms": {
-            "strings": [
-              "Ecosystem"
-            ]
-          },
+          "synonyms": [
+            "생태계",
+            "Ecosystem"
+          ],
           "linked_clsf_id": "C10040001",
           "parent_id": null,
           "standard_refs": [
@@ -10577,10 +10137,6 @@
               "primary_standard": null,
               "children": []
             }
-          ],
-          "related_terms": [
-            "T10040002",
-            "T10040003"
           ]
         },
         {
@@ -10589,12 +10145,10 @@
           "name_en": "Biodiversity",
           "acronym": null,
           "description": "생물다양성 (Biodiversity)",
-          "synonyms": {
-            "strings": [
-              "생태다양성",
-              "생물종다양성"
-            ]
-          },
+          "synonyms": [
+            "생태다양성",
+            "생물종다양성"
+          ],
           "linked_clsf_id": "C10040001",
           "parent_id": null,
           "standard_refs": [],
@@ -10607,13 +10161,11 @@
           "name_en": "Renewable Energy",
           "acronym": null,
           "description": "신재생에너지 (Renewable Energy)",
-          "synonyms": {
-            "strings": [
-              "재생에너지",
-              "대체에너지",
-              "청정에너지"
-            ]
-          },
+          "synonyms": [
+            "재생에너지",
+            "대체에너지",
+            "청정에너지"
+          ],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [
@@ -10634,13 +10186,11 @@
           "name_en": "Solar Power",
           "acronym": null,
           "description": "태양광 (Solar Power)",
-          "synonyms": {
-            "strings": [
-              "태양에너지",
-              "태양광발전",
-              "솔라"
-            ]
-          },
+          "synonyms": [
+            "태양에너지",
+            "태양광발전",
+            "솔라"
+          ],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [],
@@ -10653,12 +10203,10 @@
           "name_en": "Wind Power",
           "acronym": null,
           "description": "풍력 (Wind Power)",
-          "synonyms": {
-            "strings": [
-              "풍력발전",
-              "풍력에너지"
-            ]
-          },
+          "synonyms": [
+            "풍력발전",
+            "풍력에너지"
+          ],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [],
@@ -10671,12 +10219,10 @@
           "name_en": "Energy Transition",
           "acronym": null,
           "description": "에너지전환 (Energy Transition)",
-          "synonyms": {
-            "strings": [
-              "수소경제",
-              "수소에너지"
-            ]
-          },
+          "synonyms": [
+            "수소경제",
+            "수소에너지"
+          ],
           "linked_clsf_id": "C10050001",
           "parent_id": null,
           "standard_refs": [],
@@ -10689,13 +10235,11 @@
           "name_en": "Recycling",
           "acronym": null,
           "description": "재활용 (Recycling)",
-          "synonyms": {
-            "strings": [
-              "자원재활용",
-              "폐기물재생",
-              "재사용"
-            ]
-          },
+          "synonyms": [
+            "자원재활용",
+            "폐기물재생",
+            "재사용"
+          ],
           "linked_clsf_id": "C10060001",
           "parent_id": null,
           "standard_refs": [],
@@ -10708,12 +10252,10 @@
           "name_en": "Circular Economy",
           "acronym": null,
           "description": "순환경제 (Circular Economy)",
-          "synonyms": {
-            "strings": [
-              "순환자원경제",
-              "자원순환"
-            ]
-          },
+          "synonyms": [
+            "순환자원경제",
+            "자원순환"
+          ],
           "linked_clsf_id": "C10060001",
           "parent_id": null,
           "standard_refs": [],
@@ -11331,13 +10873,11 @@
           "name_en": "Research and Development",
           "acronym": "R&D",
           "description": "연구개발 (Research and Development)",
-          "synonyms": {
-            "strings": [
-              "연구개발사업",
-              "R&D투자",
-              "기술개발"
-            ]
-          },
+          "synonyms": [
+            "연구개발사업",
+            "R&D투자",
+            "기술개발"
+          ],
           "linked_clsf_id": "C11010001",
           "parent_id": null,
           "standard_refs": [
@@ -11357,13 +10897,11 @@
           "name_en": "National R&D",
           "acronym": null,
           "description": "국가R&D (National R&D)",
-          "synonyms": {
-            "strings": [
-              "국가연구개발",
-              "정부R&D",
-              "국책연구"
-            ]
-          },
+          "synonyms": [
+            "국가연구개발",
+            "정부R&D",
+            "국책연구"
+          ],
           "linked_clsf_id": "C11010001",
           "parent_id": null,
           "standard_refs": [
@@ -11383,12 +10921,10 @@
           "name_en": "Natural Science",
           "acronym": null,
           "description": "자연과학 (Natural Science)",
-          "synonyms": {
-            "strings": [
-              "자연과학분야",
-              "기초과학"
-            ]
-          },
+          "synonyms": [
+            "자연과학분야",
+            "기초과학"
+          ],
           "linked_clsf_id": "C11020001",
           "parent_id": null,
           "standard_refs": [
@@ -11409,12 +10945,10 @@
           "name_en": "Physics",
           "acronym": null,
           "description": "물리학 (Physics)",
-          "synonyms": {
-            "strings": [
-              "물리과학",
-              "물리학연구"
-            ]
-          },
+          "synonyms": [
+            "물리과학",
+            "물리학연구"
+          ],
           "linked_clsf_id": "C11020001",
           "parent_id": null,
           "standard_refs": [
@@ -11435,13 +10969,11 @@
           "name_en": "Engineering",
           "acronym": null,
           "description": "공학기술 (Engineering)",
-          "synonyms": {
-            "strings": [
-              "공학",
-              "엔지니어링",
-              "기술공학"
-            ]
-          },
+          "synonyms": [
+            "공학",
+            "엔지니어링",
+            "기술공학"
+          ],
           "linked_clsf_id": "C11030001",
           "parent_id": null,
           "standard_refs": [
@@ -11462,13 +10994,11 @@
           "name_en": "Electronics Engineering",
           "acronym": null,
           "description": "전자공학 (Electronics Engineering)",
-          "synonyms": {
-            "strings": [
-              "전자전기공학",
-              "전기공학",
-              "전자기술"
-            ]
-          },
+          "synonyms": [
+            "전자전기공학",
+            "전기공학",
+            "전자기술"
+          ],
           "linked_clsf_id": "C11030001",
           "parent_id": null,
           "standard_refs": [
@@ -11489,13 +11019,11 @@
           "name_en": "Information Technology",
           "acronym": "IT",
           "description": "정보기술 (Information Technology)",
-          "synonyms": {
-            "strings": [
-              "정보통신기술",
-              "ICT",
-              "디지털기술"
-            ]
-          },
+          "synonyms": [
+            "정보통신기술",
+            "ICT",
+            "디지털기술"
+          ],
           "linked_clsf_id": "C11040001",
           "parent_id": null,
           "standard_refs": [
@@ -11516,13 +11044,11 @@
           "name_en": "Artificial Intelligence",
           "acronym": "AI",
           "description": "인공지능 (Artificial Intelligence)",
-          "synonyms": {
-            "strings": [
-              "머신러닝",
-              "딥러닝",
-              "지능형시스템"
-            ]
-          },
+          "synonyms": [
+            "머신러닝",
+            "딥러닝",
+            "지능형시스템"
+          ],
           "linked_clsf_id": "C11040001",
           "parent_id": null,
           "standard_refs": [
@@ -11543,13 +11069,11 @@
           "name_en": "Big Data",
           "acronym": null,
           "description": "빅데이터 (Big Data)",
-          "synonyms": {
-            "strings": [
-              "대용량데이터",
-              "데이터분석",
-              "데이터과학"
-            ]
-          },
+          "synonyms": [
+            "대용량데이터",
+            "데이터분석",
+            "데이터과학"
+          ],
           "linked_clsf_id": "C11040001",
           "parent_id": null,
           "standard_refs": [
@@ -11570,13 +11094,11 @@
           "name_en": "Patent",
           "acronym": null,
           "description": "특허 (Patent)",
-          "synonyms": {
-            "strings": [
-              "특허권",
-              "지식재산권",
-              "발명특허"
-            ]
-          },
+          "synonyms": [
+            "특허권",
+            "지식재산권",
+            "발명특허"
+          ],
           "linked_clsf_id": "C11050001",
           "parent_id": null,
           "standard_refs": [
@@ -11597,12 +11119,11 @@
           "name_en": "Technology Transfer",
           "acronym": null,
           "description": "기술이전 (Technology Transfer)",
-          "synonyms": {
-            "strings": [
-              "기술사업화",
-              "기술거래"
-            ]
-          },
+          "synonyms": [
+            "기술이전",
+            "기술사업화",
+            "기술거래"
+          ],
           "linked_clsf_id": "C11050001",
           "parent_id": null,
           "standard_refs": [],
@@ -11615,13 +11136,11 @@
           "name_en": "Space Development",
           "acronym": null,
           "description": "우주개발 (Space Development)",
-          "synonyms": {
-            "strings": [
-              "우주항공",
-              "우주기술",
-              "항공우주"
-            ]
-          },
+          "synonyms": [
+            "우주항공",
+            "우주기술",
+            "항공우주"
+          ],
           "linked_clsf_id": "C11060001",
           "parent_id": null,
           "standard_refs": [],
@@ -12052,15 +11571,11 @@
           "name_en": "Disaster Management",
           "acronym": null,
           "description": "재난관리 (Disaster Management)",
-          "synonyms": {
-            "terms": [
-              "T12030003"
-            ],
-            "strings": [
-              "재해관리",
-              "재난대응체계"
-            ]
-          },
+          "synonyms": [
+            "재해관리",
+            "재난대응체계",
+            "위기관리"
+          ],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [
@@ -12080,13 +11595,11 @@
           "name_en": "Disaster Prevention",
           "acronym": null,
           "description": "재난예방 (Disaster Prevention)",
-          "synonyms": {
-            "strings": [
-              "재해예방",
-              "재난방지",
-              "사전대비"
-            ]
-          },
+          "synonyms": [
+            "재해예방",
+            "재난방지",
+            "사전대비"
+          ],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [
@@ -12106,14 +11619,12 @@
           "name_en": "Disaster Response",
           "acronym": null,
           "description": "재난대응 (Disaster Response)",
-          "synonyms": {
-            "strings": [
-              "긴급대응",
-              "재난대처",
-              "재해대응",
-              "비상대응"
-            ]
-          },
+          "synonyms": [
+            "긴급대응",
+            "재난대처",
+            "재해대응",
+            "비상대응"
+          ],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [
@@ -12133,13 +11644,11 @@
           "name_en": "Recovery and Restoration",
           "acronym": null,
           "description": "복구복원 (Recovery and Restoration)",
-          "synonyms": {
-            "strings": [
-              "재난복구",
-              "재해복원",
-              "피해복구"
-            ]
-          },
+          "synonyms": [
+            "재난복구",
+            "재해복원",
+            "피해복구"
+          ],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [],
@@ -12152,12 +11661,11 @@
           "name_en": "Disaster Statistics",
           "acronym": null,
           "description": "재난통계 (Disaster Statistics)",
-          "synonyms": {
-            "strings": [
-              "재해통계",
-              "피해통계"
-            ]
-          },
+          "synonyms": [
+            "재난통계",
+            "재해통계",
+            "피해통계"
+          ],
           "linked_clsf_id": "C12010001",
           "parent_id": null,
           "standard_refs": [],
@@ -12170,13 +11678,11 @@
           "name_en": "Safety Management",
           "acronym": null,
           "description": "안전관리 (Safety Management)",
-          "synonyms": {
-            "strings": [
-              "안전관리체계",
-              "안전확보",
-              "위험관리"
-            ]
-          },
+          "synonyms": [
+            "안전관리체계",
+            "안전확보",
+            "위험관리"
+          ],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [
@@ -12196,13 +11702,11 @@
           "name_en": "Facility Safety",
           "acronym": null,
           "description": "시설물안전 (Facility Safety)",
-          "synonyms": {
-            "strings": [
-              "시설안전",
-              "건축물안전",
-              "구조물안전"
-            ]
-          },
+          "synonyms": [
+            "시설안전",
+            "건축물안전",
+            "구조물안전"
+          ],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [
@@ -12222,13 +11726,11 @@
           "name_en": "Daily Life Safety",
           "acronym": null,
           "description": "생활안전 (Daily Life Safety)",
-          "synonyms": {
-            "strings": [
-              "생활안전관리",
-              "일상안전",
-              "시민안전"
-            ]
-          },
+          "synonyms": [
+            "생활안전관리",
+            "일상안전",
+            "시민안전"
+          ],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [],
@@ -12241,13 +11743,11 @@
           "name_en": "Traffic Safety",
           "acronym": null,
           "description": "교통안전 (Traffic Safety)",
-          "synonyms": {
-            "strings": [
-              "교통안전관리",
-              "도로안전",
-              "차량안전"
-            ]
-          },
+          "synonyms": [
+            "교통안전관리",
+            "도로안전",
+            "차량안전"
+          ],
           "linked_clsf_id": "C12020001",
           "parent_id": null,
           "standard_refs": [],
@@ -12260,13 +11760,11 @@
           "name_en": "Emergency Preparedness",
           "acronym": null,
           "description": "비상대비 (Emergency Preparedness)",
-          "synonyms": {
-            "strings": [
-              "비상대비체계",
-              "긴급대비",
-              "위기대비"
-            ]
-          },
+          "synonyms": [
+            "비상대비체계",
+            "긴급대비",
+            "위기대비"
+          ],
           "linked_clsf_id": "C12030001",
           "parent_id": null,
           "standard_refs": [
@@ -12286,13 +11784,11 @@
           "name_en": "Civil Defense",
           "acronym": null,
           "description": "민방위 (Civil Defense)",
-          "synonyms": {
-            "strings": [
-              "비상훈련",
-              "재난훈련",
-              "대피훈련"
-            ]
-          },
+          "synonyms": [
+            "비상훈련",
+            "재난훈련",
+            "대피훈련"
+          ],
           "linked_clsf_id": "C12030001",
           "parent_id": null,
           "standard_refs": [
@@ -12312,13 +11808,11 @@
           "name_en": "Crisis Management",
           "acronym": null,
           "description": "위기관리 (Crisis Management)",
-          "synonyms": {
-            "strings": [
-              "구호활동",
-              "구난구조",
-              "인명구조"
-            ]
-          },
+          "synonyms": [
+            "구호활동",
+            "구난구조",
+            "인명구조"
+          ],
           "linked_clsf_id": "C12030001",
           "parent_id": null,
           "standard_refs": [],
@@ -12331,12 +11825,11 @@
           "name_en": "Natural Disaster",
           "acronym": null,
           "description": "자연재해 (Natural Disaster)",
-          "synonyms": {
-            "strings": [
-              "자연재난",
-              "천재지변"
-            ]
-          },
+          "synonyms": [
+            "자연재난",
+            "자연재해",
+            "천재지변"
+          ],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [
@@ -12356,12 +11849,10 @@
           "name_en": "Typhoon",
           "acronym": null,
           "description": "태풍 (Typhoon)",
-          "synonyms": {
-            "strings": [
-              "태풍피해",
-              "태풍재난"
-            ]
-          },
+          "synonyms": [
+            "태풍피해",
+            "태풍재난"
+          ],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [
@@ -12381,13 +11872,11 @@
           "name_en": "Flood",
           "acronym": null,
           "description": "홍수 (Flood)",
-          "synonyms": {
-            "strings": [
-              "호우피해",
-              "폭우재난",
-              "집중호우"
-            ]
-          },
+          "synonyms": [
+            "호우피해",
+            "폭우재난",
+            "집중호우"
+          ],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [],
@@ -12400,13 +11889,11 @@
           "name_en": "Earthquake",
           "acronym": null,
           "description": "지진 (Earthquake)",
-          "synonyms": {
-            "strings": [
-              "지진피해",
-              "지진재난",
-              "진동재해"
-            ]
-          },
+          "synonyms": [
+            "지진피해",
+            "지진재난",
+            "진동재해"
+          ],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [],
@@ -12419,13 +11906,11 @@
           "name_en": "Heat Wave",
           "acronym": null,
           "description": "폭염 (Heat Wave)",
-          "synonyms": {
-            "strings": [
-              "고온특보",
-              "폭염주의보",
-              "열대야"
-            ]
-          },
+          "synonyms": [
+            "고온특보",
+            "폭염주의보",
+            "열대야"
+          ],
           "linked_clsf_id": "C12040001",
           "parent_id": null,
           "standard_refs": [],
@@ -12438,12 +11923,11 @@
           "name_en": "Social Disaster",
           "acronym": null,
           "description": "사회재난 (Social Disaster)",
-          "synonyms": {
-            "strings": [
-              "인적재난",
-              "인위재난"
-            ]
-          },
+          "synonyms": [
+            "사회재난",
+            "인적재난",
+            "인위재난"
+          ],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [
@@ -12463,13 +11947,11 @@
           "name_en": "Fire",
           "acronym": null,
           "description": "화재 (Fire)",
-          "synonyms": {
-            "strings": [
-              "화재사고",
-              "화재재난",
-              "소방사고"
-            ]
-          },
+          "synonyms": [
+            "화재사고",
+            "화재재난",
+            "소방사고"
+          ],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [],
@@ -12482,13 +11964,11 @@
           "name_en": "Infectious Disease",
           "acronym": null,
           "description": "감염병 (Infectious Disease)",
-          "synonyms": {
-            "strings": [
-              "감염병재난",
-              "전염병재해",
-              "역병"
-            ]
-          },
+          "synonyms": [
+            "감염병재난",
+            "전염병재해",
+            "역병"
+          ],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [],
@@ -12501,12 +11981,11 @@
           "name_en": "Industrial Accident",
           "acronym": null,
           "description": "산업재해 (Industrial Accident)",
-          "synonyms": {
-            "strings": [
-              "산업사고",
-              "작업재해"
-            ]
-          },
+          "synonyms": [
+            "산업사고",
+            "산업재해",
+            "작업재해"
+          ],
           "linked_clsf_id": "C12050001",
           "parent_id": null,
           "standard_refs": [],

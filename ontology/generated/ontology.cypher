@@ -140,7 +140,6 @@ MATCH (t:Term {id: 'T01030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'IT
 MATCH (t:Term {id: 'T01030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공공데이터포털', display_name: '공공데이터포털 (:Synonym)'});
 MATCH (t:Term {id: 'T01030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공공정보개방', display_name: '공공정보개방 (:Synonym)'});
 MATCH (t:Term {id: 'T01030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '오픈데이터', display_name: '오픈데이터 (:Synonym)'});
-MATCH (t:Term {id: 'T01040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '국가정책', display_name: '국가정책 (:Synonym)'});
 MATCH (t:Term {id: 'T01040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '정부사업', display_name: '정부사업 (:Synonym)'});
 MATCH (t:Term {id: 'T01040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '국정과제', display_name: '국정과제 (:Synonym)'});
 MATCH (t:Term {id: 'T01040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '국민서비스', display_name: '국민서비스 (:Synonym)'});
@@ -152,6 +151,15 @@ MATCH (c1:Classification {id: 'C01020001'}), (c2:Classification {id: 'C06030001'
 MATCH (c1:Classification {id: 'C01040001'}), (c2:Classification {id: 'C06010001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C01040001'}), (c2:Classification {id: 'C05010001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C01040003'}), (c2:Classification {id: 'C05030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T01010001'}), (t2:Term {id: 'T01010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T01010001'}), (t2:Term {id: 'T01010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T01010001'}), (t2:Term {id: 'T01010004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T01020001'}), (t2:Term {id: 'T01020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T01020001'}), (t2:Term {id: 'T01030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T01030001'}), (t2:Term {id: 'T01030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T01040001'}), (t2:Term {id: 'T01040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 교육 (Education)
 
@@ -337,6 +345,17 @@ MATCH (c1:Classification {id: 'C02030001'}), (c2:Classification {id: 'C09010001'
 MATCH (c1:Classification {id: 'C02040001'}), (c2:Classification {id: 'C11010001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C02040003'}), (c2:Classification {id: 'C11050001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 
+// Related Term Relations
+MATCH (t1:Term {id: 'T02010001'}), (t2:Term {id: 'T02010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02010001'}), (t2:Term {id: 'T02010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02010001'}), (t2:Term {id: 'T02010004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02020001'}), (t2:Term {id: 'T02020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02020001'}), (t2:Term {id: 'T02020003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02020001'}), (t2:Term {id: 'T02020004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02030001'}), (t2:Term {id: 'T02030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02030001'}), (t2:Term {id: 'T02030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T02040001'}), (t2:Term {id: 'T02040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+
 // 보건의료 (Healthcare)
 
 // Classifications
@@ -493,8 +512,8 @@ MATCH (t:Term {id: 'T03060001'}), (c:Classification {id: 'C03060001'}) CREATE (t
 MATCH (t:Term {id: 'T03060002'}), (c:Classification {id: 'C03060001'}) CREATE (t)-[:BELONGS_TO]->(c);
 
 // Synonym Relations
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010005'}) CREATE (t1)-[:SYNONYM_OF]->(t2), (t2)-[:SYNONYM_OF]->(t1);
 MATCH (t:Term {id: 'T03010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '병원', display_name: '병원 (:Synonym)'});
-MATCH (t:Term {id: 'T03010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '의료시설', display_name: '의료시설 (:Synonym)'});
 MATCH (t:Term {id: 'T03010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '보건의료기관', display_name: '보건의료기관 (:Synonym)'});
 MATCH (t:Term {id: 'T03010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '결장암', display_name: '결장암 (:Synonym)'});
 MATCH (t:Term {id: 'T03010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '직장암', display_name: '직장암 (:Synonym)'});
@@ -543,6 +562,22 @@ MATCH (t:Term {id: 'T03060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (c1:Classification {id: 'C03030001'}), (c2:Classification {id: 'C04020001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C03040001'}), (c2:Classification {id: 'C04010001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C03050001'}), (c2:Classification {id: 'C04040001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010006'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03010001'}), (t2:Term {id: 'T03010007'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03010002'}), (t2:Term {id: 'T03010005'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03010002'}), (t2:Term {id: 'T03030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03020001'}), (t2:Term {id: 'T03020005'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03020002'}), (t2:Term {id: 'T03020005'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03030001'}), (t2:Term {id: 'T03030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03030001'}), (t2:Term {id: 'T03030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03040001'}), (t2:Term {id: 'T03040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03050001'}), (t2:Term {id: 'T03050002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03050001'}), (t2:Term {id: 'T03010005'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03050001'}), (t2:Term {id: 'T03010006'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T03060001'}), (t2:Term {id: 'T03060002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 사회복지 (Social Welfare)
 
@@ -674,6 +709,12 @@ MATCH (t:Term {id: 'T04040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (c1:Classification {id: 'C04010001'}), (c2:Classification {id: 'C03040001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C04020001'}), (c2:Classification {id: 'C03030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C04040001'}), (c2:Classification {id: 'C03050001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T04010001'}), (t2:Term {id: 'T04010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T04020001'}), (t2:Term {id: 'T04020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T04040001'}), (t2:Term {id: 'T04040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T04040001'}), (t2:Term {id: 'T04040003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 법률 (Law)
 
@@ -850,7 +891,6 @@ MATCH (t:Term {id: 'T05030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T05030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '법률지원', display_name: '법률지원 (:Synonym)'});
 MATCH (t:Term {id: 'T05030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '법률복지', display_name: '법률복지 (:Synonym)'});
 MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Tax', display_name: 'Tax (:Synonym)'});
-MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '조세', display_name: '조세 (:Synonym)'});
 MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '부동산등기', display_name: '부동산등기 (:Synonym)'});
 MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '소유권등기', display_name: '소유권등기 (:Synonym)'});
 MATCH (t:Term {id: 'T05040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재산등기', display_name: '재산등기 (:Synonym)'});
@@ -871,8 +911,8 @@ MATCH (t:Term {id: 'T05050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T05050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '범죄통계', display_name: '범죄통계 (:Synonym)'});
 MATCH (t:Term {id: 'T05050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '범죄발생현황', display_name: '범죄발생현황 (:Synonym)'});
 MATCH (t:Term {id: 'T05050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '형사통계', display_name: '형사통계 (:Synonym)'});
+MATCH (t1:Term {id: 'T05060001'}), (t2:Term {id: 'T05060002'}) CREATE (t1)-[:SYNONYM_OF]->(t2), (t2)-[:SYNONYM_OF]->(t1);
 MATCH (t:Term {id: 'T05060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '행정소송', display_name: '행정소송 (:Synonym)'});
-MATCH (t:Term {id: 'T05060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '행정심판', display_name: '행정심판 (:Synonym)'});
 MATCH (t:Term {id: 'T05060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '행정쟁송', display_name: '행정쟁송 (:Synonym)'});
 MATCH (t:Term {id: 'T05060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '행정쟁송', display_name: '행정쟁송 (:Synonym)'});
 MATCH (t:Term {id: 'T05060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '행정불복', display_name: '행정불복 (:Synonym)'});
@@ -880,6 +920,13 @@ MATCH (t:Term {id: 'T05060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 // Similar Classification Relations
 MATCH (c1:Classification {id: 'C05010001'}), (c2:Classification {id: 'C01040001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C05030001'}), (c2:Classification {id: 'C01040003'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T05010001'}), (t2:Term {id: 'T05010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T05010001'}), (t2:Term {id: 'T05010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T05040001'}), (t2:Term {id: 'T05040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T05040001'}), (t2:Term {id: 'T05040003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T05040001'}), (t2:Term {id: 'T05040004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 재정금융 (Finance)
 
@@ -1072,7 +1119,6 @@ MATCH (t:Term {id: 'T06020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Pr
 MATCH (t:Term {id: 'T06020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재정상태', display_name: '재정상태 (:Synonym)'});
 MATCH (t:Term {id: 'T06020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재무상태표', display_name: '재무상태표 (:Synonym)'});
 MATCH (t:Term {id: 'T06020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재정현황', display_name: '재정현황 (:Synonym)'});
-MATCH (t:Term {id: 'T06020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '국가결산', display_name: '국가결산 (:Synonym)'});
 MATCH (t:Term {id: 'T06020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '세입세출결산', display_name: '세입세출결산 (:Synonym)'});
 MATCH (t:Term {id: 'T06030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지방정부재정', display_name: '지방정부재정 (:Synonym)'});
 MATCH (t:Term {id: 'T06030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지역재정', display_name: '지역재정 (:Synonym)'});
@@ -1096,6 +1142,22 @@ MATCH (t:Term {id: 'T06060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 // Similar Classification Relations
 MATCH (c1:Classification {id: 'C06010001'}), (c2:Classification {id: 'C01040001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C06030001'}), (c2:Classification {id: 'C01020001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06010001'}), (t2:Term {id: 'T06010005'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06010003'}), (t2:Term {id: 'T06010007'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06010003'}), (t2:Term {id: 'T06010008'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06020001'}), (t2:Term {id: 'T06020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06030001'}), (t2:Term {id: 'T06030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06030001'}), (t2:Term {id: 'T06030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06030001'}), (t2:Term {id: 'T06030004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06040001'}), (t2:Term {id: 'T06040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06050001'}), (t2:Term {id: 'T06050002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06050001'}), (t2:Term {id: 'T04020001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T06060001'}), (t2:Term {id: 'T06060002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 산업경제 (Industry & Economy)
 
@@ -1313,6 +1375,19 @@ MATCH (c1:Classification {id: 'C07030001'}), (c2:Classification {id: 'C08020001'
 MATCH (c1:Classification {id: 'C07040001'}), (c2:Classification {id: 'C08030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C07040001'}), (c2:Classification {id: 'C11050001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 
+// Related Term Relations
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07020001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07010001'}), (t2:Term {id: 'T07010004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07020001'}), (t2:Term {id: 'T07030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07020001'}), (t2:Term {id: 'T07030004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07030002'}), (t2:Term {id: 'T07060002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07040001'}), (t2:Term {id: 'T07040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07040001'}), (t2:Term {id: 'T07040003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07050001'}), (t2:Term {id: 'T07050002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T07060001'}), (t2:Term {id: 'T07060002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+
 // 디지털커머스 (Digital Commerce)
 
 // Classifications
@@ -1403,7 +1478,7 @@ MATCH (t:Term {id: 'T08050001'}), (c:Classification {id: 'C08050001'}) CREATE (t
 MATCH (t:Term {id: 'T08050002'}), (c:Classification {id: 'C08050001'}) CREATE (t)-[:BELONGS_TO]->(c);
 
 // Synonym Relations
-MATCH (t:Term {id: 'T08010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난관리', display_name: '재난관리 (:Synonym)'});
+MATCH (t1:Term {id: 'T08010001'}), (t2:Term {id: 'T12010001'}) CREATE (t1)-[:SYNONYM_OF]->(t2), (t2)-[:SYNONYM_OF]->(t1);
 MATCH (t:Term {id: 'T08010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Disaster Management', display_name: 'Disaster Management (:Synonym)'});
 MATCH (t:Term {id: 'T08010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난대응체계', display_name: '재난대응체계 (:Synonym)'});
 MATCH (t:Term {id: 'T08010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난예방', display_name: '재난예방 (:Synonym)'});
@@ -1412,7 +1487,7 @@ MATCH (t:Term {id: 'T08010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T08010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난대응', display_name: '재난대응 (:Synonym)'});
 MATCH (t:Term {id: 'T08010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Emergency Response', display_name: 'Emergency Response (:Synonym)'});
 MATCH (t:Term {id: 'T08010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '긴급대응', display_name: '긴급대응 (:Synonym)'});
-MATCH (t:Term {id: 'T08020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '안전관리', display_name: '안전관리 (:Synonym)'});
+MATCH (t1:Term {id: 'T08020001'}), (t2:Term {id: 'T12020001'}) CREATE (t1)-[:SYNONYM_OF]->(t2), (t2)-[:SYNONYM_OF]->(t1);
 MATCH (t:Term {id: 'T08020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Safety Management', display_name: 'Safety Management (:Synonym)'});
 MATCH (t:Term {id: 'T08020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '시설안전', display_name: '시설안전 (:Synonym)'});
 MATCH (t:Term {id: 'T08020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Facility Safety', display_name: 'Facility Safety (:Synonym)'});
@@ -1437,6 +1512,11 @@ MATCH (t:Term {id: 'T08050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (c1:Classification {id: 'C08010001'}), (c2:Classification {id: 'C07010001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C08020001'}), (c2:Classification {id: 'C07030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C08030001'}), (c2:Classification {id: 'C07040001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T08010001'}), (t2:Term {id: 'T08010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T08010001'}), (t2:Term {id: 'T08010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T08020001'}), (t2:Term {id: 'T08020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 문화관광 (Culture & Tourism)
 
@@ -1602,17 +1682,14 @@ MATCH (t:Term {id: 'T09020003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T09020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '여행사', display_name: '여행사 (:Synonym)'});
 MATCH (t:Term {id: 'T09020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '관광업체', display_name: '관광업체 (:Synonym)'});
 MATCH (t:Term {id: 'T09020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '여행사업', display_name: '여행사업 (:Synonym)'});
-MATCH (t:Term {id: 'T09030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '문화시설', display_name: '문화시설 (:Synonym)'});
 MATCH (t:Term {id: 'T09030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Cultural Facility', display_name: 'Cultural Facility (:Synonym)'});
 MATCH (t:Term {id: 'T09030004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공연시설', display_name: '공연시설 (:Synonym)'});
 MATCH (t:Term {id: 'T09030004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '문화공간', display_name: '문화공간 (:Synonym)'});
 MATCH (t:Term {id: 'T09030004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '극장', display_name: '극장 (:Synonym)'});
 MATCH (t:Term {id: 'T09030005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공공도서관', display_name: '공공도서관 (:Synonym)'});
 MATCH (t:Term {id: 'T09030005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '도서관시설', display_name: '도서관시설 (:Synonym)'});
-MATCH (t:Term {id: 'T09040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '공연', display_name: '공연 (:Synonym)'});
 MATCH (t:Term {id: 'T09040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Performance', display_name: 'Performance (:Synonym)'});
 MATCH (t:Term {id: 'T09040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '무대예술', display_name: '무대예술 (:Synonym)'});
-MATCH (t:Term {id: 'T09040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '전시', display_name: '전시 (:Synonym)'});
 MATCH (t:Term {id: 'T09040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Exhibition', display_name: 'Exhibition (:Synonym)'});
 MATCH (t:Term {id: 'T09040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '전람회', display_name: '전람회 (:Synonym)'});
 MATCH (t:Term {id: 'T09040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지역축제', display_name: '지역축제 (:Synonym)'});
@@ -1643,6 +1720,14 @@ MATCH (t:Term {id: 'T09060002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 // Similar Classification Relations
 MATCH (c1:Classification {id: 'C09010001'}), (c2:Classification {id: 'C02030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C09030001'}), (c2:Classification {id: 'C02020001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T09010001'}), (t2:Term {id: 'T09010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T09010001'}), (t2:Term {id: 'T09010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T09020001'}), (t2:Term {id: 'T09020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T09030001'}), (t2:Term {id: 'T09030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T09030001'}), (t2:Term {id: 'T09030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T09040001'}), (t2:Term {id: 'T09040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 환경기상 (Environment & Weather)
 
@@ -1793,7 +1878,6 @@ MATCH (t:Term {id: 'T10060001'}), (c:Classification {id: 'C10060001'}) CREATE (t
 MATCH (t:Term {id: 'T10060002'}), (c:Classification {id: 'C10060001'}) CREATE (t)-[:BELONGS_TO]->(c);
 
 // Synonym Relations
-MATCH (t:Term {id: 'T10010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '환경보전', display_name: '환경보전 (:Synonym)'});
 MATCH (t:Term {id: 'T10010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Environmental Conservation', display_name: 'Environmental Conservation (:Synonym)'});
 MATCH (t:Term {id: 'T10010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '환경보호', display_name: '환경보호 (:Synonym)'});
 MATCH (t:Term {id: 'T10010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '대기환경', display_name: '대기환경 (:Synonym)'});
@@ -1809,7 +1893,6 @@ MATCH (t:Term {id: 'T10010005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T10010005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '대기오염물질', display_name: '대기오염물질 (:Synonym)'});
 MATCH (t:Term {id: 'T10010006'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '토양환경오염', display_name: '토양환경오염 (:Synonym)'});
 MATCH (t:Term {id: 'T10010006'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지하수오염', display_name: '지하수오염 (:Synonym)'});
-MATCH (t:Term {id: 'T10020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기후변화', display_name: '기후변화 (:Synonym)'});
 MATCH (t:Term {id: 'T10020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Climate Change', display_name: 'Climate Change (:Synonym)'});
 MATCH (t:Term {id: 'T10020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지구온난화', display_name: '지구온난화 (:Synonym)'});
 MATCH (t:Term {id: 'T10020002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'GHG', display_name: 'GHG (:Synonym)'});
@@ -1824,7 +1907,6 @@ MATCH (t:Term {id: 'T10020004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T10020005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기후변화적응', display_name: '기후변화적응 (:Synonym)'});
 MATCH (t:Term {id: 'T10020005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기후대응', display_name: '기후대응 (:Synonym)'});
 MATCH (t:Term {id: 'T10020005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기후탄력성', display_name: '기후탄력성 (:Synonym)'});
-MATCH (t:Term {id: 'T10030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '날씨', display_name: '날씨 (:Synonym)'});
 MATCH (t:Term {id: 'T10030001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Weather', display_name: 'Weather (:Synonym)'});
 MATCH (t:Term {id: 'T10030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기상학', display_name: '기상학 (:Synonym)'});
 MATCH (t:Term {id: 'T10030002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Meteorology', display_name: 'Meteorology (:Synonym)'});
@@ -1836,7 +1918,6 @@ MATCH (t:Term {id: 'T10030004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T10030005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기후데이터', display_name: '기후데이터 (:Synonym)'});
 MATCH (t:Term {id: 'T10030005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기상정보', display_name: '기상정보 (:Synonym)'});
 MATCH (t:Term {id: 'T10030005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '날씨정보', display_name: '날씨정보 (:Synonym)'});
-MATCH (t:Term {id: 'T10040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '생태계', display_name: '생태계 (:Synonym)'});
 MATCH (t:Term {id: 'T10040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Ecosystem', display_name: 'Ecosystem (:Synonym)'});
 MATCH (t:Term {id: 'T10040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '보호구역', display_name: '보호구역 (:Synonym)'});
 MATCH (t:Term {id: 'T10040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: 'Protected Area', display_name: 'Protected Area (:Synonym)'});
@@ -1868,6 +1949,17 @@ MATCH (c1:Classification {id: 'C10030001'}), (c2:Classification {id: 'C12040001'
 MATCH (c1:Classification {id: 'C10030001'}), (c2:Classification {id: 'C12040004'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C10030001'}), (c2:Classification {id: 'C12040002'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C10050001'}), (c2:Classification {id: 'C11030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T10010001'}), (t2:Term {id: 'T10010002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10010001'}), (t2:Term {id: 'T10010003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10010001'}), (t2:Term {id: 'T10010004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10020001'}), (t2:Term {id: 'T10020002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10020001'}), (t2:Term {id: 'T10020003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10030001'}), (t2:Term {id: 'T10030002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10030001'}), (t2:Term {id: 'T10030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10040001'}), (t2:Term {id: 'T10040002'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T10040001'}), (t2:Term {id: 'T10040003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 과학기술 (Science & Technology)
 
@@ -2000,7 +2092,6 @@ MATCH (t:Term {id: 'T11040003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T11050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '특허권', display_name: '특허권 (:Synonym)'});
 MATCH (t:Term {id: 'T11050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '지식재산권', display_name: '지식재산권 (:Synonym)'});
 MATCH (t:Term {id: 'T11050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '발명특허', display_name: '발명특허 (:Synonym)'});
-MATCH (t:Term {id: 'T11050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기술이전', display_name: '기술이전 (:Synonym)'});
 MATCH (t:Term {id: 'T11050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기술사업화', display_name: '기술사업화 (:Synonym)'});
 MATCH (t:Term {id: 'T11050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '기술거래', display_name: '기술거래 (:Synonym)'});
 MATCH (t:Term {id: 'T11060001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '우주항공', display_name: '우주항공 (:Synonym)'});
@@ -2014,6 +2105,8 @@ MATCH (c1:Classification {id: 'C11030001'}), (c2:Classification {id: 'C10050001'
 MATCH (c1:Classification {id: 'C11040001'}), (c2:Classification {id: 'C07020001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C11050001'}), (c2:Classification {id: 'C02040003'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C11050001'}), (c2:Classification {id: 'C07040001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations
 
 // 재난안전 (Disaster & Safety)
 
@@ -2137,9 +2230,9 @@ MATCH (t:Term {id: 'T12050003'}), (c:Classification {id: 'C12050001'}) CREATE (t
 MATCH (t:Term {id: 'T12050004'}), (c:Classification {id: 'C12050001'}) CREATE (t)-[:BELONGS_TO]->(c);
 
 // Synonym Relations
+MATCH (t1:Term {id: 'T12010001'}), (t2:Term {id: 'T12030003'}) CREATE (t1)-[:SYNONYM_OF]->(t2), (t2)-[:SYNONYM_OF]->(t1);
 MATCH (t:Term {id: 'T12010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재해관리', display_name: '재해관리 (:Synonym)'});
 MATCH (t:Term {id: 'T12010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난대응체계', display_name: '재난대응체계 (:Synonym)'});
-MATCH (t:Term {id: 'T12010001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '위기관리', display_name: '위기관리 (:Synonym)'});
 MATCH (t:Term {id: 'T12010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재해예방', display_name: '재해예방 (:Synonym)'});
 MATCH (t:Term {id: 'T12010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난방지', display_name: '재난방지 (:Synonym)'});
 MATCH (t:Term {id: 'T12010002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '사전대비', display_name: '사전대비 (:Synonym)'});
@@ -2150,7 +2243,6 @@ MATCH (t:Term {id: 'T12010003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T12010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난복구', display_name: '재난복구 (:Synonym)'});
 MATCH (t:Term {id: 'T12010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재해복원', display_name: '재해복원 (:Synonym)'});
 MATCH (t:Term {id: 'T12010004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '피해복구', display_name: '피해복구 (:Synonym)'});
-MATCH (t:Term {id: 'T12010005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재난통계', display_name: '재난통계 (:Synonym)'});
 MATCH (t:Term {id: 'T12010005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '재해통계', display_name: '재해통계 (:Synonym)'});
 MATCH (t:Term {id: 'T12010005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '피해통계', display_name: '피해통계 (:Synonym)'});
 MATCH (t:Term {id: 'T12020001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '안전관리체계', display_name: '안전관리체계 (:Synonym)'});
@@ -2175,7 +2267,6 @@ MATCH (t:Term {id: 'T12030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T12030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '구난구조', display_name: '구난구조 (:Synonym)'});
 MATCH (t:Term {id: 'T12030003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '인명구조', display_name: '인명구조 (:Synonym)'});
 MATCH (t:Term {id: 'T12040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '자연재난', display_name: '자연재난 (:Synonym)'});
-MATCH (t:Term {id: 'T12040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '자연재해', display_name: '자연재해 (:Synonym)'});
 MATCH (t:Term {id: 'T12040001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '천재지변', display_name: '천재지변 (:Synonym)'});
 MATCH (t:Term {id: 'T12040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '태풍피해', display_name: '태풍피해 (:Synonym)'});
 MATCH (t:Term {id: 'T12040002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '태풍재난', display_name: '태풍재난 (:Synonym)'});
@@ -2188,7 +2279,6 @@ MATCH (t:Term {id: 'T12040004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T12040005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '고온특보', display_name: '고온특보 (:Synonym)'});
 MATCH (t:Term {id: 'T12040005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '폭염주의보', display_name: '폭염주의보 (:Synonym)'});
 MATCH (t:Term {id: 'T12040005'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '열대야', display_name: '열대야 (:Synonym)'});
-MATCH (t:Term {id: 'T12050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '사회재난', display_name: '사회재난 (:Synonym)'});
 MATCH (t:Term {id: 'T12050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '인적재난', display_name: '인적재난 (:Synonym)'});
 MATCH (t:Term {id: 'T12050001'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '인위재난', display_name: '인위재난 (:Synonym)'});
 MATCH (t:Term {id: 'T12050002'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '화재사고', display_name: '화재사고 (:Synonym)'});
@@ -2198,10 +2288,11 @@ MATCH (t:Term {id: 'T12050003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '�
 MATCH (t:Term {id: 'T12050003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '전염병재해', display_name: '전염병재해 (:Synonym)'});
 MATCH (t:Term {id: 'T12050003'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '역병', display_name: '역병 (:Synonym)'});
 MATCH (t:Term {id: 'T12050004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '산업사고', display_name: '산업사고 (:Synonym)'});
-MATCH (t:Term {id: 'T12050004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '산업재해', display_name: '산업재해 (:Synonym)'});
 MATCH (t:Term {id: 'T12050004'}) CREATE (t)-[:SYNONYM_OF]->(:Synonym {value: '작업재해', display_name: '작업재해 (:Synonym)'});
 
 // Similar Classification Relations
 MATCH (c1:Classification {id: 'C12040001'}), (c2:Classification {id: 'C10030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C12040002'}), (c2:Classification {id: 'C10030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
 MATCH (c1:Classification {id: 'C12040004'}), (c2:Classification {id: 'C10030001'}) CREATE (c1)-[:SIMILAR_TO]->(c2);
+
+// Related Term Relations

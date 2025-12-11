@@ -193,7 +193,7 @@ def generate_mc_term_rel_sql(data: Dict) -> str:
     for domain in data['domains']:
         flat_terms = flatten_terms(domain['terms'])
 
-        has_relations = any(term.get('synonyms') or term.get('parent_id')
+        has_relations = any(term.get('synonyms') or term.get('parent_id') or term.get('related_terms')
                            for term in flat_terms)
 
         if has_relations:
@@ -215,24 +215,59 @@ def generate_mc_term_rel_sql(data: Dict) -> str:
         if hierarchy_found:
             lines.append("")
 
-        # 동의어 관계
+        # 동의어 관계 (하이브리드 구조)
         synonym_found = False
         for term in flat_terms:
             if term.get('synonyms'):
                 if not synonym_found:
                     lines.append("-- 동의어 (Synonyms)")
                     synonym_found = True
-                for synonym in term['synonyms']:
-                    synonym_escaped = synonym.replace("'", "''")
-                    # 동의어는 TERM_ID가 아닌 텍스트이므로 REL_TERM_ID에 동의어 문자열을 저장
-                    # 또는 별도 SYNONYM 테이블을 만들어야 하지만, 현재 스키마상 REL_TERM_ID에 저장
-                    # 주의: 이 부분은 스키마 설계에 따라 달라질 수 있음
-                    lines.append(
-                        f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
-                        f"VALUES ('{term['id']}', 'S', '{synonym_escaped}');"
-                    )
+
+                synonyms = term['synonyms']
+
+                # Handle structured synonyms (v3.11+)
+                if isinstance(synonyms, dict):
+                    # Term → Term synonyms
+                    for synonym_term_id in synonyms.get('terms', []):
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'S', '{synonym_term_id}');"
+                        )
+
+                    # String synonyms
+                    for synonym_str in synonyms.get('strings', []):
+                        synonym_escaped = synonym_str.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'S', '{synonym_escaped}');"
+                        )
+
+                # Handle legacy flat list (backward compatibility)
+                elif isinstance(synonyms, list):
+                    for synonym in synonyms:
+                        synonym_escaped = synonym.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'S', '{synonym_escaped}');"
+                        )
 
         if synonym_found:
+            lines.append("")
+
+        # 연관 용어 관계 (RELATED_TO)
+        related_found = False
+        for term in flat_terms:
+            if term.get('related_terms'):
+                if not related_found:
+                    lines.append("-- 연관 용어 (Related Terms)")
+                    related_found = True
+                for related_id in term['related_terms']:
+                    lines.append(
+                        f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                        f"VALUES ('{term['id']}', 'T', '{related_id}');"
+                    )
+
+        if related_found:
             lines.append("")
 
     return '\n'.join(lines)
@@ -401,17 +436,48 @@ def generate_ontology_cypher(data: Dict) -> str:
 
         lines.append("")
 
-        # Synonyms (SYNONYM_OF)
+        # Synonyms (SYNONYM_OF) - Hybrid structure
         lines.append("// Synonym Relations")
+
+        # Track processed bidirectional relationships
+        processed_pairs = set()
+
         for term in flat_terms:
             if term.get('synonyms'):
-                for synonym in term['synonyms']:
-                    synonym_escaped = synonym.replace("'", "\\'")
-                    display_name = f"{synonym} (:Synonym)"
-                    lines.append(
-                        f"MATCH (t:Term {{id: '{term['id']}'}}) "
-                        f"CREATE (t)-[:SYNONYM_OF]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
-                    )
+                synonyms = term['synonyms']
+
+                # Handle structured synonyms (v3.11+)
+                if isinstance(synonyms, dict):
+                    # Term → Term SYNONYM_OF (bidirectional)
+                    for synonym_term_id in synonyms.get('terms', []):
+                        # Create bidirectional relationship
+                        pair = tuple(sorted([term['id'], synonym_term_id]))
+                        if pair not in processed_pairs:
+                            lines.append(
+                                f"MATCH (t1:Term {{id: '{term['id']}'}}), "
+                                f"(t2:Term {{id: '{synonym_term_id}'}}) "
+                                f"CREATE (t1)-[:SYNONYM_OF]->(t2), (t2)-[:SYNONYM_OF]->(t1);"
+                            )
+                            processed_pairs.add(pair)
+
+                    # Term → Synonym node (unidirectional)
+                    for synonym_str in synonyms.get('strings', []):
+                        synonym_escaped = synonym_str.replace("'", "\\'")
+                        display_name = f"{synonym_str} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:SYNONYM_OF]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
+
+                # Handle legacy flat list (backward compatibility)
+                elif isinstance(synonyms, list):
+                    for synonym in synonyms:
+                        synonym_escaped = synonym.replace("'", "\\'")
+                        display_name = f"{synonym} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:SYNONYM_OF]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
 
         lines.append("")
 
@@ -425,6 +491,25 @@ def generate_ontology_cypher(data: Dict) -> str:
                         f"(c2:Classification {{id: '{similar_id}'}}) "
                         f"CREATE (c1)-[:SIMILAR_TO]->(c2);"
                     )
+
+        lines.append("")
+
+        # Related terms (RELATED_TO)
+        lines.append("// Related Term Relations")
+        processed_related_pairs = set()
+
+        for term in flat_terms:
+            if term.get('related_terms'):
+                for related_id in term['related_terms']:
+                    # Create bidirectional relationship
+                    pair = tuple(sorted([term['id'], related_id]))
+                    if pair not in processed_related_pairs:
+                        lines.append(
+                            f"MATCH (t1:Term {{id: '{term['id']}'}}), "
+                            f"(t2:Term {{id: '{related_id}'}}) "
+                            f"CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);"
+                        )
+                        processed_related_pairs.add(pair)
 
         lines.append("")
 

@@ -1,0 +1,2803 @@
+{
+  "exact": [
+    {
+      "term_id": "T01030002",
+      "term": "정보자원",
+      "synonym": "IT자산",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T03020001",
+      "term": "의료이용 통계",
+      "synonym": "DES",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030001",
+      "term": "보건의료인력",
+      "synonym": "GERD",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03050001",
+      "term": "암",
+      "synonym": "Cancer",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03050003",
+      "term": "안구건조증",
+      "synonym": "DES",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03050004",
+      "term": "위식도역류질환",
+      "synonym": "GERD",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03060001",
+      "term": "보건의료빅데이터",
+      "synonym": "Healthcare Big Data",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T04040001",
+      "term": "고령사회",
+      "synonym": "Aged Society",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04040003",
+      "term": "노노케어",
+      "synonym": "Senior Care",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T05020003",
+      "term": "헌법재판소 결정",
+      "synonym": "VAT",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040001",
+      "term": "조세",
+      "synonym": "Tax",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T06010001",
+      "term": "국가예산",
+      "synonym": "Base Rate",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010003",
+      "term": "부처별 예산",
+      "synonym": "OMO",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020001",
+      "term": "재정통계",
+      "synonym": "PF",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020001",
+      "term": "재정통계",
+      "synonym": "Project Financing",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06040001",
+      "term": "국세",
+      "synonym": "Fintech",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06050001",
+      "term": "기금",
+      "synonym": "DC",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06050001",
+      "term": "기금",
+      "synonym": "DB",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T07010001",
+      "term": "산업생산지수",
+      "synonym": "Digital Economy",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07010002",
+      "term": "산업동향",
+      "synonym": "Deep Technology",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07020003",
+      "term": "바이오산업",
+      "synonym": "BT산업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07030002",
+      "term": "유통업",
+      "synonym": "Last Mile",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040001",
+      "term": "고용통계",
+      "synonym": "E-commerce Platform",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050001",
+      "term": "창업",
+      "synonym": "Digital Economy",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07060001",
+      "term": "중소기업",
+      "synonym": "E-commerce Tech",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T08010001",
+      "term": "이커머스 플랫폼",
+      "synonym": "Disaster Management",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08020001",
+      "term": "D2C",
+      "synonym": "Safety Management",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T09010001",
+      "term": "문화재",
+      "synonym": "Cultural Heritage",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020001",
+      "term": "관광지",
+      "synonym": "Tourist Site",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09030001",
+      "term": "문화시설",
+      "synonym": "Cultural Facility",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040001",
+      "term": "공연",
+      "synonym": "Performance",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040002",
+      "term": "전시",
+      "synonym": "Exhibition",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040004",
+      "term": "한류",
+      "synonym": "K-Wave",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09060001",
+      "term": "방송콘텐츠",
+      "synonym": "TV콘텐츠",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T10010001",
+      "term": "환경보전",
+      "synonym": "Environmental Conservation",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020001",
+      "term": "기후변화",
+      "synonym": "Climate Change",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10030001",
+      "term": "날씨",
+      "synonym": "Weather",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10040001",
+      "term": "생태계",
+      "synonym": "Ecosystem",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T11010001",
+      "term": "연구개발",
+      "synonym": "R&D투자",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11010002",
+      "term": "국가R&D",
+      "synonym": "정부R&D",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040001",
+      "term": "정보기술",
+      "synonym": "ICT",
+      "domain": "과학기술"
+    }
+  ],
+  "close": [],
+  "derived": [
+    {
+      "term_id": "T01030002",
+      "term": "정보자원",
+      "synonym": "정보자원관리",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T02030005",
+      "term": "교육복지",
+      "synonym": "교육복지사업",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040001",
+      "term": "고등교육",
+      "synonym": "고등교육기관",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02050001",
+      "term": "유아교육",
+      "synonym": "유아교육기관",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02060001",
+      "term": "특수교육",
+      "synonym": "특수교육기관",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T03010004",
+      "term": "약국",
+      "synonym": "약국시설",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T04010002",
+      "term": "사회보험",
+      "synonym": "사회보험제도",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T05010001",
+      "term": "법령",
+      "synonym": "법령정보",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T07070001",
+      "term": "수출입",
+      "synonym": "수출입통계",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T08030001",
+      "term": "간편결제",
+      "synonym": "간편결제서비스",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T09030005",
+      "term": "도서관",
+      "synonym": "공공도서관",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09030005",
+      "term": "도서관",
+      "synonym": "도서관시설",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040003",
+      "term": "축제",
+      "synonym": "지역축제",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T11010001",
+      "term": "연구개발",
+      "synonym": "연구개발사업",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T12020003",
+      "term": "생활안전",
+      "synonym": "생활안전관리",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020004",
+      "term": "교통안전",
+      "synonym": "교통안전관리",
+      "domain": "재난안전"
+    }
+  ],
+  "broader": [
+    {
+      "term_id": "T01010002",
+      "term": "정부조직도",
+      "synonym": "정부조직",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T02010001",
+      "term": "교육통계연보",
+      "synonym": "교육통계",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T03050004",
+      "term": "위식도역류질환",
+      "synonym": "위식도역류",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03060001",
+      "term": "보건의료빅데이터",
+      "synonym": "의료빅데이터",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03060002",
+      "term": "의료영상데이터",
+      "synonym": "의료영상",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T05010002",
+      "term": "법률",
+      "synonym": "법",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T06010004",
+      "term": "세출예산",
+      "synonym": "세출",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010005",
+      "term": "세입예산",
+      "synonym": "세입",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020002",
+      "term": "재정상태표",
+      "synonym": "재정상태",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T10030004",
+      "term": "기상특보",
+      "synonym": "특보",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050001",
+      "term": "신재생에너지",
+      "synonym": "재생에너지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T11030001",
+      "term": "공학기술",
+      "synonym": "공학",
+      "domain": "과학기술"
+    }
+  ],
+  "narrower": [
+    {
+      "term_id": "T02020005",
+      "term": "직업능력개발",
+      "synonym": "직업능력개발훈련",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02060002",
+      "term": "영재교육",
+      "synonym": "영재교육원",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T03010001",
+      "term": "의료기관",
+      "synonym": "보건의료기관",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03010004",
+      "term": "약국",
+      "synonym": "조제약국",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03020002",
+      "term": "진료통계",
+      "synonym": "외래진료통계",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03040001",
+      "term": "건강보험",
+      "synonym": "국민건강보험",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T05020001",
+      "term": "판례",
+      "synonym": "재판례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020001",
+      "term": "판례",
+      "synonym": "법원판례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020004",
+      "term": "재판통계",
+      "synonym": "재판통계연보",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030003",
+      "term": "법률구조",
+      "synonym": "무료법률구조",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040005",
+      "term": "국세",
+      "synonym": "국세청세금",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040006",
+      "term": "지방세",
+      "synonym": "지방세무",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T06040002",
+      "term": "지방세",
+      "synonym": "지방세금",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T07040002",
+      "term": "일자리",
+      "synonym": "일자리창출",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040005",
+      "term": "최저임금",
+      "synonym": "법정최저임금",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050003",
+      "term": "스타트업",
+      "synonym": "스타트업회사",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T08040002",
+      "term": "라스트마일",
+      "synonym": "라스트마일배송",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T09010004",
+      "term": "국보",
+      "synonym": "국보급유물",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09010005",
+      "term": "세계유산",
+      "synonym": "유네스코세계유산",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040003",
+      "term": "축제",
+      "synonym": "문화축제",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040003",
+      "term": "축제",
+      "synonym": "전통축제",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T10010005",
+      "term": "미세먼지",
+      "synonym": "초미세먼지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050002",
+      "term": "태양광",
+      "synonym": "태양광발전",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050003",
+      "term": "풍력",
+      "synonym": "풍력발전",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050003",
+      "term": "풍력",
+      "synonym": "풍력에너지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10060001",
+      "term": "재활용",
+      "synonym": "자원재활용",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T11020001",
+      "term": "자연과학",
+      "synonym": "자연과학분야",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11020002",
+      "term": "물리학",
+      "synonym": "물리학연구",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11050001",
+      "term": "특허",
+      "synonym": "특허권",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11050001",
+      "term": "특허",
+      "synonym": "발명특허",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T12020001",
+      "term": "안전관리",
+      "synonym": "안전관리체계",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030001",
+      "term": "비상대비",
+      "synonym": "비상대비체계",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040002",
+      "term": "태풍",
+      "synonym": "태풍피해",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040002",
+      "term": "태풍",
+      "synonym": "태풍재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040004",
+      "term": "지진",
+      "synonym": "지진피해",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040004",
+      "term": "지진",
+      "synonym": "지진재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040005",
+      "term": "폭염",
+      "synonym": "폭염주의보",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050002",
+      "term": "화재",
+      "synonym": "화재사고",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050002",
+      "term": "화재",
+      "synonym": "화재재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050003",
+      "term": "감염병",
+      "synonym": "감염병재난",
+      "domain": "재난안전"
+    }
+  ],
+  "related": [
+    {
+      "term_id": "T01010001",
+      "term": "공공기관",
+      "synonym": "공기업",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01010001",
+      "term": "공공기관",
+      "synonym": "공공단체",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01010001",
+      "term": "공공기관",
+      "synonym": "공공조직",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01010002",
+      "term": "정부조직도",
+      "synonym": "행정조직",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01010002",
+      "term": "정부조직도",
+      "synonym": "부처조직도",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01010003",
+      "term": "공공기관 현황",
+      "synonym": "공공기관정보",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01010003",
+      "term": "공공기관 현황",
+      "synonym": "기관현황",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020001",
+      "term": "행정구역",
+      "synonym": "행정동",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020001",
+      "term": "행정구역",
+      "synonym": "법정동",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020001",
+      "term": "행정구역",
+      "synonym": "동리",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020002",
+      "term": "지방자치단체",
+      "synonym": "지자체",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020002",
+      "term": "지방자치단체",
+      "synonym": "광역자치단체",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020002",
+      "term": "지방자치단체",
+      "synonym": "기초자치단체",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020003",
+      "term": "읍면동",
+      "synonym": "읍사무소",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020003",
+      "term": "읍면동",
+      "synonym": "면사무소",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020003",
+      "term": "읍면동",
+      "synonym": "동주민센터",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020004",
+      "term": "행정복지센터",
+      "synonym": "주민센터",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020004",
+      "term": "행정복지센터",
+      "synonym": "동사무소",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01020004",
+      "term": "행정복지센터",
+      "synonym": "행정센터",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01030001",
+      "term": "행정정보화",
+      "synonym": "전자정부",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01030001",
+      "term": "행정정보화",
+      "synonym": "디지털행정",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01030001",
+      "term": "행정정보화",
+      "synonym": "스마트행정",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01030003",
+      "term": "공공데이터 개방",
+      "synonym": "공공데이터포털",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01030003",
+      "term": "공공데이터 개방",
+      "synonym": "공공정보개방",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01030003",
+      "term": "공공데이터 개방",
+      "synonym": "오픈데이터",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01040001",
+      "term": "국가정책",
+      "synonym": "정부사업",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01040001",
+      "term": "국가정책",
+      "synonym": "국정과제",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01040002",
+      "term": "대민서비스",
+      "synonym": "국민서비스",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01040002",
+      "term": "대민서비스",
+      "synonym": "행정서비스",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T01040002",
+      "term": "대민서비스",
+      "synonym": "민원서비스",
+      "domain": "공공행정"
+    },
+    {
+      "term_id": "T02010001",
+      "term": "교육통계연보",
+      "synonym": "학교통계연보",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02010005",
+      "term": "교육재정",
+      "synonym": "교육예산",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02010005",
+      "term": "교육재정",
+      "synonym": "학교재정",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02010005",
+      "term": "교육재정",
+      "synonym": "교육비",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02020001",
+      "term": "평생교육",
+      "synonym": "평생학습",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02020001",
+      "term": "평생교육",
+      "synonym": "성인교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02020001",
+      "term": "평생교육",
+      "synonym": "계속교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02020005",
+      "term": "직업능력개발",
+      "synonym": "직업교육훈련",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02020005",
+      "term": "직업능력개발",
+      "synonym": "직무교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030001",
+      "term": "학교교육",
+      "synonym": "초중등교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030001",
+      "term": "학교교육",
+      "synonym": "공교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030001",
+      "term": "학교교육",
+      "synonym": "정규교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030004",
+      "term": "학교시설",
+      "synonym": "교육시설",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030004",
+      "term": "학교시설",
+      "synonym": "학교건물",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030004",
+      "term": "학교시설",
+      "synonym": "학습시설",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02030005",
+      "term": "교육복지",
+      "synonym": "교육지원",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040001",
+      "term": "고등교육",
+      "synonym": "대학교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040002",
+      "term": "대학정보공시",
+      "synonym": "대학공시",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040002",
+      "term": "대학정보공시",
+      "synonym": "대학정보제공",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040002",
+      "term": "대학정보공시",
+      "synonym": "학교공시",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040003",
+      "term": "산학협력",
+      "synonym": "산학연협력",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040003",
+      "term": "산학협력",
+      "synonym": "대학-기업협력",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02040003",
+      "term": "산학협력",
+      "synonym": "산학협동",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02050001",
+      "term": "유아교육",
+      "synonym": "어린이집",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02050001",
+      "term": "유아교육",
+      "synonym": "유치원",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02050002",
+      "term": "누리과정",
+      "synonym": "누리교육과정",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02050002",
+      "term": "누리과정",
+      "synonym": "국가수준교육과정",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02060001",
+      "term": "특수교육",
+      "synonym": "특수학교",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02060001",
+      "term": "특수교육",
+      "synonym": "장애인교육",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02060002",
+      "term": "영재교육",
+      "synonym": "영재학급",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T02060002",
+      "term": "영재교육",
+      "synonym": "영재학생",
+      "domain": "교육"
+    },
+    {
+      "term_id": "T03010001",
+      "term": "의료기관",
+      "synonym": "병원",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03010005",
+      "term": "의료시설",
+      "synonym": "의료인프라",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03010005",
+      "term": "의료시설",
+      "synonym": "병원시설",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03010006",
+      "term": "의료장비",
+      "synonym": "의료기기",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03010006",
+      "term": "의료장비",
+      "synonym": "진료장비",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03010006",
+      "term": "의료장비",
+      "synonym": "의료설비",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03020001",
+      "term": "의료이용 통계",
+      "synonym": "건조안",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03020002",
+      "term": "진료통계",
+      "synonym": "입원통계",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030001",
+      "term": "보건의료인력",
+      "synonym": "역류성식도염",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030002",
+      "term": "의사",
+      "synonym": "의료인",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030002",
+      "term": "의사",
+      "synonym": "의료진",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030002",
+      "term": "의사",
+      "synonym": "임상의",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030003",
+      "term": "간호사",
+      "synonym": "간호인력",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03030003",
+      "term": "간호사",
+      "synonym": "간호직",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03040001",
+      "term": "건강보험",
+      "synonym": "의료보험",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03040002",
+      "term": "의료급여",
+      "synonym": "의료보호",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03040002",
+      "term": "의료급여",
+      "synonym": "의료지원",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03050001",
+      "term": "암",
+      "synonym": "악성종양",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03050003",
+      "term": "안구건조증",
+      "synonym": "건조안",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03050004",
+      "term": "위식도역류질환",
+      "synonym": "역류성식도염",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03060002",
+      "term": "의료영상데이터",
+      "synonym": "진단영상",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T03060002",
+      "term": "의료영상데이터",
+      "synonym": "의료이미지",
+      "domain": "보건의료"
+    },
+    {
+      "term_id": "T04010001",
+      "term": "사회보장",
+      "synonym": "사회안전망",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04010001",
+      "term": "사회보장",
+      "synonym": "사회복지제도",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04010002",
+      "term": "사회보험",
+      "synonym": "4대보험",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04010003",
+      "term": "공적부조",
+      "synonym": "노노돌봄",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04010003",
+      "term": "공적부조",
+      "synonym": "고령자돌봄",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04020001",
+      "term": "복지시설",
+      "synonym": "공적연금제도",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04020001",
+      "term": "복지시설",
+      "synonym": "사회보험연금",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04020002",
+      "term": "노인복지시설",
+      "synonym": "노인시설",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04020002",
+      "term": "노인복지시설",
+      "synonym": "양로시설",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04020002",
+      "term": "노인복지시설",
+      "synonym": "요양시설",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04030001",
+      "term": "취약계층",
+      "synonym": "사회적약자",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04030001",
+      "term": "취약계층",
+      "synonym": "취약층",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04030001",
+      "term": "취약계층",
+      "synonym": "소외계층",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04030002",
+      "term": "저소득층",
+      "synonym": "빈곤층",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04030002",
+      "term": "저소득층",
+      "synonym": "기초수급자",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04040001",
+      "term": "고령사회",
+      "synonym": "고령화사회",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T04040003",
+      "term": "노노케어",
+      "synonym": "노인돌봄",
+      "domain": "사회복지"
+    },
+    {
+      "term_id": "T05010001",
+      "term": "법령",
+      "synonym": "법규",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010001",
+      "term": "법령",
+      "synonym": "법제",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010002",
+      "term": "법률",
+      "synonym": "법규범",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010002",
+      "term": "법률",
+      "synonym": "제정법",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010003",
+      "term": "시행령",
+      "synonym": "대통령령",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010003",
+      "term": "시행령",
+      "synonym": "시행규칙",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010003",
+      "term": "시행령",
+      "synonym": "명령",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010004",
+      "term": "자치법규",
+      "synonym": "조례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010004",
+      "term": "자치법규",
+      "synonym": "지방법규",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010004",
+      "term": "자치법규",
+      "synonym": "자치규칙",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010005",
+      "term": "행정규칙",
+      "synonym": "행정명령",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010005",
+      "term": "행정규칙",
+      "synonym": "고시",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05010005",
+      "term": "행정규칙",
+      "synonym": "훈령",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020001",
+      "term": "판례",
+      "synonym": "판결례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020002",
+      "term": "대법원 판례",
+      "synonym": "대법원판결",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020002",
+      "term": "대법원 판례",
+      "synonym": "상고심판례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020002",
+      "term": "대법원 판례",
+      "synonym": "최고법원판례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020003",
+      "term": "헌법재판소 결정",
+      "synonym": "부가세",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020003",
+      "term": "헌법재판소 결정",
+      "synonym": "일반법원판례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020003",
+      "term": "헌법재판소 결정",
+      "synonym": "하급법원판례",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020004",
+      "term": "재판통계",
+      "synonym": "상증세",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020004",
+      "term": "재판통계",
+      "synonym": "증여세",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020004",
+      "term": "재판통계",
+      "synonym": "상속세",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05020004",
+      "term": "재판통계",
+      "synonym": "사법통계",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030001",
+      "term": "법률서비스",
+      "synonym": "법률지원",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030001",
+      "term": "법률서비스",
+      "synonym": "법률복지",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030001",
+      "term": "법률서비스",
+      "synonym": "법무서비스",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030002",
+      "term": "법률상담",
+      "synonym": "법률자문",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030002",
+      "term": "법률상담",
+      "synonym": "법률컨설팅",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030002",
+      "term": "법률상담",
+      "synonym": "법무상담",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030003",
+      "term": "법률구조",
+      "synonym": "법률지원",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05030003",
+      "term": "법률구조",
+      "synonym": "법률복지",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040001",
+      "term": "조세",
+      "synonym": "부동산등기",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040001",
+      "term": "조세",
+      "synonym": "소유권등기",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040001",
+      "term": "조세",
+      "synonym": "재산등기",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040005",
+      "term": "국세",
+      "synonym": "국가세수",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05040006",
+      "term": "지방세",
+      "synonym": "자치단체세금",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05050001",
+      "term": "민법",
+      "synonym": "형사사법",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05050001",
+      "term": "민법",
+      "synonym": "형법체계",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05050001",
+      "term": "민법",
+      "synonym": "범죄처벌",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05050002",
+      "term": "상법",
+      "synonym": "범죄통계",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05050002",
+      "term": "상법",
+      "synonym": "범죄발생현황",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05050002",
+      "term": "상법",
+      "synonym": "형사통계",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05060001",
+      "term": "형법",
+      "synonym": "행정소송",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05060001",
+      "term": "형법",
+      "synonym": "행정쟁송",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05060002",
+      "term": "행정심판",
+      "synonym": "행정쟁송",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T05060002",
+      "term": "행정심판",
+      "synonym": "행정불복",
+      "domain": "법률"
+    },
+    {
+      "term_id": "T06010001",
+      "term": "국가예산",
+      "synonym": "정책금리",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010001",
+      "term": "국가예산",
+      "synonym": "기준금리",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010002",
+      "term": "분야별 예산",
+      "synonym": "부문별예산",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010002",
+      "term": "분야별 예산",
+      "synonym": "사업별예산",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010003",
+      "term": "부처별 예산",
+      "synonym": "공개시장조작",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010004",
+      "term": "세출예산",
+      "synonym": "지출예산",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06010005",
+      "term": "세입예산",
+      "synonym": "수입예산",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020001",
+      "term": "재정통계",
+      "synonym": "프로젝트파이낸싱",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020002",
+      "term": "재정상태표",
+      "synonym": "재무상태표",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020002",
+      "term": "재정상태표",
+      "synonym": "재정현황",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06020003",
+      "term": "국가결산",
+      "synonym": "세입세출결산",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06030001",
+      "term": "지방재정",
+      "synonym": "지방정부재정",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06030001",
+      "term": "지방재정",
+      "synonym": "지역재정",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06030002",
+      "term": "지방교부세",
+      "synonym": "지방교부금",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06030002",
+      "term": "지방교부세",
+      "synonym": "재정교부금",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06030003",
+      "term": "재정자립도",
+      "synonym": "재정자주도",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06030003",
+      "term": "재정자립도",
+      "synonym": "재정독립도",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06040001",
+      "term": "국세",
+      "synonym": "금융기술",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06040002",
+      "term": "지방세",
+      "synonym": "지역세",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06050001",
+      "term": "기금",
+      "synonym": "기업연금",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06050001",
+      "term": "기금",
+      "synonym": "퇴직연금",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06050002",
+      "term": "기금운용",
+      "synonym": "기금관리",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06050002",
+      "term": "기금운용",
+      "synonym": "기금운영",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06060001",
+      "term": "통화정책",
+      "synonym": "금융정책",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T06060001",
+      "term": "통화정책",
+      "synonym": "통화금융정책",
+      "domain": "재정금융"
+    },
+    {
+      "term_id": "T07010001",
+      "term": "산업생산지수",
+      "synonym": "데이터경제",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07010002",
+      "term": "산업동향",
+      "synonym": "심층기술",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07020002",
+      "term": "자동차산업",
+      "synonym": "자동차제조업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07020002",
+      "term": "자동차산업",
+      "synonym": "차량산업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07020003",
+      "term": "바이오산업",
+      "synonym": "생명공학산업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07020003",
+      "term": "바이오산업",
+      "synonym": "바이오테크",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07030001",
+      "term": "서비스업",
+      "synonym": "3차산업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07030001",
+      "term": "서비스업",
+      "synonym": "서비스산업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07030002",
+      "term": "유통업",
+      "synonym": "최종구간배송",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07030002",
+      "term": "유통업",
+      "synonym": "문전배송",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040001",
+      "term": "고용통계",
+      "synonym": "상거래SaaS",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040001",
+      "term": "고용통계",
+      "synonym": "쇼핑몰솔루션",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040002",
+      "term": "일자리",
+      "synonym": "취업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040002",
+      "term": "일자리",
+      "synonym": "고용",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040003",
+      "term": "실업률",
+      "synonym": "실직률",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040003",
+      "term": "실업률",
+      "synonym": "비취업률",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040003",
+      "term": "실업률",
+      "synonym": "미취업률",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040004",
+      "term": "노동시장",
+      "synonym": "고용시장",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040004",
+      "term": "노동시장",
+      "synonym": "취업시장",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040004",
+      "term": "노동시장",
+      "synonym": "인력시장",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07040005",
+      "term": "최저임금",
+      "synonym": "최저시급",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050001",
+      "term": "창업",
+      "synonym": "디지털경제",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050003",
+      "term": "스타트업",
+      "synonym": "벤처기업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050003",
+      "term": "스타트업",
+      "synonym": "신생기업",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050004",
+      "term": "액셀러레이터",
+      "synonym": "창업지원기관",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07050004",
+      "term": "액셀러레이터",
+      "synonym": "인큐베이터",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07060001",
+      "term": "중소기업",
+      "synonym": "이커머스기술",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070001",
+      "term": "수출입",
+      "synonym": "무역",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070001",
+      "term": "수출입",
+      "synonym": "대외무역",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070002",
+      "term": "FTA",
+      "synonym": "국제무역",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070002",
+      "term": "FTA",
+      "synonym": "글로벌무역",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070003",
+      "term": "무역수지",
+      "synonym": "무역적자",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070003",
+      "term": "무역수지",
+      "synonym": "무역흑자",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T07070003",
+      "term": "무역수지",
+      "synonym": "수출입차액",
+      "domain": "산업경제"
+    },
+    {
+      "term_id": "T08010001",
+      "term": "이커머스 플랫폼",
+      "synonym": "재난대응체계",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08030001",
+      "term": "간편결제",
+      "synonym": "모바일결제",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08030001",
+      "term": "간편결제",
+      "synonym": "페이",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08030002",
+      "term": "BNPL",
+      "synonym": "선구매후결제",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08030002",
+      "term": "BNPL",
+      "synonym": "외상결제",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08040001",
+      "term": "풀필먼트",
+      "synonym": "물류대행",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08040001",
+      "term": "풀필먼트",
+      "synonym": "주문처리",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08040001",
+      "term": "풀필먼트",
+      "synonym": "배송대행",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08040002",
+      "term": "라스트마일",
+      "synonym": "최종배송",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08040002",
+      "term": "라스트마일",
+      "synonym": "막차배송",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08050001",
+      "term": "라이브커머스",
+      "synonym": "실시간커머스",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08050001",
+      "term": "라이브커머스",
+      "synonym": "라방",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08050002",
+      "term": "구독경제",
+      "synonym": "구독서비스",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T08050002",
+      "term": "구독경제",
+      "synonym": "정기결제",
+      "domain": "디지털커머스"
+    },
+    {
+      "term_id": "T09010001",
+      "term": "문화재",
+      "synonym": "문화유산",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09010004",
+      "term": "국보",
+      "synonym": "국가지정문화재",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09010005",
+      "term": "세계유산",
+      "synonym": "세계문화유산",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020001",
+      "term": "관광지",
+      "synonym": "관광명소",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020002",
+      "term": "관광통계",
+      "synonym": "여행통계",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020002",
+      "term": "관광통계",
+      "synonym": "관광객통계",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020002",
+      "term": "관광통계",
+      "synonym": "방문객통계",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020003",
+      "term": "관광산업",
+      "synonym": "관광사업",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020003",
+      "term": "관광산업",
+      "synonym": "여행산업",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020003",
+      "term": "관광산업",
+      "synonym": "관광업",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020004",
+      "term": "여행업",
+      "synonym": "여행사",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020004",
+      "term": "여행업",
+      "synonym": "관광업체",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09020004",
+      "term": "여행업",
+      "synonym": "여행사업",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09030004",
+      "term": "공연장",
+      "synonym": "공연시설",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09030004",
+      "term": "공연장",
+      "synonym": "문화공간",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09030004",
+      "term": "공연장",
+      "synonym": "극장",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040001",
+      "term": "공연",
+      "synonym": "무대예술",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040002",
+      "term": "전시",
+      "synonym": "전람회",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040004",
+      "term": "한류",
+      "synonym": "한국문화",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040004",
+      "term": "한류",
+      "synonym": "한국열풍",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040005",
+      "term": "K-컬처",
+      "synonym": "한국문화콘텐츠",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040005",
+      "term": "K-컬처",
+      "synonym": "케이팝",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09040005",
+      "term": "K-컬처",
+      "synonym": "한국대중문화",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050001",
+      "term": "체육시설",
+      "synonym": "체육인프라",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050001",
+      "term": "체육시설",
+      "synonym": "운동시설",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050001",
+      "term": "체육시설",
+      "synonym": "스포츠센터",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050002",
+      "term": "프로스포츠",
+      "synonym": "프로리그",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050002",
+      "term": "프로스포츠",
+      "synonym": "직업스포츠",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050002",
+      "term": "프로스포츠",
+      "synonym": "프로경기",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050003",
+      "term": "생활체육",
+      "synonym": "생활스포츠",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050003",
+      "term": "생활체육",
+      "synonym": "여가체육",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09050003",
+      "term": "생활체육",
+      "synonym": "동호회체육",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09060001",
+      "term": "방송콘텐츠",
+      "synonym": "방송프로그램",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09060001",
+      "term": "방송콘텐츠",
+      "synonym": "미디어콘텐츠",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09060002",
+      "term": "OTT",
+      "synonym": "온라인동영상서비스",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09060002",
+      "term": "OTT",
+      "synonym": "스트리밍서비스",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T09060002",
+      "term": "OTT",
+      "synonym": "넷플릭스",
+      "domain": "문화관광"
+    },
+    {
+      "term_id": "T10010001",
+      "term": "환경보전",
+      "synonym": "환경보호",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10010005",
+      "term": "미세먼지",
+      "synonym": "미세입자",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10010005",
+      "term": "미세먼지",
+      "synonym": "대기오염물질",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10010006",
+      "term": "토양오염",
+      "synonym": "토양환경오염",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10010006",
+      "term": "토양오염",
+      "synonym": "지하수오염",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020001",
+      "term": "기후변화",
+      "synonym": "지구온난화",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020004",
+      "term": "NDC",
+      "synonym": "온실가스감축목표",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020004",
+      "term": "NDC",
+      "synonym": "국가감축목표",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020004",
+      "term": "NDC",
+      "synonym": "배출감축목표",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020005",
+      "term": "기후적응",
+      "synonym": "기후변화적응",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020005",
+      "term": "기후적응",
+      "synonym": "기후대응",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10020005",
+      "term": "기후적응",
+      "synonym": "기후탄력성",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10030004",
+      "term": "기상특보",
+      "synonym": "기상주의보",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10030004",
+      "term": "기상특보",
+      "synonym": "기상경보",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10030005",
+      "term": "기후정보",
+      "synonym": "기후데이터",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10030005",
+      "term": "기후정보",
+      "synonym": "기상정보",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10030005",
+      "term": "기후정보",
+      "synonym": "날씨정보",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10040004",
+      "term": "생물다양성",
+      "synonym": "생태다양성",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10040004",
+      "term": "생물다양성",
+      "synonym": "생물종다양성",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050001",
+      "term": "신재생에너지",
+      "synonym": "대체에너지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050001",
+      "term": "신재생에너지",
+      "synonym": "청정에너지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050002",
+      "term": "태양광",
+      "synonym": "태양에너지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050002",
+      "term": "태양광",
+      "synonym": "솔라",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050004",
+      "term": "에너지전환",
+      "synonym": "수소경제",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10050004",
+      "term": "에너지전환",
+      "synonym": "수소에너지",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10060001",
+      "term": "재활용",
+      "synonym": "폐기물재생",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10060001",
+      "term": "재활용",
+      "synonym": "재사용",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10060002",
+      "term": "순환경제",
+      "synonym": "순환자원경제",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T10060002",
+      "term": "순환경제",
+      "synonym": "자원순환",
+      "domain": "환경기상"
+    },
+    {
+      "term_id": "T11010001",
+      "term": "연구개발",
+      "synonym": "기술개발",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11010002",
+      "term": "국가R&D",
+      "synonym": "국가연구개발",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11010002",
+      "term": "국가R&D",
+      "synonym": "국책연구",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11020001",
+      "term": "자연과학",
+      "synonym": "기초과학",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11020002",
+      "term": "물리학",
+      "synonym": "물리과학",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11030001",
+      "term": "공학기술",
+      "synonym": "엔지니어링",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11030001",
+      "term": "공학기술",
+      "synonym": "기술공학",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11030002",
+      "term": "전자공학",
+      "synonym": "전자전기공학",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11030002",
+      "term": "전자공학",
+      "synonym": "전기공학",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11030002",
+      "term": "전자공학",
+      "synonym": "전자기술",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040001",
+      "term": "정보기술",
+      "synonym": "정보통신기술",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040001",
+      "term": "정보기술",
+      "synonym": "디지털기술",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040002",
+      "term": "인공지능",
+      "synonym": "머신러닝",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040002",
+      "term": "인공지능",
+      "synonym": "딥러닝",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040002",
+      "term": "인공지능",
+      "synonym": "지능형시스템",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040003",
+      "term": "빅데이터",
+      "synonym": "대용량데이터",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040003",
+      "term": "빅데이터",
+      "synonym": "데이터분석",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11040003",
+      "term": "빅데이터",
+      "synonym": "데이터과학",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11050001",
+      "term": "특허",
+      "synonym": "지식재산권",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11050002",
+      "term": "기술이전",
+      "synonym": "기술사업화",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11050002",
+      "term": "기술이전",
+      "synonym": "기술거래",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11060001",
+      "term": "우주개발",
+      "synonym": "우주항공",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11060001",
+      "term": "우주개발",
+      "synonym": "우주기술",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T11060001",
+      "term": "우주개발",
+      "synonym": "항공우주",
+      "domain": "과학기술"
+    },
+    {
+      "term_id": "T12010001",
+      "term": "재난관리",
+      "synonym": "재해관리",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010001",
+      "term": "재난관리",
+      "synonym": "재난대응체계",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010002",
+      "term": "재난예방",
+      "synonym": "재해예방",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010002",
+      "term": "재난예방",
+      "synonym": "재난방지",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010002",
+      "term": "재난예방",
+      "synonym": "사전대비",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010003",
+      "term": "재난대응",
+      "synonym": "긴급대응",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010003",
+      "term": "재난대응",
+      "synonym": "재난대처",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010003",
+      "term": "재난대응",
+      "synonym": "재해대응",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010003",
+      "term": "재난대응",
+      "synonym": "비상대응",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010004",
+      "term": "복구복원",
+      "synonym": "재난복구",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010004",
+      "term": "복구복원",
+      "synonym": "재해복원",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010004",
+      "term": "복구복원",
+      "synonym": "피해복구",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010005",
+      "term": "재난통계",
+      "synonym": "재해통계",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12010005",
+      "term": "재난통계",
+      "synonym": "피해통계",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020001",
+      "term": "안전관리",
+      "synonym": "안전확보",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020001",
+      "term": "안전관리",
+      "synonym": "위험관리",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020002",
+      "term": "시설물안전",
+      "synonym": "시설안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020002",
+      "term": "시설물안전",
+      "synonym": "건축물안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020002",
+      "term": "시설물안전",
+      "synonym": "구조물안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020003",
+      "term": "생활안전",
+      "synonym": "일상안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020003",
+      "term": "생활안전",
+      "synonym": "시민안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020004",
+      "term": "교통안전",
+      "synonym": "도로안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12020004",
+      "term": "교통안전",
+      "synonym": "차량안전",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030001",
+      "term": "비상대비",
+      "synonym": "긴급대비",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030001",
+      "term": "비상대비",
+      "synonym": "위기대비",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030002",
+      "term": "민방위",
+      "synonym": "비상훈련",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030002",
+      "term": "민방위",
+      "synonym": "재난훈련",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030002",
+      "term": "민방위",
+      "synonym": "대피훈련",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030003",
+      "term": "위기관리",
+      "synonym": "구호활동",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030003",
+      "term": "위기관리",
+      "synonym": "구난구조",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12030003",
+      "term": "위기관리",
+      "synonym": "인명구조",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040001",
+      "term": "자연재해",
+      "synonym": "자연재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040001",
+      "term": "자연재해",
+      "synonym": "천재지변",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040003",
+      "term": "홍수",
+      "synonym": "호우피해",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040003",
+      "term": "홍수",
+      "synonym": "폭우재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040003",
+      "term": "홍수",
+      "synonym": "집중호우",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040004",
+      "term": "지진",
+      "synonym": "진동재해",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040005",
+      "term": "폭염",
+      "synonym": "고온특보",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12040005",
+      "term": "폭염",
+      "synonym": "열대야",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050001",
+      "term": "사회재난",
+      "synonym": "인적재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050001",
+      "term": "사회재난",
+      "synonym": "인위재난",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050002",
+      "term": "화재",
+      "synonym": "소방사고",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050003",
+      "term": "감염병",
+      "synonym": "전염병재해",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050003",
+      "term": "감염병",
+      "synonym": "역병",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050004",
+      "term": "산업재해",
+      "synonym": "산업사고",
+      "domain": "재난안전"
+    },
+    {
+      "term_id": "T12050004",
+      "term": "산업재해",
+      "synonym": "작업재해",
+      "domain": "재난안전"
+    }
+  ]
+}

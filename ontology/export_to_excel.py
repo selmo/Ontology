@@ -170,7 +170,7 @@ def create_excel_workbook(data, output_file='ontology_master_data.xlsx'):
             if term.get('synonyms'):
                 synonyms = term['synonyms']
 
-                # Handle structured synonyms (v3.11+)
+                # Handle structured synonyms (v3.12+)
                 if isinstance(synonyms, dict):
                     # Term → Term synonyms
                     for syn_term_id in synonyms.get('terms', []):
@@ -183,7 +183,62 @@ def create_excel_workbook(data, output_file='ontology_master_data.xlsx'):
                             domain['name_ko']
                         ])
 
-                    # String synonyms
+                    # Exact synonyms
+                    for syn_str in synonyms.get('exact', []):
+                        ws_syn.append([
+                            term['id'],
+                            term['name_ko'],
+                            'Exact',
+                            '',
+                            syn_str,
+                            domain['name_ko']
+                        ])
+
+                    # Close synonyms
+                    for syn_str in synonyms.get('close', []):
+                        ws_syn.append([
+                            term['id'],
+                            term['name_ko'],
+                            'Close',
+                            '',
+                            syn_str,
+                            domain['name_ko']
+                        ])
+
+                    # Related synonyms
+                    for syn_str in synonyms.get('related', []):
+                        ws_syn.append([
+                            term['id'],
+                            term['name_ko'],
+                            'Related',
+                            '',
+                            syn_str,
+                            domain['name_ko']
+                        ])
+
+                    # Broader synonyms
+                    for syn_str in synonyms.get('broader', []):
+                        ws_syn.append([
+                            term['id'],
+                            term['name_ko'],
+                            'Broader',
+                            '',
+                            syn_str,
+                            domain['name_ko']
+                        ])
+
+                    # Narrower synonyms
+                    for syn_str in synonyms.get('narrower', []):
+                        ws_syn.append([
+                            term['id'],
+                            term['name_ko'],
+                            'Narrower',
+                            '',
+                            syn_str,
+                            domain['name_ko']
+                        ])
+
+                    # Backward compatibility: v3.11 'strings' field
                     for syn_str in synonyms.get('strings', []):
                         ws_syn.append([
                             term['id'],

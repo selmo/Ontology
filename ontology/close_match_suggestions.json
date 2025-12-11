@@ -1,0 +1,583 @@
+[
+  {
+    "term_id": "T10040004",
+    "term": "생물다양성",
+    "synonym": "생물종다양성",
+    "reason": "문자열 유사도: 0.91",
+    "confidence": 0.9090909090909091
+  },
+  {
+    "term_id": "T01010001",
+    "term": "공공기관",
+    "synonym": "공기업",
+    "reason": "패턴 매칭: 혼용 용어",
+    "confidence": 0.9
+  },
+  {
+    "term_id": "T01010001",
+    "term": "공공기관",
+    "synonym": "공공단체",
+    "reason": "패턴 매칭: 혼용 용어",
+    "confidence": 0.9
+  },
+  {
+    "term_id": "T01010001",
+    "term": "공공기관",
+    "synonym": "공공조직",
+    "reason": "패턴 매칭: 혼용 용어",
+    "confidence": 0.9
+  },
+  {
+    "term_id": "T01020002",
+    "term": "지방자치단체",
+    "synonym": "지자체",
+    "reason": "패턴 매칭: 혼용 용어",
+    "confidence": 0.9
+  },
+  {
+    "term_id": "T03010001",
+    "term": "의료기관",
+    "synonym": "병원",
+    "reason": "패턴 매칭: 혼용 용어",
+    "confidence": 0.9
+  },
+  {
+    "term_id": "T02040003",
+    "term": "산학협력",
+    "synonym": "산학연협력",
+    "reason": "문자열 유사도: 0.89",
+    "confidence": 0.8888888888888888
+  },
+  {
+    "term_id": "T04040001",
+    "term": "고령사회",
+    "synonym": "고령화사회",
+    "reason": "문자열 유사도: 0.89",
+    "confidence": 0.8888888888888888
+  },
+  {
+    "term_id": "T07030001",
+    "term": "서비스업",
+    "synonym": "서비스산업",
+    "reason": "문자열 유사도: 0.89",
+    "confidence": 0.8888888888888888
+  },
+  {
+    "term_id": "T09020002",
+    "term": "관광통계",
+    "synonym": "관광객통계",
+    "reason": "문자열 유사도: 0.89",
+    "confidence": 0.8888888888888888
+  },
+  {
+    "term_id": "T12020002",
+    "term": "시설물안전",
+    "synonym": "시설안전",
+    "reason": "문자열 유사도: 0.89",
+    "confidence": 0.8888888888888888
+  },
+  {
+    "term_id": "T04030001",
+    "term": "취약계층",
+    "synonym": "취약층",
+    "reason": "문자열 유사도: 0.86",
+    "confidence": 0.8571428571428571
+  },
+  {
+    "term_id": "T09020003",
+    "term": "관광산업",
+    "synonym": "관광업",
+    "reason": "문자열 유사도: 0.86",
+    "confidence": 0.8571428571428571
+  },
+  {
+    "term_id": "T09020004",
+    "term": "여행업",
+    "synonym": "여행사업",
+    "reason": "문자열 유사도: 0.86",
+    "confidence": 0.8571428571428571
+  },
+  {
+    "term_id": "T11020002",
+    "term": "물리학",
+    "synonym": "물리과학",
+    "reason": "문자열 유사도: 0.86",
+    "confidence": 0.8571428571428571
+  },
+  {
+    "term_id": "T02010001",
+    "term": "교육통계연보",
+    "synonym": "학교통계연보",
+    "reason": "문자열 유사도: 0.83",
+    "confidence": 0.8333333333333334
+  },
+  {
+    "term_id": "T02040002",
+    "term": "대학정보공시",
+    "synonym": "대학정보제공",
+    "reason": "문자열 유사도: 0.83",
+    "confidence": 0.8333333333333334
+  },
+  {
+    "term_id": "T01010002",
+    "term": "정부조직도",
+    "synonym": "부처조직도",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01020004",
+    "term": "행정복지센터",
+    "synonym": "행정센터",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01030002",
+    "term": "정보자원",
+    "synonym": "정보자원관리",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01040002",
+    "term": "대민서비스",
+    "synonym": "국민서비스",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01040002",
+    "term": "대민서비스",
+    "synonym": "민원서비스",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02030005",
+    "term": "교육복지",
+    "synonym": "교육복지사업",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02040001",
+    "term": "고등교육",
+    "synonym": "고등교육기관",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02040002",
+    "term": "대학정보공시",
+    "synonym": "대학공시",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02050001",
+    "term": "유아교육",
+    "synonym": "유아교육기관",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02050002",
+    "term": "누리과정",
+    "synonym": "누리교육과정",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02060001",
+    "term": "특수교육",
+    "synonym": "특수교육기관",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T04010002",
+    "term": "사회보험",
+    "synonym": "사회보험제도",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T04020002",
+    "term": "노인복지시설",
+    "synonym": "노인시설",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T05020001",
+    "term": "판례",
+    "synonym": "판결례",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T05030001",
+    "term": "법률서비스",
+    "synonym": "법무서비스",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06020002",
+    "term": "재정상태표",
+    "synonym": "재무상태표",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06030001",
+    "term": "지방재정",
+    "synonym": "지방정부재정",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06030002",
+    "term": "지방교부세",
+    "synonym": "지방교부금",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06030003",
+    "term": "재정자립도",
+    "synonym": "재정자주도",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06030003",
+    "term": "재정자립도",
+    "synonym": "재정독립도",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06060001",
+    "term": "통화정책",
+    "synonym": "통화금융정책",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T09010005",
+    "term": "세계유산",
+    "synonym": "세계문화유산",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T10010006",
+    "term": "토양오염",
+    "synonym": "토양환경오염",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T10020005",
+    "term": "기후적응",
+    "synonym": "기후변화적응",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T10040004",
+    "term": "생물다양성",
+    "synonym": "생태다양성",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T10060002",
+    "term": "순환경제",
+    "synonym": "순환자원경제",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T11010001",
+    "term": "연구개발",
+    "synonym": "연구개발사업",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T11030002",
+    "term": "전자공학",
+    "synonym": "전자전기공학",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T11040001",
+    "term": "정보기술",
+    "synonym": "정보통신기술",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T12020003",
+    "term": "생활안전",
+    "synonym": "생활안전관리",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T12020004",
+    "term": "교통안전",
+    "synonym": "교통안전관리",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02010005",
+    "term": "교육재정",
+    "synonym": "학교재정",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T02030004",
+    "term": "학교시설",
+    "synonym": "교육시설",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T02030004",
+    "term": "학교시설",
+    "synonym": "학습시설",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T02030005",
+    "term": "교육복지",
+    "synonym": "교육지원",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T02040003",
+    "term": "산학협력",
+    "synonym": "산학협동",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T02060001",
+    "term": "특수교육",
+    "synonym": "특수학교",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T03010006",
+    "term": "의료장비",
+    "synonym": "진료장비",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T03010006",
+    "term": "의료장비",
+    "synonym": "의료설비",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T05010004",
+    "term": "자치법규",
+    "synonym": "자치규칙",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T05030002",
+    "term": "법률상담",
+    "synonym": "법무상담",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T06010004",
+    "term": "세출예산",
+    "synonym": "지출예산",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T06010005",
+    "term": "세입예산",
+    "synonym": "수입예산",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T06030001",
+    "term": "지방재정",
+    "synonym": "지역재정",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T06050002",
+    "term": "기금운용",
+    "synonym": "기금운영",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T07070001",
+    "term": "수출입",
+    "synonym": "수출입통계",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T09020003",
+    "term": "관광산업",
+    "synonym": "관광사업",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T09030005",
+    "term": "도서관",
+    "synonym": "공공도서관",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T09030005",
+    "term": "도서관",
+    "synonym": "도서관시설",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T10010001",
+    "term": "환경보전",
+    "synonym": "환경보호",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T10020005",
+    "term": "기후적응",
+    "synonym": "기후대응",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T10030004",
+    "term": "기상특보",
+    "synonym": "기상경보",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T10030005",
+    "term": "기후정보",
+    "synonym": "기상정보",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T11030002",
+    "term": "전자공학",
+    "synonym": "전기공학",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12010001",
+    "term": "재난관리",
+    "synonym": "재해관리",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12010002",
+    "term": "재난예방",
+    "synonym": "재해예방",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12010002",
+    "term": "재난예방",
+    "synonym": "재난방지",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12010003",
+    "term": "재난대응",
+    "synonym": "재난대처",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12010003",
+    "term": "재난대응",
+    "synonym": "재해대응",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12010005",
+    "term": "재난통계",
+    "synonym": "재해통계",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12040001",
+    "term": "자연재해",
+    "synonym": "자연재난",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T12050004",
+    "term": "산업재해",
+    "synonym": "작업재해",
+    "reason": "문자열 유사도: 0.75",
+    "confidence": 0.75
+  },
+  {
+    "term_id": "T01010003",
+    "term": "공공기관 현황",
+    "synonym": "기관현황",
+    "reason": "문자열 유사도: 0.73",
+    "confidence": 0.7272727272727273
+  },
+  {
+    "term_id": "T05020002",
+    "term": "대법원 판례",
+    "synonym": "대법원판결",
+    "reason": "문자열 유사도: 0.73",
+    "confidence": 0.7272727272727273
+  },
+  {
+    "term_id": "T07020002",
+    "term": "자동차산업",
+    "synonym": "자동차제조업",
+    "reason": "문자열 유사도: 0.73",
+    "confidence": 0.7272727272727273
+  },
+  {
+    "term_id": "T08030001",
+    "term": "간편결제",
+    "synonym": "간편결제서비스",
+    "reason": "문자열 유사도: 0.73",
+    "confidence": 0.7272727272727273
+  }
+]

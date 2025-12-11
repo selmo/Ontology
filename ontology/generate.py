@@ -215,17 +215,18 @@ def generate_mc_term_rel_sql(data: Dict) -> str:
         if hierarchy_found:
             lines.append("")
 
-        # 동의어 관계 (하이브리드 구조)
+        # 동의어 관계 (타입별 구분, v3.12+)
+        # REL_TYPE: 'S' (Term→Term), 'SE' (Exact), 'SC' (Close), 'SR' (Related), 'SB' (Broader), 'SN' (Narrower)
         synonym_found = False
         for term in flat_terms:
             if term.get('synonyms'):
                 if not synonym_found:
-                    lines.append("-- 동의어 (Synonyms)")
+                    lines.append("-- 동의어 (Synonyms - Typed)")
                     synonym_found = True
 
                 synonyms = term['synonyms']
 
-                # Handle structured synonyms (v3.11+)
+                # Handle structured synonyms (v3.12+)
                 if isinstance(synonyms, dict):
                     # Term → Term synonyms
                     for synonym_term_id in synonyms.get('terms', []):
@@ -234,7 +235,47 @@ def generate_mc_term_rel_sql(data: Dict) -> str:
                             f"VALUES ('{term['id']}', 'S', '{synonym_term_id}');"
                         )
 
-                    # String synonyms
+                    # Exact synonyms
+                    for synonym_str in synonyms.get('exact', []):
+                        synonym_escaped = synonym_str.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'SE', '{synonym_escaped}');"
+                        )
+
+                    # Close synonyms
+                    for synonym_str in synonyms.get('close', []):
+                        synonym_escaped = synonym_str.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'SC', '{synonym_escaped}');"
+                        )
+
+                    # Related synonyms
+                    for synonym_str in synonyms.get('related', []):
+                        synonym_escaped = synonym_str.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'SR', '{synonym_escaped}');"
+                        )
+
+                    # Broader
+                    for synonym_str in synonyms.get('broader', []):
+                        synonym_escaped = synonym_str.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'SB', '{synonym_escaped}');"
+                        )
+
+                    # Narrower
+                    for synonym_str in synonyms.get('narrower', []):
+                        synonym_escaped = synonym_str.replace("'", "''")
+                        lines.append(
+                            f"INSERT INTO MC_TERM_REL (TERM_ID, REL_TYPE, REL_TERM_ID) "
+                            f"VALUES ('{term['id']}', 'SN', '{synonym_escaped}');"
+                        )
+
+                    # Legacy 'strings' field (backward compatibility)
                     for synonym_str in synonyms.get('strings', []):
                         synonym_escaped = synonym_str.replace("'", "''")
                         lines.append(
@@ -436,8 +477,8 @@ def generate_ontology_cypher(data: Dict) -> str:
 
         lines.append("")
 
-        # Synonyms (SYNONYM_OF) - Hybrid structure
-        lines.append("// Synonym Relations")
+        # Synonyms - Typed relationships (v3.12+)
+        lines.append("// Synonym Relations (Typed)")
 
         # Track processed bidirectional relationships
         processed_pairs = set()
@@ -446,7 +487,7 @@ def generate_ontology_cypher(data: Dict) -> str:
             if term.get('synonyms'):
                 synonyms = term['synonyms']
 
-                # Handle structured synonyms (v3.11+)
+                # Handle structured synonyms (v3.12+)
                 if isinstance(synonyms, dict):
                     # Term → Term SYNONYM_OF (bidirectional)
                     for synonym_term_id in synonyms.get('terms', []):
@@ -460,7 +501,52 @@ def generate_ontology_cypher(data: Dict) -> str:
                             )
                             processed_pairs.add(pair)
 
-                    # Term → Synonym node (unidirectional)
+                    # Exact synonyms
+                    for synonym_str in synonyms.get('exact', []):
+                        synonym_escaped = synonym_str.replace("'", "\\'")
+                        display_name = f"{synonym_str} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
+
+                    # Close synonyms
+                    for synonym_str in synonyms.get('close', []):
+                        synonym_escaped = synonym_str.replace("'", "\\'")
+                        display_name = f"{synonym_str} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
+
+                    # Related synonyms
+                    for synonym_str in synonyms.get('related', []):
+                        synonym_escaped = synonym_str.replace("'", "\\'")
+                        display_name = f"{synonym_str} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
+
+                    # Broader than (상위 개념)
+                    for synonym_str in synonyms.get('broader', []):
+                        synonym_escaped = synonym_str.replace("'", "\\'")
+                        display_name = f"{synonym_str} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:BROADER_THAN]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
+
+                    # Narrower than (하위 개념)
+                    for synonym_str in synonyms.get('narrower', []):
+                        synonym_escaped = synonym_str.replace("'", "\\'")
+                        display_name = f"{synonym_str} (:Synonym)"
+                        lines.append(
+                            f"MATCH (t:Term {{id: '{term['id']}'}}) "
+                            f"CREATE (t)-[:NARROWER_THAN]->(:Synonym {{value: '{synonym_escaped}', display_name: '{display_name}'}});"
+                        )
+
+                    # Legacy 'strings' field (backward compatibility)
                     for synonym_str in synonyms.get('strings', []):
                         synonym_escaped = synonym_str.replace("'", "\\'")
                         display_name = f"{synonym_str} (:Synonym)"

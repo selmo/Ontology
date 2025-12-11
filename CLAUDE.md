@@ -19,19 +19,20 @@
 
 `ontology/` 디렉토리는 **단일 마스터 파일(ontology.json)** 기반의 체계적인 분류·용어 시스템을 포함합니다.
 
-**버전:** 3.7.0
+**버전:** 3.12.0
 **구조:** 단일 마스터 (ontology.json)
-**최종 업데이트:** 2025-12-10
+**최종 업데이트:** 2025-12-11
 
 ### 빠른 참조
 
-**통계 (v3.7):**
+**통계 (v3.12):**
 - 12개 도메인
 - 376개 분류 (44개 중분류, 332개 소분류)
 - 221개 용어
-- 154개 동의어, 83개 연관관계
-- 20개 표준 등록, 368개 표준 레퍼런스
-  - **분류: 203개 (54.0%) - 218 레퍼런스** ⬆️
+- **470개 동의어** (타입별: Exact 41, Close 6, Related 366, Broader 12, Narrower 40, Term→Term 5)
+- 78개 연관관계
+- 24개 표준 등록, 405개 표준 레퍼런스
+  - 분류: 232개 (61.7%) - 255 레퍼런스
   - 용어: 140개 (63.3%) - 150 레퍼런스
 
 **주요 작업:**
@@ -59,6 +60,12 @@ python3 validate_ontology.py  # 0 errors, 0 warnings
 **스크립트:**
 - `generate.py` - ontology.json → generated/ 디렉토리에 모든 출력 파일 생성
 - `validate_ontology.py` - 구조적 정합성 검증 (10개 검증 항목)
+- `export_to_excel.py` - Excel 파일 생성 (분류, 용어, 동의어, 연관관계, 표준 레지스트리)
+- **SYNONYM 관리 스크립트 (v3.12):**
+  - `analyze_synonym_types.py` - 동의어 타입 자동 분류
+  - `suggest_close_matches.py` - Close Match 후보 추천
+  - `apply_close_matches.py` - 고신뢰도 Close Match 자동 적용
+  - `migrate_to_v312.py` - v3.11 → v3.12 마이그레이션
 
 **생성 디렉토리 (generated/):**
 자동 생성된 파일 (수정 금지):
@@ -75,6 +82,13 @@ python3 validate_ontology.py  # 0 errors, 0 warnings
 - `README.md` - 프로젝트 개요 및 사용법
 - `README_memgraph.md` - Memgraph 사용법
 - `context_schema.md` - JSON 스키마 상세
+- `SAMPLE_QUERIES.md` - Cypher/SQL 샘플 쿼리 (40개)
+- `SYNONYM_REFINEMENT_PROPOSAL.md` - v3.12 SYNONYM 타입 세분화 설계 문서
+
+**생성 파일:**
+- `ontology_master_data.xlsx` - Excel 마스터 데이터 (6개 시트, 66KB)
+- `synonym_categories.json` - 자동 분류 결과 (465개)
+- `close_match_suggestions.json` - Close Match 후보 (83개)
 
 ### 데이터 흐름
 
@@ -101,6 +115,15 @@ generated/
 - ✅ 생성 파일 분리 (`generated/` 디렉토리)
 - ✅ 데이터 동기화 불필요
 - ✅ 명명 일관성 (context.* → ontology.*)
+
+**v3.12 변경점 (SYNONYM 타입 세분화):**
+- ✅ **SKOS 기반 5가지 SYNONYM 타입** (Exact/Close/Related/Broader/Narrower)
+- ✅ **자동 분류 시스템** (패턴 기반 465개 동의어 자동 분류)
+- ✅ **Close Match 추천 엔진** (83개 후보, 6개 자동 적용)
+- ✅ **타입별 Cypher 관계** (:EXACT_SYNONYM, :CLOSE_SYNONYM, :RELATED_SYNONYM, :BROADER_THAN, :NARROWER_THAN)
+- ✅ **SQL REL_TYPE 확장** (CHAR(1) → VARCHAR(2), SE/SC/SR/SB/SN 코드)
+- ✅ **Excel 출력 강화** (타입별 동의어 시트)
+- ✅ **검색 정확도 향상** (Exact/Close 우선 검색 가능)
 
 ### ID 체계
 
@@ -259,14 +282,24 @@ DELETE_YN    CHAR(1)        -- 삭제 여부, 기본값 'N'
 README       CLOB           -- 연결 분류 ID (예: C01010001)
 ```
 
-**MC_TERM_REL (용어 관계)**
+**MC_TERM_REL (용어 관계)** ← v3.12: 타입 세분화
 ```sql
 TERM_ID     VARCHAR2(32)   -- 용어 ID
-REL_TYPE    CHAR(1)        -- 관계 유형 ('S': 동의어, 'T': 연관/계층)
+REL_TYPE    VARCHAR2(2)    -- 관계 유형 (v3.12 확장)
 REL_TERM_ID VARCHAR2(32)   -- 관계 대상 (동의어 텍스트 또는 용어 ID)
 ```
-- 동의어(S): 154개
-- 연관 용어 및 계층(T): 83개
+
+**REL_TYPE 코드 (v3.12):**
+- **Term → Term 관계:**
+  - `'S'`: Term → Term 동의어 (5개)
+  - `'T'`: 연관 관계 (78개)
+- **SYNONYM 타입별 (SKOS 기반):**
+  - `'SE'`: Exact Synonym - 완전 동의어 (41개)
+  - `'SC'`: Close Synonym - 유사어 (6개)
+  - `'SR'`: Related Synonym - 관련어 (366개)
+  - `'SB'`: Broader - 상위 개념 (12개)
+  - `'SN'`: Narrower - 하위 개념 (40개)
+- **총 동의어**: 470개 (Term 5 + String 465)
 
 **MC_STANDARD (표준 레지스트리)** ← v3.2+
 ```sql
@@ -309,15 +342,21 @@ NOTE          CLOB           -- 비고
 **노드 타입:**
 - `:Classification` - 분류 노드 (376개)
 - `:Term` - 용어 노드 (221개)
-- `:Synonym` - 동의어 노드 (154개)
-- `:Standard` - 표준 노드 (20개) ← v3.2+
+- `:Synonym` - 동의어 노드 (465개) ← v3.12: 타입별 구분
+- `:Standard` - 표준 노드 (24개) ← v3.2+
 
 **관계 타입:**
 - `:PARENT_OF` - 계층 관계 (분류↔분류, 용어↔용어)
 - `:BELONGS_TO` - 용어가 분류에 속함
-- `:SYNONYM_OF` - 용어의 동의어
-- `:RELATED_TO` - 용어 간 연관 관계
+- `:RELATED_TO` - 용어 간 연관 관계 (78개)
 - `:MAPPED_TO` - 표준 매핑 관계 ← v3.2+
+- **SYNONYM 관계 (v3.12 타입 세분화):**
+  - `:SYNONYM_OF` - Term → Term 동의어 (5개)
+  - `:EXACT_SYNONYM` - 완전 동의어 (41개)
+  - `:CLOSE_SYNONYM` - 유사어 (6개)
+  - `:RELATED_SYNONYM` - 관련어 (366개)
+  - `:BROADER_THAN` - 상위 개념 (12개)
+  - `:NARROWER_THAN` - 하위 개념 (40개)
 
 **노드 속성:**
 - `display_name` - 모든 노드에 `이름 (:라벨)` 형식으로 표시
@@ -344,12 +383,12 @@ NOTE          CLOB           -- 비고
 ```json
 {
   "metadata": {
-    "version": "3.6.0",
-    "last_updated": "2025-12-10",
-    "description": "MC 분류·용어 통합 체계 (단일 마스터 파일)"
+    "version": "3.12.0",
+    "last_updated": "2025-12-11",
+    "description": "MC 분류·용어 통합 체계 (SYNONYM 타입 세분화: SKOS 기반)"
   },
   "standards": {
-    "count": 20,
+    "count": 24,
     "registry": [...]
   },
   "domains": [
@@ -381,18 +420,25 @@ NOTE          CLOB           -- 비고
       "terms": [
         {
           "id": "T01010001",
-          "name_ko": "정부조직",
-          "name_en": "Government Organization",
+          "name_ko": "공공기관",
+          "name_en": "Public Institution",
           "acronym": null,
-          "description": "국가를 운영하는 행정 조직",
-          "synonyms": ["행정조직", "정부기구"],
+          "description": "국가 또는 지방자치단체가 설립·운영하는 기관",
+          "synonyms": {
+            "terms": ["T01010005"],
+            "exact": [],
+            "close": ["공기업", "공공단체", "공공조직"],
+            "related": ["공공기관정보", "기관현황"],
+            "broader": [],
+            "narrower": []
+          },
           "related_terms": ["T01010002"],
           "linked_clsf_id": "C01010001",
           "parent_id": null,
           "standard_refs": [
             {
               "standard_id": "STD-DATAGOkr",
-              "external_id": "정부조직",
+              "external_id": "공공기관",
               "match_type": "EXACT_MATCH",
               "confidence": 0.95
             }
@@ -475,23 +521,34 @@ python3 validate_ontology.py
 - **v3.5.0** (2025-12-10): 용어 표준 레퍼런스 완성 (140개 용어, 63% 커버리지, 255개 총 매핑)
 - **v3.6** (2025-12-10): **단일 마스터 구조** (ontology.json), 파일 정리, 명명 일관성
 - **v3.7** (2025-12-10): **분류 표준 레퍼런스 확장** (23.9% → 54.0%, +113개 매핑, 목표 초과 달성)
+- **v3.8** (2025-12-11): 동의어 대폭 확장 (87→485개, 100% 커버리지 달성)
+- **v3.9** (2025-12-11): 디지털커머스·과학기술 표준 레퍼런스 완성 (전체 12개 도메인 50%+ 달성)
+- **v3.10** (2025-12-11): 관계 재구조화 - SIMILAR_TO 추가, RELATED_TO 제거
+- **v3.11** (2025-12-11): SYNONYM 하이브리드 구조 및 RELATED_TO 조건부 복원
+- **v3.12** (2025-12-11): **SYNONYM 타입 세분화 (SKOS 기반)** - 5가지 관계 타입 (Exact/Close/Related/Broader/Narrower)
 
-## 주요 성과 (v2.1 → v3.7)
+## 주요 성과 (v2.1 → v3.12)
 
 - **분류:** 175 → 376개 (+115%)
 - **용어:** 124 → 221개 (+78%)
+- **동의어:** 87 → 470개 (+440%, SKOS 기반 타입 세분화)
+  - Exact: 41개, Close: 6개, Related: 366개, Broader: 12개, Narrower: 40개, Term→Term: 5개
 - **도메인:** 10 → 12개 (디지털커머스, 과학기술 추가)
-- **표준 등록:** 0 → 20개 (국제 8 + 국내 6 + 한국형 6)
-- **표준 레퍼런스:** 0 → 368개
-  - **분류 매핑: 90/376 (24%) → 203/376 (54%)** ⬆️
-  - 용어 매핑: 140/221 (63.3%)
+- **표준 등록:** 0 → 24개 (국제 8 + 국내 6 + 한국형 6 + 추가 4)
+- **표준 레퍼런스:** 0 → 405개
+  - 분류 매핑: 90/376 (24%) → 232/376 (61.7%)
+  - 용어 매핑: 0/221 (0%) → 140/221 (63.3%)
 - **분류 설명:** 26% → 100% 커버리지
 - **검증 체계:** 6개 → 10개 항목 (표준 레퍼런스 포함)
+- **관계 타입:** 2개 → 8개 (SKOS 기반 Synonym 타입 세분화)
 
 ## 다음 단계 (권장)
 
-1. ~~**분류 표준 레퍼런스 확장**: 24% → 50%+~~ ✅ 완료 (v3.7: 54%)
-2. **디지털커머스·과학기술 도메인 표준 매핑**: 27% → 50%+ (e-commerce, scientific taxonomy)
-3. **SKOS RDF 출력 구현**: 국제 표준 호환 (RDF/Turtle/JSON-LD)
-4. **동의어 확장**: 154 → 250개 (검색 성능 향상)
-5. **공통표준용어 자동 매핑**: 9,027개 표준용어 연계
+1. ~~**분류 표준 레퍼런스 확장**: 24% → 50%+~~ ✅ 완료 (v3.7: 61.7%)
+2. ~~**동의어 확장**: 154 → 250개~~ ✅ 완료 (v3.12: 470개)
+3. ~~**SYNONYM 타입 세분화**: SKOS 기반 구조~~ ✅ 완료 (v3.12)
+4. **Close Match 수동 검토**: 77개 후보 (confidence 0.7-0.9) → 20~30개 추가 예상
+5. **SKOS RDF 출력 구현**: 국제 표준 호환 (RDF/Turtle/JSON-LD)
+6. **디지털커머스·과학기술 도메인 표준 매핑 강화**: e-commerce, scientific taxonomy 추가 매핑
+7. **공통표준용어 자동 매핑**: 9,027개 표준용어 연계
+8. **타입별 동의어 검색 최적화**: Exact/Close 우선 검색 알고리즘

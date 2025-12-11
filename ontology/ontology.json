@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.13.0",
+    "version": "3.13.1",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (공통표준용어 연계: +219개 표준용어)"
+    "description": "MC 분류·용어 통합 체계 (Close Match 확장: +48개)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -1119,10 +1119,10 @@
             "exact": [
               "IT자산"
             ],
-            "close": [],
-            "related": [
+            "close": [
               "정보자원관리"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -1229,10 +1229,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "기관이름",
+            "close": [
               "기관명칭"
+            ],
+            "related": [
+              "기관이름"
             ],
             "broader": [],
             "narrower": []
@@ -1288,10 +1289,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "부서이름",
+            "close": [
               "부서명칭"
+            ],
+            "related": [
+              "부서이름"
             ],
             "broader": [],
             "narrower": []
@@ -1319,10 +1321,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "조직이름",
+            "close": [
               "조직명칭"
+            ],
+            "related": [
+              "조직이름"
             ],
             "broader": [],
             "narrower": []
@@ -1915,7 +1918,9 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "관계부서명칭"
+            ],
             "related": [
               "관련부서명",
               "관계부서이름",
@@ -1925,7 +1930,6 @@
               "연관부서명",
               "연관부서이름",
               "관련부서명칭",
-              "관계부서명칭",
               "유관부서명칭"
             ],
             "broader": [],
@@ -2858,9 +2862,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "교육복지사업"
+            ],
             "related": [
-              "교육복지사업",
               "교육지원"
             ],
             "broader": [],
@@ -2881,10 +2886,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "대학교육",
+            "close": [
               "고등교육기관"
+            ],
+            "related": [
+              "대학교육"
             ],
             "broader": [],
             "narrower": []
@@ -2939,9 +2945,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "산학연협력"
+            ],
             "related": [
-              "산학연협력",
               "대학-기업협력",
               "산학협동"
             ],
@@ -2963,9 +2970,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "유아교육기관"
+            ],
             "related": [
-              "유아교육기관",
               "어린이집",
               "유치원"
             ],
@@ -3018,11 +3026,12 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "특수교육기관"
+            ],
             "related": [
               "특수학교",
-              "장애인교육",
-              "특수교육기관"
+              "장애인교육"
             ],
             "broader": [],
             "narrower": []
@@ -3207,10 +3216,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "교육과정이름",
+            "close": [
               "교육과정명칭"
+            ],
+            "related": [
+              "교육과정이름"
             ],
             "broader": [],
             "narrower": []
@@ -4631,10 +4641,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "약국시설"
             ],
+            "related": [],
             "broader": [],
             "narrower": [
               "조제약국"
@@ -5163,10 +5173,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "병원이름",
+            "close": [
               "병원명칭"
+            ],
+            "related": [
+              "병원이름"
             ],
             "broader": [],
             "narrower": []
@@ -6153,9 +6164,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "사회보험제도"
+            ],
             "related": [
-              "사회보험제도",
               "4대보험"
             ],
             "broader": [],
@@ -6277,10 +6289,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "취약층"
+            ],
             "related": [
               "사회적약자",
-              "취약층",
               "소외계층"
             ],
             "broader": [],
@@ -6333,10 +6346,10 @@
             "exact": [
               "Aged Society"
             ],
-            "close": [],
-            "related": [
+            "close": [
               "고령화사회"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -7603,9 +7616,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "법령정보"
+            ],
             "related": [
-              "법령정보",
               "법규",
               "법제"
             ],
@@ -7886,9 +7900,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "법률지원"
+            ],
             "related": [
-              "법률지원",
               "법률복지",
               "법무서비스"
             ],
@@ -8243,10 +8258,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "법원이름",
+            "close": [
               "법원명칭"
+            ],
+            "related": [
+              "법원이름"
             ],
             "broader": [],
             "narrower": []
@@ -11831,11 +11847,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "자동차제조업",
               "차량산업"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -11864,9 +11880,10 @@
             "exact": [
               "BT산업"
             ],
-            "close": [],
+            "close": [
+              "생명공학산업"
+            ],
             "related": [
-              "생명공학산업",
               "바이오테크"
             ],
             "broader": [],
@@ -11895,10 +11912,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "3차산업",
+            "close": [
               "서비스산업"
+            ],
+            "related": [
+              "3차산업"
             ],
             "broader": [],
             "narrower": []
@@ -12270,11 +12288,12 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "수출입통계"
+            ],
             "related": [
               "무역",
-              "대외무역",
-              "수출입통계"
+              "대외무역"
             ],
             "broader": [],
             "narrower": []
@@ -12369,12 +12388,13 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "기업체명",
+              "기업명칭"
+            ],
+            "related": [
               "기업이름",
               "기업체이름",
-              "기업명칭",
               "기업체명칭"
             ],
             "broader": [],
@@ -12403,10 +12423,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "업종이름",
+            "close": [
               "업종명칭"
+            ],
+            "related": [
+              "업종이름"
             ],
             "broader": [],
             "narrower": []
@@ -12434,10 +12455,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "기업체번호"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -12520,12 +12541,13 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "제조회사명",
+              "제조사명칭"
+            ],
             "related": [
               "제조사이름",
-              "제조회사명",
               "제조회사이름",
-              "제조사명칭",
               "제조회사명칭"
             ],
             "broader": [],
@@ -13646,9 +13668,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "간편결제서비스"
+            ],
             "related": [
-              "간편결제서비스",
               "모바일결제",
               "페이"
             ],
@@ -14766,10 +14789,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "관광객통계"
+            ],
             "related": [
               "여행통계",
-              "관광객통계",
               "방문객통계"
             ],
             "broader": [],
@@ -14798,12 +14822,12 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
+              "관광업",
               "관광사업",
-              "여행산업",
-              "관광업"
+              "여행산업"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -14822,11 +14846,12 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "여행사업"
+            ],
             "related": [
               "여행사",
-              "관광업체",
-              "여행사업"
+              "관광업체"
             ],
             "broader": [],
             "narrower": []
@@ -14949,11 +14974,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "공공도서관",
               "도서관시설"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -15047,10 +15072,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "지역축제"
             ],
+            "related": [],
             "broader": [],
             "narrower": [
               "문화축제",
@@ -15370,10 +15395,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "문화재이름",
+            "close": [
               "문화재명칭"
+            ],
+            "related": [
+              "문화재이름"
             ],
             "broader": [],
             "narrower": []
@@ -17863,9 +17889,10 @@
             "exact": [
               "R&D투자"
             ],
-            "close": [],
+            "close": [
+              "연구개발사업"
+            ],
             "related": [
-              "연구개발사업",
               "기술개발"
             ],
             "broader": [],
@@ -17957,10 +17984,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "물리과학"
             ],
+            "related": [],
             "broader": [],
             "narrower": [
               "물리학연구"
@@ -19049,9 +19076,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "시설안전"
+            ],
             "related": [
-              "시설안전",
               "건축물안전",
               "구조물안전"
             ],
@@ -19080,9 +19108,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "생활안전관리"
+            ],
             "related": [
-              "생활안전관리",
               "일상안전",
               "시민안전"
             ],
@@ -19104,9 +19133,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "교통안전관리"
+            ],
             "related": [
-              "교통안전관리",
               "도로안전",
               "차량안전"
             ],
@@ -19429,11 +19459,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "산업사고",
               "작업재해"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -19452,10 +19482,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "구조물이름",
+            "close": [
               "구조물명칭"
+            ],
+            "related": [
+              "구조물이름"
             ],
             "broader": [],
             "narrower": []

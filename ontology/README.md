@@ -1,11 +1,11 @@
 # MC 분류·용어 통합 체계
 
-**버전:** 3.12.0
+**버전:** 3.13.0
 **최종 업데이트:** 2025-12-11
 **구조:** 단일 마스터 파일 (ontology.json)
 
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-3.12.0-green.svg)](README.md)
+[![Version](https://img.shields.io/badge/version-3.13.0-green.svg)](README.md)
 [![Data Source](https://img.shields.io/badge/source-data.go.kr-orange.svg)](https://www.data.go.kr)
 
 ## 개요
@@ -19,26 +19,26 @@
 - 🔄 **다중 출력**: SQL, Cypher, JSON, TXT, Excel 자동 생성
 - ✅ **높은 품질**: 자동 검증 (0 오류, 0 경고)
 
-## 통계 (v3.12)
+## 통계 (v3.13)
 
 | 항목 | 개수 | 변경 |
 |------|------|------|
 | 도메인 | 12개 | - |
 | 분류 | 376개 (44개 중분류, 332개 소분류) | - |
-| 용어 | 221개 | - |
+| **용어** | **440개** | **+219 (공통표준용어 연계)** |
 | **동의어 (총계)** | **470개** | - |
 | └ Term → Term | 5개 | - |
-| └ **Exact (완전 동의어)** | **41개** | **✨ NEW** |
-| └ **Close (유사어)** | **6개** | **✨ NEW** |
-| └ **Related (관련어)** | **366개** | **✨ NEW** |
-| └ **Broader (상위 개념)** | **12개** | **✨ NEW** |
-| └ **Narrower (하위 개념)** | **40개** | **✨ NEW** |
+| └ Exact (완전 동의어) | 41개 | - |
+| └ Close (유사어) | 6개 | - |
+| └ Related (관련어) | 366개 | - |
+| └ Broader (상위 개념) | 12개 | - |
+| └ Narrower (하위 개념) | 40개 | - |
 | 연관 용어 (RELATED_TO) | 78개 | - |
 | 분류 유사 관계 (SIMILAR_TO) | 42개 | - |
 | 표준 레지스트리 | 24개 | - |
-| 표준 레퍼런스 | 405개 (분류 255개, 용어 150개) | - |
+| **표준 레퍼런스** | **624개 (분류 255개, 용어 369개)** | **+219** |
 | 분류 커버리지 | 232/376 (61.7%) | - |
-| 용어 커버리지 | 140/221 (63.3%) | - |
+| **용어 커버리지** | **359/440 (81.6%)** | **+18.3%p** |
 | 동의어 커버리지 | 182/182 (100.0%) | - |
 
 ## 12개 도메인
@@ -50,16 +50,16 @@
 5. **05 법률** (Law)
 6. **06 재정금융** (Finance)
 7. **07 산업경제** (Industry & Economy)
-8. **08 재난안전** (Disaster & Safety)
+8. **08 디지털커머스** (Digital Commerce)
 9. **09 문화관광** (Culture & Tourism)
 10. **10 환경기상** (Environment & Weather)
 11. **11 과학기술** (Science & Technology)
-12. **12 국토교통** (Land & Transport)
+12. **12 재난안전** (Disaster & Safety)
 
 ## 파일 구조
 
 ### 마스터 파일
-- **ontology.json** - 모든 데이터의 단일 원천 (376개 분류, 221개 용어, 표준 레퍼런스 포함)
+- **ontology.json** - 모든 데이터의 단일 원천 (376개 분류, 440개 용어, 표준 레퍼런스 포함)
 
 ### 스크립트
 - **generate.py** - ontology.json → generated/ 디렉토리에 모든 출력 파일 생성
@@ -90,6 +90,7 @@
 
 ### 생성 파일
 - **ontology_master_data.xlsx** - Excel 마스터 데이터 (6개 시트)
+- **selected_standard_terms.json** - 선별된 공통표준용어 (219개)
 - **synonym_categories.json** - 자동 분류 결과 (465개)
 - **close_match_suggestions.json** - Close Match 후보 (83개)
 
@@ -344,22 +345,32 @@ RETURN t.name_ko, s.value AS broader_concept;
 - ✅ 필드 값 일치
 - ✅ 표준 레퍼런스 유효성
 
-### 검증 결과 (v3.12)
+### 검증 결과 (v3.13)
 ```bash
 $ python3 validate_ontology.py
 
 ✅ 모든 검증 통과!
 총계: 0 오류, 0 경고, 9 정보
 - JSON 분류: 376개, SQL 분류: 376개, TXT 분류: 376개
-- JSON 용어: 221개, SQL 용어: 221개, TXT 용어: 221개
+- JSON 용어: 440개, SQL 용어: 440개, TXT 용어: 440개
 - 분류 표준 레퍼런스: 232개 (255개 매핑)
-- 용어 표준 레퍼런스: 140개 (150개 매핑)
+- 용어 표준 레퍼런스: 359개 (369개 매핑)
 - 동의어: 470개 (5타입: SE 41, SC 6, SR 366, SB 12, SN 40)
 ```
 
 ## 버전 이력
 
-### v3.12 (2025-12-11) - 현재 버전
+### v3.13 (2025-12-11) - 현재 버전
+- 🚀 **공통표준용어 연계**: 9,027개 공공데이터 표준용어 중 219개 선별 추가
+- 📈 **용어 대폭 확장**: 221개 → 440개 (+219개, +99% 증가)
+- 🎯 **용어 커버리지 향상**: 63.3% → 81.6% (+18.3%p)
+- 📊 **표준 레퍼런스 자동 매핑**: STD-STDTERM 219개 (EXACT_MATCH, confidence 1.0)
+- 🔧 **ID 생성 로직 강화**: 하위 용어(children) 재귀 체크, 충돌 완전 방지
+- 🐛 **검증 스크립트 버그 수정**: 이스케이프 따옴표(`''`) 처리 개선
+- 📋 **도메인별 균형 추가**: 25개씩 배분 (번호, 코드, 명, 일자 등 핵심 항목 우선)
+- ✅ **검증 완료**: 0 errors, 0 warnings (JSON=440, SQL=440, TXT=440)
+
+### v3.12 (2025-12-11)
 - 🎯 **SKOS 기반 SYNONYM 타입 세분화**: 5가지 관계 타입
   - Exact (41개): 완전 동의어 (약어, 영문명)
   - Close (6개): 유사어 (혼용 가능한 근접 개념)

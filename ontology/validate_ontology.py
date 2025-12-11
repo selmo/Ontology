@@ -82,7 +82,8 @@ def parse_sql(filepath: str) -> Tuple[List[Dict], List[Dict]]:
     terms = []
 
     # Parse MC_CLSF INSERT statements
-    clsf_pattern = r"INSERT INTO MC_CLSF \(CLSF_ID, CLSF_NAME, CLSF_DESC, PRT_CLSF_ID, GROUP_YN, README\) VALUES \('([^']+)', '([^']+)', '([^']+)', '([^']+)', '([YN])', '([^']*)'\);"
+    # Pattern handles escaped quotes ('') in text fields
+    clsf_pattern = r"INSERT INTO MC_CLSF \(CLSF_ID, CLSF_NAME, CLSF_DESC, PRT_CLSF_ID, GROUP_YN, README\) VALUES \('([^']+)', '((?:[^']|'')+)', '((?:[^']|'')*)', '([^']+)', '([YN])', '((?:[^']|'')*)'\);"
 
     for match in re.finditer(clsf_pattern, content):
         classifications.append({
@@ -95,7 +96,8 @@ def parse_sql(filepath: str) -> Tuple[List[Dict], List[Dict]]:
         })
 
     # Parse MC_TERM INSERT statements (with DIC_ID instead of PRT_TERM_ID)
-    term_pattern = r"INSERT INTO MC_TERM \(TERM_ID, TERM_NAME, TERM_NAME_EN, ACRONYM, TERM_DESC, DIC_ID, README\) VALUES \('([^']+)', '([^']+)', '([^']+)', '([^']*)', '([^']*)', '([^']+)', '([^']+)'\);"
+    # Pattern handles escaped quotes ('') in text fields
+    term_pattern = r"INSERT INTO MC_TERM \(TERM_ID, TERM_NAME, TERM_NAME_EN, ACRONYM, TERM_DESC, DIC_ID, README\) VALUES \('([^']+)', '((?:[^']|'')+)', '((?:[^']|'')*)', '((?:[^']|'')*)', '((?:[^']|'')*)', '([^']+)', '([^']+)'\);"
 
     for match in re.finditer(term_pattern, content):
         terms.append({

@@ -1,0 +1,1973 @@
+[
+  {
+    "name": "기관명",
+    "description": "사회생활의 영역에서 일정한 역할과 목적을 위하여 설치한 기구나 조직의 이름",
+    "acronym": "INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "기관이름, 기관명칭",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "민원명",
+    "description": "주민이 행정 기관에 대하여 원하는 바를 요구한 것의 이름",
+    "acronym": "CVLCPT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "부서명",
+    "description": "기관이나 단체 등에서 일이나 사업의 체계에 따라 나뉜 사무의 각 부문의 이름",
+    "acronym": "DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "부서이름, 부서명칭",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "조직명",
+    "description": "특정한 목적을 달성하려고 여러 개체나 요소를 모아서 체계를 이룬 집단의 이름",
+    "acronym": "OGNZ_NM",
+    "data_domain": "명V200",
+    "synonyms": "조직이름, 조직명칭",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "기관코드",
+    "description": "사회생활의 영역에서 일정한 역할과 목적을 위하여 설치한 기구나 조직을 나타내는 기호 체계",
+    "acronym": "INST_CD",
+    "data_domain": "코드C7",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "민원인명",
+    "description": "행정 기관에 민원의 처리를 요구하는 자연인 또는 단체의 이름",
+    "acronym": "CVLPR_NM",
+    "data_domain": "명V100",
+    "synonyms": "민원인이름",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "조직도명",
+    "description": "정부나 기업 따위와 같은 조직체의 구조와 권한 관계를 한눈에 알 수 있도록 나타낸 그림표의 이름",
+    "acronym": "ORGCHT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "조직설명",
+    "description": "특정한 목적을 달성하려고 여러 개체나 요소를 모아서 체계를 이룬 집단에 대한 설명",
+    "acronym": "OGNZ_EXPLN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "감사기관명",
+    "description": "다른 행정 기관이 행하는 행정 사무의 처리를 감시하고 검사하는 권한을 가지는 기관의 이름",
+    "acronym": "ADT_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "감정기관명",
+    "description": "감정 평가를 시행하는 조직의 이름",
+    "acronym": "APRS_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "검사기관명",
+    "description": "사실이나 일의 상태 또는 물질의 구성 성분 따위를 조사하여 옳고 그름과 낫고 못함을 판단하는 기관의 이름",
+    "acronym": "INSP_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "검사부서명",
+    "description": "사실이나 일의 상태 또는 물질의 구성 성분 따위를 조사하여 옳고 그름과 낫고 못함을 판단하는 일을 수행하는 기관이나 단체의 사무 조직의 이름",
+    "acronym": "INSP_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "검토부서명",
+    "description": "어떤 사실이나 내용을 분석하여 따지는 기관이나 단체의 사무 각 부문의 이름",
+    "acronym": "RVW_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "결재부서명",
+    "description": "결정할 권한이 있는 상관이 부하가 제출한 안건을 검토하여 허가하거나 승인하는 일을 수행하는 기관이나 단체의 사무 조직의 이름",
+    "acronym": "ATRZ_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "결제기관명",
+    "description": "증권 또는 대금을 주고받는 매매 당사자 사이의 거래 관계를 끝맺는 일을 수행하는 기관의 이름",
+    "acronym": "STLM_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "겸직부서명",
+    "description": "자기의 본디 직무 외에 다른 직무를 겸하는 부서의 이름",
+    "acronym": "CCPS_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "계약기관명",
+    "description": "관련되는 사람이나 조직체 사이에서 서로 지켜야 할 의무에 대하여 글이나 말로 정한 약속을 체결한 상대방 기관의 이름",
+    "acronym": "CTRT_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "계약부서명",
+    "description": "관련되는 사람이나 조직체 사이에서 서로 지켜야 할 의무를 글이나 말로 정하는 업무를 수행하는 기관이나 단체의 사무 조직의 이름",
+    "acronym": "CTRT_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "고객부서명",
+    "description": "상점 등에 물건을 사러 오는 손님이나 단골로 오는 손님이 속해 있는 기관이나 단체의 사무 각 부문의 이름",
+    "acronym": "CUST_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "고발기관명",
+    "description": "세상에 잘 알려지지 않은 잘못이나 비리 따위를 드러내어 알린 기관의 이름",
+    "acronym": "ACSTN_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "공고기관명",
+    "description": "국가 기관이나 공공 단체에서 일정한 사항을 일반 대중에게 알리려고 광고 또는 게시 등의 방법으로 알린 기관의 이름",
+    "acronym": "PBANC_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "공공기관명",
+    "description": "국가나 사회의 구성원에게 두루 관계되는 기관의 이름",
+    "acronym": "PBNST_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "공표부서명",
+    "description": "여러 사람에게 널리 드러내어 알리는 기관이나 단체의 사무 각 부문의 이름",
+    "acronym": "OFANC_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "관계기관명",
+    "description": "서로 관계나 관련이 있는 기관의 이름",
+    "acronym": "REL_INST_NM",
+    "data_domain": "명V200",
+    "synonyms": "관련기관명, 유관기관명",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "관계부서명",
+    "description": "어떠한 업무나 사무 등에 연관이 있는 기관이나 단체의 사무 각 부문의 이름",
+    "acronym": "REL_DEPT_NM",
+    "data_domain": "명V200",
+    "synonyms": "관련부서명, 관계부서이름, 관련부서이름, 유관부서명, 유관부서이름, 연관부서명, 연관부서이름, 관련부서명칭, 관계부서명칭, 유관부서명칭",
+    "priority": 1,
+    "domain_code": "01"
+  },
+  {
+    "name": "대학교명",
+    "description": "고등 교육을 베푸는 교육 기관이 이름",
+    "acronym": "UNIV_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "입학일자",
+    "description": "공부하려고 학교 등에 들어간 날짜",
+    "acronym": "MTCLTN_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업일자",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마친 날짜",
+    "acronym": "GRDTN_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "중학교명",
+    "description": "초등학교와 고등학교 사이에 중등 보통 교육을 실시하기 위한 학교의 이름",
+    "acronym": "MDSCHL_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "고등학교명",
+    "description": "중학교를 졸업한 사람을 입학시켜 고등 보통 교육과 실업 교육을 실시하는 학교의 이름",
+    "acronym": "HGSCHL_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "교육과정명",
+    "description": "교육 내용과 관련하여, 교과의 배열과 조직을 체계화한 전체적인 계획의 이름",
+    "acronym": "CRCLM_NM",
+    "data_domain": "명V200",
+    "synonyms": "교육과정이름, 교육과정명칭",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "성적서번호",
+    "description": "해 온 일의 결과로 얻은 실적을 분석한 보고서에 부여하는 식별 번호",
+    "acronym": "SCRPT_NO",
+    "data_domain": "번호V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "전공학과명",
+    "description": "어느 한 분야를 전문적으로 연구하는 과목 중 교수 또는 연구의 편의를 위하여 구분한 학술의 분과의 이름",
+    "acronym": "MJR_SCSBJT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업학교명",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마치고 나온 학교의 이름",
+    "acronym": "GRDTN_SCHL_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "입학예정일자",
+    "description": "공부하려고 학교 등에 들어가는 시기를 미리 정해 놓은 날짜",
+    "acronym": "MTCLTN_PRNMNT_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업예정일자",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마치는 시기를 미리 정하거나 생각해 놓은 날짜",
+    "acronym": "GRDTN_PRNMNT_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "유지보수업체명",
+    "description": "시스템을 항상 최상의 운전 상태로 유지하려고 각 장치의 시험, 조정, 수리, 복구 따위의 작업을 하는 업체의 이름",
+    "acronym": "MNTN_BZENTY_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "교육과정일련번호",
+    "description": "교육 내용과 관련하여, 교과의 배열과 조직을 체계화한 전체적인 계획에 일정한 방식으로 연속되게 매긴 번호",
+    "acronym": "CRCLM_SN",
+    "data_domain": "일련번호N22",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업증명서파일명",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마친 사실을 증명하는 문서 파일의 이름",
+    "acronym": "GRDTN_PRDOC_FILE_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "02"
+  },
+  {
+    "name": "수업료",
+    "description": "학생이 수업의 대가로 치르는 요금",
+    "acronym": "TTFE",
+    "data_domain": "요금N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "입학금",
+    "description": "입학할 때에 학교에 내는 돈의 액수",
+    "acronym": "ADMFE",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업월",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마치는 월",
+    "acronym": "GRDTN_MM",
+    "data_domain": "월C2",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "성적점수",
+    "description": "하여 온 일의 결과로 얻은 실적 또는 학생들이 배운 지식, 기능, 태도 따위를 평가한 결과를 성적으로 나타낸 점수",
+    "acronym": "SCRE_SCR",
+    "data_domain": "수N7",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "수업일수",
+    "description": "교사가 학생에게 지식이나 기능을 가르쳐 준 날의 수",
+    "acronym": "LSN_DAY_CNT",
+    "data_domain": "수N7",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "수업주수",
+    "description": "교사가 학생에게 지식이나 기능을 가르쳐 준 주(週)의 수",
+    "acronym": "LSN_WKCNT",
+    "data_domain": "수N2",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "입학연도",
+    "description": "공부하려고 학교 등에 들어가는 연도",
+    "acronym": "MTCLTN_YR",
+    "data_domain": "연도C4",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "입학연월",
+    "description": "공부하려고 학교 등에 들어가는 연도와 월",
+    "acronym": "MTCLTN_YM",
+    "data_domain": "연월C6",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업여부",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마쳤는지 여부",
+    "acronym": "GRDTN_YN",
+    "data_domain": "여부C1",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업연도",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마치는 연도",
+    "acronym": "GRDTN_YR",
+    "data_domain": "연도C4",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "졸업연월",
+    "description": "학생이 규정에 따라 소정의 교과 과정을 마치는 연도와 월",
+    "acronym": "GRDTN_YM",
+    "data_domain": "연월C6",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "02"
+  },
+  {
+    "name": "병원명",
+    "description": "환자를 진찰, 치료하는 데에 필요한 설비를 갖추어 놓은 곳의 이름",
+    "acronym": "HSPTL_NM",
+    "data_domain": "명V100",
+    "synonyms": "병원이름, 병원명칭",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "약품명",
+    "description": "병이나 상처 따위를 고치거나 예방하려고 먹거나 바르거나 주사하는 물질의 이름",
+    "acronym": "MDCN_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "의사명",
+    "description": "일정한 자격을 가지고 병을 고치는 것을 직업으로 하는 사람의 이름",
+    "acronym": "DR_NM",
+    "data_domain": "명V100",
+    "synonyms": "의사이름",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "담당의사명",
+    "description": "병원 등에서 환자의 진료를 맡은, 일정한 자격을 가지고 병을 고치는 것을 직업으로 하는 사람의 이름",
+    "acronym": "TKCG_DR_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "건강검진일자",
+    "description": "몸의 건강 상태를 검사하는 의학적 진찰을 하는 날짜",
+    "acronym": "HLTH_CKUP_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "의사면허번호",
+    "description": "의과 대학이나 의학 전문 대학원을 졸업하거나 졸업 예정인 사람이 의사 국가 고시에 합격하면 발급받는, 의사로서 의료 행위를 할 수 있게 자격을 허가하는 증서에 부여하는 식별 번호",
+    "acronym": "DR_LCNS_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "요양기관전화번호",
+    "description": "환자를 진료하거나 환자에게 약을 주는 기구나 조직의 전화번호",
+    "acronym": "RCPR_INST_TELNO",
+    "data_domain": "전화번호V11",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "03"
+  },
+  {
+    "name": "의사수",
+    "description": "일정한 자격을 가지고 병을 고치는 것을 직업으로 하는 사람의 수",
+    "acronym": "DR_CNT",
+    "data_domain": "수N14",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "간호사수",
+    "description": "의사의 진료를 돕고 환자를 돌보는 일을 하는, 법으로 자격이 부여된 사람의 수",
+    "acronym": "NRS_CNT",
+    "data_domain": "수N10",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "건의사항",
+    "description": "개인이나 단체가 의견이나 희망을 내놓은 일의 항목이나 내용",
+    "acronym": "SGST_MTTR",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "문의사항",
+    "description": "물어서 의논하는 항목이나 내용",
+    "acronym": "INQRY_MTTR",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "유의사항",
+    "description": "마음에 새겨 두어 조심하며 관심을 가져야 하는 항목이나 내용",
+    "acronym": "CTN_MTTR",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "주의사항",
+    "description": "마음에 새겨 두고 조심해야 하는 항목이나 내용",
+    "acronym": "CUTN_MTTR",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "비동의사유",
+    "description": "다른 사람의 행위를 승인하거나 시인하지 않은 이유",
+    "acronym": "DSAG_RSN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "요양기관기호",
+    "description": "환자를 진료하거나 환자에게 약을 주는 기구나 조직을 식별하기 위해 부여하는 부호 또는 문자",
+    "acronym": "RCPR_INST_SYMBL",
+    "data_domain": "번호V100",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "03"
+  },
+  {
+    "name": "수당명",
+    "description": "정해진 봉급 이외에 따로 주는 보수의 이름",
+    "acronym": "ALW_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "수급자명",
+    "description": "급여, 연금, 배급 따위를 받은 사람의 이름",
+    "acronym": "RECPNT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "장애인명",
+    "description": "신체의 일부에 장애가 있거나 정신 능력이 원활하지 못해 일상생활이나 사회생활에서 어려움이 있는 사람의 이름",
+    "acronym": "PWDBS_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "수당지급일자",
+    "description": "정해진 봉급 이외에 따로 주는 보수를 지급한 날짜",
+    "acronym": "ALW_GIVE_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금계좌번호",
+    "description": "국가나 사회에 특별한 공로가 있거나 일정 기간 동안 국가 기관에 복무한 사람에게 해마다 주는 돈을 관리하는 계좌에 부여하는 식별 번호",
+    "acronym": "PN_ACTNO",
+    "data_domain": "계좌번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금지급일자",
+    "description": "연금 수급자에게 정기적으로 연금이 지급된 날짜",
+    "acronym": "PN_GIVE_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "장애인정일자",
+    "description": "신체 기관이 본래의 제 기능을 하지 못하거나 정신 능력이 원활하지 못한 상태를 확실히 그렇다고 여긴 날짜",
+    "acronym": "DSBLTY_RCG_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "국민연금등급명",
+    "description": "가입자, 사용자 및 국가로부터 일정액의 보험료를 받고 노령연금, 유족연금, 장애연금 등을 지급함으로써 국가의 안정성을 보장하는 제도를 위해 치르는 요금을 일정한 분류에 의해 여러 층으로 구분한 단계의 이름",
+    "acronym": "NPN_GRD_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "장애인등록번호",
+    "description": "장애인복지법'에서 규정하고 있는 '장애인'임을 확인 및 증명하는 절차에 의해 등록하는 것에 부여하는 식별 번호",
+    "acronym": "PWDBS_REG_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "국민연금상실일자",
+    "description": "노령・장애・사망 따위로 소득 획득 능력이 없어졌을 때 국가가 생활 보장을 위하여 정기적으로 지급하는 금액을 위한 보험의 자격이 소멸된 날짜",
+    "acronym": "NPN_LOSE_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "국민연금취득일자",
+    "description": "노령・장애・사망 따위로 소득 획득 능력이 없어졌을 때 국가가 생활 보장을 위하여 정기적으로 지급하는 금액을 위한 보험의 자격을 자기 것으로 만들어 가진 날짜",
+    "acronym": "NPN_ACQS_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금계좌취급자명",
+    "description": "국가나 사회에 특별한 공로가 있거나 일정 기간 동안 국가 기관에 복무한 사람에게 해마다 주는 돈을 관리하는 계좌를 관리하거나 운영하는 담당자의 이름",
+    "acronym": "PN_BACNT_HDLR_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금지급개시일자",
+    "description": "연금 수급자에게 정기적으로 연금이 지급되기 시작하는 날짜",
+    "acronym": "PN_GIVE_STRT_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금지급종료일자",
+    "description": "연금 수급자에게 정기적으로 연금이 지급되는 것을 끝마친 날짜",
+    "acronym": "PN_GIVE_END_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "국민연금사업장관리번호",
+    "description": "국민연금을 관리하기 위해 공단에서 해당 사업장에 부여하는 식별 번호",
+    "acronym": "NPN_BPLC_MNG_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "04"
+  },
+  {
+    "name": "제수당",
+    "description": "임금(賃金)을 구성하는 요소 가운데 기본급을 제외한 모든 수당에 해당하는 돈의 액수",
+    "acronym": "SALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "가족수당",
+    "description": "근로자의 생활비 보조를 목적으로 하여 부양가족의 수에 따라 기본급 외에 추가로 지급되는 수당의 액수",
+    "acronym": "FAM_ALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "기술수당",
+    "description": "국가 기술 자격법에 의한 자격증을 취득한 자로서 기술, 기능 분야 자격증 소지자에게 지급하는 돈의 액수",
+    "acronym": "TECH_ALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "기타수당",
+    "description": "기본급이나 주요 수당 이외에 지급되는 돈의 액수",
+    "acronym": "ETC_ALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "당직수당",
+    "description": "근무하는 곳에서 숙직이나 일직 따위의 당번을 수행하고 지급받는 돈의 액수",
+    "acronym": "ONDT_ALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "대우수당",
+    "description": "직급이나 직위는 유지하면서, 일정한 직무 또는 책임에 상응하는 처우를 해주기 위해 추가로 지급하는 돈의 액수",
+    "acronym": "TRTM_ALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "아동여부",
+    "description": "일정한 나이 기준에 따라 아동에 해당하는지 여부",
+    "acronym": "CHILD_YN",
+    "data_domain": "여부C1",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금금액",
+    "description": "국가나 사회에 특별한 공로가 있거나 일정 기간 국가 기관에 복무한 사람에게 해마다 주는 돈의 액수",
+    "acronym": "PN_AMT",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "연금월액",
+    "description": "연금 수급자가 매월 정기적으로 지급받는 돈의 액수",
+    "acronym": "PN_MAMT",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "위험수당",
+    "description": "위험한 일을 하는 사람에게 봉급 이외에 따로 지급하는 돈의 액수",
+    "acronym": "RISK_ALW",
+    "data_domain": "금액N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "04"
+  },
+  {
+    "name": "법령명",
+    "description": "법률과 명령을 아울러 이르는 것의 이름",
+    "acronym": "STT_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "법원명",
+    "description": "사법권을 행사하는 국가 기관의 이름",
+    "acronym": "CT_NM",
+    "data_domain": "명V100",
+    "synonyms": "법원이름, 법원명칭",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기번호",
+    "description": "국가 기관이 법정 절차에 따라 등기부에 부동산이나 동산ㆍ채권 등의 담보 따위에 관한 일정한 권리관계를 적는 일에 부여하는 식별 번호",
+    "acronym": "RG_NO",
+    "data_domain": "번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기소명",
+    "description": "등기 사무를 맡아보는 관청의 이름",
+    "acronym": "RGOFC_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기일자",
+    "description": "국가 기관이 법정 절차에 따라 부동산이나 동산ㆍ채권 등의 담보 따위에 관한 일정한 권리관계를 등기부에 적은 날짜",
+    "acronym": "RG_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "변호사명",
+    "description": "법률에 규정된 자격을 가지고 소송 당사자나 관계인의 의뢰 또는 법원의 명령에 따라 피고나 원고를 변론하며 그 밖의 법률에 관한 업무에 종사하는 사람의 이름",
+    "acronym": "LWYR_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송번호",
+    "description": "재판에서 원고와 피고 사이의 권리나 의무 따위의 법률 관계를 확정해 달라고 법원에 요구하거나 그런 절차에 부여하는 식별 번호",
+    "acronym": "LWS_NO",
+    "data_domain": "번호V25",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "재판부명",
+    "description": "특정 소송 사건을 심판하기 위하여 법관으로 구성하는 재판 부서의 이름",
+    "acronym": "JSDP_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "관계법령명",
+    "description": "서로 관련을 맺거나 관련이 있는 법률과 명령 등의 이름",
+    "acronym": "REL_STT_NM",
+    "data_domain": "명V300",
+    "synonyms": "관련법령명",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "관할법원명",
+    "description": "특정 지역의 법원 업무를 담당하는 기관의 이름",
+    "acronym": "CMPTNC_CT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "근거법령명",
+    "description": "어떤 일의 근본이 되는 법률과 법령을 아울러 이르는 것의 이름",
+    "acronym": "BSS_STT_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송사건명",
+    "description": "재판에서 원고와 피고 사이의 권리나 의무 따위의 법률 관계를 확정해 달라고 법원에 요구한 사건의 이름",
+    "acronym": "LWS_INCDNT_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "관할등기소명",
+    "description": "특정 지역의 등기업무를 담당하는 기관의 이름",
+    "acronym": "CMPTNC_RGOFC_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "담당변호사명",
+    "description": "어떤 일을 맡은, 법률에 규정된 자격을 가지고 소송 당사자나 관계인의 의뢰 또는 법원의 명령에 따라 피고나 원고를 변론하며 그 밖의 법률에 관한 업무에 종사하는 사람의 이름",
+    "acronym": "TKCG_LWYR_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기우편번호",
+    "description": "우체국에서 우편물의 안전한 송달을 보증하려고 우편물의 인수ㆍ배달 과정을 기록한 우편번호",
+    "acronym": "RG_ZIP",
+    "data_domain": "우편번호C13",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기원인일자",
+    "description": "등기를 정당화하는 법률에서의 원인이 발생한 날짜",
+    "acronym": "RGCS_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기접수번호",
+    "description": "국가 기관이 법정 절차에 따라 등기부에 부동산이나 동산ㆍ채권 등의 담보 따위에 관한 일정한 권리관계를 적은 문서를 받는 일을 식별하기 위하여 부여한 번호",
+    "acronym": "RG_RCPT_NO",
+    "data_domain": "번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "등기접수일자",
+    "description": "국가 기관이 법정 절차에 따라 부동산이나 채권 등의 담보 따위에 관한 권리 신청이나 신고를 문서로 받은 날짜",
+    "acronym": "RG_RCPT_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "법원사건번호",
+    "description": "법원에서 다투는 사건에 부여하는 식별 번호",
+    "acronym": "CT_INCDNT_NO",
+    "data_domain": "번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "법원접수일자",
+    "description": "사법권을 행사하는 국가 기관에 서류를 제출한 날짜",
+    "acronym": "CT_RCPT_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송대리인명",
+    "description": "소송 당사자를 대신하여 자기 의사에 따라 소송 행위를 하고 소송 행위를 받는 제삼자의 이름",
+    "acronym": "LWS_AGT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송수행자명",
+    "description": "재판에서 원고와 피고 사이의 법적 권리나 의무를 확정해 달라고 법원에 요구하는 일을 실제로 수행하여 완수한 사람의 이름",
+    "acronym": "LWS_PRFMR_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송시작일자",
+    "description": "재판에서 원고와 피고 사이의 권리나 의무 따위의 법률 관계를 확정해 달라고 법원에 요구하기 시작한 날짜",
+    "acronym": "LWS_BGNG_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송접수일자",
+    "description": "재판에서 원고와 피고 사이의 권리나 의무 따위의 법률 관계를 확정해 달라고 법원에 요구하는 문서를 받아들인 날짜",
+    "acronym": "LWS_RCPT_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "소송제기일자",
+    "description": "재판에서 원고와 피고 사이의 권리나 의무 따위의 법률 관계를 확정해 달라고 법원에 소송 절차를 알려 청구한 날짜",
+    "acronym": "LWS_RAIS_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "05"
+  },
+  {
+    "name": "계좌명",
+    "description": "금융 기관에 예금하려고 설정한 개인 명의나 법인명의 계좌 이름",
+    "acronym": "BACNT_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "보험명",
+    "description": "재해나 각종 사고 따위가 일어날 경우의 사람들이 미리 일정한 돈을 함께 적립하여 두었다가 손해를 보상하는 제도의 이름",
+    "acronym": "INSRNC_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "계좌번호",
+    "description": "금융 기관 등에 예금하려고 설정한 개인명의나 법인명의 계좌에 부여하는 식별 번호",
+    "acronym": "ACTNO",
+    "data_domain": "계좌번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "과세일자",
+    "description": "세금을 부과하는 기준 날짜",
+    "acronym": "TXTN_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "납세자명",
+    "description": "세금을 내는 사람의 이름",
+    "acronym": "TXPR_NM",
+    "data_domain": "명V200",
+    "synonyms": "납세자이름",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "대출번호",
+    "description": "돈이나 물건 등을 빌려주거나 빌린 것에 부여하는 식별 번호",
+    "acronym": "LOAN_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "대출일자",
+    "description": "돈이나 물건 등을 빌려주거나 빌린 날짜",
+    "acronym": "LOAN_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "대출자명",
+    "description": "대출을 하거나 받는 사람의 이름",
+    "acronym": "BRWR_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예금주명",
+    "description": "금융 기관에서 만든 예금 계좌의 주인 이름",
+    "acronym": "DPSTR_NM",
+    "data_domain": "명V100",
+    "synonyms": "예금주이름, 예금자명, 예금자이름",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산번호",
+    "description": "필요한 비용을 미리 헤아려 계산한 항목이나 계정에 부여하는 식별 번호",
+    "acronym": "BGT_NO",
+    "data_domain": "번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "증권번호",
+    "description": "재산상의 권리와 의무에 관한 사항을 기재한 문서에 부여하는 식별 번호",
+    "acronym": "SCRT_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "과세물건명",
+    "description": "세금을 정하여 그것을 내도록 의무를 지닌 일정한 형체를 갖춘 모든 물질적 대상의 이름",
+    "acronym": "TXTN_THING_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "납세자번호",
+    "description": "개별 국가 및 지역이 납세자를 구분하기 위해 부여하는 식별 번호",
+    "acronym": "TXPR_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "대출과목명",
+    "description": "대출을 위해 분류한 계정과목의 이름",
+    "acronym": "LOAN_SBJCT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "대출상품명",
+    "description": "금융 기관에서 돈을 빌려주는 목적으로 만든 상품의 이름",
+    "acronym": "LOAN_GDS_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "보험상품명",
+    "description": "재해나 각종 사고 따위가 일어날 경우의 사람들이 미리 일정한 돈을 함께 적립하여 두었다가 손해를 보상하는 제도를 이용하여 만든 상품의 이름",
+    "acronym": "INSRNC_GDS_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "보험종류명",
+    "description": "재해나 각종 사고 따위가 일어날 경우의 사람들이 미리 일정한 돈을 함께 적립하여 두었다가 손해를 보상하는 제도의 부문을 나눈 갈래의 이름",
+    "acronym": "INSRNC_KND_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "보험회사명",
+    "description": "보험업을 하는 회사의 이름",
+    "acronym": "INSRNC_CO_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예금종류명",
+    "description": "일정한 계약으로 은행이나 우체국 따위에 돈을 맡기는 일의 부문을 나눈 갈래의 이름",
+    "acronym": "SVG_KND_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산과목명",
+    "description": "예산을 부(部), 항(項), 목(目) 따위로 나눈 것의 이름",
+    "acronym": "BGT_SBJCT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산구분명",
+    "description": "필요한 비용을 미리 헤아려 계산한 돈을 일정한 기준에 따라 전체를 몇 개로 갈라 나눈 것의 이름",
+    "acronym": "BGT_SE_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산그룹명",
+    "description": "필요한 비용을 미리 헤아려 계산한 돈을 일정한 기준에 따라 몇 개로 가른 것의 이름",
+    "acronym": "BGT_GROUP_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산분류명",
+    "description": "필요한 비용을 미리 헤아려 계산한 항목이나 계정을 종류에 따라서 가른 것의 이름",
+    "acronym": "BGT_CLSF_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산사업명",
+    "description": "필요한 비용을 미리 헤아려 계산하여 배정한 돈을 일정한 목적과 계획에 따라 짜임새 있게 지속적으로 경영하는 일의 이름",
+    "acronym": "BGT_BIZ_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "예산코드명",
+    "description": "필요한 비용을 미리 헤아려 계산하여 배정한 돈의 정보를 나타내는 기호 체계의 이름",
+    "acronym": "BGT_CD_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "06"
+  },
+  {
+    "name": "공장명",
+    "description": "원료나 재료를 가공하여 물건을 만들어 내는 설비를 갖춘 곳의 이름",
+    "acronym": "FCTRY_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업명",
+    "description": "영리를 얻으려고 재화나 용역을 생산하고 판매하는 단체의 이름",
+    "acronym": "ENT_NM",
+    "data_domain": "명V100",
+    "synonyms": "기업체명 ,기업이름, 기업체이름 ,기업명칭, 기업체명칭",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "업종명",
+    "description": "직업이나 영업 종류의 이름",
+    "acronym": "TPBIZ_NM",
+    "data_domain": "명V100",
+    "synonyms": "업종이름, 업종명칭",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업번호",
+    "description": "영리(營利)를 얻기 위하여 재화나 용역을 생산하고 판매하는 단체에 부여하는 식별 번호",
+    "acronym": "ENT_NO",
+    "data_domain": "번호V20",
+    "synonyms": "기업체번호",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "모기업명",
+    "description": "이미 있던 기업에서 한 기업이 독립하여 나왔을 때, 그 모체가 되는 기업의 이름",
+    "acronym": "PRNCO_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "제조번호",
+    "description": "생산한 물품을 서로 구별하여 알아보기 위해 부여하는 식별 번호",
+    "acronym": "MNFTR_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "제조사명",
+    "description": "물품을 만든 회사의 이름",
+    "acronym": "MKR_NM",
+    "data_domain": "명V100",
+    "synonyms": "제조사이름, 제조회사명, 제조회사이름, 제조사명칭, 제조회사명칭",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "제조일자",
+    "description": "공장 등에서 물품을 만든 날짜",
+    "acronym": "MNFTR_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "구매기업명",
+    "description": "물건 등을 사들인 기업의 이름",
+    "acronym": "PRCHS_ENT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업구분명",
+    "description": "영리를 얻으려고 재화나 용역을 생산하고 판매하는 단체 전체를 일정한 기준에 따라 몇 개로 가른 것의 이름",
+    "acronym": "ENT_SE_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업규모명",
+    "description": "영리를 얻으려고 재화나 용역을 생산하고 판매하는 단체의 크가나 범위의 이름",
+    "acronym": "ENT_SCL_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업분류명",
+    "description": "영리를 얻기 위하여 재화나 용역을 생산하고 판매하는 조직체를 종류에 따라서 가른 것에 붙인 이름",
+    "acronym": "ENT_CLSF_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업상태명",
+    "description": "영리를 얻으려고 재화나 용역을 생산하고 판매하는 단체의 사물・현상이 놓인 모양이나 형편에 붙인 이름",
+    "acronym": "ENT_STTS_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업집단명",
+    "description": "자본이나 인적 자원을 서로 공유하는 기업 무리의 이름",
+    "acronym": "ENT_GRUP_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "기업형태명",
+    "description": "영리를 얻으려고 재화나 용역을 생산하고 판매하는 단체가 일정하게 갖추고 있는 모양의 이름",
+    "acronym": "ENT_SHP_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "사업종류명",
+    "description": "어떤 일을 일정한 목적과 계획을 세우고 짜임새 있게 지속해 경영하는 것의 부문을 나눈 갈래의 이름",
+    "acronym": "BIZ_KND_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "사업종목명",
+    "description": "어떤 일을 일정한 목적과 계획을 세우고 짜임새 있게 지속해 경영하는 것을 종류에 따라 나눈 항목의 이름",
+    "acronym": "BIZ_CLS_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "상세업종명",
+    "description": "직업이나 영업의 종류에 낱낱이 자세하게 붙인 이름",
+    "acronym": "DTL_TPBIZ_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "신청기업명",
+    "description": "단체나 기관에 어떤 일이나 물건을 요청한 기업의 이름",
+    "acronym": "APLY_ENT_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "업종분류명",
+    "description": "직업이나 영업의 종류를 나누어 가른 것의 이름",
+    "acronym": "TPBIZ_CLSF_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "업종영문명",
+    "description": "직업이나 영업 종류의 영문 이름",
+    "acronym": "TPBIZ_ENG_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "업종코드명",
+    "description": "직업이나 영업 종류의 정보를 나타내는 기호 체계의 이름",
+    "acronym": "TPBIZ_CD_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "제공장소명",
+    "description": "무엇을 내주거나 갖다 바치는 일이 일어나는 곳의 이름",
+    "acronym": "PVSN_PLC_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "제조국가명",
+    "description": "물품을 만든 곳이 속한 나라의 이름",
+    "acronym": "MNFTR_NTN_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "제한업종명",
+    "description": "일정한 한도를 정하거나 그 한도를 넘지 못하게 정한 영업 종류의 이름",
+    "acronym": "LMT_TPBIZ_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "07"
+  },
+  {
+    "name": "배송일자",
+    "description": "물자를 여러 곳에 나누어 보내 준 날짜",
+    "acronym": "DLVR_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "08"
+  },
+  {
+    "name": "주문번호",
+    "description": "어떤 상품을 만들거나 파는 사람에게 그 상품의 생산이나 수송, 또는 서비스의 제공을 요구하거나 청구하는 것에 부여하는 식별 번호",
+    "acronym": "ORDR_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "08"
+  },
+  {
+    "name": "바코드번호",
+    "description": "상품의 포장이나 꼬리표에 표시된 검고 흰 줄무늬에 부여하는 식별 번호",
+    "acronym": "BRCD_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "08"
+  },
+  {
+    "name": "PG거래번호",
+    "description": "인터넷상에서 금융 기관과 하는 결제를 대행해 주는 회사가 각각의 결제 건에 부여하는 식별 번호",
+    "acronym": "PG_DLNG_NO",
+    "data_domain": "번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "08"
+  },
+  {
+    "name": "배송지우편번호",
+    "description": "물품을 다른 곳으로 보낼 때 그 물품을 받는 곳의 소재지 우편번호",
+    "acronym": "DLVRPL_ZIP",
+    "data_domain": "우편번호C5",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "08"
+  },
+  {
+    "name": "배송비",
+    "description": "물품을 다른 곳으로 보내는 데 드는 비용",
+    "acronym": "DLVCHG",
+    "data_domain": "비용N15",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "08"
+  },
+  {
+    "name": "배송여부",
+    "description": "물자를 여러 곳에 나누어 보내 줬는지 여부",
+    "acronym": "DLVR_YN",
+    "data_domain": "여부C1",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "08"
+  },
+  {
+    "name": "배송지주소",
+    "description": "물품을 다른 곳으로 보낼 때 그 물품을 받는 장소의 주소",
+    "acronym": "DLVRPL_ADDR",
+    "data_domain": "주소V200",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "08"
+  },
+  {
+    "name": "배송지상세주소",
+    "description": "물품을 다른 곳으로 보낼 때 그 물품을 받는 장소의 동(棟) 번호, 호(號)수 또는 층수가 나타난 주소",
+    "acronym": "DLVRPL_DADDR",
+    "data_domain": "상세주소V200",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "08"
+  },
+  {
+    "name": "공연명",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보이는 것의 이름",
+    "acronym": "PRFR_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "전시명",
+    "description": "여러 가지 물품을 한곳에 벌여 놓고 보인 것의 이름",
+    "acronym": "EXHB_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연일자",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보인 날짜",
+    "acronym": "PRFR_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "관광지명",
+    "description": "경치가 뛰어나거나 사적(史跡), 온천 따위가 있어 관광할 만한 곳의 이름",
+    "acronym": "TRSPT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "문화재명",
+    "description": "문화 활동으로 창조된 가치가 뛰어난 사물의 이름",
+    "acronym": "CLTPTY_NM",
+    "data_domain": "명V200",
+    "synonyms": "문화재이름, 문화재명칭",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "박물관명",
+    "description": "고고학적 자료, 역사적 유물, 예술품, 그 밖의 학술 자료를 수집・보존・진열하고 일반에게 전시하여 학술 연구와 사회 교육에 기여할 목적으로 만든 시설의 이름",
+    "acronym": "MSM_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연장소명",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보이는 일이 일어나는 곳의 이름",
+    "acronym": "PRFR_PLC_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "문화재설명",
+    "description": "문화 활동으로 창조된 가치가 뛰어난 사물에 대한 설명",
+    "acronym": "CLTPTY_EXPLN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연시작일자",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보이는 것을 시작한 날짜",
+    "acronym": "PRFR_BGNG_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연종료일자",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보이는 것을 끝마친 날짜",
+    "acronym": "PRFR_END_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "운전시작일자",
+    "description": "기계나 자동차 따위를 움직여 부리기 시작한 날짜",
+    "acronym": "DRVN_BGNG_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "전시시작일자",
+    "description": "여러 가지 물품을 한곳에 벌여 놓고 보이는 것을 시작한 날짜",
+    "acronym": "EXHB_BGNG_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "전시일련번호",
+    "description": "여러 가지 물품을 한곳에 벌여 놓고 보이는 것에 일정한 방식으로 연속되게 매긴 번호",
+    "acronym": "EXHB_SN",
+    "data_domain": "일련번호N10",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "전시종료일자",
+    "description": "여러 가지 물품을 한곳에 벌여 놓고 보이는 것을 끝마친 날짜",
+    "acronym": "EXHB_END_YMD",
+    "data_domain": "연월일C8",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "변경이전시도명",
+    "description": "다르게 바꾸어 새롭게 고치기 이전의, 행정 구역 단위인 시와 도의 이름",
+    "acronym": "CHG_BFR_CTPV_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "변경이전시군구명",
+    "description": "다르게 바꾸어 새롭게 고치기 이전의, 행정 구역 단위인 시와 군과 구의 이름",
+    "acronym": "CHG_BFR_SGG_NM",
+    "data_domain": "명V40",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연내용",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보이는 것을 설명하는 내용",
+    "acronym": "PRFR_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연시간",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보이는 데에 걸리는 일정한 시간",
+    "acronym": "PRFR_HR",
+    "data_domain": "시분초C6",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "공연일시",
+    "description": "음악, 무용, 연극 따위를 많은 사람 앞에서 보인 날짜와 시각",
+    "acronym": "PRFR_DT",
+    "data_domain": "연월일시분초D",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "여행목적",
+    "description": "일이나 유람을 목적으로 다른 고장이나 외국에 가서 실현하려고 하는 일이나 나아가는 방향",
+    "acronym": "TRVL_PRPS",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "영화제목",
+    "description": "일정한 의미를 갖고 움직이는 대상을 촬영하여 편집한 결과물에 붙이는 이름",
+    "acronym": "MOVIE_TTL",
+    "data_domain": "명V256",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "운전시간",
+    "description": "기계나 자동차 따위를 움직여 부리는 데에 걸리는 일정한 시간",
+    "acronym": "DRVN_HR",
+    "data_domain": "시분초C6",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "전시내용",
+    "description": "여러 가지 물품을 한곳에 벌여 놓고 보이는 것을 설명하는 내용",
+    "acronym": "EXHB_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "준공연도",
+    "description": "공사를 다 마친 연도",
+    "acronym": "CMCN_YR",
+    "data_domain": "연도C4",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "준공연월",
+    "description": "공사를 다 마친 건물 등을 실제 사용하도록 허가가 완료된 연도와 월",
+    "acronym": "CMCN_YM",
+    "data_domain": "연월C6",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "09"
+  },
+  {
+    "name": "온실가스배출량",
+    "description": "지구 대기를 오염시켜 온실 효과를 일으키는 가스를 내보낸 양",
+    "acronym": "GRGS_EHQTY",
+    "data_domain": "수N10,3",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "10"
+  },
+  {
+    "name": "일산화탄소지수",
+    "description": "탄소 산화물로 무색, 무취의 맹독성 기체가 대기 중에서 차지하는 농도나 비율",
+    "acronym": "CBMX_IDX",
+    "data_domain": "율N7,2",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "10"
+  },
+  {
+    "name": "재활용방법내용",
+    "description": "폐품 따위의 용도를 바꾸거나 가공하여 다시 사용하는 수단이나 방식의 내용",
+    "acronym": "RCYC_MTHD_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "10"
+  },
+  {
+    "name": "논문번호",
+    "description": "어떤 것에 관하여 체계적으로 자기 의견이나 주장을 적은 글에 부여하는 식별 번호",
+    "acronym": "THSS_NO",
+    "data_domain": "번호V25",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "11"
+  },
+  {
+    "name": "연구과제명",
+    "description": "정부나 기관으로부터 지원금을 받아 연구를 수행하고, 결과물을 제출하는 일을 처리하거나 해결해야 할 문제의 이름",
+    "acronym": "RSCH_ASMT_NM",
+    "data_domain": "명V300",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "11"
+  },
+  {
+    "name": "연구과제번호",
+    "description": "정부나 기관으로부터 지원금을 받아 연구를 수행하고, 결과물을 제출하는 과제에 부여하는 식별 번호",
+    "acronym": "RSCH_ASMT_NO",
+    "data_domain": "번호V20",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "11"
+  },
+  {
+    "name": "과학기술인등록번호",
+    "description": "과학의 원리를 기술에 활용하여 인간 생활에 쓸 수 있게 하는 사람에 대하여 등록한 순서대로 주어지거나 별도 규칙에 따라 부여하는 식별 번호",
+    "acronym": "SCEGNR_REG_NO",
+    "data_domain": "번호V50",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "11"
+  },
+  {
+    "name": "논문건수",
+    "description": "어떤 것에 관하여 체계적으로 자기 의견이나 주장을 적은 글의 건수",
+    "acronym": "THSS_NOCS",
+    "data_domain": "수N10",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "11"
+  },
+  {
+    "name": "논문내용",
+    "description": "어떤 것에 관하여 체계적으로 자기 의견이나 주장을 적은 글의 내용",
+    "acronym": "THSS_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "11"
+  },
+  {
+    "name": "논문점수",
+    "description": "어떤 것에 관하여 체계적으로 자기 의견이나 주장을 적은 글의 성적을 나타내는 점수",
+    "acronym": "THSS_SCR",
+    "data_domain": "수N7",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "11"
+  },
+  {
+    "name": "논문제목",
+    "description": "어떤 것에 관하여 체계적으로 자기 의견이나 주장을 적은 글을 대표하여 붙이는 이름",
+    "acronym": "THSS_TTL",
+    "data_domain": "명V256",
+    "synonyms": "논문명",
+    "priority": 0,
+    "domain_code": "11"
+  },
+  {
+    "name": "구조물명",
+    "description": "일정한 설계에 따라 여러 가지 재료를 얽어서 만든 물건에 붙인 이름",
+    "acronym": "STRTS_NM",
+    "data_domain": "명V100",
+    "synonyms": "구조물이름, 구조물명칭",
+    "priority": 1,
+    "domain_code": "12"
+  },
+  {
+    "name": "소방서명",
+    "description": "소방에 관한 업무를 맡아보는 일선 소방 기관의 이름",
+    "acronym": "FRSTN_NM",
+    "data_domain": "명V200",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "12"
+  },
+  {
+    "name": "건축구조명",
+    "description": "여러 가지 건축 재료를 이용하여 건축물을 형성하는 것의 이름",
+    "acronym": "ARCH_STRCT_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "12"
+  },
+  {
+    "name": "구조물설명",
+    "description": "일정한 설계에 따라 여러 가지 재료를 얽어서 만든 물건에 대한 설명",
+    "acronym": "STRTS_EXPLN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "12"
+  },
+  {
+    "name": "위험등급명",
+    "description": "해로움이나 손실이 생길 우려가 있는 일을 일정한 분류에 의해 여러 층으로 구분한 단계의 이름",
+    "acronym": "RISK_GRD_NM",
+    "data_domain": "명V100",
+    "synonyms": "-",
+    "priority": 1,
+    "domain_code": "12"
+  },
+  {
+    "name": "구조내용",
+    "description": "부분이나 요소가 어떤 전체를 짜 이룸 또는 그렇게 이루어진 얼개를 설명한 내용",
+    "acronym": "STRCT_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "12"
+  },
+  {
+    "name": "응급실수",
+    "description": "병원 같은 데서 환자의 응급 처치를 할 수 있는 시설을 갖추어 놓은 방의 수",
+    "acronym": "EMRM_CNT",
+    "data_domain": "수N7",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "12"
+  },
+  {
+    "name": "건물구조내용",
+    "description": "건물의 부분이나 요소가 어떤 전체를 짜 이루거나 그렇게 이루어진 얼개를 설명한 내용",
+    "acronym": "BLDG_STRCT_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "12"
+  },
+  {
+    "name": "응급조치내용",
+    "description": "재해가 발생하거나 발생할 우려가 있는 현장에서 항구적인 대책을 강구하기 전에 임시적으로 피해를 줄이거나 예방하기 위해 취하는 제반 활동의 내용",
+    "acronym": "EMGC_ACTN_CN",
+    "data_domain": "내용V4000",
+    "synonyms": "-",
+    "priority": 0,
+    "domain_code": "12"
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "term_id": "T01010003",
+    "term": "공공기관 현황",
+    "synonym": "공공기관정보",
+    "reason": "문자열 유사도: 0.80 + 공통 접두어",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01020004",
+    "term": "행정복지센터",
+    "synonym": "행정센터",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01040002",
+    "term": "대민서비스",
+    "synonym": "국민서비스",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T01040002",
+    "term": "대민서비스",
+    "synonym": "민원서비스",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06060001",
+    "term": "통화정책",
+    "synonym": "통화금융정책",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T11040001",
+    "term": "정보기술",
+    "synonym": "정보통신기술",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06020002",
+    "term": "재정상태표",
+    "synonym": "재무상태표",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T06030001",
+    "term": "지방재정",
+    "synonym": "지방정부재정",
+    "reason": "문자열 유사도: 0.80 + 공통 접두어",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T10020005",
+    "term": "기후적응",
+    "synonym": "기후변화적응",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T02050002",
+    "term": "누리과정",
+    "synonym": "누리교육과정",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T05020001",
+    "term": "판례",
+    "synonym": "판결례",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  },
+  {
+    "term_id": "T10040004",
+    "term": "생물다양성",
+    "synonym": "생태다양성",
+    "reason": "문자열 유사도: 0.80",
+    "confidence": 0.8
+  }
+]

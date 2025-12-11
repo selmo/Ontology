@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.13.2",
+    "version": "3.13.3",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (Close Match 추가 확장: +8개)"
+    "description": "MC 분류·용어 통합 체계 (Close Match 수동 검토 완료: +12개)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -918,9 +918,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "공공기관정보"
+            ],
             "related": [
-              "공공기관정보",
               "기관현황"
             ],
             "broader": [],
@@ -1045,11 +1046,12 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "행정센터"
+            ],
             "related": [
               "주민센터",
-              "동사무소",
-              "행정센터"
+              "동사무소"
             ],
             "broader": [],
             "narrower": []
@@ -1205,11 +1207,12 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "국민서비스",
-              "행정서비스",
               "민원서비스"
+            ],
+            "related": [
+              "행정서비스"
             ],
             "broader": [],
             "narrower": []
@@ -2995,9 +2998,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "누리교육과정"
+            ],
             "related": [
-              "누리교육과정",
               "국가수준교육과정"
             ],
             "broader": [],
@@ -7778,10 +7782,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "판결례"
             ],
+            "related": [],
             "broader": [],
             "narrower": [
               "재판례",
@@ -10018,9 +10022,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "재무상태표"
+            ],
             "related": [
-              "재무상태표",
               "재정현황"
             ],
             "broader": [
@@ -10073,9 +10078,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "지방정부재정"
+            ],
             "related": [
-              "지방정부재정",
               "지역재정"
             ],
             "broader": [],
@@ -10336,10 +10342,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "금융정책",
+            "close": [
               "통화금융정책"
+            ],
+            "related": [
+              "금융정책"
             ],
             "broader": [],
             "narrower": []
@@ -16796,9 +16803,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
+            "close": [
+              "기후변화적응"
+            ],
             "related": [
-              "기후변화적응",
               "기후대응",
               "기후탄력성"
             ],
@@ -17024,11 +17032,10 @@
             "terms": [],
             "exact": [],
             "close": [
-              "생물종다양성"
-            ],
-            "related": [
+              "생물종다양성",
               "생태다양성"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -18084,9 +18091,10 @@
             "exact": [
               "ICT"
             ],
-            "close": [],
+            "close": [
+              "정보통신기술"
+            ],
             "related": [
-              "정보통신기술",
               "디지털기술"
             ],
             "broader": [],

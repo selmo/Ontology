@@ -1,11 +1,11 @@
 # MC 분류·용어 통합 체계
 
-**버전:** 3.11.0
+**버전:** 3.12.0
 **최종 업데이트:** 2025-12-11
 **구조:** 단일 마스터 파일 (ontology.json)
 
 [![License](https://img.shields.io/badge/license-CC--BY--4.0-blue.svg)](http://creativecommons.org/licenses/by/4.0/)
-[![Version](https://img.shields.io/badge/version-3.11.0-green.svg)](README.md)
+[![Version](https://img.shields.io/badge/version-3.12.0-green.svg)](README.md)
 [![Data Source](https://img.shields.io/badge/source-data.go.kr-orange.svg)](https://www.data.go.kr)
 
 ## 개요
@@ -15,20 +15,25 @@
 **주요 특징:**
 - 📄 **단일 마스터**: ontology.json 하나가 모든 데이터의 원천
 - 🏛️ **표준 기반**: 24개 국제/국내 표준 연계 (SKOS, GS1, arXiv, ACM CCS 등)
-- 📊 **풍부한 관계**: 하이브리드 SYNONYM + RELATED_TO + SIMILAR_TO
-- 🔄 **다중 출력**: SQL, Cypher, JSON, TXT 자동 생성
+- 📊 **SKOS 기반 SYNONYM**: 5가지 타입 (Exact/Close/Related/Broader/Narrower)
+- 🔄 **다중 출력**: SQL, Cypher, JSON, TXT, Excel 자동 생성
 - ✅ **높은 품질**: 자동 검증 (0 오류, 0 경고)
 
-## 통계 (v3.11)
+## 통계 (v3.12)
 
 | 항목 | 개수 | 변경 |
 |------|------|------|
 | 도메인 | 12개 | - |
 | 분류 | 376개 (44개 중분류, 332개 소분류) | - |
 | 용어 | 221개 | - |
-| **동의어 (Term → Term)** | **5개** | **✨ NEW** |
-| **동의어 (문자열)** | **465개** | ⬇️ |
-| **연관 용어 (RELATED_TO)** | **78개** | ⬇️ |
+| **동의어 (총계)** | **470개** | - |
+| └ Term → Term | 5개 | - |
+| └ **Exact (완전 동의어)** | **41개** | **✨ NEW** |
+| └ **Close (유사어)** | **6개** | **✨ NEW** |
+| └ **Related (관련어)** | **366개** | **✨ NEW** |
+| └ **Broader (상위 개념)** | **12개** | **✨ NEW** |
+| └ **Narrower (하위 개념)** | **40개** | **✨ NEW** |
+| 연관 용어 (RELATED_TO) | 78개 | - |
 | 분류 유사 관계 (SIMILAR_TO) | 42개 | - |
 | 표준 레지스트리 | 24개 | - |
 | 표준 레퍼런스 | 405개 (분류 255개, 용어 150개) | - |
@@ -59,6 +64,12 @@
 ### 스크립트
 - **generate.py** - ontology.json → generated/ 디렉토리에 모든 출력 파일 생성
 - **validate_ontology.py** - 구조적 정합성 검증
+- **export_to_excel.py** - Excel 파일 생성 (분류, 용어, 동의어, 연관관계, 표준)
+- **SYNONYM 관리 (v3.12):**
+  - **analyze_synonym_types.py** - 동의어 타입 자동 분류
+  - **suggest_close_matches.py** - Close Match 후보 추천
+  - **apply_close_matches.py** - 고신뢰도 Close Match 자동 적용
+  - **migrate_to_v312.py** - v3.11 → v3.12 마이그레이션
 
 ### 생성 디렉토리 (generated/)
 자동 생성된 모든 파일이 저장됨 (수정 금지):
@@ -74,6 +85,13 @@
 ### 참고 문서
 - **README_memgraph.md** - Memgraph 그래프 DB 사용법
 - **context_schema.md** - JSON 스키마 상세 설명
+- **SAMPLE_QUERIES.md** - Cypher/SQL 샘플 쿼리 (40개)
+- **SYNONYM_REFINEMENT_PROPOSAL.md** - v3.12 SYNONYM 타입 세분화 설계 문서
+
+### 생성 파일
+- **ontology_master_data.xlsx** - Excel 마스터 데이터 (6개 시트)
+- **synonym_categories.json** - 자동 분류 결과 (465개)
+- **close_match_suggestions.json** - Close Match 후보 (83개)
 
 ## 데이터 흐름
 
@@ -157,12 +175,23 @@ DELETE_YN    CHAR(1)        -- 삭제 여부
 README       CLOB           -- 연결 분류 ID
 ```
 
-### MC_TERM_REL (용어 관계)
+### MC_TERM_REL (용어 관계) ← v3.12 확장
 ```sql
 TERM_ID     VARCHAR2(32)   -- 용어 ID
-REL_TYPE    CHAR(1)        -- 관계 유형 ('S': 동의어, 'T': 연관/계층)
+REL_TYPE    VARCHAR2(2)    -- 관계 유형 (v3.12 확장)
 REL_TERM_ID VARCHAR2(32)   -- 관계 대상
 ```
+
+**REL_TYPE 코드 (v3.12 SKOS 기반):**
+| 코드 | 타입 | 설명 | 개수 |
+|------|------|------|------|
+| `S` | Term → Term | 용어 간 동의어 | 5개 |
+| `T` | Related | 연관 관계 | 78개 |
+| `SE` | Exact Synonym | 완전 동의어 (약어, 영문명) | 41개 |
+| `SC` | Close Synonym | 유사어 (혼용 가능) | 6개 |
+| `SR` | Related Synonym | 관련어 | 366개 |
+| `SB` | Broader | 상위 개념 | 12개 |
+| `SN` | Narrower | 하위 개념 | 40개 |
 
 ### MC_STANDARD (표준 레지스트리)
 ```sql
@@ -255,14 +284,24 @@ NOTE          VARCHAR2(4000) -- 비고
 | `:PARENT_OF` | Classification | Classification | 단방향 | 분류 계층 (376개) |
 | `:PARENT_OF` | Term | Term | 단방향 | 용어 계층 (221개) |
 | `:BELONGS_TO` | Term | Classification | 단방향 | 용어 소속 (221개) |
-| **`:SYNONYM_OF`** | **Term** | **Term** | **양방향** | **용어 동의어 (5개 = 10개 관계)** ✨ |
-| `:SYNONYM_OF` | Term | Synonym | 단방향 | 문자열 동의어 (465개) |
-| **`:RELATED_TO`** | **Term** | **Term** | **양방향** | **연관 용어 (78개 = 156개 관계)** |
+| `:SYNONYM_OF` | Term | Term | 양방향 | 용어 동의어 (5개 = 10개 관계) |
+| `:RELATED_TO` | Term | Term | 양방향 | 연관 용어 (78개 = 156개 관계) |
 | `:SIMILAR_TO` | Classification | Classification | 양방향 | 분류 유사 관계 (42개) |
 
-**v3.11 주요 변경:**
-- **하이브리드 SYNONYM 구조**: Term → Term (5개) + Term → Synonym node (465개)
-- **RELATED_TO 복원**: 조건부 필터링 적용 (78개)
+**SYNONYM 관계 타입 (v3.12 SKOS 기반):**
+
+| 관계 | 설명 | 개수 |
+|------|------|------|
+| **`:EXACT_SYNONYM`** | 완전 동의어 (약어, 영문명) | 41개 |
+| **`:CLOSE_SYNONYM`** | 유사어 (혼용 가능한 근접 개념) | 6개 |
+| **`:RELATED_SYNONYM`** | 관련어 (연관되지만 동의어 아님) | 366개 |
+| **`:BROADER_THAN`** | 상위 개념 | 12개 |
+| **`:NARROWER_THAN`** | 하위 개념 | 40개 |
+
+**v3.12 주요 변경:**
+- **SKOS 기반 SYNONYM 타입 세분화**: 5가지 관계 타입으로 분류
+- **자동 분류 시스템**: 패턴 기반 465개 동의어 자동 분류
+- **Close Match 추천**: 83개 후보 중 6개 고신뢰도(0.9+) 자동 적용
 
 ### Memgraph 사용법
 ```cypher
@@ -280,6 +319,19 @@ RETURN c;
 MATCH path = (root:Classification)-[:PARENT_OF*]->(child)
 WHERE root.id = 'C01000001'
 RETURN path;
+
+// v3.12: 타입별 동의어 검색
+MATCH (t:Term)-[:EXACT_SYNONYM]->(s:Synonym)
+WHERE t.name_ko = '공개시장운영'
+RETURN s.value AS exact_synonym;
+
+// v3.12: Close Match (유사어) 조회
+MATCH (t:Term)-[:CLOSE_SYNONYM]->(s:Synonym)
+RETURN t.name_ko, s.value AS close_synonym;
+
+// v3.12: 상위/하위 개념 탐색
+MATCH (t:Term)-[:BROADER_THAN]->(s:Synonym)
+RETURN t.name_ko, s.value AS broader_concept;
 ```
 
 ## 검증
@@ -292,17 +344,40 @@ RETURN path;
 - ✅ 필드 값 일치
 - ✅ 표준 레퍼런스 유효성
 
-### 검증 결과 (v3.7)
+### 검증 결과 (v3.12)
 ```bash
 $ python3 validate_ontology.py
 
 ✅ 모든 검증 통과!
 총계: 0 오류, 0 경고, 9 정보
-- 분류 표준 레퍼런스: 203개 (218개 매핑)
+- JSON 분류: 376개, SQL 분류: 376개, TXT 분류: 376개
+- JSON 용어: 221개, SQL 용어: 221개, TXT 용어: 221개
+- 분류 표준 레퍼런스: 232개 (255개 매핑)
 - 용어 표준 레퍼런스: 140개 (150개 매핑)
+- 동의어: 470개 (5타입: SE 41, SC 6, SR 366, SB 12, SN 40)
 ```
 
 ## 버전 이력
+
+### v3.12 (2025-12-11) - 현재 버전
+- 🎯 **SKOS 기반 SYNONYM 타입 세분화**: 5가지 관계 타입
+  - Exact (41개): 완전 동의어 (약어, 영문명)
+  - Close (6개): 유사어 (혼용 가능한 근접 개념)
+  - Related (366개): 관련어 (연관되지만 동의어 아님)
+  - Broader (12개): 상위 개념
+  - Narrower (40개): 하위 개념
+- ✨ **자동 분류 시스템**: 패턴 기반 465개 동의어 자동 분류
+- 🔍 **Close Match 추천 엔진**: 83개 후보 추출, 6개 고신뢰도(0.9+) 자동 적용
+- 🔄 **SQL REL_TYPE 확장**: CHAR(1) → VARCHAR(2), SE/SC/SR/SB/SN 코드
+- 📊 **Cypher 타입별 관계**: :EXACT_SYNONYM, :CLOSE_SYNONYM, :RELATED_SYNONYM, :BROADER_THAN, :NARROWER_THAN
+- 📋 **Excel 출력 강화**: 타입별 동의어 시트
+- 📝 **설계 문서**: SYNONYM_REFINEMENT_PROPOSAL.md
+
+### v3.11 (2025-12-11)
+- ✨ **하이브리드 SYNONYM 구조**: Term → Term (5개) + Term → Synonym node (465개)
+- 🔄 **RELATED_TO 복원**: v3.9에서 78개 조건부 복원
+- 🎯 **자기 참조 제거**: 15개 제거
+- 📝 **정책 문서화**: term_revision_proposal.md
 
 ### v3.10 (2025-12-11)
 - 🔄 **관계 재구조화**: SIMILAR_TO 추가, RELATED_TO 제거
@@ -347,20 +422,6 @@ $ python3 validate_ontology.py
 - 🌐 도메인 확대: 10개 → 12개 (과학기술, 국토교통 추가)
 - 📋 표준 레지스트리 구축: 20개 표준 등록
 - 🔗 표준 레퍼런스 시스템 구현
-
-### v3.11 (2025-12-11)
-- ✨ **하이브리드 SYNONYM 구조**: Term → Term (5개) + Term → Synonym node (465개)
-- 🔄 **RELATED_TO 복원**: v3.9에서 78개 조건부 복원
-- 🎯 **자기 참조 제거**: 15개 제거
-- 📝 **정책 문서화**: term_revision_proposal.md
-
-### v3.10 (2025-12-11)
-- 🔗 SIMILAR_TO 추가: Classification 간 유사 관계 (42개)
-- ⚠️ RELATED_TO 잘못 제거 (v3.11에서 복원)
-
-### v3.9 (2025-12-11)
-- 📚 표준 레퍼런스 대폭 확장: 405개
-- 🏷️ 동의어 확장: 87개 → 485개 (100% 커버리지)
 
 ### v2.1 (2025-12-01)
 - 📊 세부 분류 확장: 92개 → 175개

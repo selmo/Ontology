@@ -1,5 +1,5 @@
 {
-  "count": 24,
+  "count": 25,
   "registry": [
     {
       "id": "STD-SKOS",
@@ -288,6 +288,18 @@
       "version": "2012",
       "uri": "https://www.acm.org/publications/class-2012",
       "description": "컴퓨터과학 분류체계. 소프트웨어, AI, 네트워크 등 2,000+ 개념."
+    },
+    {
+      "id": "STD-DAMA",
+      "code": "DAMA-DMBOK",
+      "name_ko": "DAMA-DMBOK",
+      "name_en": "Data Management Body of Knowledge",
+      "type": "INTERNATIONAL",
+      "scope": "ONTOLOGY",
+      "organization": "DAMA International",
+      "version": "2.0 (2017)",
+      "uri": "https://www.dama.org/cpages/body-of-knowledge",
+      "description": "데이터 관리 전문가를 위한 11개 지식 영역 체계. 데이터 거버넌스, 아키텍처, 품질, 보안, 통합, MDM, DW/BI, 메타데이터 등 포괄."
     }
   ]
 }

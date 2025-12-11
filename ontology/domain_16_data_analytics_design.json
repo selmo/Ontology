@@ -1,0 +1,407 @@
+{
+  "domain": {
+    "code": "16",
+    "name_ko": "데이터 분석",
+    "name_en": "Data Analytics",
+    "description": "데이터 웨어하우스, BI, 고급 분석, 데이터 과학 등",
+    "primary_standards": [
+      "STD-DAMA"
+    ]
+  },
+  "classifications": [
+    {
+      "id": "C16000001",
+      "name": "데이터 분석",
+      "description": "데이터 웨어하우스, BI, 고급 분석, 데이터 과학 등",
+      "level": 0,
+      "group": true,
+      "parent_id": "03facd74b2d24f7cab807b8980391649",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA09",
+          "external_name": "Data Warehousing & Business Intelligence",
+          "match_type": "BROAD_MATCH",
+          "confidence": 0.90,
+          "note": "DAMA-DMBOK 지식 영역 #9 확장"
+        }
+      ]
+    },
+    {
+      "id": "C16010001",
+      "name": "데이터 웨어하우스",
+      "description": "의사결정 지원을 위한 통합 데이터 저장소",
+      "level": 1,
+      "group": false,
+      "parent_id": "C16000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA09-DW",
+          "external_name": "Data Warehousing",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "DAMA-DMBOK 지식 영역 #9"
+        }
+      ]
+    },
+    {
+      "id": "C16010002",
+      "name": "DW 설계",
+      "description": "스타 스키마, 스노우플레이크 스키마 설계",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16010003",
+      "name": "데이터 마트",
+      "description": "특정 업무 영역을 위한 부분 데이터 웨어하우스",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16010004",
+      "name": "OLAP",
+      "description": "온라인 분석 처리 (Online Analytical Processing)",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16020001",
+      "name": "비즈니스 인텔리전스",
+      "description": "데이터 기반 의사결정 지원 (BI)",
+      "level": 1,
+      "group": false,
+      "parent_id": "C16000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA09-BI",
+          "external_name": "Business Intelligence",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "DAMA-DMBOK 지식 영역 #9"
+        }
+      ]
+    },
+    {
+      "id": "C16020002",
+      "name": "BI 리포트",
+      "description": "정형화된 보고서 생성 및 배포",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16020003",
+      "name": "대시보드",
+      "description": "실시간 KPI 및 지표 시각화",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16020004",
+      "name": "셀프서비스 BI",
+      "description": "사용자 주도 데이터 탐색 및 분석",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16030001",
+      "name": "고급 분석",
+      "description": "통계 분석, 예측 분석, 최적화",
+      "level": 1,
+      "group": false,
+      "parent_id": "C16000001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16030002",
+      "name": "통계 분석",
+      "description": "기술 통계, 추론 통계, 회귀 분석",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16030001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16030003",
+      "name": "예측 분석",
+      "description": "미래 결과 예측 (Predictive Analytics)",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16030001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16030004",
+      "name": "처방 분석",
+      "description": "최적 의사결정 권고 (Prescriptive Analytics)",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16030001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16040001",
+      "name": "데이터 과학",
+      "description": "머신러닝, 딥러닝, AI 기반 데이터 분석",
+      "level": 1,
+      "group": false,
+      "parent_id": "C16000001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16040002",
+      "name": "머신러닝",
+      "description": "지도학습, 비지도학습, 강화학습",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16040001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16040003",
+      "name": "딥러닝",
+      "description": "신경망 기반 학습 (Neural Networks)",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16040001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16040004",
+      "name": "자연어 처리",
+      "description": "텍스트 분석, 감성 분석, NLP",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16040001",
+      "standard_refs": []
+    },
+    {
+      "id": "C16040005",
+      "name": "컴퓨터 비전",
+      "description": "이미지 인식, 객체 탐지, 영상 분석",
+      "level": 2,
+      "group": false,
+      "parent_id": "C16040001",
+      "standard_refs": []
+    }
+  ],
+  "terms": [
+    {
+      "id": "T16010001",
+      "name_ko": "데이터 웨어하우스",
+      "name_en": "Data Warehouse",
+      "acronym": "DW",
+      "description": "의사결정 지원을 위한 주제 중심의 통합 데이터 저장소",
+      "synonyms": {
+        "terms": [],
+        "exact": ["DW"],
+        "close": ["데이터웨어하우스"],
+        "related": ["데이터 마트", "OLAP"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C16010001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA09-DW",
+          "external_name": "Data Warehousing",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T16010002",
+      "name_ko": "OLAP",
+      "name_en": "Online Analytical Processing",
+      "acronym": "OLAP",
+      "description": "다차원 데이터 분석을 위한 온라인 처리 시스템",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["온라인 분석 처리"],
+        "related": ["큐브", "다차원 분석"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T16010001"],
+      "linked_clsf_id": "C16010004",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T16020001",
+      "name_ko": "비즈니스 인텔리전스",
+      "name_en": "Business Intelligence",
+      "acronym": "BI",
+      "description": "데이터 기반 의사결정을 지원하는 기술 및 프로세스",
+      "synonyms": {
+        "terms": [],
+        "exact": ["BI"],
+        "close": ["경영 정보"],
+        "related": ["데이터 분석", "리포팅"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T16010001"],
+      "linked_clsf_id": "C16020001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA09-BI",
+          "external_name": "Business Intelligence",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T16020002",
+      "name_ko": "대시보드",
+      "name_en": "Dashboard",
+      "acronym": null,
+      "description": "핵심 지표(KPI)를 시각적으로 표시하는 화면",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["경영 대시보드"],
+        "related": ["리포트", "시각화"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T16020001"],
+      "linked_clsf_id": "C16020003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T16030001",
+      "name_ko": "예측 분석",
+      "name_en": "Predictive Analytics",
+      "acronym": null,
+      "description": "통계 및 머신러닝 기법을 사용하여 미래 결과 예측",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["예측 모델링"],
+        "related": ["머신러닝", "통계 분석"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C16030003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T16040001",
+      "name_ko": "머신러닝",
+      "name_en": "Machine Learning",
+      "acronym": "ML",
+      "description": "데이터로부터 패턴을 학습하여 예측하는 기술",
+      "synonyms": {
+        "terms": [],
+        "exact": ["ML"],
+        "close": ["기계학습"],
+        "related": ["딥러닝", "AI"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C16040002",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T16040002",
+      "name_ko": "딥러닝",
+      "name_en": "Deep Learning",
+      "acronym": "DL",
+      "description": "다층 신경망을 사용한 학습 기술",
+      "synonyms": {
+        "terms": [],
+        "exact": ["DL"],
+        "close": ["심층학습"],
+        "related": ["신경망", "AI"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T16040001"],
+      "linked_clsf_id": "C16040003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T16040003",
+      "name_ko": "자연어 처리",
+      "name_en": "Natural Language Processing",
+      "acronym": "NLP",
+      "description": "인간의 언어를 컴퓨터가 이해하고 처리하는 기술",
+      "synonyms": {
+        "terms": [],
+        "exact": ["NLP"],
+        "close": ["자연어분석"],
+        "related": ["텍스트 마이닝", "감성 분석"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T16040001"],
+      "linked_clsf_id": "C16040004",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T16040004",
+      "name_ko": "데이터 과학",
+      "name_en": "Data Science",
+      "acronym": "DS",
+      "description": "통계, 수학, 컴퓨터과학을 결합하여 데이터로부터 인사이트 도출",
+      "synonyms": {
+        "terms": [],
+        "exact": ["DS"],
+        "close": [],
+        "related": ["데이터 분석", "머신러닝"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T16040001"],
+      "linked_clsf_id": "C16040001",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    }
+  ],
+  "statistics": {
+    "num_classifications": 19,
+    "num_terms": 9,
+    "num_standard_refs_clsf": 3,
+    "num_standard_refs_term": 3,
+    "standards_used": ["STD-DAMA"]
+  }
+}

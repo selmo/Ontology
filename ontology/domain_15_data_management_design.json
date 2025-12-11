@@ -1,0 +1,385 @@
+{
+  "domain": {
+    "code": "15",
+    "name_ko": "데이터 관리",
+    "name_en": "Data Management",
+    "description": "데이터 저장·운영, 통합, 문서 관리 등 데이터 관리 기술 및 프로세스",
+    "primary_standards": [
+      "STD-DAMA"
+    ]
+  },
+  "classifications": [
+    {
+      "id": "C15000001",
+      "name": "데이터 관리",
+      "description": "데이터 저장·운영, 통합, 문서 관리 등 데이터 관리 기술 및 프로세스",
+      "level": 0,
+      "group": true,
+      "parent_id": "03facd74b2d24f7cab807b8980391649",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-DMBOK",
+          "external_name": "Data Management Body of Knowledge",
+          "match_type": "BROAD_MATCH",
+          "confidence": 0.90
+        }
+      ]
+    },
+    {
+      "id": "C15010001",
+      "name": "데이터 저장 및 운영",
+      "description": "데이터베이스 관리, 백업·복구, 성능 최적화 등",
+      "level": 1,
+      "group": false,
+      "parent_id": "C15000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA04",
+          "external_name": "Data Storage & Operations",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "DAMA-DMBOK 지식 영역 #4"
+        }
+      ]
+    },
+    {
+      "id": "C15010002",
+      "name": "데이터베이스 관리",
+      "description": "DBMS 설치, 구성, 모니터링, 튜닝 (DBA)",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15010003",
+      "name": "데이터 백업 및 복구",
+      "description": "백업 전략, 복구 계획, 재해 복구",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15010004",
+      "name": "데이터 아카이빙",
+      "description": "장기 보관 데이터 관리 및 저장",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15010005",
+      "name": "데이터베이스 성능 최적화",
+      "description": "쿼리 튜닝, 인덱스 설계, 파티셔닝",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15010001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15020001",
+      "name": "데이터 통합",
+      "description": "시스템 간 데이터 이동 및 통합 (ETL, ELT, API)",
+      "level": 1,
+      "group": false,
+      "parent_id": "C15000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA06",
+          "external_name": "Data Integration & Interoperability",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "DAMA-DMBOK 지식 영역 #6"
+        }
+      ]
+    },
+    {
+      "id": "C15020002",
+      "name": "ETL 프로세스",
+      "description": "Extract, Transform, Load 프로세스 설계 및 구현",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15020003",
+      "name": "데이터 파이프라인",
+      "description": "실시간·배치 데이터 처리 파이프라인",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15020004",
+      "name": "API 통합",
+      "description": "REST API, SOAP, GraphQL 등을 통한 데이터 연동",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15020005",
+      "name": "실시간 데이터 통합",
+      "description": "스트리밍 데이터 처리 (Kafka, Message Queue)",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15020001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15030001",
+      "name": "문서 및 콘텐츠 관리",
+      "description": "비정형 데이터(문서, 이미지, 영상) 관리",
+      "level": 1,
+      "group": false,
+      "parent_id": "C15000001",
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA07",
+          "external_name": "Document & Content Management",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95,
+          "note": "DAMA-DMBOK 지식 영역 #7"
+        }
+      ]
+    },
+    {
+      "id": "C15030002",
+      "name": "문서 분류 체계",
+      "description": "문서 유형, 카테고리, 태그 체계 정의",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15030001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15030003",
+      "name": "문서 생명주기 관리",
+      "description": "문서 생성, 승인, 배포, 보관, 폐기",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15030001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15030004",
+      "name": "콘텐츠 검색",
+      "description": "전문 검색, 메타데이터 검색, 유사 문서 검색",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15030001",
+      "standard_refs": []
+    },
+    {
+      "id": "C15030005",
+      "name": "레코드 관리",
+      "description": "Records Management, 법적 기록 보존",
+      "level": 2,
+      "group": false,
+      "parent_id": "C15030001",
+      "standard_refs": []
+    }
+  ],
+  "terms": [
+    {
+      "id": "T15010001",
+      "name_ko": "데이터베이스 관리자",
+      "name_en": "Database Administrator",
+      "acronym": "DBA",
+      "description": "데이터베이스 시스템의 설치, 구성, 모니터링, 튜닝을 담당하는 역할",
+      "synonyms": {
+        "terms": [],
+        "exact": ["DBA"],
+        "close": ["DB 관리자"],
+        "related": ["데이터베이스 엔지니어"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C15010002",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA04-DBA",
+          "external_name": "Database Administration",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T15010002",
+      "name_ko": "백업",
+      "name_en": "Backup",
+      "acronym": null,
+      "description": "데이터 손실을 방지하기 위한 데이터 복사본 생성",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["데이터 백업"],
+        "related": ["복구", "아카이빙"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C15010003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T15020001",
+      "name_ko": "ETL",
+      "name_en": "Extract Transform Load",
+      "acronym": "ETL",
+      "description": "데이터를 추출(Extract), 변환(Transform), 적재(Load)하는 프로세스",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["데이터 통합"],
+        "related": ["ELT", "데이터 파이프라인"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C15020002",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA06-ETL",
+          "external_name": "ETL Processes",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T15020002",
+      "name_ko": "데이터 파이프라인",
+      "name_en": "Data Pipeline",
+      "acronym": null,
+      "description": "데이터의 수집, 처리, 저장을 자동화한 워크플로우",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["데이터 흐름"],
+        "related": ["ETL", "워크플로우"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T15020001"],
+      "linked_clsf_id": "C15020003",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T15020003",
+      "name_ko": "API",
+      "name_en": "Application Programming Interface",
+      "acronym": "API",
+      "description": "애플리케이션 간 데이터 및 기능을 연동하는 인터페이스",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["인터페이스"],
+        "related": ["REST API", "웹 서비스"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C15020004",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T15030001",
+      "name_ko": "문서 관리",
+      "name_en": "Document Management",
+      "acronym": "DM",
+      "description": "전자 문서의 생성, 저장, 검색, 배포, 보관, 폐기 관리",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["문서관리 시스템"],
+        "related": ["ECM", "콘텐츠 관리"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": [],
+      "linked_clsf_id": "C15030001",
+      "parent_id": null,
+      "standard_refs": [
+        {
+          "standard_id": "STD-DAMA",
+          "external_id": "DAMA-KA07",
+          "external_name": "Document & Content Management",
+          "match_type": "EXACT_MATCH",
+          "confidence": 0.95
+        }
+      ],
+      "children": []
+    },
+    {
+      "id": "T15030002",
+      "name_ko": "콘텐츠 관리",
+      "name_en": "Content Management",
+      "acronym": "CM",
+      "description": "디지털 콘텐츠(문서, 이미지, 영상 등)의 생명주기 관리",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["콘텐츠관리 시스템"],
+        "related": ["ECM", "DAM"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T15030001"],
+      "linked_clsf_id": "C15030001",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    },
+    {
+      "id": "T15030003",
+      "name_ko": "레코드 관리",
+      "name_en": "Records Management",
+      "acronym": "RM",
+      "description": "법적·규제적 요구사항에 따른 기록물 관리",
+      "synonyms": {
+        "terms": [],
+        "exact": [],
+        "close": ["기록 관리", "기록물 관리"],
+        "related": ["문서 보존", "아카이빙"],
+        "broader": [],
+        "narrower": []
+      },
+      "related_terms": ["T15030001"],
+      "linked_clsf_id": "C15030005",
+      "parent_id": null,
+      "standard_refs": [],
+      "children": []
+    }
+  ],
+  "statistics": {
+    "num_classifications": 18,
+    "num_terms": 8,
+    "num_standard_refs_clsf": 4,
+    "num_standard_refs_term": 4,
+    "standards_used": ["STD-DAMA"]
+  }
+}

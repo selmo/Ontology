@@ -3023,6 +3023,26 @@ CREATE (:Classification {id: 'C13040001', name: '공공데이터 개방', descri
 CREATE (:Classification {id: 'C13040002', name: '오픈데이터 정책', description: '공공데이터법, 개방 원칙, 라이선스 정책', display_name: '오픈데이터 정책 (:Classification)', readme: '', group: false});
 CREATE (:Classification {id: 'C13040003', name: '데이터셋 관리', description: '데이터셋 등록, 메타데이터 관리, 버전 관리', display_name: '데이터셋 관리 (:Classification)', readme: '', group: false});
 CREATE (:Classification {id: 'C13040004', name: 'API 관리', description: '오픈 API, REST API, 데이터 서비스 제공', display_name: 'API 관리 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13050001', name: '데이터 거버넌스 조직', description: '데이터 거버넌스 위원회, 데이터 관리자, CDO 역할 등 조직 구성', display_name: '데이터 거버넌스 조직 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13050002', name: '데이터 거버넌스 위원회', description: '데이터 거버넌스 정책 및 의사결정 기구', display_name: '데이터 거버넌스 위원회 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13050003', name: '데이터 관리자', description: 'Data Stewards, 데이터 도메인별 관리 책임자', display_name: '데이터 관리자 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13050004', name: '데이터 소유자', description: 'Data Owners, 데이터 자산의 궁극적 책임자', display_name: '데이터 소유자 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13060001', name: '데이터 아키텍처', description: '엔터프라이즈 데이터 모델, 데이터 흐름, 통합 설계', display_name: '데이터 아키텍처 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13060002', name: '엔터프라이즈 데이터 모델', description: '조직 전체 데이터 구조 및 관계 정의', display_name: '엔터프라이즈 데이터 모델 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13060003', name: '데이터 흐름 설계', description: '시스템 간 데이터 이동 경로 및 변환 설계', display_name: '데이터 흐름 설계 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13070001', name: '데이터 모델링', description: '개념/논리/물리 데이터 모델 설계 및 관리', display_name: '데이터 모델링 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13070002', name: '개념 데이터 모델', description: '비즈니스 개념 및 관계 정의 (Conceptual Model)', display_name: '개념 데이터 모델 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13070003', name: '논리 데이터 모델', description: '엔티티, 속성, 관계 상세 정의 (Logical Model)', display_name: '논리 데이터 모델 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13070004', name: '물리 데이터 모델', description: '테이블, 컬럼, 인덱스 등 물리 구조 (Physical Model)', display_name: '물리 데이터 모델 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13080001', name: '데이터 보안', description: '데이터 접근 제어, 암호화, 개인정보 보호', display_name: '데이터 보안 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13080002', name: '데이터 분류', description: '데이터 민감도 등급 정의 (Public, Internal, Confidential, Restricted)', display_name: '데이터 분류 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13080003', name: '접근 제어', description: '인증, 권한 부여, 접근 로그 관리', display_name: '접근 제어 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13080004', name: '암호화', description: '저장 데이터 및 전송 데이터 암호화', display_name: '암호화 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13080005', name: '개인정보 보호', description: '개인정보 수집·이용·제공 관리, 비식별화', display_name: '개인정보 보호 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13090001', name: '마스터 데이터 관리', description: '핵심 비즈니스 엔티티(고객, 제품 등)의 공유 데이터 관리', display_name: '마스터 데이터 관리 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13090002', name: '마스터 데이터', description: '고객, 제품, 계정, 위치 등 핵심 엔티티', display_name: '마스터 데이터 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13090003', name: '참조 데이터', description: '국가 코드, 통화 코드, 상태 코드 등', display_name: '참조 데이터 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C13090004', name: 'MDM 프로세스', description: '마스터 데이터 통합, 동기화, 정합성 관리', display_name: 'MDM 프로세스 (:Classification)', readme: '', group: false});
 
 // Classification Hierarchy
 MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C13000001'}) CREATE (p)-[:PARENT_OF]->(c);
@@ -3042,6 +3062,26 @@ MATCH (p:Classification {id: 'C13000001'}), (c:Classification {id: 'C13040001'})
 MATCH (p:Classification {id: 'C13040001'}), (c:Classification {id: 'C13040002'}) CREATE (p)-[:PARENT_OF]->(c);
 MATCH (p:Classification {id: 'C13040001'}), (c:Classification {id: 'C13040003'}) CREATE (p)-[:PARENT_OF]->(c);
 MATCH (p:Classification {id: 'C13040001'}), (c:Classification {id: 'C13040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13000001'}), (c:Classification {id: 'C13050001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13050001'}), (c:Classification {id: 'C13050002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13050001'}), (c:Classification {id: 'C13050003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13050001'}), (c:Classification {id: 'C13050004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13000001'}), (c:Classification {id: 'C13060001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13060001'}), (c:Classification {id: 'C13060002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13060001'}), (c:Classification {id: 'C13060003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13000001'}), (c:Classification {id: 'C13070001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13070001'}), (c:Classification {id: 'C13070002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13070001'}), (c:Classification {id: 'C13070003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13070001'}), (c:Classification {id: 'C13070004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13000001'}), (c:Classification {id: 'C13080001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13080001'}), (c:Classification {id: 'C13080002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13080001'}), (c:Classification {id: 'C13080003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13080001'}), (c:Classification {id: 'C13080004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13080001'}), (c:Classification {id: 'C13080005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13000001'}), (c:Classification {id: 'C13090001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13090001'}), (c:Classification {id: 'C13090002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13090001'}), (c:Classification {id: 'C13090003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C13090001'}), (c:Classification {id: 'C13090004'}) CREATE (p)-[:PARENT_OF]->(c);
 
 // Terms
 CREATE (:Term {id: 'T13010001', name_ko: '메타데이터', name_en: 'Metadata', acronym: 'None', description: '데이터에 대한 데이터. 데이터의 속성, 구조, 의미 등을 설명하는 정보', display_name: '메타데이터 (:Term)'});
@@ -3054,6 +3094,15 @@ CREATE (:Term {id: 'T13030002', name_ko: '공통코드', name_en: 'Common Code',
 CREATE (:Term {id: 'T13040001', name_ko: '오픈데이터', name_en: 'Open Data', acronym: 'None', description: '누구나 자유롭게 이용·재배포·재가공할 수 있도록 공개된 데이터', display_name: '오픈데이터 (:Term)'});
 CREATE (:Term {id: 'T13040002', name_ko: '데이터셋', name_en: 'Dataset', acronym: 'None', description: '특정 주제나 목적으로 수집된 데이터의 집합', display_name: '데이터셋 (:Term)'});
 CREATE (:Term {id: 'T13040003', name_ko: '오픈API', name_en: 'Open API', acronym: 'API', description: '공개된 애플리케이션 프로그래밍 인터페이스. 외부에서 데이터나 기능에 접근할 수 있도록 제공', display_name: '오픈API (:Term)'});
+CREATE (:Term {id: 'T13050001', name_ko: '데이터 거버넌스', name_en: 'Data Governance', acronym: 'DG', description: '데이터 자산의 관리를 위한 권한 행사 및 통제 체계', display_name: '데이터 거버넌스 (:Term)'});
+CREATE (:Term {id: 'T13050002', name_ko: '데이터 관리자', name_en: 'Data Steward', acronym: 'None', description: '데이터 품질 및 정책 준수를 책임지는 역할', display_name: '데이터 관리자 (:Term)'});
+CREATE (:Term {id: 'T13060001', name_ko: '데이터 아키텍처', name_en: 'Data Architecture', acronym: 'DA', description: '비즈니스 요구사항을 데이터 자산으로 변환하는 설계 청사진', display_name: '데이터 아키텍처 (:Term)'});
+CREATE (:Term {id: 'T13070001', name_ko: '데이터 모델링', name_en: 'Data Modeling', acronym: 'None', description: '데이터 요구사항을 발견, 분석, 표현하는 프로세스', display_name: '데이터 모델링 (:Term)'});
+CREATE (:Term {id: 'T13080001', name_ko: '데이터 보안', name_en: 'Data Security', acronym: 'None', description: '데이터 프라이버시, 기밀성, 접근 권한 보장', display_name: '데이터 보안 (:Term)'});
+CREATE (:Term {id: 'T13080002', name_ko: '개인정보 보호', name_en: 'Privacy Protection', acronym: 'None', description: '개인정보의 수집·이용·제공 및 안전한 관리', display_name: '개인정보 보호 (:Term)'});
+CREATE (:Term {id: 'T13090001', name_ko: '마스터 데이터', name_en: 'Master Data', acronym: 'MD', description: '조직 내 공유되는 핵심 비즈니스 엔티티 (고객, 제품, 계정 등)', display_name: '마스터 데이터 (:Term)'});
+CREATE (:Term {id: 'T13090002', name_ko: '참조 데이터', name_en: 'Reference Data', acronym: 'None', description: '분류 및 코드 체계 (국가 코드, 통화 코드 등)', display_name: '참조 데이터 (:Term)'});
+CREATE (:Term {id: 'T13090003', name_ko: '마스터 데이터 관리', name_en: 'Master Data Management', acronym: 'MDM', description: '마스터 데이터의 통합, 동기화, 품질 관리 프로세스', display_name: '마스터 데이터 관리 (:Term)'});
 
 // Term Hierarchy
 MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13010001'}) CREATE (p)-[:PARENT_OF]->(t);
@@ -3066,6 +3115,15 @@ MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13030002
 MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13040001'}) CREATE (p)-[:PARENT_OF]->(t);
 MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13040002'}) CREATE (p)-[:PARENT_OF]->(t);
 MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13050001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13050002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13060001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13070001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13080001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13080002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13090001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13090002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T13090003'}) CREATE (p)-[:PARENT_OF]->(t);
 
 // Term-Classification Relations
 MATCH (t:Term {id: 'T13010001'}), (c:Classification {id: 'C13010001'}) CREATE (t)-[:BELONGS_TO]->(c);
@@ -3078,6 +3136,15 @@ MATCH (t:Term {id: 'T13030002'}), (c:Classification {id: 'C13030003'}) CREATE (t
 MATCH (t:Term {id: 'T13040001'}), (c:Classification {id: 'C13040001'}) CREATE (t)-[:BELONGS_TO]->(c);
 MATCH (t:Term {id: 'T13040002'}), (c:Classification {id: 'C13040003'}) CREATE (t)-[:BELONGS_TO]->(c);
 MATCH (t:Term {id: 'T13040003'}), (c:Classification {id: 'C13040004'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13050001'}), (c:Classification {id: 'C13050001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13050002'}), (c:Classification {id: 'C13050003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13060001'}), (c:Classification {id: 'C13060001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13070001'}), (c:Classification {id: 'C13070001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13080001'}), (c:Classification {id: 'C13080001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13080002'}), (c:Classification {id: 'C13080005'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13090001'}), (c:Classification {id: 'C13090002'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13090002'}), (c:Classification {id: 'C13090003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T13090003'}), (c:Classification {id: 'C13090004'}) CREATE (t)-[:BELONGS_TO]->(c);
 
 // Synonym Relations (Typed)
 MATCH (t:Term {id: 'T13010001'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: '메타정보', display_name: '메타정보 (:Synonym)'});
@@ -3117,6 +3184,33 @@ MATCH (t:Term {id: 'T13040003'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 
 MATCH (t:Term {id: 'T13040003'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: 'REST API', display_name: 'REST API (:Synonym)'});
 MATCH (t:Term {id: 'T13040003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '웹 서비스', display_name: '웹 서비스 (:Synonym)'});
 MATCH (t:Term {id: 'T13040003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'API 게이트웨이', display_name: 'API 게이트웨이 (:Synonym)'});
+MATCH (t:Term {id: 'T13050001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 관리체계', display_name: '데이터 관리체계 (:Synonym)'});
+MATCH (t:Term {id: 'T13050001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 정책', display_name: '데이터 정책 (:Synonym)'});
+MATCH (t:Term {id: 'T13050001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 관리', display_name: '데이터 관리 (:Synonym)'});
+MATCH (t:Term {id: 'T13050002'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: '데이터 스튜어드', display_name: '데이터 스튜어드 (:Synonym)'});
+MATCH (t:Term {id: 'T13050002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 담당자', display_name: '데이터 담당자 (:Synonym)'});
+MATCH (t:Term {id: 'T13060001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 구조 설계', display_name: '데이터 구조 설계 (:Synonym)'});
+MATCH (t:Term {id: 'T13060001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '시스템 아키텍처', display_name: '시스템 아키텍처 (:Synonym)'});
+MATCH (t:Term {id: 'T13070001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 모델 설계', display_name: '데이터 모델 설계 (:Synonym)'});
+MATCH (t:Term {id: 'T13070001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'ERD', display_name: 'ERD (:Synonym)'});
+MATCH (t:Term {id: 'T13070001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '엔티티 관계도', display_name: '엔티티 관계도 (:Synonym)'});
+MATCH (t:Term {id: 'T13080001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '정보 보안', display_name: '정보 보안 (:Synonym)'});
+MATCH (t:Term {id: 'T13080001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 보호', display_name: '데이터 보호 (:Synonym)'});
+MATCH (t:Term {id: 'T13080001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '개인정보 보호', display_name: '개인정보 보호 (:Synonym)'});
+MATCH (t:Term {id: 'T13080001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '암호화', display_name: '암호화 (:Synonym)'});
+MATCH (t:Term {id: 'T13080002'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: '프라이버시 보호', display_name: '프라이버시 보호 (:Synonym)'});
+MATCH (t:Term {id: 'T13080002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '개인정보보호', display_name: '개인정보보호 (:Synonym)'});
+MATCH (t:Term {id: 'T13080002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '비식별화', display_name: '비식별화 (:Synonym)'});
+MATCH (t:Term {id: 'T13080002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '가명처리', display_name: '가명처리 (:Synonym)'});
+MATCH (t:Term {id: 'T13090001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '기준 데이터', display_name: '기준 데이터 (:Synonym)'});
+MATCH (t:Term {id: 'T13090001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '참조 데이터', display_name: '참조 데이터 (:Synonym)'});
+MATCH (t:Term {id: 'T13090001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'MDM', display_name: 'MDM (:Synonym)'});
+MATCH (t:Term {id: 'T13090002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '코드 데이터', display_name: '코드 데이터 (:Synonym)'});
+MATCH (t:Term {id: 'T13090002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '공통 코드', display_name: '공통 코드 (:Synonym)'});
+MATCH (t:Term {id: 'T13090002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '표준 코드', display_name: '표준 코드 (:Synonym)'});
+MATCH (t:Term {id: 'T13090003'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'MDM', display_name: 'MDM (:Synonym)'});
+MATCH (t:Term {id: 'T13090003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 통합', display_name: '데이터 통합 (:Synonym)'});
+MATCH (t:Term {id: 'T13090003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 정합성', display_name: '데이터 정합성 (:Synonym)'});
 
 // Similar Classification Relations
 
@@ -3126,6 +3220,11 @@ MATCH (t1:Term {id: 'T13010003'}), (t2:Term {id: 'T13010001'}) CREATE (t1)-[:REL
 MATCH (t1:Term {id: 'T13020002'}), (t2:Term {id: 'T13020001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 MATCH (t1:Term {id: 'T13040002'}), (t2:Term {id: 'T13040001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 MATCH (t1:Term {id: 'T13040003'}), (t2:Term {id: 'T13040001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T13050002'}), (t2:Term {id: 'T13050001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T13070001'}), (t2:Term {id: 'T13060001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T13080002'}), (t2:Term {id: 'T13080001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T13090002'}), (t2:Term {id: 'T13090001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T13090003'}), (t2:Term {id: 'T13090001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 
 // 학술연구 (Academic Research)
 
@@ -3254,3 +3353,224 @@ MATCH (t1:Term {id: 'T14030003'}), (t2:Term {id: 'T14030001'}) CREATE (t1)-[:REL
 MATCH (t1:Term {id: 'T14030004'}), (t2:Term {id: 'T14030003'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 MATCH (t1:Term {id: 'T14030005'}), (t2:Term {id: 'T14030004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
 MATCH (t1:Term {id: 'T14030006'}), (t2:Term {id: 'T14030004'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+
+// 데이터 관리 (Data Management)
+
+// Classifications
+CREATE (:Classification {id: 'C15000001', name: '데이터 관리', description: '데이터 저장·운영, 통합, 문서 관리 등 데이터 관리 기술 및 프로세스', display_name: '데이터 관리 (:Classification)', readme: '', group: true});
+CREATE (:Classification {id: 'C15010001', name: '데이터 저장 및 운영', description: '데이터베이스 관리, 백업·복구, 성능 최적화 등', display_name: '데이터 저장 및 운영 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15010002', name: '데이터베이스 관리', description: 'DBMS 설치, 구성, 모니터링, 튜닝 (DBA)', display_name: '데이터베이스 관리 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15010003', name: '데이터 백업 및 복구', description: '백업 전략, 복구 계획, 재해 복구', display_name: '데이터 백업 및 복구 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15010004', name: '데이터 아카이빙', description: '장기 보관 데이터 관리 및 저장', display_name: '데이터 아카이빙 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15010005', name: '데이터베이스 성능 최적화', description: '쿼리 튜닝, 인덱스 설계, 파티셔닝', display_name: '데이터베이스 성능 최적화 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15020001', name: '데이터 통합', description: '시스템 간 데이터 이동 및 통합 (ETL, ELT, API)', display_name: '데이터 통합 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15020002', name: 'ETL 프로세스', description: 'Extract, Transform, Load 프로세스 설계 및 구현', display_name: 'ETL 프로세스 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15020003', name: '데이터 파이프라인', description: '실시간·배치 데이터 처리 파이프라인', display_name: '데이터 파이프라인 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15020004', name: 'API 통합', description: 'REST API, SOAP, GraphQL 등을 통한 데이터 연동', display_name: 'API 통합 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15020005', name: '실시간 데이터 통합', description: '스트리밍 데이터 처리 (Kafka, Message Queue)', display_name: '실시간 데이터 통합 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15030001', name: '문서 및 콘텐츠 관리', description: '비정형 데이터(문서, 이미지, 영상) 관리', display_name: '문서 및 콘텐츠 관리 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15030002', name: '문서 분류 체계', description: '문서 유형, 카테고리, 태그 체계 정의', display_name: '문서 분류 체계 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15030003', name: '문서 생명주기 관리', description: '문서 생성, 승인, 배포, 보관, 폐기', display_name: '문서 생명주기 관리 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15030004', name: '콘텐츠 검색', description: '전문 검색, 메타데이터 검색, 유사 문서 검색', display_name: '콘텐츠 검색 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C15030005', name: '레코드 관리', description: 'Records Management, 법적 기록 보존', display_name: '레코드 관리 (:Classification)', readme: '', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C15000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15000001'}), (c:Classification {id: 'C15010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15010001'}), (c:Classification {id: 'C15010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15010001'}), (c:Classification {id: 'C15010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15010001'}), (c:Classification {id: 'C15010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15010001'}), (c:Classification {id: 'C15010005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15000001'}), (c:Classification {id: 'C15020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15020001'}), (c:Classification {id: 'C15020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15020001'}), (c:Classification {id: 'C15020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15020001'}), (c:Classification {id: 'C15020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15020001'}), (c:Classification {id: 'C15020005'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15000001'}), (c:Classification {id: 'C15030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15030001'}), (c:Classification {id: 'C15030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15030001'}), (c:Classification {id: 'C15030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15030001'}), (c:Classification {id: 'C15030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C15030001'}), (c:Classification {id: 'C15030005'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T15010001', name_ko: '데이터베이스 관리자', name_en: 'Database Administrator', acronym: 'DBA', description: '데이터베이스 시스템의 설치, 구성, 모니터링, 튜닝을 담당하는 역할', display_name: '데이터베이스 관리자 (:Term)'});
+CREATE (:Term {id: 'T15010002', name_ko: '백업', name_en: 'Backup', acronym: 'None', description: '데이터 손실을 방지하기 위한 데이터 복사본 생성', display_name: '백업 (:Term)'});
+CREATE (:Term {id: 'T15020001', name_ko: 'ETL', name_en: 'Extract Transform Load', acronym: 'ETL', description: '데이터를 추출(Extract), 변환(Transform), 적재(Load)하는 프로세스', display_name: 'ETL (:Term)'});
+CREATE (:Term {id: 'T15020002', name_ko: '데이터 파이프라인', name_en: 'Data Pipeline', acronym: 'None', description: '데이터의 수집, 처리, 저장을 자동화한 워크플로우', display_name: '데이터 파이프라인 (:Term)'});
+CREATE (:Term {id: 'T15020003', name_ko: 'API', name_en: 'Application Programming Interface', acronym: 'API', description: '애플리케이션 간 데이터 및 기능을 연동하는 인터페이스', display_name: 'API (:Term)'});
+CREATE (:Term {id: 'T15030001', name_ko: '문서 관리', name_en: 'Document Management', acronym: 'DM', description: '전자 문서의 생성, 저장, 검색, 배포, 보관, 폐기 관리', display_name: '문서 관리 (:Term)'});
+CREATE (:Term {id: 'T15030002', name_ko: '콘텐츠 관리', name_en: 'Content Management', acronym: 'CM', description: '디지털 콘텐츠(문서, 이미지, 영상 등)의 생명주기 관리', display_name: '콘텐츠 관리 (:Term)'});
+CREATE (:Term {id: 'T15030003', name_ko: '레코드 관리', name_en: 'Records Management', acronym: 'RM', description: '법적·규제적 요구사항에 따른 기록물 관리', display_name: '레코드 관리 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15020003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15030002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T15030003'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T15010001'}), (c:Classification {id: 'C15010002'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15010002'}), (c:Classification {id: 'C15010003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15020001'}), (c:Classification {id: 'C15020002'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15020002'}), (c:Classification {id: 'C15020003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15020003'}), (c:Classification {id: 'C15020004'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15030001'}), (c:Classification {id: 'C15030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15030002'}), (c:Classification {id: 'C15030001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T15030003'}), (c:Classification {id: 'C15030005'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations (Typed)
+MATCH (t:Term {id: 'T15010001'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'DBA', display_name: 'DBA (:Synonym)'});
+MATCH (t:Term {id: 'T15010001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: 'DB 관리자', display_name: 'DB 관리자 (:Synonym)'});
+MATCH (t:Term {id: 'T15010001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터베이스 엔지니어', display_name: '데이터베이스 엔지니어 (:Synonym)'});
+MATCH (t:Term {id: 'T15010002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 백업', display_name: '데이터 백업 (:Synonym)'});
+MATCH (t:Term {id: 'T15010002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '복구', display_name: '복구 (:Synonym)'});
+MATCH (t:Term {id: 'T15010002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '아카이빙', display_name: '아카이빙 (:Synonym)'});
+MATCH (t:Term {id: 'T15020001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 통합', display_name: '데이터 통합 (:Synonym)'});
+MATCH (t:Term {id: 'T15020001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'ELT', display_name: 'ELT (:Synonym)'});
+MATCH (t:Term {id: 'T15020001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 파이프라인', display_name: '데이터 파이프라인 (:Synonym)'});
+MATCH (t:Term {id: 'T15020002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터 흐름', display_name: '데이터 흐름 (:Synonym)'});
+MATCH (t:Term {id: 'T15020002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'ETL', display_name: 'ETL (:Synonym)'});
+MATCH (t:Term {id: 'T15020002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '워크플로우', display_name: '워크플로우 (:Synonym)'});
+MATCH (t:Term {id: 'T15020003'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '인터페이스', display_name: '인터페이스 (:Synonym)'});
+MATCH (t:Term {id: 'T15020003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'REST API', display_name: 'REST API (:Synonym)'});
+MATCH (t:Term {id: 'T15020003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '웹 서비스', display_name: '웹 서비스 (:Synonym)'});
+MATCH (t:Term {id: 'T15030001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '문서관리 시스템', display_name: '문서관리 시스템 (:Synonym)'});
+MATCH (t:Term {id: 'T15030001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'ECM', display_name: 'ECM (:Synonym)'});
+MATCH (t:Term {id: 'T15030001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '콘텐츠 관리', display_name: '콘텐츠 관리 (:Synonym)'});
+MATCH (t:Term {id: 'T15030002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '콘텐츠관리 시스템', display_name: '콘텐츠관리 시스템 (:Synonym)'});
+MATCH (t:Term {id: 'T15030002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'ECM', display_name: 'ECM (:Synonym)'});
+MATCH (t:Term {id: 'T15030002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'DAM', display_name: 'DAM (:Synonym)'});
+MATCH (t:Term {id: 'T15030003'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '기록 관리', display_name: '기록 관리 (:Synonym)'});
+MATCH (t:Term {id: 'T15030003'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '기록물 관리', display_name: '기록물 관리 (:Synonym)'});
+MATCH (t:Term {id: 'T15030003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '문서 보존', display_name: '문서 보존 (:Synonym)'});
+MATCH (t:Term {id: 'T15030003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '아카이빙', display_name: '아카이빙 (:Synonym)'});
+
+// Similar Classification Relations
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T15020002'}), (t2:Term {id: 'T15020001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T15030002'}), (t2:Term {id: 'T15030001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T15030003'}), (t2:Term {id: 'T15030001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+
+// 데이터 분석 (Data Analytics)
+
+// Classifications
+CREATE (:Classification {id: 'C16000001', name: '데이터 분석', description: '데이터 웨어하우스, BI, 고급 분석, 데이터 과학 등', display_name: '데이터 분석 (:Classification)', readme: '', group: true});
+CREATE (:Classification {id: 'C16010001', name: '데이터 웨어하우스', description: '의사결정 지원을 위한 통합 데이터 저장소', display_name: '데이터 웨어하우스 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16010002', name: 'DW 설계', description: '스타 스키마, 스노우플레이크 스키마 설계', display_name: 'DW 설계 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16010003', name: '데이터 마트', description: '특정 업무 영역을 위한 부분 데이터 웨어하우스', display_name: '데이터 마트 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16010004', name: 'OLAP', description: '온라인 분석 처리 (Online Analytical Processing)', display_name: 'OLAP (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16020001', name: '비즈니스 인텔리전스', description: '데이터 기반 의사결정 지원 (BI)', display_name: '비즈니스 인텔리전스 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16020002', name: 'BI 리포트', description: '정형화된 보고서 생성 및 배포', display_name: 'BI 리포트 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16020003', name: '대시보드', description: '실시간 KPI 및 지표 시각화', display_name: '대시보드 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16020004', name: '셀프서비스 BI', description: '사용자 주도 데이터 탐색 및 분석', display_name: '셀프서비스 BI (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16030001', name: '고급 분석', description: '통계 분석, 예측 분석, 최적화', display_name: '고급 분석 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16030002', name: '통계 분석', description: '기술 통계, 추론 통계, 회귀 분석', display_name: '통계 분석 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16030003', name: '예측 분석', description: '미래 결과 예측 (Predictive Analytics)', display_name: '예측 분석 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16030004', name: '처방 분석', description: '최적 의사결정 권고 (Prescriptive Analytics)', display_name: '처방 분석 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16040001', name: '데이터 과학', description: '머신러닝, 딥러닝, AI 기반 데이터 분석', display_name: '데이터 과학 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16040002', name: '머신러닝', description: '지도학습, 비지도학습, 강화학습', display_name: '머신러닝 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16040003', name: '딥러닝', description: '신경망 기반 학습 (Neural Networks)', display_name: '딥러닝 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16040004', name: '자연어 처리', description: '텍스트 분석, 감성 분석, NLP', display_name: '자연어 처리 (:Classification)', readme: '', group: false});
+CREATE (:Classification {id: 'C16040005', name: '컴퓨터 비전', description: '이미지 인식, 객체 탐지, 영상 분석', display_name: '컴퓨터 비전 (:Classification)', readme: '', group: false});
+
+// Classification Hierarchy
+MATCH (p:Classification {id: '03facd74b2d24f7cab807b8980391649'}), (c:Classification {id: 'C16000001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16000001'}), (c:Classification {id: 'C16010001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16010001'}), (c:Classification {id: 'C16010002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16010001'}), (c:Classification {id: 'C16010003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16010001'}), (c:Classification {id: 'C16010004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16000001'}), (c:Classification {id: 'C16020001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16020001'}), (c:Classification {id: 'C16020002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16020001'}), (c:Classification {id: 'C16020003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16020001'}), (c:Classification {id: 'C16020004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16000001'}), (c:Classification {id: 'C16030001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16030001'}), (c:Classification {id: 'C16030002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16030001'}), (c:Classification {id: 'C16030003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16030001'}), (c:Classification {id: 'C16030004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16000001'}), (c:Classification {id: 'C16040001'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16040001'}), (c:Classification {id: 'C16040002'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16040001'}), (c:Classification {id: 'C16040003'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16040001'}), (c:Classification {id: 'C16040004'}) CREATE (p)-[:PARENT_OF]->(c);
+MATCH (p:Classification {id: 'C16040001'}), (c:Classification {id: 'C16040005'}) CREATE (p)-[:PARENT_OF]->(c);
+
+// Terms
+CREATE (:Term {id: 'T16010001', name_ko: '데이터 웨어하우스', name_en: 'Data Warehouse', acronym: 'DW', description: '의사결정 지원을 위한 주제 중심의 통합 데이터 저장소', display_name: '데이터 웨어하우스 (:Term)'});
+CREATE (:Term {id: 'T16010002', name_ko: 'OLAP', name_en: 'Online Analytical Processing', acronym: 'OLAP', description: '다차원 데이터 분석을 위한 온라인 처리 시스템', display_name: 'OLAP (:Term)'});
+CREATE (:Term {id: 'T16020001', name_ko: '비즈니스 인텔리전스', name_en: 'Business Intelligence', acronym: 'BI', description: '데이터 기반 의사결정을 지원하는 기술 및 프로세스', display_name: '비즈니스 인텔리전스 (:Term)'});
+CREATE (:Term {id: 'T16020002', name_ko: '대시보드', name_en: 'Dashboard', acronym: 'None', description: '핵심 지표(KPI)를 시각적으로 표시하는 화면', display_name: '대시보드 (:Term)'});
+CREATE (:Term {id: 'T16030001', name_ko: '예측 분석', name_en: 'Predictive Analytics', acronym: 'None', description: '통계 및 머신러닝 기법을 사용하여 미래 결과 예측', display_name: '예측 분석 (:Term)'});
+CREATE (:Term {id: 'T16040001', name_ko: '머신러닝', name_en: 'Machine Learning', acronym: 'ML', description: '데이터로부터 패턴을 학습하여 예측하는 기술', display_name: '머신러닝 (:Term)'});
+CREATE (:Term {id: 'T16040002', name_ko: '딥러닝', name_en: 'Deep Learning', acronym: 'DL', description: '다층 신경망을 사용한 학습 기술', display_name: '딥러닝 (:Term)'});
+CREATE (:Term {id: 'T16040003', name_ko: '자연어 처리', name_en: 'Natural Language Processing', acronym: 'NLP', description: '인간의 언어를 컴퓨터가 이해하고 처리하는 기술', display_name: '자연어 처리 (:Term)'});
+CREATE (:Term {id: 'T16040004', name_ko: '데이터 과학', name_en: 'Data Science', acronym: 'DS', description: '통계, 수학, 컴퓨터과학을 결합하여 데이터로부터 인사이트 도출', display_name: '데이터 과학 (:Term)'});
+
+// Term Hierarchy
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16010001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16010002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16020001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16020002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16030001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16040001'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16040002'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16040003'}) CREATE (p)-[:PARENT_OF]->(t);
+MATCH (p:Term {id: '4147179070a84d3887b97eb57085d850'}), (t:Term {id: 'T16040004'}) CREATE (p)-[:PARENT_OF]->(t);
+
+// Term-Classification Relations
+MATCH (t:Term {id: 'T16010001'}), (c:Classification {id: 'C16010001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16010002'}), (c:Classification {id: 'C16010004'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16020001'}), (c:Classification {id: 'C16020001'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16020002'}), (c:Classification {id: 'C16020003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16030001'}), (c:Classification {id: 'C16030003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16040001'}), (c:Classification {id: 'C16040002'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16040002'}), (c:Classification {id: 'C16040003'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16040003'}), (c:Classification {id: 'C16040004'}) CREATE (t)-[:BELONGS_TO]->(c);
+MATCH (t:Term {id: 'T16040004'}), (c:Classification {id: 'C16040001'}) CREATE (t)-[:BELONGS_TO]->(c);
+
+// Synonym Relations (Typed)
+MATCH (t:Term {id: 'T16010001'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'DW', display_name: 'DW (:Synonym)'});
+MATCH (t:Term {id: 'T16010001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '데이터웨어하우스', display_name: '데이터웨어하우스 (:Synonym)'});
+MATCH (t:Term {id: 'T16010001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 마트', display_name: '데이터 마트 (:Synonym)'});
+MATCH (t:Term {id: 'T16010001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'OLAP', display_name: 'OLAP (:Synonym)'});
+MATCH (t:Term {id: 'T16010002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '온라인 분석 처리', display_name: '온라인 분석 처리 (:Synonym)'});
+MATCH (t:Term {id: 'T16010002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '큐브', display_name: '큐브 (:Synonym)'});
+MATCH (t:Term {id: 'T16010002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '다차원 분석', display_name: '다차원 분석 (:Synonym)'});
+MATCH (t:Term {id: 'T16020001'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'BI', display_name: 'BI (:Synonym)'});
+MATCH (t:Term {id: 'T16020001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '경영 정보', display_name: '경영 정보 (:Synonym)'});
+MATCH (t:Term {id: 'T16020001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 분석', display_name: '데이터 분석 (:Synonym)'});
+MATCH (t:Term {id: 'T16020001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '리포팅', display_name: '리포팅 (:Synonym)'});
+MATCH (t:Term {id: 'T16020002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '경영 대시보드', display_name: '경영 대시보드 (:Synonym)'});
+MATCH (t:Term {id: 'T16020002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '리포트', display_name: '리포트 (:Synonym)'});
+MATCH (t:Term {id: 'T16020002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '시각화', display_name: '시각화 (:Synonym)'});
+MATCH (t:Term {id: 'T16030001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '예측 모델링', display_name: '예측 모델링 (:Synonym)'});
+MATCH (t:Term {id: 'T16030001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '머신러닝', display_name: '머신러닝 (:Synonym)'});
+MATCH (t:Term {id: 'T16030001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '통계 분석', display_name: '통계 분석 (:Synonym)'});
+MATCH (t:Term {id: 'T16040001'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'ML', display_name: 'ML (:Synonym)'});
+MATCH (t:Term {id: 'T16040001'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '기계학습', display_name: '기계학습 (:Synonym)'});
+MATCH (t:Term {id: 'T16040001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '딥러닝', display_name: '딥러닝 (:Synonym)'});
+MATCH (t:Term {id: 'T16040001'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'AI', display_name: 'AI (:Synonym)'});
+MATCH (t:Term {id: 'T16040002'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'DL', display_name: 'DL (:Synonym)'});
+MATCH (t:Term {id: 'T16040002'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '심층학습', display_name: '심층학습 (:Synonym)'});
+MATCH (t:Term {id: 'T16040002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '신경망', display_name: '신경망 (:Synonym)'});
+MATCH (t:Term {id: 'T16040002'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: 'AI', display_name: 'AI (:Synonym)'});
+MATCH (t:Term {id: 'T16040003'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'NLP', display_name: 'NLP (:Synonym)'});
+MATCH (t:Term {id: 'T16040003'}) CREATE (t)-[:CLOSE_SYNONYM]->(:Synonym {value: '자연어분석', display_name: '자연어분석 (:Synonym)'});
+MATCH (t:Term {id: 'T16040003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '텍스트 마이닝', display_name: '텍스트 마이닝 (:Synonym)'});
+MATCH (t:Term {id: 'T16040003'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '감성 분석', display_name: '감성 분석 (:Synonym)'});
+MATCH (t:Term {id: 'T16040004'}) CREATE (t)-[:EXACT_SYNONYM]->(:Synonym {value: 'DS', display_name: 'DS (:Synonym)'});
+MATCH (t:Term {id: 'T16040004'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '데이터 분석', display_name: '데이터 분석 (:Synonym)'});
+MATCH (t:Term {id: 'T16040004'}) CREATE (t)-[:RELATED_SYNONYM]->(:Synonym {value: '머신러닝', display_name: '머신러닝 (:Synonym)'});
+
+// Similar Classification Relations
+
+// Related Term Relations
+MATCH (t1:Term {id: 'T16010002'}), (t2:Term {id: 'T16010001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T16020001'}), (t2:Term {id: 'T16010001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T16020002'}), (t2:Term {id: 'T16020001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T16040002'}), (t2:Term {id: 'T16040001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T16040003'}), (t2:Term {id: 'T16040001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);
+MATCH (t1:Term {id: 'T16040004'}), (t2:Term {id: 'T16040001'}) CREATE (t1)-[:RELATED_TO]->(t2), (t2)-[:RELATED_TO]->(t1);

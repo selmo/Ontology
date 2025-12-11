@@ -1,0 +1,477 @@
+{
+  "domain_code": "13",
+  "enhancements": {
+    "description": "DAMA-DMBOK 기반 데이터 거버넌스 도메인 보강 (5개 중분류 추가)",
+    "new_classifications": [
+      {
+        "id": "C13050001",
+        "name": "데이터 거버넌스 조직",
+        "description": "데이터 거버넌스 위원회, 데이터 관리자, CDO 역할 등 조직 구성",
+        "level": 1,
+        "group": false,
+        "parent_id": "C13000001",
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA01",
+            "external_name": "Data Governance",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95,
+            "note": "DAMA-DMBOK 지식 영역 #1"
+          }
+        ]
+      },
+      {
+        "id": "C13050002",
+        "name": "데이터 거버넌스 위원회",
+        "description": "데이터 거버넌스 정책 및 의사결정 기구",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13050001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13050003",
+        "name": "데이터 관리자",
+        "description": "Data Stewards, 데이터 도메인별 관리 책임자",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13050001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13050004",
+        "name": "데이터 소유자",
+        "description": "Data Owners, 데이터 자산의 궁극적 책임자",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13050001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13060001",
+        "name": "데이터 아키텍처",
+        "description": "엔터프라이즈 데이터 모델, 데이터 흐름, 통합 설계",
+        "level": 1,
+        "group": false,
+        "parent_id": "C13000001",
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA02",
+            "external_name": "Data Architecture",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95,
+            "note": "DAMA-DMBOK 지식 영역 #2"
+          }
+        ]
+      },
+      {
+        "id": "C13060002",
+        "name": "엔터프라이즈 데이터 모델",
+        "description": "조직 전체 데이터 구조 및 관계 정의",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13060001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13060003",
+        "name": "데이터 흐름 설계",
+        "description": "시스템 간 데이터 이동 경로 및 변환 설계",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13060001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13070001",
+        "name": "데이터 모델링",
+        "description": "개념/논리/물리 데이터 모델 설계 및 관리",
+        "level": 1,
+        "group": false,
+        "parent_id": "C13000001",
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA03",
+            "external_name": "Data Modeling & Design",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95,
+            "note": "DAMA-DMBOK 지식 영역 #3"
+          }
+        ]
+      },
+      {
+        "id": "C13070002",
+        "name": "개념 데이터 모델",
+        "description": "비즈니스 개념 및 관계 정의 (Conceptual Model)",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13070001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13070003",
+        "name": "논리 데이터 모델",
+        "description": "엔티티, 속성, 관계 상세 정의 (Logical Model)",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13070001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13070004",
+        "name": "물리 데이터 모델",
+        "description": "테이블, 컬럼, 인덱스 등 물리 구조 (Physical Model)",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13070001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13080001",
+        "name": "데이터 보안",
+        "description": "데이터 접근 제어, 암호화, 개인정보 보호",
+        "level": 1,
+        "group": false,
+        "parent_id": "C13000001",
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA05",
+            "external_name": "Data Security",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95,
+            "note": "DAMA-DMBOK 지식 영역 #5"
+          }
+        ]
+      },
+      {
+        "id": "C13080002",
+        "name": "데이터 분류",
+        "description": "데이터 민감도 등급 정의 (Public, Internal, Confidential, Restricted)",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13080001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13080003",
+        "name": "접근 제어",
+        "description": "인증, 권한 부여, 접근 로그 관리",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13080001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13080004",
+        "name": "암호화",
+        "description": "저장 데이터 및 전송 데이터 암호화",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13080001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13080005",
+        "name": "개인정보 보호",
+        "description": "개인정보 수집·이용·제공 관리, 비식별화",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13080001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13090001",
+        "name": "마스터 데이터 관리",
+        "description": "핵심 비즈니스 엔티티(고객, 제품 등)의 공유 데이터 관리",
+        "level": 1,
+        "group": false,
+        "parent_id": "C13000001",
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA08",
+            "external_name": "Reference & Master Data",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95,
+            "note": "DAMA-DMBOK 지식 영역 #8"
+          }
+        ]
+      },
+      {
+        "id": "C13090002",
+        "name": "마스터 데이터",
+        "description": "고객, 제품, 계정, 위치 등 핵심 엔티티",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13090001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13090003",
+        "name": "참조 데이터",
+        "description": "국가 코드, 통화 코드, 상태 코드 등",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13090001",
+        "standard_refs": []
+      },
+      {
+        "id": "C13090004",
+        "name": "MDM 프로세스",
+        "description": "마스터 데이터 통합, 동기화, 정합성 관리",
+        "level": 2,
+        "group": false,
+        "parent_id": "C13090001",
+        "standard_refs": []
+      }
+    ],
+    "new_terms": [
+      {
+        "id": "T13050001",
+        "name_ko": "데이터 거버넌스",
+        "name_en": "Data Governance",
+        "acronym": "DG",
+        "description": "데이터 자산의 관리를 위한 권한 행사 및 통제 체계",
+        "synonyms": {
+          "terms": [],
+          "exact": [],
+          "close": ["데이터 관리체계"],
+          "related": ["데이터 정책", "데이터 관리"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": [],
+        "linked_clsf_id": "C13050001",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA01",
+            "external_name": "Data Governance",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "T13050002",
+        "name_ko": "데이터 관리자",
+        "name_en": "Data Steward",
+        "acronym": null,
+        "description": "데이터 품질 및 정책 준수를 책임지는 역할",
+        "synonyms": {
+          "terms": [],
+          "exact": ["데이터 스튜어드"],
+          "close": [],
+          "related": ["데이터 담당자"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": ["T13050001"],
+        "linked_clsf_id": "C13050003",
+        "parent_id": null,
+        "standard_refs": [],
+        "children": []
+      },
+      {
+        "id": "T13060001",
+        "name_ko": "데이터 아키텍처",
+        "name_en": "Data Architecture",
+        "acronym": "DA",
+        "description": "비즈니스 요구사항을 데이터 자산으로 변환하는 설계 청사진",
+        "synonyms": {
+          "terms": [],
+          "exact": [],
+          "close": ["데이터 구조 설계"],
+          "related": ["시스템 아키텍처"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": [],
+        "linked_clsf_id": "C13060001",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA02",
+            "external_name": "Data Architecture",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "T13070001",
+        "name_ko": "데이터 모델링",
+        "name_en": "Data Modeling",
+        "acronym": null,
+        "description": "데이터 요구사항을 발견, 분석, 표현하는 프로세스",
+        "synonyms": {
+          "terms": [],
+          "exact": [],
+          "close": ["데이터 모델 설계"],
+          "related": ["ERD", "엔티티 관계도"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": ["T13060001"],
+        "linked_clsf_id": "C13070001",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA03",
+            "external_name": "Data Modeling & Design",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "T13080001",
+        "name_ko": "데이터 보안",
+        "name_en": "Data Security",
+        "acronym": null,
+        "description": "데이터 프라이버시, 기밀성, 접근 권한 보장",
+        "synonyms": {
+          "terms": [],
+          "exact": [],
+          "close": ["정보 보안", "데이터 보호"],
+          "related": ["개인정보 보호", "암호화"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": [],
+        "linked_clsf_id": "C13080001",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA05",
+            "external_name": "Data Security",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "T13080002",
+        "name_ko": "개인정보 보호",
+        "name_en": "Privacy Protection",
+        "acronym": null,
+        "description": "개인정보의 수집·이용·제공 및 안전한 관리",
+        "synonyms": {
+          "terms": [],
+          "exact": ["프라이버시 보호"],
+          "close": ["개인정보보호"],
+          "related": ["비식별화", "가명처리"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": ["T13080001"],
+        "linked_clsf_id": "C13080005",
+        "parent_id": null,
+        "standard_refs": [],
+        "children": []
+      },
+      {
+        "id": "T13090001",
+        "name_ko": "마스터 데이터",
+        "name_en": "Master Data",
+        "acronym": "MD",
+        "description": "조직 내 공유되는 핵심 비즈니스 엔티티 (고객, 제품, 계정 등)",
+        "synonyms": {
+          "terms": [],
+          "exact": [],
+          "close": ["기준 데이터"],
+          "related": ["참조 데이터", "MDM"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": [],
+        "linked_clsf_id": "C13090002",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA08-MD",
+            "external_name": "Master Data",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "T13090002",
+        "name_ko": "참조 데이터",
+        "name_en": "Reference Data",
+        "acronym": null,
+        "description": "분류 및 코드 체계 (국가 코드, 통화 코드 등)",
+        "synonyms": {
+          "terms": [],
+          "exact": [],
+          "close": ["코드 데이터"],
+          "related": ["공통 코드", "표준 코드"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": ["T13090001"],
+        "linked_clsf_id": "C13090003",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA08-RD",
+            "external_name": "Reference Data",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      },
+      {
+        "id": "T13090003",
+        "name_ko": "마스터 데이터 관리",
+        "name_en": "Master Data Management",
+        "acronym": "MDM",
+        "description": "마스터 데이터의 통합, 동기화, 품질 관리 프로세스",
+        "synonyms": {
+          "terms": [],
+          "exact": ["MDM"],
+          "close": [],
+          "related": ["데이터 통합", "데이터 정합성"],
+          "broader": [],
+          "narrower": []
+        },
+        "related_terms": ["T13090001"],
+        "linked_clsf_id": "C13090004",
+        "parent_id": null,
+        "standard_refs": [
+          {
+            "standard_id": "STD-DAMA",
+            "external_id": "DAMA-KA08",
+            "external_name": "Reference & Master Data",
+            "match_type": "EXACT_MATCH",
+            "confidence": 0.95
+          }
+        ],
+        "children": []
+      }
+    ]
+  },
+  "statistics": {
+    "added_classifications": 23,
+    "added_terms": 9,
+    "total_classifications_after": 40,
+    "total_terms_after": 19
+  }
+}

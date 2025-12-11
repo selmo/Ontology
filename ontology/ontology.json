@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "version": "3.13.1",
+    "version": "3.13.2",
     "last_updated": "2025-12-11",
-    "description": "MC 분류·용어 통합 체계 (Close Match 확장: +48개)"
+    "description": "MC 분류·용어 통합 체계 (Close Match 추가 확장: +8개)"
   },
   "id_schema": {
     "classification": "C + DD(도메인) + LL(중분류) + SSSS(일련번호)",
@@ -1887,11 +1887,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "관련기관명",
               "유관기관명"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -1919,15 +1919,15 @@
             "terms": [],
             "exact": [],
             "close": [
-              "관계부서명칭"
+              "관계부서명칭",
+              "관련부서명",
+              "유관부서명",
+              "연관부서명"
             ],
             "related": [
-              "관련부서명",
               "관계부서이름",
               "관련부서이름",
-              "유관부서명",
               "유관부서이름",
-              "연관부서명",
               "연관부서이름",
               "관련부서명칭",
               "유관부서명칭"
@@ -6131,10 +6131,11 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
-              "사회안전망",
+            "close": [
               "사회복지제도"
+            ],
+            "related": [
+              "사회안전망"
             ],
             "broader": [],
             "narrower": []
@@ -8458,10 +8459,10 @@
           "synonyms": {
             "terms": [],
             "exact": [],
-            "close": [],
-            "related": [
+            "close": [
               "관련법령명"
             ],
+            "related": [],
             "broader": [],
             "narrower": []
           },
@@ -12543,12 +12544,12 @@
             "exact": [],
             "close": [
               "제조회사명",
-              "제조사명칭"
+              "제조사명칭",
+              "제조회사명칭"
             ],
             "related": [
               "제조사이름",
-              "제조회사이름",
-              "제조회사명칭"
+              "제조회사이름"
             ],
             "broader": [],
             "narrower": []
